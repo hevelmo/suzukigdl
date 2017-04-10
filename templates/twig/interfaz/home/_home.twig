@@ -1,0 +1,22 @@
+{% extends "super.twig" %}
+{% block title %}{{ title }}{% endblock %}
+{% block section_stylessheet %}
+	<link id="home" rel="stylesheet" class="link-home" href="{{ _host }}css/sections/home.css">
+{% endblock %}
+{% block section %}
+    <input type="hidden" id="hidden_section" value="home">
+{% endblock %}
+{% block navbar %}
+    {% embed "super_navbar.twig" %}{% endembed %}
+{% endblock %}
+{% block content_current %}
+{% endblock %}
+{% block footer %}
+    {% embed "super_footer.twig" %}{% endembed %}
+{% endblock %}
+{% block script_load_js %}
+{% endblock %}
+{% block section_scripts %}                
+{% endblock %}
+{% block load_scripts %}
+{% endblock %}
