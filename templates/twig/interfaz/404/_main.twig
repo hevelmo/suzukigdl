@@ -1,0 +1,22 @@
+{% extends "super.twig" %}
+{% block title %}{{ title }}{% endblock %}
+{% block section_stylessheet %}
+	<link id="404" rel="stylesheet" class="link-404" href="">
+{% endblock %}
+{% block section %}
+    <input type="hidden" id="hidden_section" value="404">
+{% endblock %}
+{% block navbar %}
+    {% embed "super_navbar.twig" %}{% endembed %}
+{% endblock %}
+{% block content_current %}
+{% endblock %}
+{% block footer %}
+    {% embed "super_footer.twig" %}{% endembed %}
+{% endblock %}
+{% block script_load_js %}
+{% endblock %}
+{% block section_scripts %}                
+{% endblock %}
+{% block load_scripts %}
+{% endblock %}
