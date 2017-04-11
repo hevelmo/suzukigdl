@@ -1,14 +1,14 @@
 <?php
 
-/* home/_home.twig */
-class __TwigTemplate_b2f3c399226d11076cb5fbe99ff264deb0ce8564d4d466ede2c447e629fcfd5b extends Twig_Template
+/* 404/_404.twig */
+class __TwigTemplate_738b08fdbb7bae5de19179d1594ce7a101aac0d63550ac7872c16004df9cb7be extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("super.twig", "home/_home.twig", 1);
+        $this->parent = $this->loadTemplate("super.twig", "404/_404.twig", 1);
         $this->blocks = array(
             'title' => array($this, 'block_title'),
             'section_stylessheet' => array($this, 'block_section_stylessheet'),
@@ -42,61 +42,66 @@ class __TwigTemplate_b2f3c399226d11076cb5fbe99ff264deb0ce8564d4d466ede2c447e629f
     public function block_section_stylessheet($context, array $blocks = array())
     {
         // line 4
-        echo "\t<link id=\"home\" rel=\"stylesheet\" class=\"link-home\" href=\"";
+        echo "\t<link id=\"404\" rel=\"stylesheet\" class=\"link-404\" href=\"";
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "css/sections/home.css\">
+        echo "css/sections/404.css\">
 ";
     }
 
-    // line 7
+    // line 6
     public function block_section($context, array $blocks = array())
     {
-        // line 8
-        echo "    <input type=\"hidden\" id=\"hidden_section\" value=\"home\">
+        // line 7
+        echo "    <input type=\"hidden\" id=\"hidden_section\" value=\"404\">
 ";
     }
 
-    // line 10
+    // line 9
     public function block_navbar($context, array $blocks = array())
     {
-        // line 11
+        // line 10
         echo "    ";
-        $this->loadTemplate("home/_home.twig", "home/_home.twig", 11, "1223205823")->display($context);
+        $this->loadTemplate("404/_404.twig", "404/_404.twig", 10, "2114637569")->display($context);
     }
 
-    // line 23
+    // line 12
     public function block_content_current($context, array $blocks = array())
     {
+        // line 13
+        echo "    ";
+        $this->loadTemplate("404/_404.twig", "404/_404.twig", 13, "668529014")->display($context);
+        echo "\t
+";
     }
 
-    // line 25
+    // line 15
     public function block_footer($context, array $blocks = array())
     {
-        // line 26
+        // line 16
         echo "    ";
-        $this->loadTemplate("home/_home.twig", "home/_home.twig", 26, "1139305593")->display($context);
+        $this->loadTemplate("404/_404.twig", "404/_404.twig", 16, "648299406")->display($context);
     }
 
-    // line 28
+    // line 18
     public function block_script_load_js($context, array $blocks = array())
     {
     }
 
-    // line 30
+    // line 20
     public function block_section_scripts($context, array $blocks = array())
     {
         echo "                
 ";
     }
 
-    // line 32
+    // line 22
     public function block_load_scripts($context, array $blocks = array())
     {
     }
 
     public function getTemplateName()
     {
-        return "home/_home.twig";
+        return "404/_404.twig";
     }
 
     public function isTraitable()
@@ -106,22 +111,21 @@ class __TwigTemplate_b2f3c399226d11076cb5fbe99ff264deb0ce8564d4d466ede2c447e629f
 
     public function getDebugInfo()
     {
-        return array (  93 => 32,  86 => 30,  81 => 28,  76 => 26,  73 => 25,  68 => 23,  63 => 11,  60 => 10,  55 => 8,  52 => 7,  45 => 4,  42 => 3,  36 => 2,  11 => 1,);
+        return array (  98 => 22,  91 => 20,  86 => 18,  81 => 16,  78 => 15,  71 => 13,  68 => 12,  63 => 10,  60 => 9,  55 => 7,  52 => 6,  45 => 4,  42 => 3,  36 => 2,  11 => 1,);
     }
 }
 
 
-/* home/_home.twig */
-class __TwigTemplate_b2f3c399226d11076cb5fbe99ff264deb0ce8564d4d466ede2c447e629fcfd5b_1223205823 extends Twig_Template
+/* 404/_404.twig */
+class __TwigTemplate_738b08fdbb7bae5de19179d1594ce7a101aac0d63550ac7872c16004df9cb7be_2114637569 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
-        // line 11
-        $this->parent = $this->loadTemplate("super_navbar.twig", "home/_home.twig", 11);
+        // line 10
+        $this->parent = $this->loadTemplate("super_navbar.twig", "404/_404.twig", 10);
         $this->blocks = array(
-            'phone_call' => array($this, 'block_phone_call'),
         );
     }
 
@@ -135,23 +139,9 @@ class __TwigTemplate_b2f3c399226d11076cb5fbe99ff264deb0ce8564d4d466ede2c447e629f
         $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
 
-    // line 12
-    public function block_phone_call($context, array $blocks = array())
-    {
-        // line 13
-        echo "\t\t\t<div id=\"phone-call\">
-\t\t\t\t<a href=\"tel: +013337771989\">
-\t\t\t\t\t<span style=\"color: #ffffff;\">
-\t\t\t\t    \tTel. 01(33)3777-1989
-\t\t\t\t\t</span>
-\t\t\t\t</a>
-\t\t\t</div>
-\t\t";
-    }
-
     public function getTemplateName()
     {
-        return "home/_home.twig";
+        return "404/_404.twig";
     }
 
     public function isTraitable()
@@ -161,20 +151,60 @@ class __TwigTemplate_b2f3c399226d11076cb5fbe99ff264deb0ce8564d4d466ede2c447e629f
 
     public function getDebugInfo()
     {
-        return array (  142 => 13,  139 => 12,  122 => 11,  93 => 32,  86 => 30,  81 => 28,  76 => 26,  73 => 25,  68 => 23,  63 => 11,  60 => 10,  55 => 8,  52 => 7,  45 => 4,  42 => 3,  36 => 2,  11 => 1,);
+        return array (  127 => 10,  98 => 22,  91 => 20,  86 => 18,  81 => 16,  78 => 15,  71 => 13,  68 => 12,  63 => 10,  60 => 9,  55 => 7,  52 => 6,  45 => 4,  42 => 3,  36 => 2,  11 => 1,);
     }
 }
 
 
-/* home/_home.twig */
-class __TwigTemplate_b2f3c399226d11076cb5fbe99ff264deb0ce8564d4d466ede2c447e629fcfd5b_1139305593 extends Twig_Template
+/* 404/_404.twig */
+class __TwigTemplate_738b08fdbb7bae5de19179d1594ce7a101aac0d63550ac7872c16004df9cb7be_668529014 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
-        // line 26
-        $this->parent = $this->loadTemplate("super_footer.twig", "home/_home.twig", 26);
+        // line 13
+        $this->parent = $this->loadTemplate("404/container.twig", "404/_404.twig", 13);
+        $this->blocks = array(
+        );
+    }
+
+    protected function doGetParent(array $context)
+    {
+        return "404/container.twig";
+    }
+
+    protected function doDisplay(array $context, array $blocks = array())
+    {
+        $this->parent->display($context, array_merge($this->blocks, $blocks));
+    }
+
+    public function getTemplateName()
+    {
+        return "404/_404.twig";
+    }
+
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  167 => 13,  127 => 10,  98 => 22,  91 => 20,  86 => 18,  81 => 16,  78 => 15,  71 => 13,  68 => 12,  63 => 10,  60 => 9,  55 => 7,  52 => 6,  45 => 4,  42 => 3,  36 => 2,  11 => 1,);
+    }
+}
+
+
+/* 404/_404.twig */
+class __TwigTemplate_738b08fdbb7bae5de19179d1594ce7a101aac0d63550ac7872c16004df9cb7be_648299406 extends Twig_Template
+{
+    public function __construct(Twig_Environment $env)
+    {
+        parent::__construct($env);
+
+        // line 16
+        $this->parent = $this->loadTemplate("super_footer.twig", "404/_404.twig", 16);
         $this->blocks = array(
         );
     }
@@ -191,7 +221,7 @@ class __TwigTemplate_b2f3c399226d11076cb5fbe99ff264deb0ce8564d4d466ede2c447e629f
 
     public function getTemplateName()
     {
-        return "home/_home.twig";
+        return "404/_404.twig";
     }
 
     public function isTraitable()
@@ -201,32 +231,22 @@ class __TwigTemplate_b2f3c399226d11076cb5fbe99ff264deb0ce8564d4d466ede2c447e629f
 
     public function getDebugInfo()
     {
-        return array (  177 => 26,  142 => 13,  139 => 12,  122 => 11,  93 => 32,  86 => 30,  81 => 28,  76 => 26,  73 => 25,  68 => 23,  63 => 11,  60 => 10,  55 => 8,  52 => 7,  45 => 4,  42 => 3,  36 => 2,  11 => 1,);
+        return array (  207 => 16,  167 => 13,  127 => 10,  98 => 22,  91 => 20,  86 => 18,  81 => 16,  78 => 15,  71 => 13,  68 => 12,  63 => 10,  60 => 9,  55 => 7,  52 => 6,  45 => 4,  42 => 3,  36 => 2,  11 => 1,);
     }
 }
 /* {% extends "super.twig" %}*/
 /* {% block title %}{{ title }}{% endblock %}*/
 /* {% block section_stylessheet %}*/
-/* 	<link id="home" rel="stylesheet" class="link-home" href="{{ _host }}css/sections/home.css">*/
+/* 	<link id="404" rel="stylesheet" class="link-404" href="{{ _host }}css/sections/404.css">*/
 /* {% endblock %}*/
-/* */
 /* {% block section %}*/
-/*     <input type="hidden" id="hidden_section" value="home">*/
+/*     <input type="hidden" id="hidden_section" value="404">*/
 /* {% endblock %}*/
 /* {% block navbar %}*/
-/*     {% embed "super_navbar.twig" %}*/
-/* 		{% block phone_call %}*/
-/* 			<div id="phone-call">*/
-/* 				<a href="tel: +013337771989">*/
-/* 					<span style="color: #ffffff;">*/
-/* 				    	Tel. 01(33)3777-1989*/
-/* 					</span>*/
-/* 				</a>*/
-/* 			</div>*/
-/* 		{% endblock %}*/
-/*     {% endembed %}*/
+/*     {% embed "super_navbar.twig" %}{% endembed %}*/
 /* {% endblock %}*/
 /* {% block content_current %}*/
+/*     {% embed "404/container.twig" %}{% endembed %}	*/
 /* {% endblock %}*/
 /* {% block footer %}*/
 /*     {% embed "super_footer.twig" %}{% endembed %}*/

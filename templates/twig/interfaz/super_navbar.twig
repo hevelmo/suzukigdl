@@ -5,7 +5,7 @@
             <header id="header-zone">
                 <div id="logo-wrapper">
                     <div id="logo">
-                        <a id="return-index" title="Suzuki Autos Guadalajara">
+                        <a href="{{ _host }}" title="Suzuki Autos Guadalajara">
                             <span>Suzuki <sup style="position: relative; top: -2px;">&copy;</sup> Guadalajara</span>
                         </a>
                     </div>
@@ -16,22 +16,22 @@
                             <nav>
                                 <ul>
                                     <li>
-                                        <a id="go-group" title="Grupo">
+                                        <a href="{{ _host }}grupo" title="Grupo">
                                             <span>Grupo</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a id="go-concesionaries" title="Concesionarias">
+                                        <a href="{{ _host }}concesionarias" title="Concesionarias">
                                             <span>Concesionarias</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a id="go-catalogs" title="Catalogos">
+                                        <a href="{{ _host }}catalogos" title="Catalogos">
                                             <span>Catálogos</span>
                                         </a>
                                     </li>
                                     <li class="last">
-                                        <a id="go-contact" title="Contactános">
+                                        <a href="{{ _host }}cotactanos" title="Contactános">
                                             <span>Contáctanos</span>
                                         </a>
                                     </li>
@@ -41,7 +41,8 @@
                                         </a>
                                     </li>
                                     <li class="last">
-                                        <div id="phone-call"></div>
+                                        {% block phone_call %}
+                                        {% endblock %}
                                     </li>
                                 </ul>
                             </nav>

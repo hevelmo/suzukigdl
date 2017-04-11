@@ -10,6 +10,7 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
         $this->parent = false;
 
         $this->blocks = array(
+            'phone_call' => array($this, 'block_phone_call'),
         );
     }
 
@@ -22,7 +23,10 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
             <header id=\"header-zone\">
                 <div id=\"logo-wrapper\">
                     <div id=\"logo\">
-                        <a id=\"return-index\" title=\"Suzuki Autos Guadalajara\">
+                        <a href=\"";
+        // line 8
+        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
+        echo "\" title=\"Suzuki Autos Guadalajara\">
                             <span>Suzuki <sup style=\"position: relative; top: -2px;\">&copy;</sup> Guadalajara</span>
                         </a>
                     </div>
@@ -33,22 +37,34 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
                             <nav>
                                 <ul>
                                     <li>
-                                        <a id=\"go-group\" title=\"Grupo\">
+                                        <a href=\"";
+        // line 19
+        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
+        echo "grupo\" title=\"Grupo\">
                                             <span>Grupo</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a id=\"go-concesionaries\" title=\"Concesionarias\">
+                                        <a href=\"";
+        // line 24
+        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
+        echo "concesionarias\" title=\"Concesionarias\">
                                             <span>Concesionarias</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a id=\"go-catalogs\" title=\"Catalogos\">
+                                        <a href=\"";
+        // line 29
+        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
+        echo "catalogos\" title=\"Catalogos\">
                                             <span>Catálogos</span>
                                         </a>
                                     </li>
                                     <li class=\"last\">
-                                        <a id=\"go-contact\" title=\"Contactános\">
+                                        <a href=\"";
+        // line 34
+        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
+        echo "cotactanos\" title=\"Contactános\">
                                             <span>Contáctanos</span>
                                         </a>
                                     </li>
@@ -58,8 +74,11 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
                                         </a>
                                     </li>
                                     <li class=\"last\">
-                                        <div id=\"phone-call\"></div>
-                                    </li>
+                                        ";
+        // line 44
+        $this->displayBlock('phone_call', $context, $blocks);
+        // line 46
+        echo "                                    </li>
                                 </ul>
                             </nav>
                         </div>
@@ -69,14 +88,14 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
                                     <li>
                                         <a id=\"header-models-button\" title=\"Modelos\">
                                         ";
-        // line 57
+        // line 58
         echo "                                            <span>Modelos</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a id=\"header-financing-button\" title=\"Prueba de Manejo\">
                                         ";
-        // line 65
+        // line 66
         echo "                                            <span>Financiamiento</span>
                                         </a>
                                     </li>
@@ -97,7 +116,7 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
                     </div>
                 </div>
                 ";
-        // line 87
+        // line 88
         echo "                <div id=\"models-header\">
                     <div class=\"content\" id=\"content-models-header\"></div>
                 </div>
@@ -115,14 +134,26 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
 ";
     }
 
+    // line 44
+    public function block_phone_call($context, array $blocks = array())
+    {
+        // line 45
+        echo "                                        ";
+    }
+
     public function getTemplateName()
     {
         return "super_navbar.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  101 => 87,  80 => 65,  73 => 57,  19 => 2,);
+        return array (  141 => 45,  138 => 44,  120 => 88,  99 => 66,  92 => 58,  81 => 46,  79 => 44,  66 => 34,  58 => 29,  50 => 24,  42 => 19,  28 => 8,  20 => 2,);
     }
 }
 /* {# Begin: Header #}*/
@@ -132,7 +163,7 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
 /*             <header id="header-zone">*/
 /*                 <div id="logo-wrapper">*/
 /*                     <div id="logo">*/
-/*                         <a id="return-index" title="Suzuki Autos Guadalajara">*/
+/*                         <a href="{{ _host }}" title="Suzuki Autos Guadalajara">*/
 /*                             <span>Suzuki <sup style="position: relative; top: -2px;">&copy;</sup> Guadalajara</span>*/
 /*                         </a>*/
 /*                     </div>*/
@@ -143,22 +174,22 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
 /*                             <nav>*/
 /*                                 <ul>*/
 /*                                     <li>*/
-/*                                         <a id="go-group" title="Grupo">*/
+/*                                         <a href="{{ _host }}grupo" title="Grupo">*/
 /*                                             <span>Grupo</span>*/
 /*                                         </a>*/
 /*                                     </li>*/
 /*                                     <li>*/
-/*                                         <a id="go-concesionaries" title="Concesionarias">*/
+/*                                         <a href="{{ _host }}concesionarias" title="Concesionarias">*/
 /*                                             <span>Concesionarias</span>*/
 /*                                         </a>*/
 /*                                     </li>*/
 /*                                     <li>*/
-/*                                         <a id="go-catalogs" title="Catalogos">*/
+/*                                         <a href="{{ _host }}catalogos" title="Catalogos">*/
 /*                                             <span>Catálogos</span>*/
 /*                                         </a>*/
 /*                                     </li>*/
 /*                                     <li class="last">*/
-/*                                         <a id="go-contact" title="Contactános">*/
+/*                                         <a href="{{ _host }}cotactanos" title="Contactános">*/
 /*                                             <span>Contáctanos</span>*/
 /*                                         </a>*/
 /*                                     </li>*/
@@ -168,7 +199,8 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
 /*                                         </a>*/
 /*                                     </li>*/
 /*                                     <li class="last">*/
-/*                                         <div id="phone-call"></div>*/
+/*                                         {% block phone_call %}*/
+/*                                         {% endblock %}*/
 /*                                     </li>*/
 /*                                 </ul>*/
 /*                             </nav>*/

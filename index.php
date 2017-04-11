@@ -25,24 +25,20 @@ $container = new \Slim\Container();
 
 $container["notFoundHandler"] = function($c) {
     return function($request, $response) use ($c) {
-        return $c["response"]
-            ->withStatus(404)
-            ->withHeader("Content-Type", "text/html")
-            ->write((new Control404())->getTemplate()->render());
+        return $c["response"]->withStatus(404)
+                             ->withHeader("Content-Type", "text/html")
+                             ->write((new Control404())->getTemplate()->render());
     };
 };
 
 $app = new \Slim\App($container);
 
-/*
- ###################################################################################################
-    ROOM
- ###################################################################################################
-*/
+/**
+ * [ROOM]
+ */
     $app->get("/", "ControlHome:__invoke");
     $app->get("/aviso-de-privacidad", "ControlPrivacyNotice:__invoke");
     $app->run();
-
 /**
  * CONTROL MASTER
  * 
@@ -140,18 +136,18 @@ $app = new \Slim\App($container);
         function __construct() {
             parent::__construct(
                 array(
-                    "title" => "Suzuki Autos Guadalajara Página no encontrada",
-                    "title_header" => "Suzuki Autos Guadalajara Página no encontrada"
+                    "title" => "Página no encontrada",
+                    "title_header" => "Página no encontrada"
                 ),
                 array(),
                 "404/_404.twig"
             );
             // Facebook Metatags
             parent::getTemplate()->makeFacebookTags(
-                "JAGUAR GUADALAJARA: Página no encontrada",
-                "JAGUAR GUADALAJARA",
-                "JAGUAR GUADALAJARA: Página no encontrada",
-                _HOST . "img/logo/logo_jaguar.png"
+                "Página no encontrada",
+                "Página no encontrada",
+                "Página no encontrada",
+                _HOST . "img/template/common/header/horizontal_logo.png"
             );
         }
         /**
@@ -195,7 +191,6 @@ $app = new \Slim\App($container);
          * @param   array                   $args
         **/
         public function __invoke($request, $response, $args) {
-
             parent::getTemplate()->display();
             //echo "<pre>", print_r(parent::getTemplate()->getMasterConfigArray()), "</pre>";
         }
@@ -228,14 +223,7 @@ $app = new \Slim\App($container);
          * @param   Slim\Http\Response      $response 
          * @param   array                   $args
         **/
-        public function __invoke($request, $response, $args) {
-            parent::getRouter()->setRouteParams($request, $response, $args);
-            parent::getTemplate()->addToMasterConfigArray(parent::getRouter()->getArgs());
-            
-            $navbar = parent::getNavbar()->getNavbarArray();
-            parent::getTemplate()->addToMasterConfigArray('navpa', $navbar);
-            //echo "<pre>", print_r($navbar), "</pre>";
-            
+        public function __invoke($request, $response, $args) {            
             parent::getTemplate()->display();
             //echo "<pre>", print_r(parent::getTemplate()->getMasterConfigArray()), "</pre>";
         }
