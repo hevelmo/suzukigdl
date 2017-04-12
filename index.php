@@ -39,6 +39,7 @@ $app = new \Slim\App($container);
     $app->get("/", "ControlHome:__invoke");
     $app->get("/grupo", "ControlGroup:__invoke");
     $app->get("/catalogos", "ControlCatalogs:__invoke");
+    $app->get("/concesionarias", "ControlConcessionaires:__invoke");
     $app->get("/aviso-de-privacidad", "ControlPrivacyNotice:__invoke");
     $app->run();
 /**
@@ -204,17 +205,17 @@ $app = new \Slim\App($container);
         function __construct() {
             parent::__construct(
                 array(
-                    "title" => "Suzuki Autos Guadalajara: Grupo",
-                    "title_header" => "Suzuki Autos Guadalajara: Grupo"
+                    "title" => "Suzuki Autos " . _LOC . ": Grupo",
+                    "title_header" => "Suzuki Autos " . _LOC . ": Grupo"
                 ),
                 array(),
                 "grupo/_grupo.twig"
             );
             // Facebook Metatags
             parent::getTemplate()->makeFacebookTags(
-                "Suzuki Autos Guadalajara: Grupo",
-                "Suzuki Autos Guadalajara: Grupo",
-                "Suzuki Autos Guadalajara: Grupo",
+                "Suzuki Autos " . _LOC . ": Grupo",
+                "Suzuki Autos " . _LOC . ": Grupo",
+                "Suzuki Autos " . _LOC . ": Grupo",
                 _HOST . "img/template/common/header/horizontal_logo.png"
             );
         }
@@ -232,23 +233,57 @@ $app = new \Slim\App($container);
         }
     }
     /**
-     * CONTROL GROUP
+     * CONTROL CATALOGS
     **/
     class ControlCatalogs extends ControlMaster {    
         function __construct() {
             parent::__construct(
                 array(
-                    "title" => "Suzuki Autos Guadalajara: Catalogos",
-                    "title_header" => "Suzuki Autos Guadalajara: Catalogos"
+                    "title" => "Suzuki Autos " . _LOC . ": Catalogos",
+                    "title_header" => "Suzuki Autos " . _LOC . ": Catalogos"
                 ),
                 array(),
                 "catalogos/_catalogos.twig"
             );
             // Facebook Metatags
             parent::getTemplate()->makeFacebookTags(
-                "Suzuki Autos Guadalajara: Catalogos",
-                "Suzuki Autos Guadalajara: Catalogos",
-                "Suzuki Autos Guadalajara: Catalogos",
+                "Suzuki Autos " . _LOC . ": Catalogos",
+                "Suzuki Autos " . _LOC . ": Catalogos",
+                "Suzuki Autos " . _LOC . ": Catalogos",
+                _HOST . "img/template/common/header/horizontal_logo.png"
+            );
+        }
+        /**
+         * This inherited method don't do nothing however is mandatory to implement it
+         * Because the parent method is an abstract one.
+         * 
+         * @param   Slim\Http\Request       $request 
+         * @param   Slim\Http\Response      $response 
+         * @param   array                   $args
+        **/
+        public function __invoke($request, $response, $args) {
+            parent::getTemplate()->display();
+            //echo "<pre>", print_r(parent::getTemplate()->getMasterConfigArray()), "</pre>";
+        }
+    }
+    /**
+     * CONTROL CONCESSIONAIRES
+    **/
+    class ControlConcessionaires extends ControlMaster {    
+        function __construct() {
+            parent::__construct(
+                array(
+                    "title" => "Suzuki Autos " . _LOC . ": Concesionarias",
+                    "title_header" => "Suzuki Autos " . _LOC . ": Concesionarias"
+                ),
+                array(),
+                "concesionarias/_concesionarias.twig"
+            );
+            // Facebook Metatags
+            parent::getTemplate()->makeFacebookTags(
+                "Suzuki Autos " . _LOC . ": Concesionarias",
+                "Suzuki Autos " . _LOC . ": Concesionarias",
+                "Suzuki Autos " . _LOC . ": Concesionarias",
                 _HOST . "img/template/common/header/horizontal_logo.png"
             );
         }
@@ -279,12 +314,11 @@ $app = new \Slim\App($container);
             );
             //Facebook Metatags
             parent::getTemplate()->makeFacebookTags(
-                "SEMINUEVOS PREMIUM: AVISO DE PRIVACIDAD", 
-                "SEMINUEVOS PREMIUM", 
-                "SEMINUEVOS PREMIUM: AVISO DE PRIVACIDAD",
-                _HOST . "img/logo/logo_jaguar.png"
+                "AVISO DE PRIVACIDAD", 
+                "Suzuki Autos " . _LOC, 
+                "AVISO DE PRIVACIDAD",
+                _HOST . "img/template/common/header/horizontal_logo.png"
             );
-
         }
         /**
          * This inherited method don't do nothing however is mandatory to implement it

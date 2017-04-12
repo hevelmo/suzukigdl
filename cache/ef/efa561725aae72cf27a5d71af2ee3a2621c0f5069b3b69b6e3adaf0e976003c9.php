@@ -202,7 +202,7 @@ class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d
         // line 19
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
         echo "\" />
-                <meta name=\"keywords\" content=\"Suzuki ";
+                <meta name=\"keywords\" content=\"Suzuki Autos ";
         // line 20
         echo twig_escape_filter($this->env, (isset($context["_loc"]) ? $context["_loc"] : null), "html", null, true);
         echo ", Ciaz, Kizashi, Grand Vitara, Nueva Vitara, Swift, Swift Sport, S-cross, Ignis\" />
@@ -396,7 +396,7 @@ class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d
     {
         // line 166
         echo "            ";
-        $this->loadTemplate("super.twig", "super.twig", 166, "643276385")->display($context);
+        $this->loadTemplate("super.twig", "super.twig", 166, "1261121444")->display($context);
         // line 167
         echo "        ";
     }
@@ -468,7 +468,7 @@ class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d
 
 
 /* super.twig */
-class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d37ccb_643276385 extends Twig_Template
+class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d37ccb_1261121444 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -524,7 +524,7 @@ class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d
 /*                 <meta charset="UTF-8">*/
 /*                 <meta name="title" content="Suzuki Autos {{ _loc }}">*/
 /*                 <meta name="identifier-url" content="{{ _host }}" />*/
-/*                 <meta name="keywords" content="Suzuki {{ _loc }}, Ciaz, Kizashi, Grand Vitara, Nueva Vitara, Swift, Swift Sport, S-cross, Ignis" />*/
+/*                 <meta name="keywords" content="Suzuki Autos {{ _loc }}, Ciaz, Kizashi, Grand Vitara, Nueva Vitara, Swift, Swift Sport, S-cross, Ignis" />*/
 /*                 <meta name="author" content="" />*/
 /*                 <meta name="language" content="ES" />*/
 /*                 <meta name="copyright" content="© {{ _anio }} Suzuki Autos {{ _loc }}" />*/

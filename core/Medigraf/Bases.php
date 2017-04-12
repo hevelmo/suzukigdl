@@ -20,14 +20,7 @@ class Bases
     {
         $this->constants = array(
             "_host" => _HOST,
-            /*
-            "_admin" => _ADMIN,
-            "_login" => _LOGIN,
-            "_sitio" => _SITIO,
-            "_inventarios" => _INVENTARIOS,
-            */
             "_max" => _MAX,
-            //"_rootapi" => _ROOTAPI,
             "_loc" => _LOC,
             "_anio" => date("o")
         );

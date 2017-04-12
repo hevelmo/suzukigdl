@@ -1,0 +1,32 @@
+{% extends "super.twig" %}
+{% block title %}{{ title }}{% endblock %}
+{% block section_stylessheet %}
+    {#<link id="catalogs" rel="stylesheet" class="link-catalogs" href="{{ _host }}css/sections/catalog.css">#}
+{% endblock %}
+{% block social_bar %} 
+{% endblock %}
+{% block section %}
+    <input type="hidden" id="hidden_section" value="concessionaires">
+{% endblock %}
+{% block navbar %}
+    {% embed "super_navbar.twig" %}
+		{% block phone_call %}
+		{% endblock %}
+		{% block models_header %}
+    {% endembed %}
+{% endblock %}
+{% block content_current %}
+    {#{% embed "concesionarias/container.twig" %}{% endembed %}#}
+{% endblock %}
+{% block footer %}
+    {% embed "super_footer.twig" %}{% endembed %}
+{% endblock %}
+{% block script_load_js %}
+{% endblock %}
+{% block section_scripts %}
+    {#<script src="{{ _host }}js/sections/catalogs.js"></script>#}
+{% endblock %}
+{% block load_scripts %}
+    $('body').prepend( patch_bar );
+    detectNavigatorMethods.IE10();
+{% endblock %}
