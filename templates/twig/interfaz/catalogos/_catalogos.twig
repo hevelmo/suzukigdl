@@ -1,0 +1,41 @@
+{% extends "super.twig" %}
+{% block title %}{{ title }}{% endblock %}
+{% block section_stylessheet %}
+    <link id="catalogs" rel="stylesheet" class="link-catalogs" href="{{ _host }}css/sections/catalog.css">
+	<link id="catalogs" rel="stylesheet" class="link-catalogs" href="{{ _host }}css/sections/slick-theme.css">
+{% endblock %}
+{% block section %}
+    <input type="hidden" id="hidden_section" value="catalogs">
+{% endblock %}
+{% block navbar %}
+    {% embed "super_navbar.twig" %}
+		{% block phone_call %}
+			{#<div id="phone-call">
+				<a href="tel: +013337771989">
+					<span style="color: #ffffff;">
+				    	Tel. 01(33)3777-1989
+					</span>
+				</a>
+			</div>#}
+		{% endblock %}
+		{% block models_header %}
+			{#{% embed "menus/models_menu.twig" %}{% endembed %}#}
+	    {% endblock %}
+    {% endembed %}
+{% endblock %}
+{% block content_current %}
+    {% embed "catalogos/container.twig" %}{% endembed %}
+{% endblock %}
+{% block footer %}
+    {% embed "super_footer.twig" %}{% endembed %}
+{% endblock %}
+{% block script_load_js %}
+{% endblock %}
+{% block section_scripts %}
+    <script src="{{ _host }}js/sections/catalogs.js"></script>
+    <script src="{{ _host }}lib/assets/plugins/slick/slick.js"></script>
+{% endblock %}
+{% block load_scripts %}
+$('body').prepend( patch_bar );
+detectNavigatorMethods.IE10();
+{% endblock %}

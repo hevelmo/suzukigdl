@@ -61,37 +61,73 @@ class __TwigTemplate_b2f3c399226d11076cb5fbe99ff264deb0ce8564d4d466ede2c447e629f
     {
         // line 11
         echo "    ";
-        $this->loadTemplate("home/_home.twig", "home/_home.twig", 11, "1223205823")->display($context);
+        $this->loadTemplate("home/_home.twig", "home/_home.twig", 11, "776149744")->display($context);
     }
 
-    // line 23
+    // line 26
     public function block_content_current($context, array $blocks = array())
     {
+        // line 27
+        echo "    ";
+        $this->loadTemplate("home/_home.twig", "home/_home.twig", 27, "37128651")->display($context);
     }
 
-    // line 25
+    // line 29
     public function block_footer($context, array $blocks = array())
     {
-        // line 26
+        // line 30
         echo "    ";
-        $this->loadTemplate("home/_home.twig", "home/_home.twig", 26, "1139305593")->display($context);
+        $this->loadTemplate("home/_home.twig", "home/_home.twig", 30, "1768224269")->display($context);
     }
 
-    // line 28
+    // line 32
     public function block_script_load_js($context, array $blocks = array())
     {
     }
 
-    // line 30
+    // line 34
     public function block_section_scripts($context, array $blocks = array())
     {
-        echo "                
-";
     }
 
-    // line 32
+    // line 36
     public function block_load_scripts($context, array $blocks = array())
     {
+        // line 37
+        echo "\t//Specifications Slider controls and functionality
+\tvar specifications_i = 0;
+\tvar specifications_total =  \$('.specifications-wrapper .specification').length - 1;
+\t\$(\"body\").on('click', 'a.specifications-controls', function( e ){
+\t    e.preventDefault();
+\t    var direction, fake_div, copy_div;
+\t    \$('.specifications-wrapper .fake_div').remove();
+\t    if( \$(this).attr('href') == '#left' ){
+\t        if( specifications_i > 0 ){
+\t            specifications_i--;
+\t        }else{
+\t            specifications_i = specifications_total ;
+\t            fake_div = true;
+\t            copy_div = \$('#features-wrapper .specification').eq( 0).clone();
+\t            copy_div.addClass('fake_div');
+\t            \$('#features-wrapper').append( copy_div ).css({marginLeft: ( ( specifications_i + 1 ) * -100 )+'%' }).stop().animate({marginLeft: ( specifications_i * -100) + '%' });
+\t        }
+\t    }else{
+\t        if( specifications_i < specifications_total ){
+\t            specifications_i++;
+\t        }else{
+\t            fake_div = true;
+\t            specifications_i = 0;
+\t            copy_div = \$('#features-wrapper .specification').eq( specifications_i -1  ).clone();
+\t            \$('#features-wrapper').prepend( copy_div ).css({marginLeft: '100%' }).stop();
+\t            copy_div.addClass('fake_div').css({marginLeft:\"-99%\", position:\"absolute\", width: \"100%\"}).stop().animate({marginLeft:'-100%'} );
+\t            \$('#features-wrapper').animate({marginLeft: '0'});
+\t        }
+\t    }
+\t    if( !fake_div ){
+\t        \$('.specifications-wrapper .specifications').stop().animate({marginLeft: ( specifications_i * -100) + '%' });
+\t    }
+\t});
+";
     }
 
     public function getTemplateName()
@@ -106,13 +142,13 @@ class __TwigTemplate_b2f3c399226d11076cb5fbe99ff264deb0ce8564d4d466ede2c447e629f
 
     public function getDebugInfo()
     {
-        return array (  93 => 32,  86 => 30,  81 => 28,  76 => 26,  73 => 25,  68 => 23,  63 => 11,  60 => 10,  55 => 8,  52 => 7,  45 => 4,  42 => 3,  36 => 2,  11 => 1,);
+        return array (  97 => 37,  94 => 36,  89 => 34,  84 => 32,  79 => 30,  76 => 29,  71 => 27,  68 => 26,  63 => 11,  60 => 10,  55 => 8,  52 => 7,  45 => 4,  42 => 3,  36 => 2,  11 => 1,);
     }
 }
 
 
 /* home/_home.twig */
-class __TwigTemplate_b2f3c399226d11076cb5fbe99ff264deb0ce8564d4d466ede2c447e629fcfd5b_1223205823 extends Twig_Template
+class __TwigTemplate_b2f3c399226d11076cb5fbe99ff264deb0ce8564d4d466ede2c447e629fcfd5b_776149744 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -122,6 +158,7 @@ class __TwigTemplate_b2f3c399226d11076cb5fbe99ff264deb0ce8564d4d466ede2c447e629f
         $this->parent = $this->loadTemplate("super_navbar.twig", "home/_home.twig", 11);
         $this->blocks = array(
             'phone_call' => array($this, 'block_phone_call'),
+            'models_header' => array($this, 'block_models_header'),
         );
     }
 
@@ -149,6 +186,15 @@ class __TwigTemplate_b2f3c399226d11076cb5fbe99ff264deb0ce8564d4d466ede2c447e629f
 \t\t";
     }
 
+    // line 21
+    public function block_models_header($context, array $blocks = array())
+    {
+        // line 22
+        echo "\t\t\t";
+        // line 23
+        echo "\t    ";
+    }
+
     public function getTemplateName()
     {
         return "home/_home.twig";
@@ -161,20 +207,60 @@ class __TwigTemplate_b2f3c399226d11076cb5fbe99ff264deb0ce8564d4d466ede2c447e629f
 
     public function getDebugInfo()
     {
-        return array (  142 => 13,  139 => 12,  122 => 11,  93 => 32,  86 => 30,  81 => 28,  76 => 26,  73 => 25,  68 => 23,  63 => 11,  60 => 10,  55 => 8,  52 => 7,  45 => 4,  42 => 3,  36 => 2,  11 => 1,);
+        return array (  195 => 23,  193 => 22,  190 => 21,  179 => 13,  176 => 12,  158 => 11,  97 => 37,  94 => 36,  89 => 34,  84 => 32,  79 => 30,  76 => 29,  71 => 27,  68 => 26,  63 => 11,  60 => 10,  55 => 8,  52 => 7,  45 => 4,  42 => 3,  36 => 2,  11 => 1,);
     }
 }
 
 
 /* home/_home.twig */
-class __TwigTemplate_b2f3c399226d11076cb5fbe99ff264deb0ce8564d4d466ede2c447e629fcfd5b_1139305593 extends Twig_Template
+class __TwigTemplate_b2f3c399226d11076cb5fbe99ff264deb0ce8564d4d466ede2c447e629fcfd5b_37128651 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
-        // line 26
-        $this->parent = $this->loadTemplate("super_footer.twig", "home/_home.twig", 26);
+        // line 27
+        $this->parent = $this->loadTemplate("home/container.twig", "home/_home.twig", 27);
+        $this->blocks = array(
+        );
+    }
+
+    protected function doGetParent(array $context)
+    {
+        return "home/container.twig";
+    }
+
+    protected function doDisplay(array $context, array $blocks = array())
+    {
+        $this->parent->display($context, array_merge($this->blocks, $blocks));
+    }
+
+    public function getTemplateName()
+    {
+        return "home/_home.twig";
+    }
+
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  223 => 27,  195 => 23,  193 => 22,  190 => 21,  179 => 13,  176 => 12,  158 => 11,  97 => 37,  94 => 36,  89 => 34,  84 => 32,  79 => 30,  76 => 29,  71 => 27,  68 => 26,  63 => 11,  60 => 10,  55 => 8,  52 => 7,  45 => 4,  42 => 3,  36 => 2,  11 => 1,);
+    }
+}
+
+
+/* home/_home.twig */
+class __TwigTemplate_b2f3c399226d11076cb5fbe99ff264deb0ce8564d4d466ede2c447e629fcfd5b_1768224269 extends Twig_Template
+{
+    public function __construct(Twig_Environment $env)
+    {
+        parent::__construct($env);
+
+        // line 30
+        $this->parent = $this->loadTemplate("super_footer.twig", "home/_home.twig", 30);
         $this->blocks = array(
         );
     }
@@ -201,7 +287,7 @@ class __TwigTemplate_b2f3c399226d11076cb5fbe99ff264deb0ce8564d4d466ede2c447e629f
 
     public function getDebugInfo()
     {
-        return array (  177 => 26,  142 => 13,  139 => 12,  122 => 11,  93 => 32,  86 => 30,  81 => 28,  76 => 26,  73 => 25,  68 => 23,  63 => 11,  60 => 10,  55 => 8,  52 => 7,  45 => 4,  42 => 3,  36 => 2,  11 => 1,);
+        return array (  263 => 30,  223 => 27,  195 => 23,  193 => 22,  190 => 21,  179 => 13,  176 => 12,  158 => 11,  97 => 37,  94 => 36,  89 => 34,  84 => 32,  79 => 30,  76 => 29,  71 => 27,  68 => 26,  63 => 11,  60 => 10,  55 => 8,  52 => 7,  45 => 4,  42 => 3,  36 => 2,  11 => 1,);
     }
 }
 /* {% extends "super.twig" %}*/
@@ -224,16 +310,53 @@ class __TwigTemplate_b2f3c399226d11076cb5fbe99ff264deb0ce8564d4d466ede2c447e629f
 /* 				</a>*/
 /* 			</div>*/
 /* 		{% endblock %}*/
+/* 		{% block models_header %}*/
+/* 			{#{% embed "menus/models_menu.twig" %}{% endembed %}#}*/
+/* 	    {% endblock %}*/
 /*     {% endembed %}*/
 /* {% endblock %}*/
 /* {% block content_current %}*/
+/*     {% embed "home/container.twig" %}{% endembed %}*/
 /* {% endblock %}*/
 /* {% block footer %}*/
 /*     {% embed "super_footer.twig" %}{% endembed %}*/
 /* {% endblock %}*/
 /* {% block script_load_js %}*/
 /* {% endblock %}*/
-/* {% block section_scripts %}                */
+/* {% block section_scripts %}*/
 /* {% endblock %}*/
 /* {% block load_scripts %}*/
+/* 	//Specifications Slider controls and functionality*/
+/* 	var specifications_i = 0;*/
+/* 	var specifications_total =  $('.specifications-wrapper .specification').length - 1;*/
+/* 	$("body").on('click', 'a.specifications-controls', function( e ){*/
+/* 	    e.preventDefault();*/
+/* 	    var direction, fake_div, copy_div;*/
+/* 	    $('.specifications-wrapper .fake_div').remove();*/
+/* 	    if( $(this).attr('href') == '#left' ){*/
+/* 	        if( specifications_i > 0 ){*/
+/* 	            specifications_i--;*/
+/* 	        }else{*/
+/* 	            specifications_i = specifications_total ;*/
+/* 	            fake_div = true;*/
+/* 	            copy_div = $('#features-wrapper .specification').eq( 0).clone();*/
+/* 	            copy_div.addClass('fake_div');*/
+/* 	            $('#features-wrapper').append( copy_div ).css({marginLeft: ( ( specifications_i + 1 ) * -100 )+'%' }).stop().animate({marginLeft: ( specifications_i * -100) + '%' });*/
+/* 	        }*/
+/* 	    }else{*/
+/* 	        if( specifications_i < specifications_total ){*/
+/* 	            specifications_i++;*/
+/* 	        }else{*/
+/* 	            fake_div = true;*/
+/* 	            specifications_i = 0;*/
+/* 	            copy_div = $('#features-wrapper .specification').eq( specifications_i -1  ).clone();*/
+/* 	            $('#features-wrapper').prepend( copy_div ).css({marginLeft: '100%' }).stop();*/
+/* 	            copy_div.addClass('fake_div').css({marginLeft:"-99%", position:"absolute", width: "100%"}).stop().animate({marginLeft:'-100%'} );*/
+/* 	            $('#features-wrapper').animate({marginLeft: '0'});*/
+/* 	        }*/
+/* 	    }*/
+/* 	    if( !fake_div ){*/
+/* 	        $('.specifications-wrapper .specifications').stop().animate({marginLeft: ( specifications_i * -100) + '%' });*/
+/* 	    }*/
+/* 	});*/
 /* {% endblock %}*/

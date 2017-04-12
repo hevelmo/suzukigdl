@@ -11,6 +11,7 @@
 
 $devServerList = array("127.0.0.1","::1","192.168.0.102","localhost");
 $folderDev = "suzukigdl";
+$location = "Guadalajara";
 
 if(!in_array($_SERVER['SERVER_NAME'], $devServerList)){
     $urlHost  = isset($_SERVER['HTTPS']) ? 'http://' : 'http://';
@@ -27,9 +28,12 @@ if(!in_array($_SERVER['SERVER_NAME'], $devServerList)){
     //define("_ROOTAPI", "http://localhost/jaguar/");
 }
 
-define("_LOGIN", "{$urlHost}login/");
+/*define("_LOGIN", "{$urlHost}login/");
 define("_ADMIN", "{$urlHost}admin/");
 define("_SITIO", "{$urlHost}sitio/");
 define("_INVENTARIOS", "{$urlHost}sitio/inventarios/");
+*/
+define("_LOC", $location);
+
 
 ?>

@@ -15,11 +15,11 @@ class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d
             'title' => array($this, 'block_title'),
             'links' => array($this, 'block_links'),
             'section_stylessheet' => array($this, 'block_section_stylessheet'),
+            'social_bar' => array($this, 'block_social_bar'),
             'current_master' => array($this, 'block_current_master'),
             'section' => array($this, 'block_section'),
             'header_wrapper' => array($this, 'block_header_wrapper'),
             'navbar' => array($this, 'block_navbar'),
-            'social_bar' => array($this, 'block_social_bar'),
             'content_current' => array($this, 'block_content_current'),
             'footer' => array($this, 'block_footer'),
             'scroll_to_top' => array($this, 'block_scroll_to_top'),
@@ -98,35 +98,33 @@ class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d
             ";
         // line 109
         echo "\t</head>
-\t<body id=\"recurrent-body\">
+\t<body>
         ";
         // line 111
-        $this->displayBlock('current_master', $context, $blocks);
-        // line 129
-        echo "
-        ";
-        // line 130
-        $this->displayBlock('header_wrapper', $context, $blocks);
-        // line 134
-        echo "
-        ";
-        // line 136
-        echo "        <div id=\"content-wrapper\">            
-            ";
-        // line 137
         $this->displayBlock('social_bar', $context, $blocks);
-        // line 139
+        // line 113
+        echo "        ";
+        $this->displayBlock('current_master', $context, $blocks);
+        // line 131
         echo "
-            ";
-        // line 145
-        echo "            ";
-        // line 151
+        ";
+        // line 132
+        $this->displayBlock('header_wrapper', $context, $blocks);
+        // line 136
         echo "
-\t\t    ";
-        // line 153
-        echo "\t\t    <div class=\"wrapper_content_interactive\" id='content-temporal-interactive'>
+        ";
+        // line 138
+        echo "\t    <div class=\"wrapper_content_interactive\" id='content-temporal-interactive'>
+            <div id=\"content-wrapper\">
+                
+                ";
+        // line 146
+        echo "                ";
+        // line 152
+        echo "
                 ";
         // line 154
+        echo "                ";
         $this->displayBlock('content_current', $context, $blocks);
         // line 155
         echo "            </div>
@@ -152,13 +150,13 @@ class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d
         ";
         // line 169
         $this->displayBlock('body_scripts', $context, $blocks);
-        // line 186
+        // line 187
         echo "        <script>";
         $this->displayBlock('load_scripts', $context, $blocks);
         echo "</script>
 
         ";
-        // line 189
+        // line 190
         echo "        <script type=\"text/javascript\">
             /* <![CDATA[ */
                 var google_conversion_id = 956352007;
@@ -196,18 +194,26 @@ class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d
                 <meta name='viewport' content='width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0' />
                 
                 <meta charset=\"UTF-8\">
-                <meta name=\"title\" content=\"Suzuki Autos Guadalajara\">
+                <meta name=\"title\" content=\"Suzuki Autos ";
+        // line 18
+        echo twig_escape_filter($this->env, (isset($context["_loc"]) ? $context["_loc"] : null), "html", null, true);
+        echo "\">
                 <meta name=\"identifier-url\" content=\"";
         // line 19
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
         echo "\" />
-                <meta name=\"keywords\" content=\"Suzuki guadalajara, Ciaz, Kizashi, Grand Vitara, Nueva Vitara, Swift, Swift Sport, S-cross, Ignis\" />
+                <meta name=\"keywords\" content=\"Suzuki ";
+        // line 20
+        echo twig_escape_filter($this->env, (isset($context["_loc"]) ? $context["_loc"] : null), "html", null, true);
+        echo ", Ciaz, Kizashi, Grand Vitara, Nueva Vitara, Swift, Swift Sport, S-cross, Ignis\" />
                 <meta name=\"author\" content=\"\" />
                 <meta name=\"language\" content=\"ES\" />
                 <meta name=\"copyright\" content=\"© ";
         // line 23
         echo twig_escape_filter($this->env, (isset($context["_anio"]) ? $context["_anio"] : null), "html", null, true);
-        echo " Suzuki Autos Guadalajara\" />
+        echo " Suzuki Autos ";
+        echo twig_escape_filter($this->env, (isset($context["_loc"]) ? $context["_loc"] : null), "html", null, true);
+        echo "\" />
 
                 <meta name=\"robots\" content=\"index, follow\">
                 <meta name=\"googlebot\" content=\"robots.txt\">
@@ -217,7 +223,10 @@ class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
         echo "img/logo/\">
 
-                <meta itemprop=\"name\" content=\"Suzuki Autos Guadalajara\"/>
+                <meta itemprop=\"name\" content=\"Suzuki Autos ";
+        // line 30
+        echo twig_escape_filter($this->env, (isset($context["_loc"]) ? $context["_loc"] : null), "html", null, true);
+        echo "\"/>
                 <meta itemprop=\"description\" content=\"Experimenta el estilo de vida Suzuki.\"/>
                 <meta itemprop=\"image\" content=\"";
         // line 32
@@ -266,7 +275,8 @@ class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d
     // line 46
     public function block_title($context, array $blocks = array())
     {
-        echo "Suzuki Autos Guadalajara";
+        echo "Suzuki Autos ";
+        echo twig_escape_filter($this->env, (isset($context["_loc"]) ? $context["_loc"] : null), "html", null, true);
     }
 
     // line 48
@@ -298,67 +308,67 @@ class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d
     }
 
     // line 111
+    public function block_social_bar($context, array $blocks = array())
+    {
+        echo "                
+        ";
+    }
+
+    // line 113
     public function block_current_master($context, array $blocks = array())
     {
-        // line 112
+        // line 114
         echo "            ";
-        // line 113
+        // line 115
         echo "            <div id='hidden-inputs-session'></div>
 
             ";
-        // line 116
+        // line 118
         echo "            <div id='hidden-inputs-temporal'>
                 ";
-        // line 117
+        // line 119
         $this->displayBlock('section', $context, $blocks);
-        // line 118
+        // line 120
         echo "            </div>
 
             ";
-        // line 121
+        // line 123
         echo "            <input id=\"master-host\" type=\"hidden\" value=\"";
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
         echo "\">
 
             ";
-        // line 124
+        // line 126
         echo "            <input id=\"master-max\" type=\"hidden\" value=\"";
         echo twig_escape_filter($this->env, (isset($context["_max"]) ? $context["_max"] : null), "html", null, true);
         echo "\">
 
             ";
-        // line 127
+        // line 129
         echo "            <input id=\"master-root-api\" type=\"hidden\" value=\"";
         echo "\">
         ";
     }
 
-    // line 117
+    // line 119
     public function block_section($context, array $blocks = array())
     {
     }
 
-    // line 130
+    // line 132
     public function block_header_wrapper($context, array $blocks = array())
     {
-        // line 131
+        // line 133
         echo "            ";
         $this->displayBlock('navbar', $context, $blocks);
-        // line 133
+        // line 135
         echo "        ";
     }
 
-    // line 131
+    // line 133
     public function block_navbar($context, array $blocks = array())
     {
         echo "              
-            ";
-    }
-
-    // line 137
-    public function block_social_bar($context, array $blocks = array())
-    {
-        echo "                
             ";
     }
 
@@ -386,7 +396,7 @@ class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d
     {
         // line 166
         echo "            ";
-        $this->loadTemplate("super.twig", "super.twig", 166, "931050635")->display($context);
+        $this->loadTemplate("super.twig", "super.twig", 166, "643276385")->display($context);
         // line 167
         echo "        ";
     }
@@ -429,6 +439,7 @@ class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d
         // line 184
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
         echo "js/required.js\"></script>
+            
         ";
     }
 
@@ -439,7 +450,7 @@ class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d
             ";
     }
 
-    // line 186
+    // line 187
     public function block_load_scripts($context, array $blocks = array())
     {
     }
@@ -451,13 +462,13 @@ class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d
 
     public function getDebugInfo()
     {
-        return array (  443 => 186,  436 => 172,  430 => 184,  426 => 183,  422 => 182,  418 => 181,  413 => 180,  410 => 176,  407 => 174,  405 => 172,  400 => 171,  398 => 170,  395 => 169,  391 => 167,  388 => 166,  385 => 165,  381 => 163,  378 => 162,  374 => 160,  371 => 159,  366 => 154,  359 => 137,  352 => 131,  348 => 133,  345 => 131,  342 => 130,  337 => 117,  331 => 127,  325 => 124,  319 => 121,  315 => 118,  313 => 117,  310 => 116,  306 => 113,  304 => 112,  301 => 111,  296 => 52,  290 => 54,  287 => 53,  285 => 52,  281 => 51,  278 => 50,  276 => 49,  273 => 48,  267 => 46,  261 => 42,  257 => 41,  253 => 40,  249 => 39,  243 => 37,  240 => 36,  236 => 44,  234 => 36,  229 => 34,  224 => 32,  217 => 28,  209 => 23,  202 => 19,  190 => 9,  187 => 8,  162 => 189,  156 => 186,  154 => 169,  151 => 168,  149 => 165,  146 => 164,  144 => 162,  141 => 161,  139 => 159,  136 => 158,  132 => 155,  130 => 154,  127 => 153,  124 => 151,  122 => 145,  119 => 139,  117 => 137,  114 => 136,  111 => 134,  109 => 130,  106 => 129,  104 => 111,  100 => 109,  83 => 93,  74 => 85,  62 => 74,  60 => 73,  57 => 56,  55 => 48,  50 => 46,  47 => 45,  45 => 8,  36 => 1,);
+        return array (  454 => 187,  447 => 172,  440 => 184,  436 => 183,  432 => 182,  428 => 181,  423 => 180,  420 => 176,  417 => 174,  415 => 172,  410 => 171,  408 => 170,  405 => 169,  401 => 167,  398 => 166,  395 => 165,  391 => 163,  388 => 162,  384 => 160,  381 => 159,  376 => 154,  369 => 133,  365 => 135,  362 => 133,  359 => 132,  354 => 119,  348 => 129,  342 => 126,  336 => 123,  332 => 120,  330 => 119,  327 => 118,  323 => 115,  321 => 114,  318 => 113,  311 => 111,  306 => 52,  300 => 54,  297 => 53,  295 => 52,  291 => 51,  288 => 50,  286 => 49,  283 => 48,  276 => 46,  270 => 42,  266 => 41,  262 => 40,  258 => 39,  252 => 37,  249 => 36,  245 => 44,  243 => 36,  238 => 34,  233 => 32,  228 => 30,  223 => 28,  213 => 23,  207 => 20,  203 => 19,  199 => 18,  188 => 9,  185 => 8,  160 => 190,  154 => 187,  152 => 169,  149 => 168,  147 => 165,  144 => 164,  142 => 162,  139 => 161,  137 => 159,  134 => 158,  130 => 155,  127 => 154,  124 => 152,  122 => 146,  117 => 138,  114 => 136,  112 => 132,  109 => 131,  106 => 113,  104 => 111,  100 => 109,  83 => 93,  74 => 85,  62 => 74,  60 => 73,  57 => 56,  55 => 48,  50 => 46,  47 => 45,  45 => 8,  36 => 1,);
     }
 }
 
 
 /* super.twig */
-class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d37ccb_931050635 extends Twig_Template
+class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d37ccb_643276385 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -491,7 +502,7 @@ class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d
 
     public function getDebugInfo()
     {
-        return array (  467 => 166,  443 => 186,  436 => 172,  430 => 184,  426 => 183,  422 => 182,  418 => 181,  413 => 180,  410 => 176,  407 => 174,  405 => 172,  400 => 171,  398 => 170,  395 => 169,  391 => 167,  388 => 166,  385 => 165,  381 => 163,  378 => 162,  374 => 160,  371 => 159,  366 => 154,  359 => 137,  352 => 131,  348 => 133,  345 => 131,  342 => 130,  337 => 117,  331 => 127,  325 => 124,  319 => 121,  315 => 118,  313 => 117,  310 => 116,  306 => 113,  304 => 112,  301 => 111,  296 => 52,  290 => 54,  287 => 53,  285 => 52,  281 => 51,  278 => 50,  276 => 49,  273 => 48,  267 => 46,  261 => 42,  257 => 41,  253 => 40,  249 => 39,  243 => 37,  240 => 36,  236 => 44,  234 => 36,  229 => 34,  224 => 32,  217 => 28,  209 => 23,  202 => 19,  190 => 9,  187 => 8,  162 => 189,  156 => 186,  154 => 169,  151 => 168,  149 => 165,  146 => 164,  144 => 162,  141 => 161,  139 => 159,  136 => 158,  132 => 155,  130 => 154,  127 => 153,  124 => 151,  122 => 145,  119 => 139,  117 => 137,  114 => 136,  111 => 134,  109 => 130,  106 => 129,  104 => 111,  100 => 109,  83 => 93,  74 => 85,  62 => 74,  60 => 73,  57 => 56,  55 => 48,  50 => 46,  47 => 45,  45 => 8,  36 => 1,);
+        return array (  478 => 166,  454 => 187,  447 => 172,  440 => 184,  436 => 183,  432 => 182,  428 => 181,  423 => 180,  420 => 176,  417 => 174,  415 => 172,  410 => 171,  408 => 170,  405 => 169,  401 => 167,  398 => 166,  395 => 165,  391 => 163,  388 => 162,  384 => 160,  381 => 159,  376 => 154,  369 => 133,  365 => 135,  362 => 133,  359 => 132,  354 => 119,  348 => 129,  342 => 126,  336 => 123,  332 => 120,  330 => 119,  327 => 118,  323 => 115,  321 => 114,  318 => 113,  311 => 111,  306 => 52,  300 => 54,  297 => 53,  295 => 52,  291 => 51,  288 => 50,  286 => 49,  283 => 48,  276 => 46,  270 => 42,  266 => 41,  262 => 40,  258 => 39,  252 => 37,  249 => 36,  245 => 44,  243 => 36,  238 => 34,  233 => 32,  228 => 30,  223 => 28,  213 => 23,  207 => 20,  203 => 19,  199 => 18,  188 => 9,  185 => 8,  160 => 190,  154 => 187,  152 => 169,  149 => 168,  147 => 165,  144 => 164,  142 => 162,  139 => 161,  137 => 159,  134 => 158,  130 => 155,  127 => 154,  124 => 152,  122 => 146,  117 => 138,  114 => 136,  112 => 132,  109 => 131,  106 => 113,  104 => 111,  100 => 109,  83 => 93,  74 => 85,  62 => 74,  60 => 73,  57 => 56,  55 => 48,  50 => 46,  47 => 45,  45 => 8,  36 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -511,19 +522,19 @@ class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d
 /*                 <meta name='viewport' content='width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0' />*/
 /*                 */
 /*                 <meta charset="UTF-8">*/
-/*                 <meta name="title" content="Suzuki Autos Guadalajara">*/
+/*                 <meta name="title" content="Suzuki Autos {{ _loc }}">*/
 /*                 <meta name="identifier-url" content="{{ _host }}" />*/
-/*                 <meta name="keywords" content="Suzuki guadalajara, Ciaz, Kizashi, Grand Vitara, Nueva Vitara, Swift, Swift Sport, S-cross, Ignis" />*/
+/*                 <meta name="keywords" content="Suzuki {{ _loc }}, Ciaz, Kizashi, Grand Vitara, Nueva Vitara, Swift, Swift Sport, S-cross, Ignis" />*/
 /*                 <meta name="author" content="" />*/
 /*                 <meta name="language" content="ES" />*/
-/*                 <meta name="copyright" content="© {{ _anio }} Suzuki Autos Guadalajara" />*/
+/*                 <meta name="copyright" content="© {{ _anio }} Suzuki Autos {{ _loc }}" />*/
 /* */
 /*                 <meta name="robots" content="index, follow">*/
 /*                 <meta name="googlebot" content="robots.txt">*/
 /* */
 /*                 <meta itemprop="image" content="{{ _host }}img/logo/">*/
 /* */
-/*                 <meta itemprop="name" content="Suzuki Autos Guadalajara"/>*/
+/*                 <meta itemprop="name" content="Suzuki Autos {{ _loc }}"/>*/
 /*                 <meta itemprop="description" content="Experimenta el estilo de vida Suzuki."/>*/
 /*                 <meta itemprop="image" content="{{ _host }}img/template/common/header/horizontal_logo.png"/>*/
 /* */
@@ -539,7 +550,7 @@ class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d
 /*                 {% endblock %}*/
 /*             {% endblock %}*/
 /* */
-/*             <title>{% block title %}Suzuki Autos Guadalajara{% endblock %}</title>*/
+/*             <title>{% block title %}Suzuki Autos {{ _loc }}{% endblock %}</title>*/
 /* */
 /*             {% block links %}*/
 /*         		{# stylesheet #}*/
@@ -603,7 +614,9 @@ class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d
 /*             </noscript>*/
 /*             {# End Facebook Pixel Code #}*/
 /* 	</head>*/
-/* 	<body id="recurrent-body">*/
+/* 	<body>*/
+/*         {% block social_bar %}                */
+/*         {% endblock %}*/
 /*         {% block current_master %}*/
 /*             {# Auxiliar Temporal Inputs's DIV #}*/
 /*             <div id='hidden-inputs-session'></div>*/
@@ -629,24 +642,22 @@ class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d
 /*         {% endblock %}*/
 /* */
 /*         {# Begin: Content #}*/
-/*         <div id="content-wrapper">            */
-/*             {% block social_bar %}                */
-/*             {% endblock %}*/
+/* 	    <div class="wrapper_content_interactive" id='content-temporal-interactive'>*/
+/*             <div id="content-wrapper">*/
+/*                 */
+/*                 {# content hidden concessionaires */
+/*                 <div id="content-inputs-concessionaires">*/
+/*                     <input type="hidden" id="hidden_id_concessionaire" value="0">*/
+/*                 </div>*/
+/*                 #}*/
+/*                 {# content hidden gama model */
+/*                 <div id="content-inputs-model-gama">*/
+/*                     <input type="hidden" id="hidden_id_model_gama" value="0">*/
+/*                     <input type="hidden" id="hidden_key_model_gama" value="">*/
+/*                 </div>*/
+/*                 #}*/
 /* */
-/*             {# content hidden concessionaires */
-/*             <div id="content-inputs-concessionaires">*/
-/*                 <input type="hidden" id="hidden_id_concessionaire" value="0">*/
-/*             </div>*/
-/*             #}*/
-/*             {# content hidden gama model */
-/*             <div id="content-inputs-model-gama">*/
-/*                 <input type="hidden" id="hidden_id_model_gama" value="0">*/
-/*                 <input type="hidden" id="hidden_key_model_gama" value="">*/
-/*             </div>*/
-/*             #}*/
-/* */
-/* 		    {# Templates's DIV #}*/
-/* 		    <div class="wrapper_content_interactive" id='content-temporal-interactive'>*/
+/*                 {# Templates's DIV #}*/
 /*                 {% block content_current %}{% endblock %}*/
 /*             </div>*/
 /*         </div>*/
@@ -678,6 +689,7 @@ class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d
 /*             <script src="{{ _host }}js/model.js"></script>*/
 /*             <script src="{{ _host }}js/objects.js"></script>*/
 /*             <script src="{{ _host }}js/required.js"></script>*/
+/*             */
 /*         {% endblock %}*/
 /*         <script>{% block load_scripts %}{% endblock %}</script>*/
 /* */

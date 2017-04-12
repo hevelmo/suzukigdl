@@ -1,0 +1,37 @@
+{% extends "super.twig" %}
+{% block title %}{{ title }}{% endblock %}
+{% block section_stylessheet %}
+	<link id="group" rel="stylesheet" class="link-group" href="{{ _host }}css/sections/warranty.css">
+{% endblock %}
+
+{% block section %}
+    <input type="hidden" id="hidden_section" value="group">
+{% endblock %}
+{% block navbar %}
+    {% embed "super_navbar.twig" %}
+		{% block phone_call %}
+			{#<div id="phone-call">
+				<a href="tel: +013337771989">
+					<span style="color: #ffffff;">
+				    	Tel. 01(33)3777-1989
+					</span>
+				</a>
+			</div>#}
+		{% endblock %}
+		{% block models_header %}
+			{#{% embed "menus/models_menu.twig" %}{% endembed %}#}
+	    {% endblock %}
+    {% endembed %}
+{% endblock %}
+{% block content_current %}
+    {% embed "grupo/container.twig" %}{% endembed %}
+{% endblock %}
+{% block footer %}
+    {% embed "super_footer.twig" %}{% endembed %}
+{% endblock %}
+{% block script_load_js %}
+{% endblock %}
+{% block section_scripts %}
+{% endblock %}
+{% block load_scripts %}
+{% endblock %}

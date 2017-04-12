@@ -11,6 +11,7 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
 
         $this->blocks = array(
             'phone_call' => array($this, 'block_phone_call'),
+            'models_header' => array($this, 'block_models_header'),
         );
     }
 
@@ -26,8 +27,13 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
                         <a href=\"";
         // line 8
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "\" title=\"Suzuki Autos Guadalajara\">
-                            <span>Suzuki <sup style=\"position: relative; top: -2px;\">&copy;</sup> Guadalajara</span>
+        echo "\" title=\"Suzuki Autos ";
+        echo twig_escape_filter($this->env, (isset($context["_loc"]) ? $context["_loc"] : null), "html", null, true);
+        echo "\">
+                            <span>Suzuki <sup style=\"position: relative; top: -2px;\">&copy;</sup> ";
+        // line 9
+        echo twig_escape_filter($this->env, (isset($context["_loc"]) ? $context["_loc"] : null), "html", null, true);
+        echo "</span>
                         </a>
                     </div>
                 </div>
@@ -86,17 +92,19 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
                             <nav>
                                 <ul>
                                     <li>
-                                        <a id=\"header-models-button\" title=\"Modelos\">
-                                        ";
-        // line 58
-        echo "                                            <span>Modelos</span>
+                                        <a href=\"";
+        // line 54
+        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
+        echo "modelos\" title=\"Modelos\">
+                                            <span>Modelos</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a id=\"header-financing-button\" title=\"Prueba de Manejo\">
-                                        ";
-        // line 66
-        echo "                                            <span>Financiamiento</span>
+                                        <a href=\"";
+        // line 59
+        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
+        echo "financiamiento\" title=\"Financiamiento\">
+                                            <span>Financiamiento</span>
                                         </a>
                                     </li>
                                     <li>
@@ -115,14 +123,20 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
                         </div>
                     </div>
                 </div>
-                ";
-        // line 88
-        echo "                <div id=\"models-header\">
-                    <div class=\"content\" id=\"content-models-header\"></div>
-                </div>
+                <div id=\"models-header\">
+                    ";
+        // line 80
+        $this->displayBlock('models_header', $context, $blocks);
+        // line 82
+        echo "                </div>
             </header>
             <div id=\"header-mobile\">
-                <a id=\"return-index\"><img src=\"img/template/common/header/horizontal_logo.png\" alt=\"Logo Suzuki\"></a>
+                <a href=\"";
+        // line 85
+        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
+        echo "\"><img src=\"";
+        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
+        echo "img/template/common/header/horizontal_logo.png\" alt=\"Logo Suzuki\"></a>
                 <i class=\"fa fa-bars\"></i>
             </div>
             <div id=\"header-panel\" class=\"header-panel\">
@@ -141,6 +155,13 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
         echo "                                        ";
     }
 
+    // line 80
+    public function block_models_header($context, array $blocks = array())
+    {
+        echo "                        
+                    ";
+    }
+
     public function getTemplateName()
     {
         return "super_navbar.twig";
@@ -153,7 +174,7 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
 
     public function getDebugInfo()
     {
-        return array (  141 => 45,  138 => 44,  120 => 88,  99 => 66,  92 => 58,  81 => 46,  79 => 44,  66 => 34,  58 => 29,  50 => 24,  42 => 19,  28 => 8,  20 => 2,);
+        return array (  159 => 80,  155 => 45,  152 => 44,  136 => 85,  131 => 82,  129 => 80,  105 => 59,  97 => 54,  87 => 46,  85 => 44,  72 => 34,  64 => 29,  56 => 24,  48 => 19,  35 => 9,  29 => 8,  21 => 2,);
     }
 }
 /* {# Begin: Header #}*/
@@ -163,8 +184,8 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
 /*             <header id="header-zone">*/
 /*                 <div id="logo-wrapper">*/
 /*                     <div id="logo">*/
-/*                         <a href="{{ _host }}" title="Suzuki Autos Guadalajara">*/
-/*                             <span>Suzuki <sup style="position: relative; top: -2px;">&copy;</sup> Guadalajara</span>*/
+/*                         <a href="{{ _host }}" title="Suzuki Autos {{ _loc }}">*/
+/*                             <span>Suzuki <sup style="position: relative; top: -2px;">&copy;</sup> {{ _loc }}</span>*/
 /*                         </a>*/
 /*                     </div>*/
 /*                 </div>*/
@@ -209,18 +230,12 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
 /*                             <nav>*/
 /*                                 <ul>*/
 /*                                     <li>*/
-/*                                         <a id="header-models-button" title="Modelos">*/
-/*                                         {#*/
-/*                                         <a id="header-models-button" title="Modelos" class="model expand-header">*/
-/*                                         #}*/
+/*                                         <a href="{{ _host }}modelos" title="Modelos">*/
 /*                                             <span>Modelos</span>*/
 /*                                         </a>*/
 /*                                     </li>*/
 /*                                     <li>*/
-/*                                         <a id="header-financing-button" title="Prueba de Manejo">*/
-/*                                         {#*/
-/*                                         <a id="header-financing-button" title="Financiamiento" class="financing expand-header">*/
-/*                                         #}*/
+/*                                         <a href="{{ _host }}financiamiento" title="Financiamiento">*/
 /*                                             <span>Financiamiento</span>*/
 /*                                         </a>*/
 /*                                     </li>*/
@@ -240,15 +255,13 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
 /*                         </div>*/
 /*                     </div>*/
 /*                 </div>*/
-/*                 {#*/
-/*                 <div id="content-section-models-header"></div>*/
-/*                 #}*/
 /*                 <div id="models-header">*/
-/*                     <div class="content" id="content-models-header"></div>*/
+/*                     {% block models_header %}                        */
+/*                     {% endblock %}*/
 /*                 </div>*/
 /*             </header>*/
 /*             <div id="header-mobile">*/
-/*                 <a id="return-index"><img src="img/template/common/header/horizontal_logo.png" alt="Logo Suzuki"></a>*/
+/*                 <a href="{{ _host }}"><img src="{{ _host }}img/template/common/header/horizontal_logo.png" alt="Logo Suzuki"></a>*/
 /*                 <i class="fa fa-bars"></i>*/
 /*             </div>*/
 /*             <div id="header-panel" class="header-panel">*/

@@ -1,16 +1,3 @@
-/*
-var anio = '2017';
-if(car_data.key == 'kizashi'){
-    anio = '2016';
-} else if (car_data.key == 's-cross'){
-    anio = '2016';
-} else if (car_data.key == 'ciaz'){
-    anio = '2016';
-} else if (car_data.key == 'nueva-vitara'){
-    anio = '2016';
-}
-*/
-// [Methods here]
 /* ------------------------------------------------------ *\
     [Variables] 'Zone'
 \* ------------------------------------------------------ */
@@ -68,15 +55,13 @@ if(car_data.key == 'kizashi'){
         key         : ''
     };
     var cars_data = [
-        { key: 'swift-sport'    , name: 'Swift Sport'   },
+        { key: 'nueva-vitara'   , name: 'Nueva Vitara'  },
+        { key: 'ciaz'           , name: 'Ciaz'          },
         { key: 'swift'          , name: 'Swift'         },
-        { key: 'sx4-crossover'  , name: 'SX4 Crossover' },
-        { key: 'sx4-sedan'      , name: 'SX4 Sedán'     },
         { key: 'kizashi'        , name: 'Kizashi'       },
         { key: 'grand-vitara'   , name: 'Grand Vitara'  },
+        { key: 'swift-sport'    , name: 'Swift Sport'   },
         { key: 's-cross'        , name: 'S-Cross'       },
-        { key: 'ciaz'           , name: 'Ciaz'          },
-        { key: 'nueva-vitara'   , name: 'Nueva Vitara'  },
         { key: 'ignis'          , name: 'Ignis'         }
     ];
     // TEST DRIVE SELECT CONCESSIONAIRES

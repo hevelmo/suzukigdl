@@ -37,6 +37,8 @@ $app = new \Slim\App($container);
  * [ROOM]
  */
     $app->get("/", "ControlHome:__invoke");
+    $app->get("/grupo", "ControlGroup:__invoke");
+    $app->get("/catalogos", "ControlCatalogs:__invoke");
     $app->get("/aviso-de-privacidad", "ControlPrivacyNotice:__invoke");
     $app->run();
 /**
@@ -168,17 +170,17 @@ $app = new \Slim\App($container);
         function __construct() {
             parent::__construct(
                 array(
-                    "title" => "Suzuki Autos Guadalajara",
-                    "title_header" => "Suzuki Autos Guadalajara"
+                    "title" => "Suzuki Autos " . _LOC,
+                    "title_header" => "Suzuki Autos " . _LOC
                 ),
                 array(),
                 "home/_home.twig"
             );
             // Facebook Metatags
             parent::getTemplate()->makeFacebookTags(
-                "Suzuki Autos Guadalajara",
-                "Suzuki Autos Guadalajara",
-                "Suzuki Autos Guadalajara",
+                "Suzuki Autos " . _LOC,
+                "Suzuki Autos " . _LOC,
+                "Suzuki Autos " . _LOC,
                 _HOST . "img/template/common/header/horizontal_logo.png"
             );
         }
@@ -195,6 +197,75 @@ $app = new \Slim\App($container);
             //echo "<pre>", print_r(parent::getTemplate()->getMasterConfigArray()), "</pre>";
         }
     }
+    /**
+     * CONTROL GROUP
+    **/
+    class ControlGroup extends ControlMaster {    
+        function __construct() {
+            parent::__construct(
+                array(
+                    "title" => "Suzuki Autos Guadalajara: Grupo",
+                    "title_header" => "Suzuki Autos Guadalajara: Grupo"
+                ),
+                array(),
+                "grupo/_grupo.twig"
+            );
+            // Facebook Metatags
+            parent::getTemplate()->makeFacebookTags(
+                "Suzuki Autos Guadalajara: Grupo",
+                "Suzuki Autos Guadalajara: Grupo",
+                "Suzuki Autos Guadalajara: Grupo",
+                _HOST . "img/template/common/header/horizontal_logo.png"
+            );
+        }
+        /**
+         * This inherited method don't do nothing however is mandatory to implement it
+         * Because the parent method is an abstract one.
+         * 
+         * @param   Slim\Http\Request       $request 
+         * @param   Slim\Http\Response      $response 
+         * @param   array                   $args
+        **/
+        public function __invoke($request, $response, $args) {
+            parent::getTemplate()->display();
+            //echo "<pre>", print_r(parent::getTemplate()->getMasterConfigArray()), "</pre>";
+        }
+    }
+    /**
+     * CONTROL GROUP
+    **/
+    class ControlCatalogs extends ControlMaster {    
+        function __construct() {
+            parent::__construct(
+                array(
+                    "title" => "Suzuki Autos Guadalajara: Catalogos",
+                    "title_header" => "Suzuki Autos Guadalajara: Catalogos"
+                ),
+                array(),
+                "catalogos/_catalogos.twig"
+            );
+            // Facebook Metatags
+            parent::getTemplate()->makeFacebookTags(
+                "Suzuki Autos Guadalajara: Catalogos",
+                "Suzuki Autos Guadalajara: Catalogos",
+                "Suzuki Autos Guadalajara: Catalogos",
+                _HOST . "img/template/common/header/horizontal_logo.png"
+            );
+        }
+        /**
+         * This inherited method don't do nothing however is mandatory to implement it
+         * Because the parent method is an abstract one.
+         * 
+         * @param   Slim\Http\Request       $request 
+         * @param   Slim\Http\Response      $response 
+         * @param   array                   $args
+        **/
+        public function __invoke($request, $response, $args) {
+            parent::getTemplate()->display();
+            //echo "<pre>", print_r(parent::getTemplate()->getMasterConfigArray()), "</pre>";
+        }
+    }
+    
     // CONTROL PRIVACY NOTICE
     class ControlPrivacyNotice extends ControlMaster {
         function __construct() {

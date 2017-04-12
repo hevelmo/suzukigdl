@@ -15,19 +15,19 @@
                 <meta name='viewport' content='width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0' />
                 
                 <meta charset="UTF-8">
-                <meta name="title" content="Suzuki Autos Guadalajara">
+                <meta name="title" content="Suzuki Autos {{ _loc }}">
                 <meta name="identifier-url" content="{{ _host }}" />
-                <meta name="keywords" content="Suzuki guadalajara, Ciaz, Kizashi, Grand Vitara, Nueva Vitara, Swift, Swift Sport, S-cross, Ignis" />
+                <meta name="keywords" content="Suzuki {{ _loc }}, Ciaz, Kizashi, Grand Vitara, Nueva Vitara, Swift, Swift Sport, S-cross, Ignis" />
                 <meta name="author" content="" />
                 <meta name="language" content="ES" />
-                <meta name="copyright" content="© {{ _anio }} Suzuki Autos Guadalajara" />
+                <meta name="copyright" content="© {{ _anio }} Suzuki Autos {{ _loc }}" />
 
                 <meta name="robots" content="index, follow">
                 <meta name="googlebot" content="robots.txt">
 
                 <meta itemprop="image" content="{{ _host }}img/logo/">
 
-                <meta itemprop="name" content="Suzuki Autos Guadalajara"/>
+                <meta itemprop="name" content="Suzuki Autos {{ _loc }}"/>
                 <meta itemprop="description" content="Experimenta el estilo de vida Suzuki."/>
                 <meta itemprop="image" content="{{ _host }}img/template/common/header/horizontal_logo.png"/>
 
@@ -43,7 +43,7 @@
                 {% endblock %}
             {% endblock %}
 
-            <title>{% block title %}Suzuki Autos Guadalajara{% endblock %}</title>
+            <title>{% block title %}Suzuki Autos {{ _loc }}{% endblock %}</title>
 
             {% block links %}
         		{# stylesheet #}
@@ -107,7 +107,9 @@
             </noscript>
             {# End Facebook Pixel Code #}
 	</head>
-	<body id="recurrent-body">
+	<body>
+        {% block social_bar %}                
+        {% endblock %}
         {% block current_master %}
             {# Auxiliar Temporal Inputs's DIV #}
             <div id='hidden-inputs-session'></div>
@@ -133,24 +135,22 @@
         {% endblock %}
 
         {# Begin: Content #}
-        <div id="content-wrapper">            
-            {% block social_bar %}                
-            {% endblock %}
+	    <div class="wrapper_content_interactive" id='content-temporal-interactive'>
+            <div id="content-wrapper">
+                
+                {# content hidden concessionaires 
+                <div id="content-inputs-concessionaires">
+                    <input type="hidden" id="hidden_id_concessionaire" value="0">
+                </div>
+                #}
+                {# content hidden gama model 
+                <div id="content-inputs-model-gama">
+                    <input type="hidden" id="hidden_id_model_gama" value="0">
+                    <input type="hidden" id="hidden_key_model_gama" value="">
+                </div>
+                #}
 
-            {# content hidden concessionaires 
-            <div id="content-inputs-concessionaires">
-                <input type="hidden" id="hidden_id_concessionaire" value="0">
-            </div>
-            #}
-            {# content hidden gama model 
-            <div id="content-inputs-model-gama">
-                <input type="hidden" id="hidden_id_model_gama" value="0">
-                <input type="hidden" id="hidden_key_model_gama" value="">
-            </div>
-            #}
-
-		    {# Templates's DIV #}
-		    <div class="wrapper_content_interactive" id='content-temporal-interactive'>
+                {# Templates's DIV #}
                 {% block content_current %}{% endblock %}
             </div>
         </div>
@@ -182,6 +182,7 @@
             <script src="{{ _host }}js/model.js"></script>
             <script src="{{ _host }}js/objects.js"></script>
             <script src="{{ _host }}js/required.js"></script>
+            
         {% endblock %}
         <script>{% block load_scripts %}{% endblock %}</script>
 
