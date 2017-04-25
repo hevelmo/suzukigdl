@@ -20,6 +20,7 @@ include_once "core/Medigraf/Curl.php";
 include_once "core/Medigraf/Template.php";
 
 // Site
+include_once "core/Site/Site.php";
 
 $container = new \Slim\Container();
 
@@ -40,6 +41,9 @@ $app = new \Slim\App($container);
     $app->get("/grupo", "ControlGroup:__invoke");
     $app->get("/catalogos", "ControlCatalogs:__invoke");
     $app->get("/concesionarias", "ControlConcessionaires:__invoke");
+    $app->get("/contactanos", "ControlContact:__invoke");
+    $app->get("/modelos", "ControlModels:__invoke");
+    $app->get("/modelos/{modelo}", "ControlByModel:__invoke");
     $app->get("/aviso-de-privacidad", "ControlPrivacyNotice:__invoke");
     $app->run();
 /**
@@ -60,8 +64,9 @@ $app = new \Slim\App($container);
          * @var Router     $router     new Router()     instance
          * @var Curl       $curl       new Curl()       instance
          * @var Template   $template   new Template()   instance
+         * @var Site       $site       new Site()       instance
         **/
-        private $bases, $router, $curl, $template;
+        private $bases, $router, $curl, $template, $site;
         /**
          * Constructor
          * 
@@ -96,6 +101,8 @@ $app = new \Slim\App($container);
                     $masterConfigArray
                 )
             );
+            //SITE
+            $this->site = new Site();
         }
         /**
          * @return  Bases   With its related methods and performance.
@@ -120,6 +127,12 @@ $app = new \Slim\App($container);
         **/
         public function getTemplate() {
             return $this->template;
+        }
+        /**
+         * @return  Site6   With its related methods and performance.
+        **/
+        public function getSite() {
+            return $this->site;
         }
         /**
          * This abstract method ensures that each child class will have an standar method
@@ -148,7 +161,7 @@ $app = new \Slim\App($container);
             // Facebook Metatags
             parent::getTemplate()->makeFacebookTags(
                 "Página no encontrada",
-                "Página no encontrada",
+                "Suzuki Autos " . _LOC,
                 "Página no encontrada",
                 _HOST . "img/template/common/header/horizontal_logo.png"
             );
@@ -214,7 +227,7 @@ $app = new \Slim\App($container);
             // Facebook Metatags
             parent::getTemplate()->makeFacebookTags(
                 "Suzuki Autos " . _LOC . ": Grupo",
-                "Suzuki Autos " . _LOC . ": Grupo",
+                "Suzuki Autos " . _LOC,
                 "Suzuki Autos " . _LOC . ": Grupo",
                 _HOST . "img/template/common/header/horizontal_logo.png"
             );
@@ -248,7 +261,7 @@ $app = new \Slim\App($container);
             // Facebook Metatags
             parent::getTemplate()->makeFacebookTags(
                 "Suzuki Autos " . _LOC . ": Catalogos",
-                "Suzuki Autos " . _LOC . ": Catalogos",
+                "Suzuki Autos " . _LOC,
                 "Suzuki Autos " . _LOC . ": Catalogos",
                 _HOST . "img/template/common/header/horizontal_logo.png"
             );
@@ -282,7 +295,7 @@ $app = new \Slim\App($container);
             // Facebook Metatags
             parent::getTemplate()->makeFacebookTags(
                 "Suzuki Autos " . _LOC . ": Concesionarias",
-                "Suzuki Autos " . _LOC . ": Concesionarias",
+                "Suzuki Autos " . _LOC,
                 "Suzuki Autos " . _LOC . ": Concesionarias",
                 _HOST . "img/template/common/header/horizontal_logo.png"
             );
@@ -300,6 +313,127 @@ $app = new \Slim\App($container);
             //echo "<pre>", print_r(parent::getTemplate()->getMasterConfigArray()), "</pre>";
         }
     }
+    /**
+     * CONTROL CONTACT
+    **/
+    class ControlContact extends ControlMaster {    
+        function __construct() {
+            parent::__construct(
+                array(
+                    "title" => "Suzuki Autos " . _LOC . ": Contactanos",
+                    "title_header" => "Suzuki Autos " . _LOC . ": Contactanos"
+                ),
+                array(),
+                "contacto/_contacto.twig"
+            );
+            // Facebook Metatags
+            parent::getTemplate()->makeFacebookTags(
+                "Suzuki Autos " . _LOC . ": Contactanos",
+                "Suzuki Autos " . _LOC,
+                "Suzuki Autos " . _LOC . ": Contactanos",
+                _HOST . "img/template/common/header/horizontal_logo.png"
+            );
+        }
+        /**
+         * This inherited method don't do nothing however is mandatory to implement it
+         * Because the parent method is an abstract one.
+         * 
+         * @param   Slim\Http\Request       $request 
+         * @param   Slim\Http\Response      $response 
+         * @param   array                   $args
+        **/
+        public function __invoke($request, $response, $args) {
+            parent::getTemplate()->display();
+            //echo "<pre>", print_r(parent::getTemplate()->getMasterConfigArray()), "</pre>";
+        }
+    }
+    /**
+     * CONTROL MODELS
+    **/
+    class ControlModels extends ControlMaster {    
+        function __construct() {
+            parent::__construct(
+                array(
+                    "title" => "Suzuki Autos " . _LOC . ": Modelos",
+                    "title_header" => "Suzuki Autos " . _LOC . ": Modelos"
+                ),
+                array(),
+                "modelos/_modelos.twig"
+            );
+            // Facebook Metatags
+            parent::getTemplate()->makeFacebookTags(
+                "Suzuki Autos " . _LOC . ": Modelos",
+                "Suzuki Autos " . _LOC,
+                "Suzuki Autos " . _LOC . ": Modelos",
+                _HOST . "img/template/common/header/horizontal_logo.png"
+            );
+        }
+        /**
+         * This inherited method don't do nothing however is mandatory to implement it
+         * Because the parent method is an abstract one.
+         * 
+         * @param   Slim\Http\Request       $request 
+         * @param   Slim\Http\Response      $response 
+         * @param   array                   $args
+        **/
+        public function __invoke($request, $response, $args) {
+            parent::getRouter()->setRouteParams($request, $response, $args);
+            parent::getTemplate()->addToMasterConfigArray(parent::getRouter()->getArgs());
+
+            $modelos = parent::getSite()->getGamma();
+            parent::getTemplate()->addToMasterConfigArray('mdopa', $modelos);
+
+            parent::getTemplate()->display();
+            //echo "<pre>", print_r(parent::getTemplate()->getMasterConfigArray()), "</pre>";
+        }
+    }
+    /**
+     * CONTROL BY MODEL
+    **/
+    class ControlByModel extends ControlMaster {    
+        function __construct() {
+            parent::__construct(
+                array(
+                    "title" => "Suzuki Autos " . _LOC,
+                    "title_header" => "Suzuki Autos " . _LOC
+                ),
+                array(),
+                "modelos/modelo/_model.twig"
+            );
+            // Facebook Metatags
+            parent::getTemplate()->makeFacebookTags(
+                "Suzuki Autos " . _LOC,
+                "Suzuki Autos " . _LOC,
+                "Suzuki Autos " . _LOC,
+                _HOST . "img/template/common/header/horizontal_logo.png"
+            );
+        }
+        /**
+         * This inherited method don't do nothing however is mandatory to implement it
+         * Because the parent method is an abstract one.
+         * 
+         * @param   Slim\Http\Request       $request 
+         * @param   Slim\Http\Response      $response 
+         * @param   array                   $args
+        **/
+        public function __invoke($request, $response, $args) {
+            parent::getRouter()->setRouteParams($request, $response, $args);
+            parent::getTemplate()->addToMasterConfigArray(parent::getRouter()->getArgs());
+
+            $modelo = parent::getRouter()->getArgs('modelo');
+            $detalle = parent::getSite()->getModelos($modelo);
+            parent::getTemplate()->addToMasterConfigArray('mdopa', $detalle);
+            
+            $modelo = $args["modelo"];
+            $modelo = str_replace("-", " ", ucfirst($modelo));
+
+            parent::getTemplate()->addToMasterConfigArray("title", "Suzuki Autos " . _LOC . ":" . $modelo);
+
+            parent::getTemplate()->display();
+            //echo "<pre>", print_r(parent::getTemplate()->getMasterConfigArray()), "</pre>";
+        }
+    }
+    
     
     // CONTROL PRIVACY NOTICE
     class ControlPrivacyNotice extends ControlMaster {
@@ -315,7 +449,7 @@ $app = new \Slim\App($container);
             //Facebook Metatags
             parent::getTemplate()->makeFacebookTags(
                 "AVISO DE PRIVACIDAD", 
-                "Suzuki Autos " . _LOC, 
+                "Suzuki Autos " . _LOC,
                 "AVISO DE PRIVACIDAD",
                 _HOST . "img/template/common/header/horizontal_logo.png"
             );

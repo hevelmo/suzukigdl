@@ -74,6 +74,8 @@
     //
     var year_model;
     year_model = '2017';
+
+
 /* ------------------------------------------------------ *\
     [functions] instant_drive_available_time
 \* ------------------------------------------------------ */
@@ -186,6 +188,7 @@
 \* ------------------------------------------------------ */
     function switch_menus( menu ){
         if( current_menu != menu ){
+            console.log(current_menu);
             current_menu = menu;
             var new_h = ( menu == 'cars') ? 50 : 95;
             //console.log(menu);
@@ -4718,7 +4721,7 @@
                     $(".arrow-prices").attr('style','display: inline;');
                 else
                     $(".arrow-prices").attr('style','display: none;');
-                $(domEl.div_recurrent).on('click', ".arrow-prices", function(){
+                $(".arrow-prices").on('click', function(){
                     if (table.is(':animated'))
                         return 0;
                     var direction = $(this).index();
@@ -6326,5 +6329,22 @@
             SEG.loadTemplate(tempsNames.birthday_select_date, domEl.div_top_action_birthday_select_day);
             SEG.loadTemplate(tempsNames.birthday_select_month, domEl.div_top_action_birthday_select_month);
             SEG.loadTemplate(tempsNames.birthday_select_year, domEl.div_top_action_birthday_select_year);
+        }
+    }
+
+/* ------------------------------------------------------ *\
+    [Metodos] toHtmlMethod
+\* ------------------------------------------------------ */
+    var toHtmlMethod = {
+        toHtml: function() {
+            $('.to-html').each ( function( key, value ) {
+                var html, element;
+                element = $(this);
+                html = SUK.getHTML(element);
+                html = $.trim(html);
+                html = SUK.replaceAll(html, '&lt;', '<');
+                html = SUK.replaceAll(html, '&gt;', '>');
+                SUK.setHTML(element, html);
+            });
         }
     }

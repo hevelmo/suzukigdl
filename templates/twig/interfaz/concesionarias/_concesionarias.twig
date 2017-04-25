@@ -11,8 +11,9 @@
 {% block navbar %}
     {% embed "super_navbar.twig" %}
 		{% block phone_call %}
+        {% endblock %}
+        {% block models_header %}
 		{% endblock %}
-		{% block models_header %}
     {% endembed %}
 {% endblock %}
 {% block content_current %}

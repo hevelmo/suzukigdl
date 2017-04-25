@@ -70,7 +70,7 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
                                         <a href=\"";
         // line 34
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "cotactanos\" title=\"Contactános\">
+        echo "contactanos\" title=\"Contactános\">
                                             <span>Contáctanos</span>
                                         </a>
                                     </li>
@@ -210,7 +210,7 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
 /*                                         </a>*/
 /*                                     </li>*/
 /*                                     <li class="last">*/
-/*                                         <a href="{{ _host }}cotactanos" title="Contactános">*/
+/*                                         <a href="{{ _host }}contactanos" title="Contactános">*/
 /*                                             <span>Contáctanos</span>*/
 /*                                         </a>*/
 /*                                     </li>*/

@@ -169,8 +169,6 @@
         {% block body_scripts %}
             {# CORE LIBS #}
             <script src="{{ _host }}lib/min/core.lib.min.js"></script>
-            {% block section_scripts %}                
-            {% endblock %}
 
             {# GOOGLE API #}
             <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCqo-F2TnMAABZvfV5yTQLlWvUCJlJViU&amp;sensor=false"></script>
@@ -182,9 +180,11 @@
             <script src="{{ _host }}js/model.js"></script>
             <script src="{{ _host }}js/objects.js"></script>
             <script src="{{ _host }}js/required.js"></script>
+            {% block section_scripts %}                
+            {% endblock %}
             
         {% endblock %}
-        <script>{% block load_scripts %}{% endblock %}</script>
+        <script>{% block load_scripts %}toHtmlMethod.toHtml();{% endblock %}</script>
 
         {# GOOGLE CODE PARA ETIQUETAS DE REMARKETING #}
         <script type="text/javascript">

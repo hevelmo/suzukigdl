@@ -62,7 +62,7 @@ class __TwigTemplate_df2f507a9a4f8fc48c31d931a8f017e873e2e4dbcb91f5d151c1f9ab1c2
                         <a href=\"";
         // line 40
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "autos/swift-sport\">
+        echo "modelos/swift-sport\">
                             <span>Swift Sport</span>
                         </a>
                     </li>
@@ -70,7 +70,7 @@ class __TwigTemplate_df2f507a9a4f8fc48c31d931a8f017e873e2e4dbcb91f5d151c1f9ab1c2
                         <a href=\"";
         // line 45
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "autos/swift\">
+        echo "modelos/swift\">
                             <span>Swift</span>
                         </a>
                     </li>
@@ -78,7 +78,7 @@ class __TwigTemplate_df2f507a9a4f8fc48c31d931a8f017e873e2e4dbcb91f5d151c1f9ab1c2
                         <a href=\"";
         // line 50
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "autos/kizashi\">
+        echo "modelos/kizashi\">
                             <span>Kizashi</span>
                         </a>
                     </li>
@@ -86,7 +86,7 @@ class __TwigTemplate_df2f507a9a4f8fc48c31d931a8f017e873e2e4dbcb91f5d151c1f9ab1c2
                         <a href=\"";
         // line 55
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "autos/s-cross\">
+        echo "modelos/s-cross\">
                             <span>S-Cross</span>
                         </a>
                     </li>
@@ -95,8 +95,8 @@ class __TwigTemplate_df2f507a9a4f8fc48c31d931a8f017e873e2e4dbcb91f5d151c1f9ab1c2
                     <li>
                         <a href=\"";
         // line 62
-        echo twig_escape_filter($this->env, (isset($context["autos"]) ? $context["autos"] : null), "html", null, true);
-        echo "autos/grand-vitara\">
+        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
+        echo "modelos/grand-vitara\">
                             <span>Grand Vitara</span>
                         </a>
                     </li>
@@ -104,7 +104,7 @@ class __TwigTemplate_df2f507a9a4f8fc48c31d931a8f017e873e2e4dbcb91f5d151c1f9ab1c2
                         <a href=\"";
         // line 67
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "autos/ciaz\">
+        echo "modelos/ciaz\">
                             <span>Ciaz</span>
                         </a>
                     </li>
@@ -112,7 +112,7 @@ class __TwigTemplate_df2f507a9a4f8fc48c31d931a8f017e873e2e4dbcb91f5d151c1f9ab1c2
                         <a href=\"";
         // line 72
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "autos/nueva-vitara\">
+        echo "modelos/nueva-vitara\">
                             <span>Nueva Vitara</span>
                         </a>
                     </li>
@@ -120,7 +120,7 @@ class __TwigTemplate_df2f507a9a4f8fc48c31d931a8f017e873e2e4dbcb91f5d151c1f9ab1c2
                         <a href=\"";
         // line 77
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "autos/ignis\">
+        echo "modelos/ignis\">
                             <span>Ignis</span>
                         </a>
                     </li>
@@ -321,44 +321,44 @@ class __TwigTemplate_df2f507a9a4f8fc48c31d931a8f017e873e2e4dbcb91f5d151c1f9ab1c2
 /*                 </div>*/
 /*                 <ul class="links links-s-1 links_catalog" id="links-catalog">*/
 /*                     <li>*/
-/*                         <a href="{{ _host }}autos/swift-sport">*/
+/*                         <a href="{{ _host }}modelos/swift-sport">*/
 /*                             <span>Swift Sport</span>*/
 /*                         </a>*/
 /*                     </li>*/
 /*                     <li>*/
-/*                         <a href="{{ _host }}autos/swift">*/
+/*                         <a href="{{ _host }}modelos/swift">*/
 /*                             <span>Swift</span>*/
 /*                         </a>*/
 /*                     </li>*/
 /*                     <li>*/
-/*                         <a href="{{ _host }}autos/kizashi">*/
+/*                         <a href="{{ _host }}modelos/kizashi">*/
 /*                             <span>Kizashi</span>*/
 /*                         </a>*/
 /*                     </li>*/
 /*                     <li>*/
-/*                         <a href="{{ _host }}autos/s-cross">*/
+/*                         <a href="{{ _host }}modelos/s-cross">*/
 /*                             <span>S-Cross</span>*/
 /*                         </a>*/
 /*                     </li>*/
 /*                 </ul>*/
 /*                 <ul class="links links-s-2 links_catalog">*/
 /*                     <li>*/
-/*                         <a href="{{ autos }}autos/grand-vitara">*/
+/*                         <a href="{{ _host }}modelos/grand-vitara">*/
 /*                             <span>Grand Vitara</span>*/
 /*                         </a>*/
 /*                     </li>*/
 /*                     <li>*/
-/*                         <a href="{{ _host }}autos/ciaz">*/
+/*                         <a href="{{ _host }}modelos/ciaz">*/
 /*                             <span>Ciaz</span>*/
 /*                         </a>*/
 /*                     </li>*/
 /*                     <li>*/
-/*                         <a href="{{ _host }}autos/nueva-vitara">*/
+/*                         <a href="{{ _host }}modelos/nueva-vitara">*/
 /*                             <span>Nueva Vitara</span>*/
 /*                         </a>*/
 /*                     </li>*/
 /*                     <li>*/
-/*                         <a href="{{ _host }}autos/ignis">*/
+/*                         <a href="{{ _host }}modelos/ignis">*/
 /*                             <span>Ignis</span>*/
 /*                         </a>*/
 /*                     </li>*/
