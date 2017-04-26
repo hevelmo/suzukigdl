@@ -523,6 +523,9 @@
 .view .mask a.info.interior {
     background:url("../../img/sections/models/common/black_interior.png") center center no-repeat;
 }
+.view .mask a.info.special {
+    background:url("../../img/sections/models/common/black_special.png") center center no-repeat;
+}
 .view .mask a.info.html {
     background:url("../../img/sections/models/common/black_360.png") center center no-repeat;
 }

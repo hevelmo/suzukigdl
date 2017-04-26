@@ -80,6 +80,7 @@
                     </div>
                     {% set exterior = gallery.main.grid.fancybox.ext %}
                     {% set interior = gallery.main.grid.fancybox.int %}
+                    {% set special = gallery.main.grid.fancybox.special %}
                     <div class="hidden-list">
                         {% if exterior %}
                             {% for ext in exterior %}
@@ -94,6 +95,15 @@
                             {% for int in interior %}
                                 <a class="fancybox-thumbs" href="{{ _host }}img/sections/models/gallery/{{ model.key }}/{{ int.group }}/{{ int.href }}" data-fancybox-group="{{ int.group }}" title=". . ." alt=". . .">
                                     <img src="{{ _host }}img/sections/models/gallery/{{ model.key }}/{{ int.group }}/{{ int.img }}" alt=". . ."/>
+                                </a>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                    <div class="hidden-list">
+                        {% if special %}
+                            {% for spe in special %}
+                                <a class="fancybox-thumbs" href="{{ _host }}img/sections/models/gallery/{{ model.key }}/{{ spe.group }}/{{ spe.href }}" data-fancybox-group="{{ spe.group }}" title=". . ." alt=". . .">
+                                    <img src="{{ _host }}img/sections/models/gallery/{{ model.key }}/{{ spe.group }}/{{ spe.img }}" alt=". . ."/>
                                 </a>
                             {% endfor %}
                         {% endif %}

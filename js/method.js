@@ -180,7 +180,7 @@
                 //cell_array[index] = val_cell;
             });
             cell_height = Math.min.apply( Math, cell_array );
-            //$(this).find(".cell").css("height", cell_height);
+            $(this).find(".cell").css("height", cell_height);
         });
     }
 /* ------------------------------------------------------ *\

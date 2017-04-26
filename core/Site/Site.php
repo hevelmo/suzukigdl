@@ -4774,7 +4774,7 @@
 										'image' => 'box-1.png',
 										'mask' => array(
 											'class' => 'interior',
-											'href' => 'foto-07.png',
+											'href' => '01.png',
 										)
 									),
 									array(
@@ -4782,7 +4782,7 @@
 										'image' => 'box-2.png',
 										'mask' => array(
 											'class' => 'interior',
-											'href' => 'foto-06.png',
+											'href' => '04.png',
 										)
 									),
 									array(
@@ -4790,23 +4790,23 @@
 										'image' => 'box-3.png',
 										'mask' => array(
 											'class' => 'interior',
-											'href' => 'foto-04.png',
+											'href' => '05.png',
 										)
 									),
 									array(
 										'class' => 'box-4',
 										'image' => 'box-4.png',
 										'mask' => array(
-											'class' => 'exterior',
-											'href' => 'foto-10.png',
+											'class' => 'special',
+											'href' => 'special-1.png',
 										)
 									),
 									array(
 										'class' => 'box-5',
 										'image' => 'box-5.png',
 										'mask' => array(
-											'class' => 'exterior',
-											'href' => 'foto-05.png',
+											'class' => 'interior',
+											'href' => '10.png',
 										)
 									),
 									array(
@@ -4814,7 +4814,7 @@
 										'image' => 'box-6.png',
 										'mask' => array(
 											'class' => 'exterior',
-											'href' => 'foto-02.png',
+											'href' => '09.png',
 										)
 									),
 									array(
@@ -4822,7 +4822,7 @@
 										'image' => 'box-7.png',
 										'mask' => array(
 											'class' => 'interior',
-											'href' => 'foto-08.png',
+											'href' => '03.png',
 										)
 									),
 									array(
@@ -4830,7 +4830,7 @@
 										'image' => 'box-8.png',
 										'mask' => array(
 											'class' => 'exterior',
-											'href' => 'foto-09.png',
+											'href' => '08.png',
 										)
 									)
 								),
@@ -4838,55 +4838,107 @@
 									'int' => array(
 										array(
 											'group' => 'interior',
-											'img' => 'foto-01-mini.png',
-											'href' => 'foto-01.png'
+											'img' => '01-mini.png',
+											'href' => '01.png'
 										),
 										array(
 											'group' => 'interior',
-											'img' => 'foto-04-mini.png',
-											'href' => 'foto-04.png'
+											'img' => '02-mini.png',
+											'href' => '02.png'
 										),
 										array(
 											'group' => 'interior',
-											'img' => 'foto-06-mini.png',
-											'href' => 'foto-06.png'
+											'img' => '03-mini.png',
+											'href' => '03.png'
 										),
 										array(
 											'group' => 'interior',
-											'img' => 'foto-07-mini.png',
-											'href' => 'foto-07.png'
+											'img' => '04-mini.png',
+											'href' => '04.png'
+										),
+										array(
+											'group' => 'interior',
+											'img' => '05-mini.png',
+											'href' => '05.png'
+										),
+										array(
+											'group' => 'interior',
+											'img' => '10-mini.png',
+											'href' => '10.png'
 										)
 									),
 									'ext' => array(
 										array(
 											'group' => 'exterior',
-											'img' => 'foto-02-mini.png',
-											'href' => 'foto-02.png'
+											'img' => '06-mini.png',
+											'href' => '06.png'
 										),
 										array(
 											'group' => 'exterior',
-											'img' => 'foto-03-mini.png',
-											'href' => 'foto-03.png'
+											'img' => '07-mini.png',
+											'href' => '07.png'
 										),
 										array(
 											'group' => 'exterior',
-											'img' => 'foto-05-mini.png',
-											'href' => 'foto-05.png'
+											'img' => '08-mini.png',
+											'href' => '08.png'
 										),
 										array(
 											'group' => 'exterior',
-											'img' => 'foto-08-mini.png',
-											'href' => 'foto-08.png'
+											'img' => '09-mini.png',
+											'href' => '09.png'
+										)
+									),
+									'special' => array(
+										array(
+											'group' => 'special',
+											'img' => 'special-1-mini.png',
+											'href' => 'special-1.png'
 										),
 										array(
-											'group' => 'exterior',
-											'img' => 'foto-09-mini.png',
-											'href' => 'foto-09.png'
+											'group' => 'special',
+											'img' => 'special-2-mini.png',
+											'href' => 'special-2.png'
 										),
 										array(
-											'group' => 'exterior',
-											'img' => 'foto-10-mini.png',
-											'href' => 'foto-10.png'
+											'group' => 'special',
+											'img' => 'special-3-mini.png',
+											'href' => 'special-3.png'
+										),
+										array(
+											'group' => 'special',
+											'img' => 'special-4-mini.png',
+											'href' => 'special-4.png'
+										),
+										array(
+											'group' => 'special',
+											'img' => 'special-5-mini.png',
+											'href' => 'special-5.png'
+										),
+										array(
+											'group' => 'special',
+											'img' => 'special-6-mini.png',
+											'href' => 'special-6.png'
+										),
+										array(
+											'group' => 'special',
+											'img' => 'special-7-mini.png',
+											'href' => 'special-7.png'
+										),
+										array(
+											'group' => 'special',
+											'img' => 'special-8-mini.png',
+											'href' => 'special-8.png'
+										),
+										array(
+											'group' => 'special',
+											'img' => 'special-9-mini.png',
+											'href' => 'special-9.png'
+										),
+										array(
+											'group' => 'special',
+											'img' => 'special-1-mini0.png',
+											'href' => 'special-10.png'
 										)
 									)
 								)
