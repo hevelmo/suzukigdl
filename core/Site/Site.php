@@ -4952,7 +4952,7 @@
 								'description' => 'Detalles que hacen de un auto una experiencia.'
 							),
 							'model_prices' => array(
-								'columns' => '1',
+								'columns' => '3',
 								'head' => array(
 									'row' => array(
 										'class' => 'dark'
@@ -4963,9 +4963,19 @@
 									'cell' => array(
 										'class' => 'light',
 										'first' => array(
-											'class' => 'last first',
-											'image' => 'kizashi-special.png',
-											'title' => 'Kizashi Edición Especial'
+											'class' => 'first',
+											'image' => 'grand-vitara-especial.png',
+											'title' => 'Grand Vitara Special'
+										),
+										'second' => array(
+											'class' => '',
+											'image' => 'grand-vitara-gls.png',
+											'title' => 'Grand Vitara Special'
+										),
+										'third' => array(
+											'class' => 'last',
+											'image' => 'grand-vitara-especial.png',
+											'title' => 'Grand Vitara Special'
 										)
 									)
 								),
