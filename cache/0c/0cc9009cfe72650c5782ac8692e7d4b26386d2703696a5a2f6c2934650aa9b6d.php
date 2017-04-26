@@ -11,7 +11,6 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
 
         $this->blocks = array(
             'phone_call' => array($this, 'block_phone_call'),
-            'models_header' => array($this, 'block_models_header'),
         );
     }
 
@@ -124,15 +123,23 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
                     </div>
                 </div>
                 <div id=\"models-header\">
-                    ";
-        // line 80
-        $this->displayBlock('models_header', $context, $blocks);
-        // line 82
-        echo "                </div>
+                    <div class=\"content\" id=\"content-models-header\">
+                        <ul class=\"models-menu\">
+                            <li class=\"first\"><a id=\"change-model\" class=\"scroll-in-site top\" href=\"#top\"></a></li>
+                            <li class=\"features current\"><a class=\"scroll-in-site\" id=\"caracteristicas\" href=\"#caracteristicas\">Características</a></li>
+                            <li class=\"gallery\"><a class=\"scroll-in-site\" id=\"galeria\" href=\"#galeria\">Galería</a></li>
+                            <li class=\"prices\"><a class=\"scroll-in-site\" id=\"precios\" href=\"#precios\">Versiones y precios</a></li>
+                            <li class=\"accessories\"><a class=\"scroll-in-site\" id=\"accesorios\" href=\"#accesorios\">Accesorios</a></li>
+                            <!--<li class=\"cotízalo\"><a class=\"scroll-in-site\" id=\"cotizalo\" href=\"#cotizalo\">Cotízalo</a></li>-->
+                            <li class=\"top\" id=\"back-to-top-button\"><a class=\"scroll-in-site\" id=\"top\" href=\"#top\"><span>Top</span></a></li>
+                            <li class=\"clearfix\"></li>
+                        </ul>
+                    </div>
+                </div>
             </header>
             <div id=\"header-mobile\">
                 <a href=\"";
-        // line 85
+        // line 95
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
         echo "\"><img src=\"";
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
@@ -155,13 +162,6 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
         echo "                                        ";
     }
 
-    // line 80
-    public function block_models_header($context, array $blocks = array())
-    {
-        echo "                        
-                    ";
-    }
-
     public function getTemplateName()
     {
         return "super_navbar.twig";
@@ -174,7 +174,7 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
 
     public function getDebugInfo()
     {
-        return array (  159 => 80,  155 => 45,  152 => 44,  136 => 85,  131 => 82,  129 => 80,  105 => 59,  97 => 54,  87 => 46,  85 => 44,  72 => 34,  64 => 29,  56 => 24,  48 => 19,  35 => 9,  29 => 8,  21 => 2,);
+        return array (  162 => 45,  159 => 44,  143 => 95,  104 => 59,  96 => 54,  86 => 46,  84 => 44,  71 => 34,  63 => 29,  55 => 24,  47 => 19,  34 => 9,  28 => 8,  20 => 2,);
     }
 }
 /* {# Begin: Header #}*/
@@ -256,8 +256,18 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
 /*                     </div>*/
 /*                 </div>*/
 /*                 <div id="models-header">*/
-/*                     {% block models_header %}                        */
-/*                     {% endblock %}*/
+/*                     <div class="content" id="content-models-header">*/
+/*                         <ul class="models-menu">*/
+/*                             <li class="first"><a id="change-model" class="scroll-in-site top" href="#top"></a></li>*/
+/*                             <li class="features current"><a class="scroll-in-site" id="caracteristicas" href="#caracteristicas">Características</a></li>*/
+/*                             <li class="gallery"><a class="scroll-in-site" id="galeria" href="#galeria">Galería</a></li>*/
+/*                             <li class="prices"><a class="scroll-in-site" id="precios" href="#precios">Versiones y precios</a></li>*/
+/*                             <li class="accessories"><a class="scroll-in-site" id="accesorios" href="#accesorios">Accesorios</a></li>*/
+/*                             <!--<li class="cotízalo"><a class="scroll-in-site" id="cotizalo" href="#cotizalo">Cotízalo</a></li>-->*/
+/*                             <li class="top" id="back-to-top-button"><a class="scroll-in-site" id="top" href="#top"><span>Top</span></a></li>*/
+/*                             <li class="clearfix"></li>*/
+/*                         </ul>*/
+/*                     </div>*/
 /*                 </div>*/
 /*             </header>*/
 /*             <div id="header-mobile">*/

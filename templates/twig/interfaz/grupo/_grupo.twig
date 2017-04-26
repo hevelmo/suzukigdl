@@ -7,6 +7,9 @@
 {% block section %}
     <input type="hidden" id="hidden_section" value="group">
 {% endblock %}
+{% block menu_patch %}    
+	<div class="menu-patch" id="patch">&nbsp;</div>
+{% endblock %}
 {% block navbar %}
     {% embed "super_navbar.twig" %}
 		{% block phone_call %}

@@ -50,7 +50,7 @@
                         <div class="clearfix"></div>
                     </div>
                 </div>
-                <div class="next-link-text">
+                <div class="next-link-text gallery">
                     <a  class="scroll-in-site" id="galeria" href="{{ _host }}modelos/{{ model.key }}#galeria"><span>Visita Galería</span></a>
                 </div>
             </div>
@@ -99,7 +99,7 @@
                         {% endif %}
                     </div>
                 </div>
-                <div class="next-link-text" style="margin-top: 40px;">
+                <div class="next-link-text prices" style="margin-top: 40px;">
                     <a class="scroll-in-site" id="precios" href="{{ _host }}modelos/{{ model.key }}#precios"><span>Visita Versiones</span></a>
                 </div>
             </div>
@@ -122,9 +122,6 @@
                             {% set columns = prices.main.model_prices.columns %}
                             {% set head = prices.main.model_prices.head %}
                             {% set body = prices.main.model_prices.body %}
-                            {% set row = row %}
-                            {% set col = col %}
-                            {% set cell = cell %}
                             <div id="features-space">
                                 <div class="suzuki-table cols-{{ columns }}" id="versions-price-table">
                                     <div class="data-wrapper">
@@ -184,7 +181,7 @@
                                                     <div class="row  row-{{ rows.class }} cols-{{ body.col.class }}">
                                                         {% if rows.cell.first %}
                                                             {% if rows.cell.first or rows.cell.first.price %}
-                                                                <div class="cell {{ rows.cell.first.price.class }} col-{{ rows.cell.class }} {{ rows.cell.first.class }}">
+                                                                <div class="cell {{ rows.cell.first.price.class }} col-{{ rows.cell.class }} {{ rows.cell.first.class }}" style="{{ rows.cell.first.height }}">
                                                                     <div class="title to-html">
                                                                         {% if rows.cell.first.title %}
                                                                             {{ rows.cell.first.title }}
@@ -198,7 +195,7 @@
                                                                 </div>
                                                             {% endif %}
                                                             {% if rows.cell.second or rows.cell.second.price %}
-                                                                <div class="cell {{ rows.cell.second.price.class }} col-{{ rows.cell.class }} {{ rows.cell.second.class }}">
+                                                                <div class="cell {{ rows.cell.second.price.class }} col-{{ rows.cell.class }} {{ rows.cell.second.class }}" style="{{ rows.cell.second.height }}">
                                                                     <div class="title to-html">
                                                                         {% if rows.cell.second.title %}
                                                                             {{ rows.cell.second.title }}
@@ -212,7 +209,7 @@
                                                                 </div>
                                                             {% endif %}
                                                             {% if rows.cell.third or rows.cell.third.price %}
-                                                                <div class="cell {{ rows.cell.third.price.class }} col-{{ rows.cell.class }} {{ rows.cell.third.class }}">
+                                                                <div class="cell {{ rows.cell.third.price.class }} col-{{ rows.cell.class }} {{ rows.cell.third.class }}" style="{{ rows.cell.third.height }}">
                                                                     <div class="title to-html">
                                                                         {% if rows.cell.third.title %}
                                                                             {{ rows.cell.third.title }}
@@ -226,7 +223,7 @@
                                                                 </div>
                                                             {% endif %}
                                                             {% if rows.cell.fourth or rows.cell.fourth.price %}
-                                                                <div class="cell {{ rows.cell.fourth.price.class }} col-{{ rows.cell.class }} {{ rows.cell.fourth.class }}">
+                                                                <div class="cell {{ rows.cell.fourth.price.class }} col-{{ rows.cell.class }} {{ rows.cell.fourth.class }}" style="{{ rows.cell.fourth.height }}">
                                                                     <div class="title to-html">
                                                                         {% if rows.cell.fourth.title %}
                                                                             {{ rows.cell.fourth.title }}
@@ -302,14 +299,14 @@
                             </div>
                             <div class="clearfix"></div>
                         </div>
-                        <div class="maintenance-image" style="background: url('{{ _host }}img/sections/models/prices/big-models/{{ maintenance.main.image }}') right 80px no-repeat;">&nbsp;</div>
+                        {#<div class="maintenance-image" style="background: url('{{ _host }}img/sections/models/prices/big-models/{{ maintenance.main.image }}') right 80px no-repeat;">&nbsp;</div>#}
                         <div class="clearfix"></div>
                         <br><br>
                         <p style="margin: 5px 0 30px; text-align: center;">
                             <a href="{{ _host }}financiamiento/{{ maintenance.main.key }}" id="go-financing-{{ maintenance.main.key }}" data-gama-model-key="{{ maintenance.main.key }}" data-gama-model-id="{{ model.id }}" class="button red">Pide tu cotización y estrena un {{ maintenance.main.name }}.</a>
                         </p>
                         <p id="p-empty">&nbsp;</p>
-                        <div class="next-link-text" style="margin-top: 20px;">
+                        <div class="next-link-text accesories" style="margin-top: 20px;">
                             <a class="scroll-in-site" id="accesorios" href="{{ _host }}modelos/{{ model.key }}#accesorios"><span>Visita Accesorios</span></a>
                         </div>
                     </div>
@@ -332,7 +329,7 @@
                             <div class="view view-first {{ boxes_gallery.class }}">
                                 <img src="{{ _host }}img/sections/models/accessories/{{ model.key }}/boxes/{{ boxes_gallery.image }}" />
                                 <div class="mask">
-                                    <a href="{{ _host }}img/sections/models/accessories/{{ model.key }}/{{ boxes_gallery.mask.href }}" class="info gallery-box-link {{ boxes_gallery.mask.class }}" data-link="">
+                                    <a href="{{ _host }}img/sections/models/accessories/{{ model.key }}/{{ boxes_gallery.mask.href }}" class="info gallery-box-link {{ accessories.main.class }}" data-link="">
                                         <span>&nbsp;</span>
                                     </a>
                                 </div>
@@ -343,8 +340,8 @@
                     <div class="hidden-list">
                         {% if interior %}
                             {% for thumb in interior %}
-                                <a class="fancybox-thumbs" href="{{ _host }}img/sections/models/accesorios/{{ model.key }}/{{ thumb.href }}" data-fancybox-group="accesorios" title=". . ." alt=". . .">
-                                    <img src="{{ _host }}img/sections/models/accesorios/{{ model.key }}/{{ thumb.img }}" alt=". . ."/>
+                                <a class="fancybox-thumbs" href="{{ _host }}img/sections/models/accessories/{{ model.key }}/{{ thumb.href }}" data-fancybox-group="accesorios" title=". . ." alt=". . .">
+                                    <img src="{{ _host }}img/sections/models/accessories/{{ model.key }}/{{ thumb.img }}" alt=". . ."/>
                                 </a>
                             {% endfor %}
                         {% endif %}

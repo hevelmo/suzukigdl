@@ -1,12 +1,16 @@
 detectNavigatorMethods.IE10();
 is_mobileMethods.is_mobile();
-display_versions_comparative();
 modifyHeight("#features-space-wrapper .suzuki-table .body .row");
 features_tables.init_is_mobile();
 is_mobileMethods.is_mobile_versions_price_table();
 
-$('body').prepend( patch_bar );
-$('body').prepend( td_id_flag );
+modelsMenuMethods.changeNameModel();
+//addStylesMethods.addStyleModel_ignis();
+modelsMenuMethods.scrollSwitchMethod();
+
+
+//$('body').prepend( patch_bar );
+//$('body').prepend( td_id_flag );
 // FANCYBOX
     $(domEl.div_recurrent).on('click', 'a.gallery-box-link', fancyBoxMethods.onClickGalery);
     //Fancybox Trigger in all gallery elements
@@ -81,6 +85,7 @@ $('body').prepend( td_id_flag );
             if( display_vct_class == $div.data('display-table') ){
                 $div.fadeOut().fadeIn(1000);
                 //modifyHeight("#comparative-space-wrapper .suzuki-table .body .row");
+                modifyHeight("#features-space .suzuki-table .body .row");
             }else{
                 $div.hide();
             }
@@ -95,3 +100,12 @@ $('body').prepend( td_id_flag );
         }, 900 );
     });
     display_versions_comparative();
+
+    $('body').on('click', '#model-test-drive-flag-link', modelsMenuMethods.preventDefault_flag_link);
+    $('body').on('click', '#prueba-de-manejo', modelsMenuMethods.preventDefault_test_drive);
+    $('body').on('click', '#accesorios', modelsMenuMethods.preventDefault_accesories);
+    $('body').on('click', '#galeria', modelsMenuMethods.preventDefault_galery);
+    $('body').on('click', '#precios', modelsMenuMethods.preventDefault_prices);
+    $('body').on('click', '#caracteristicas', modelsMenuMethods.preventDefault_characterics);
+    $('body').on('click', '.top', modelsMenuMethods.preventDefault_class_top);
+    $('body').on('click', '#top', modelsMenuMethods.preventDefault_id_top);

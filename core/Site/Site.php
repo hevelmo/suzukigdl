@@ -230,8 +230,8 @@
 										),
 										array(
 											'group' => 'exterior',
-											'img' => '04-mini.png',
-											'href' => '04.png'
+											'img' => '05-mini.png',
+											'href' => '05.png'
 										)
 									)
 								)
@@ -261,7 +261,7 @@
 											'title' => 'Ignis GL'
 										),
 										'second' => array(
-											'class' => 'second',
+											'class' => 'last',
 											'image' => 'ignis-glx.png',
 											'title' => 'Ignis GLX'
 										)
@@ -278,13 +278,14 @@
 														'class' => 'price'
 													),
 													'class' => 'first',
-													'title' => '<p><span>TM 2017 $194,990.00</span></p>'
+													'title' => '<p><span>TM 2017 $194,990.00</span></p>',
+													'height' => 'height: 100px;'
 												),
 												'second' => array(
 													'price' => array(
 														'class' => 'price'
 													),
-													'class' => 'second',
+													'class' => 'last',
 													'titles' => array(
 														array(
 															'span' => '<p><span>TM 2017 $269,990.00</span></p>'
@@ -292,7 +293,8 @@
 														array(
 															'span' => '<p><span>TA CVT 2017 $233,990.00</span></p>'
 														)
-													)
+													),
+													'height' => 'height: 100px;'
 												)
 											)
 										),
@@ -302,11 +304,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Rendimiento de combustible en transmisión manual de 21.8 km/l</p>'
+													'title' => '<p>Rendimiento de combustible en transmisión manual de 21.8 km/l</p>',
+													'height' => 'height: 60px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Rendimiento de combustible en transmisión CVT 20.9 km/l. En transmisión manual 21.8 km/l</p>'
+													'class' => 'last',
+													'title' => '<p>Rendimiento de combustible en transmisión CVT 20.9 km/l. En transmisión manual 21.8 km/l</p>',
+													'height' => 'height: 60px;'
 												)
 											)
 										),
@@ -316,11 +320,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Diseño Nano SUV: El máximo poder en el empaque más pequeño </p>'
+													'title' => '<p>Diseño Nano SUV: El máximo poder en el empaque más pequeño </p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Diseño Nano SUV: El máximo poder en el empaque más pequeño </p>'
+													'class' => 'last',
+													'title' => '<p>Diseño Nano SUV: El máximo poder en el empaque más pequeño </p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -330,11 +336,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Motor 1.2 lt VVT de 82 HP ligero y compacto, diseñado para obtener un manejo ágil y eficiente </p>'
+													'title' => '<p>Motor 1.2 lt VVT de 82 HP ligero y compacto, diseñado para obtener un manejo ágil y eficiente </p>',
+													'height' => 'height: 60px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Motor 1.2 lt VVT de 82 HP ligero y compacto, diseñado para obtener un manejo ágil y eficiente</p>'
+													'class' => 'last',
+													'title' => '<p>Motor 1.2 lt VVT de 82 HP ligero y compacto, diseñado para obtener un manejo ágil y eficiente</p>',
+													'height' => 'height: 60px;'
 												)
 											)
 										),
@@ -344,11 +352,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Chasís más resistente con bajo peso vehicular para un manejo más dinámico y gran rendimiento de combustible </p>'
+													'title' => '<p>Chasís más resistente con bajo peso vehicular para un manejo más dinámico y gran rendimiento de combustible </p>',
+													'height' => 'height: 60px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Chasís más resistente con bajo peso vehicular para un manejo más dinámico y gran rendimiento de combustible</p>'
+													'class' => 'last',
+													'title' => '<p>Chasís más resistente con bajo peso vehicular para un manejo más dinámico y gran rendimiento de combustible</p>',
+													'height' => 'height: 60px;'
 												)
 											)
 										),
@@ -358,11 +368,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Consola central color negro </p>'
+													'title' => '<p>Consola central color negro </p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Parrilla frontal negra con acentos cromados</p>'
+													'class' => 'last',
+													'title' => '<p>Parrilla frontal negra con acentos cromados</p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -372,11 +384,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Interiores de tela negra con costuras azules </p>'
+													'title' => '<p>Interiores de tela negra con costuras azules </p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Pantalla a color 7” Touch Screen con sistema Bluetooth®, vínculo con Smartphones (Apple CarPlay®* y Android AutoTM**) y cámara de reversa</p>'
+													'class' => 'last',
+													'title' => '<p>Pantalla a color 7” Touch Screen con sistema Bluetooth®, vínculo con Smartphones (Apple CarPlay®* y Android AutoTM**) y cámara de reversa</p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -386,11 +400,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Manos libres al volante y control de audio </p>'
+													'title' => '<p>Manos libres al volante y control de audio </p>',
+													'height' => 'height: 60px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Control de velocidad crucero en el volante</p>'
+													'class' => 'last',
+													'title' => '<p>Control de velocidad crucero en el volante</p>',
+													'height' => 'height: 60px;'
 												)
 											)
 										),
@@ -400,11 +416,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Portabotellas y portadocumentos en puertas </p>'
+													'title' => '<p>Portabotellas y portadocumentos en puertas </p>',
+													'height' => 'height: 60px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Consola central color titanio con interiores de tela negra con costuras titanio disponible en colores Mentolato y Fénix</p>'
+													'class' => 'last',
+													'title' => '<p>Consola central color titanio con interiores de tela negra con costuras titanio disponible en colores Mentolato y Fénix</p>',
+													'height' => 'height: 60px;'
 												)
 											)
 										),
@@ -414,11 +432,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Asientos traseros abatibles 60/40 </p>'
+													'title' => '<p>Asientos traseros abatibles 60/40 </p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Consola central color naranja con interiores de tela negra con costuras naranja disponible en colores Constelación y Lava</p>'
+													'class' => 'last',
+													'title' => '<p>Consola central color naranja con interiores de tela negra con costuras naranja disponible en colores Constelación y Lava</p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -428,11 +448,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Habitáculo de amplio espacio </p>'
+													'title' => '<p>Habitáculo de amplio espacio </p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Sistema de navegación</p>'
+													'class' => 'last',
+													'title' => '<p>Sistema de navegación</p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -442,11 +464,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Reproductor de CD compatible con MP3 y Bluetooth®</p>'
+													'title' => '<p>Reproductor de CD compatible con MP3 y Bluetooth®</p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Transmisión: manual de 5 velocidades y CVT</p>'
+													'class' => 'last',
+													'title' => '<p>Transmisión: manual de 5 velocidades y CVT</p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -456,11 +480,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Transmisión: manual de 5 velocidades</p>'
+													'title' => '<p>Transmisión: manual de 5 velocidades</p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Portabotellas y portadocumentos en puertas</p>'
+													'class' => 'last',
+													'title' => '<p>Portabotellas y portadocumentos en puertas</p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -470,11 +496,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Aire acondicionado manual</p>'
+													'title' => '<p>Aire acondicionado manual</p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Asientos traseros abatibles 60/40</p>'
+													'class' => 'last',
+													'title' => '<p>Asientos traseros abatibles 60/40</p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -484,11 +512,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Cierre centralizado de seguros de puertas desde el mando del conductor</p>'
+													'title' => '<p>Cierre centralizado de seguros de puertas desde el mando del conductor</p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Habitáculo de amplio espacio</p>'
+													'class' => 'last',
+													'title' => '<p>Habitáculo de amplio espacio</p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -498,11 +528,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Elevadores eléctricos de cristales frontales</p>'
+													'title' => '<p>Elevadores eléctricos de cristales frontales</p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Aire acondicionado automático</p>'
+													'class' => 'last',
+													'title' => '<p>Aire acondicionado automático</p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -512,11 +544,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Filtro de polen</p>'
+													'title' => '<p>Filtro de polen</p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Cierre centralizado de seguros de puertas desde el mando del conductor</p>'
+													'class' => 'last',
+													'title' => '<p>Cierre centralizado de seguros de puertas desde el mando del conductor</p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -526,11 +560,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Puerto USB y tomacorriente de 12V</p>'
+													'title' => '<p>Puerto USB y tomacorriente de 12V</p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Elevadores eléctricos de cristales frontales y traseros</p>'
+													'class' => 'last',
+													'title' => '<p>Elevadores eléctricos de cristales frontales y traseros</p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -540,11 +576,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Volante con ajuste de altura y manos libres</p>'
+													'title' => '<p>Volante con ajuste de altura y manos libres</p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Limitador de velocidad</p>'
+													'class' => 'last',
+													'title' => '<p>Limitador de velocidad</p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -554,11 +592,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Cantoneras</p>'
+													'title' => '<p>Cantoneras</p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Filtro de polen</p>'
+													'class' => 'last',
+													'title' => '<p>Filtro de polen</p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -568,11 +608,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Cristales entintados en tono verde</p>'
+													'title' => '<p>Cristales entintados en tono verde</p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Puerto USB y tomacorriente de 12V</p>'
+													'class' => 'last',
+													'title' => '<p>Puerto USB y tomacorriente de 12V</p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -582,11 +624,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Desempañador trasero</p>'
+													'title' => '<p>Desempañador trasero</p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Volante forrado en piel, con ajuste de altura y manos libres</p>'
+													'class' => 'last',
+													'title' => '<p>Volante forrado en piel, con ajuste de altura y manos libres</p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -596,11 +640,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Espejos laterales al color de la carrocería y con ajuste eléctrico</p>'
+													'title' => '<p>Espejos laterales al color de la carrocería y con ajuste eléctrico</p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Cristales entintados en tono verde</p>'
+													'class' => 'last',
+													'title' => '<p>Cristales entintados en tono verde</p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -610,11 +656,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Espejo retrovisor con ajuste manual día / noche</p>'
+													'title' => '<p>Espejo retrovisor con ajuste manual día / noche</p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Cantoneras</p>'
+													'class' => 'last',
+													'title' => '<p>Cantoneras</p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -624,11 +672,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Faros de halógeno multirreflector </p>'
+													'title' => '<p>Faros de halógeno multirreflector </p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Espejos laterales al color de la carrocería y con ajuste eléctrico</p>'
+													'class' => 'last',
+													'title' => '<p>Espejos laterales al color de la carrocería y con ajuste eléctrico</p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -638,11 +688,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Faros frontales de niebla</p>'
+													'title' => '<p>Faros frontales de niebla</p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Espejo retrovisor con ajuste manual día / noche</p>'
+													'class' => 'last',
+													'title' => '<p>Espejo retrovisor con ajuste manual día / noche</p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -652,11 +704,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Luz de stop superior trasera de LED</p>'
+													'title' => '<p>Luz de stop superior trasera de LED</p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Faros LED con lupa y encendido automático</p>'
+													'class' => 'last',
+													'title' => '<p>Faros LED con lupa y encendido automático</p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -666,11 +720,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Parrilla frontal negra con acentos negros</p>'
+													'title' => '<p>Parrilla frontal negra con acentos negros</p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Faros frontales de niebla</p>'
+													'class' => 'last',
+													'title' => '<p>Faros frontales de niebla</p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -680,11 +736,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Rieles de carga</p>'
+													'title' => '<p>Rieles de carga</p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Rieles de carga</p>'
+													'class' => 'last',
+													'title' => '<p>Rieles de carga</p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -694,11 +752,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Biseles de rejillas laterales y centrales de aire acondicionado color negro</p>'
+													'title' => '<p>Biseles de rejillas laterales y centrales de aire acondicionado color negro</p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Biseles de rejillas laterales y centrales de aire acondicionado color plata</p>'
+													'class' => 'last',
+													'title' => '<p>Biseles de rejillas laterales y centrales de aire acondicionado color plata</p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -708,11 +768,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Viseras con espejo de vanidad y con clip portadocumentos</p>'
+													'title' => '<p>Viseras con espejo de vanidad y con clip portadocumentos</p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Viseras con espejo de vanidad y con clip portadocumentos</p>'
+													'class' => 'last',
+													'title' => '<p>Viseras con espejo de vanidad y con clip portadocumentos</p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -722,11 +784,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Alarma de luces encendidas</p>'
+													'title' => '<p>Alarma de luces encendidas</p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Alarma de luces encendidas</p>'
+													'class' => 'last',
+													'title' => '<p>Alarma de luces encendidas</p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -736,11 +800,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Pantalla de información:  Consumo de combustible instantáneo / promedio / autonomía.  Reloj digital. Termómetro</p>'
+													'title' => '<p>Pantalla de información:  Consumo de combustible instantáneo / promedio / autonomía.  Reloj digital. Termómetro</p>',
+													'height' => 'height: 60px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Clúster iluminado</p>'
+													'class' => 'last',
+													'title' => '<p>Clúster iluminado</p>',
+													'height' => 'height: 60px;'
 												)
 											)
 										),
@@ -750,11 +816,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Rines de acero de 15 pulgadas y llantas: 175 / 65R15</p>'
+													'title' => '<p>Rines de acero de 15 pulgadas y llantas: 175 / 65R15</p>',
+													'height' => 'height: 60px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Pantalla de información: Consumo de combustible instantáneo / promedio / autonomía.  Reloj digital. Termómetro. Velocidad promedio.</p>'
+													'class' => 'last',
+													'title' => '<p>Pantalla de información: Consumo de combustible instantáneo / promedio / autonomía.  Reloj digital. Termómetro. Velocidad promedio.</p>',
+													'height' => 'height: 60px;'
 												)
 											)
 										),
@@ -764,11 +832,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Alarma de seguridad</p>'
+													'title' => '<p>Alarma de seguridad</p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Rines de aluminio de 16 pulgadas y llantas: 175 / 60R16</p>'
+													'class' => 'last',
+													'title' => '<p>Rines de aluminio de 16 pulgadas y llantas: 175 / 60R16</p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -778,11 +848,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Anclaje en los asientos traseros Isofix®</p>'
+													'title' => '<p>Anclaje en los asientos traseros Isofix®</p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Alarma de seguridad</p>'
+													'class' => 'last',
+													'title' => '<p>Alarma de seguridad</p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -792,11 +864,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Barras laterales de protección de puertas</p>'
+													'title' => '<p>Barras laterales de protección de puertas</p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Anclaje en los asientos traseros Isofix®</p>'
+													'class' => 'last',
+													'title' => '<p>Anclaje en los asientos traseros Isofix®</p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -806,11 +880,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Bolsas de aire frontales</p>'
+													'title' => '<p>Bolsas de aire frontales</p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Barras laterales de protección de puertas</p>'
+													'class' => 'last',
+													'title' => '<p>Barras laterales de protección de puertas</p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -820,11 +896,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Pedal de freno colapsable para protección del tobillo</p>'
+													'title' => '<p>Pedal de freno colapsable para protección del tobillo</p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Bolsas de aire frontales</p>'
+													'class' => 'last',
+													'title' => '<p>Bolsas de aire frontales</p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -834,11 +912,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Sistema de frenos ABS con función EBD</p>'
+													'title' => '<p>Sistema de frenos ABS con función EBD</p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Pedal de freno colapsable para protección del tobillo</p>'
+													'class' => 'last',
+													'title' => '<p>Pedal de freno colapsable para protección del tobillo</p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -848,11 +928,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p></p>'
+													'title' => '<p></p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Sistema de frenos ABS con función EBD</p>'
+													'class' => 'last',
+													'title' => '<p>Sistema de frenos ABS con función EBD</p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -862,11 +944,13 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p></p>'
+													'title' => '<p></p>',
+													'height' => 'height: 20px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p></p>'
+													'class' => 'last',
+													'title' => '<p></p>',
+													'height' => 'height: 20px;'
 												)
 											)
 										)
@@ -879,7 +963,7 @@
 									'ga' => 'ficha-ignis',
 									'href' => 'ignis.2017.pdf'
 								),
-							),
+							)
 						)
 					),
 					'mantenimieto' => array(
@@ -1118,6 +1202,7 @@
 					),
 					'accesorios' => array(
 						'main' => array(
+							'class' => 'accessories',
 							'section_gallery' => array(
 								'title' => 'Accesorios',
 								'description' => 'Redefine todo e inicia un nuevo capítulo en tu vida.'
@@ -1688,7 +1773,7 @@
 									'ga' => 'ficha-swift-sport',
 									'href' => 'catalogo-swift-2017.pdf'
 								)
-							),
+							)
 						)
 					),
 					'mantenimieto' => array(
@@ -2363,28 +2448,32 @@
 														'class' => 'price'
 													),
 													'class' => 'first',
-													'title' => '<p><span>TM 2017 $214,990.00</span><span>TA 2017 $229,990.00</span></p>'
+													'title' => '<p><span>TM 2017 $214,990.00</span><span>TA 2017 $229,990.00</span></p>',
+													'height' => 'height: 100px;'
 												),
 												'second' => array(
 													'price' => array(
 														'class' => 'price'
 													),
-													'class' => 'second',
-													'title' => '<p><span>TM 2017 $239,990.00</span><span>TA 2017 $254,990.00</span></p>'
+													'class' => '',
+													'title' => '<p><span>TM 2017 $239,990.00</span><span>TA 2017 $254,990.00</span></p>',
+													'height' => 'height: 100px;'
 												),
 												'third' => array(
 													'price' => array(
 														'class' => 'price'
 													),
-													'class' => 'third',
-													'title' => '<p><span>TM 2017 $252,990.00</span><span>TA 2017 $265,990.00</span></p>'
+													'class' => '',
+													'title' => '<p><span>TM 2017 $252,990.00</span><span>TA 2017 $265,990.00</span></p>',
+													'height' => 'height: 100px;'
 												),
 												'fourth' => array(
 													'price' => array(
 														'class' => 'price'
 													),
-													'class' => 'fourth',
-													'title' => '<p><span>TM 2017 $189,990.00</span></p>'
+													'class' => 'last',
+													'title' => '<p><span>TM 2017 $189,990.00</span></p>',
+													'height' => 'height: 100px;'
 												)
 											)
 										),
@@ -2394,63 +2483,23 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Motor: 4 cilindros, 1.4 litros V V T, 16 válvulas.</p>'
+													'title' => '<p>Motor: 4 cilindros, 1.4 litros V V T, 16 válvulas.</p>',
+													'height' => 'height: 60px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Motor: 4 cilindros, 1.4 litros V V T, 16 válvulas.</p>'
+													'class' => '',
+													'title' => '<p>Motor: 4 cilindros, 1.4 litros V V T, 16 válvulas.</p>',
+													'height' => 'height: 60px;'
 												),
 												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Motor: 4 cilindros, 1.4 litros V V T .16 válvulas.</p>'
+													'class' => '',
+													'title' => '<p>Motor: 4 cilindros, 1.4 litros V V T .16 válvulas.</p>',
+													'height' => 'height: 60px;'
 												),
 												'fourth' => array(
-													'class' => 'fourth',
-													'title' => '<p>Motor: 4 cilindros, 1.4 litros V V T, 16 válvulas.</p>'
-												)
-											)
-										),
-										array(
-											'class' => 'dark',
-											'cell' => array(
-												'class' => 'light',
-												'first' => array(
-													'class' => 'first',
-													'title' => '<p>TM: Transmisión manual de 5 velocidades<br />TA: Transmisión automática de 4 velocidades</p>'
-												),
-												'second' => array(
-													'class' => 'second',
-													'title' => '<p>TM: Transmisión manual de 5 velocidades<br />TA: Transmisión automática de 4 velocidades</p>'
-												),
-												'third' => array(
-													'class' => 'third',
-													'title' => '<p>TM: Transmisión manual de 5 velocidades<br />TA: Transmisión automática de 4 velocidades</p>'
-												),
-												'fourth' => array(
-													'class' => 'fourth',
-													'title' => '<p> Transmisión manual de 5 velocidades</p>'
-												)
-											)
-										),
-										array(
-											'class' => 'light',
-											'cell' => array(
-												'class' => 'light',
-												'first' => array(
-													'class' => 'first',
-													'title' => '<p>Potencia neta (hp@rpm): 100 hp @ 6,000 rpm.</p>'
-												),
-												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Potencia neta (hp@rpm): 100 hp @ 6,000 rpm.</p>'
-												),
-												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Potencia neta (hp@rpm): 100 hp @ 6,000 rpm.</p>'
-												),
-												'fourth' => array(
-													'class' => 'fourth',
-													'title' => '<p>Potencia neta (hp@rpm): 100 hp @ 6,000 rpm.</p>'
+													'class' => 'last',
+													'title' => '<p>Motor: 4 cilindros, 1.4 litros V V T, 16 válvulas.</p>',
+													'height' => 'height: 60px;'
 												)
 											)
 										),
@@ -2460,19 +2509,23 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Elevadores eléctricos de cristales.</p>'
+													'title' => '<p>TM: Transmisión manual de 5 velocidades<br />TA: Transmisión automática de 4 velocidades</p>',
+													'height' => 'height: 100px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Elevadores eléctricos de cristales.</p>'
+													'class' => '',
+													'title' => '<p>TM: Transmisión manual de 5 velocidades<br />TA: Transmisión automática de 4 velocidades</p>',
+													'height' => 'height: 100px;'
 												),
 												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Elevadores eléctricos de cristales.</p>'
+													'class' => '',
+													'title' => '<p>TM: Transmisión manual de 5 velocidades<br />TA: Transmisión automática de 4 velocidades</p>',
+													'height' => 'height: 100px;'
 												),
 												'fourth' => array(
-													'class' => 'fourth',
-													'title' => '<p>Elevadores eléctricos de cristales.</p>'
+													'class' => 'last',
+													'title' => '<p> Transmisión manual de 5 velocidades</p>',
+													'height' => 'height: 100px;'
 												)
 											)
 										),
@@ -2482,19 +2535,23 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Seguros y espejos eléctricos.</p>'
+													'title' => '<p>Potencia neta (hp@rpm): 100 hp @ 6,000 rpm.</p>',
+													'height' => 'height: 60px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Seguros y espejos eléctricos.</p>'
+													'class' => '',
+													'title' => '<p>Potencia neta (hp@rpm): 100 hp @ 6,000 rpm.</p>',
+													'height' => 'height: 60px;'
 												),
 												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Seguros y espejos eléctricos.</p>'
+													'class' => '',
+													'title' => '<p>Potencia neta (hp@rpm): 100 hp @ 6,000 rpm.</p>',
+													'height' => 'height: 60px;'
 												),
 												'fourth' => array(
-													'class' => 'fourth',
-													'title' => '<p>Seguros y espejos eléctricos.</p>'
+													'class' => 'last',
+													'title' => '<p>Potencia neta (hp@rpm): 100 hp @ 6,000 rpm.</p>',
+													'height' => 'height: 60px;'
 												)
 											)
 										),
@@ -2504,19 +2561,23 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>ABS (Sistema Antibloqueo de Frenos).</p>'
+													'title' => '<p>Elevadores eléctricos de cristales.</p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>ABS (Sistema Antibloqueo de Frenos).</p>'
+													'class' => '',
+													'title' => '<p>Elevadores eléctricos de cristales.</p>',
+													'height' => 'height: 40px;'
 												),
 												'third' => array(
-													'class' => 'third',
-													'title' => '<p>ABS (Sistema Antibloqueo de Frenos).</p>'
+													'class' => '',
+													'title' => '<p>Elevadores eléctricos de cristales.</p>',
+													'height' => 'height: 40px;'
 												),
 												'fourth' => array(
-													'class' => 'fourth',
-													'title' => '<p>ABS (Sistema Antibloqueo de Frenos).</p>'
+													'class' => 'last',
+													'title' => '<p>Elevadores eléctricos de cristales.</p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -2526,19 +2587,23 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Asistencia de frenado.</p>'
+													'title' => '<p>Seguros y espejos eléctricos.</p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Asistencia de frenado.</p>'
+													'class' => '',
+													'title' => '<p>Seguros y espejos eléctricos.</p>',
+													'height' => 'height: 40px;'
 												),
 												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Asistencia de frenado.</p>'
+													'class' => '',
+													'title' => '<p>Seguros y espejos eléctricos.</p>',
+													'height' => 'height: 40px;'
 												),
 												'fourth' => array(
-													'class' => 'fourth',
-													'title' => '<p>Asistencia de frenado.</p>'
+													'class' => 'last',
+													'title' => '<p>Seguros y espejos eléctricos.</p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -2548,19 +2613,23 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Rines: Aluminio de 16".</p>'
+													'title' => '<p>ABS (Sistema Antibloqueo de Frenos).</p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Rines: Aluminio de 16".</p>'
+													'class' => '',
+													'title' => '<p>ABS (Sistema Antibloqueo de Frenos).</p>',
+													'height' => 'height: 40px;'
 												),
 												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Rine: pintado en color “Gun Metalic".</p>'
+													'class' => '',
+													'title' => '<p>ABS (Sistema Antibloqueo de Frenos).</p>',
+													'height' => 'height: 40px;'
 												),
 												'fourth' => array(
-													'class' => 'fourth',
-													'title' => '<p>Rines: Acero de 15".</p>'
+													'class' => 'last',
+													'title' => '<p>ABS (Sistema Antibloqueo de Frenos).</p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -2570,19 +2639,23 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Dirección Eléctricamente Asistida (EPS).</p>'
+													'title' => '<p>Asistencia de frenado.</p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Dirección Eléctricamente Asistida (EPS).</p>'
+													'class' => '',
+													'title' => '<p>Asistencia de frenado.</p>',
+													'height' => 'height: 40px;'
 												),
 												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Dirección Eléctricamente Asistida (EPS).</p>'
+													'class' => '',
+													'title' => '<p>Asistencia de frenado.</p>',
+													'height' => 'height: 40px;'
 												),
 												'fourth' => array(
-													'class' => 'fourth',
-													'title' => '<p>Dirección Eléctricamente Asistida (EPS).</p>'
+													'class' => 'last',
+													'title' => '<p>Asistencia de frenado.</p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -2592,19 +2665,23 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Suspensión delantera: McPherson.</p>'
+													'title' => '<p>Rines: Aluminio de 16".</p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Suspensión delantera: McPherson.</p>'
+													'class' => '',
+													'title' => '<p>Rines: Aluminio de 16".</p>',
+													'height' => 'height: 40px;'
 												),
 												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Suspensión delantera: McPherson.</p>'
+													'class' => '',
+													'title' => '<p>Rine: pintado en color “Gun Metalic".</p>',
+													'height' => 'height: 40px;'
 												),
 												'fourth' => array(
-													'class' => 'fourth',
-													'title' => '<p>Suspensión delantera: McPherson.</p>'
+													'class' => 'last',
+													'title' => '<p>Rines: Acero de 15".</p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -2614,19 +2691,23 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Suspensión trasera: Eje rígido.</p>'
+													'title' => '<p>Dirección Eléctricamente Asistida (EPS).</p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Suspensión trasera: Eje rígido.</p>'
+													'class' => '',
+													'title' => '<p>Dirección Eléctricamente Asistida (EPS).</p>',
+													'height' => 'height: 40px;'
 												),
 												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Suspensión trasera: Eje rígido.</p>'
+													'class' => '',
+													'title' => '<p>Dirección Eléctricamente Asistida (EPS).</p>',
+													'height' => 'height: 40px;'
 												),
 												'fourth' => array(
-													'class' => 'fourth',
-													'title' => '<p>Suspensión trasera: Eje rígido.</p>'
+													'class' => 'last',
+													'title' => '<p>Dirección Eléctricamente Asistida (EPS).</p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -2636,19 +2717,23 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Controles de audio en el volante.</p>'
+													'title' => '<p>Suspensión delantera: McPherson.</p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Controles de audio y velocidad crucero en el volante.</p>'
+													'class' => '',
+													'title' => '<p>Suspensión delantera: McPherson.</p>',
+													'height' => 'height: 40px;'
 												),
 												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Controles de audio y velocidad crucero en el volante.</p>'
+													'class' => '',
+													'title' => '<p>Suspensión delantera: McPherson.</p>',
+													'height' => 'height: 40px;'
 												),
 												'fourth' => array(
-													'class' => 'fourth',
-													'title' => '<p></p>'
+													'class' => 'last',
+													'title' => '<p>Suspensión delantera: McPherson.</p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -2658,19 +2743,75 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Sistema de audio AM / FM / CD / MP3.</p>'
+													'title' => '<p>Suspensión trasera: Eje rígido.</p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Sistema de audio AM / FM / CD / MP3.</p>'
+													'class' => '',
+													'title' => '<p>Suspensión trasera: Eje rígido.</p>',
+													'height' => 'height: 40px;'
 												),
 												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Sistema de audio AM / FM / CD / MP3.</p>'
+													'class' => '',
+													'title' => '<p>Suspensión trasera: Eje rígido.</p>',
+													'height' => 'height: 40px;'
 												),
 												'fourth' => array(
-													'class' => 'fourth',
-													'title' => '<p></p>'
+													'class' => 'last',
+													'title' => '<p>Suspensión trasera: Eje rígido.</p>',
+													'height' => 'height: 40px;'
+												)
+											)
+										),
+										array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Controles de audio en el volante.</p>',
+													'height' => 'height: 60px;'
+												),
+												'second' => array(
+													'class' => '',
+													'title' => '<p>Controles de audio y velocidad crucero en el volante.</p>',
+													'height' => 'height: 60px;'
+												),
+												'third' => array(
+													'class' => '',
+													'title' => '<p>Controles de audio y velocidad crucero en el volante.</p>',
+													'height' => 'height: 60px;'
+												),
+												'fourth' => array(
+													'class' => 'last',
+													'title' => '<p></p>',
+													'height' => 'height: 60px;'
+												)
+											)
+										),
+										array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Sistema de audio AM / FM / CD / MP3.</p>',
+													'height' => 'height: 40px;'
+												),
+												'second' => array(
+													'class' => '',
+													'title' => '<p>Sistema de audio AM / FM / CD / MP3.</p>',
+													'height' => 'height: 40px;'
+												),
+												'third' => array(
+													'class' => '',
+													'title' => '<p>Sistema de audio AM / FM / CD / MP3.</p>',
+													'height' => 'height: 40px;'
+												),
+												'fourth' => array(
+													'class' => 'last',
+													'title' => '<p></p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -2680,19 +2821,23 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Conexión USB.</p>'
+													'title' => '<p>Conexión USB.</p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Conexión USB.</p>'
+													'class' => '',
+													'title' => '<p>Conexión USB.</p>',
+													'height' => 'height: 40px;'
 												),
 												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Conexión USB.</p>'
+													'class' => '',
+													'title' => '<p>Conexión USB.</p>',
+													'height' => 'height: 40px;'
 												),
 												'fourth' => array(
-													'class' => 'fourth',
-													'title' => '<p></p>'
+													'class' => 'last',
+													'title' => '<p></p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -2702,19 +2847,23 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p>Conexión Bluetooth&#174;</p>'
+													'title' => '<p>Conexión Bluetooth&#174;</p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Frenos de disco en las cuatro ruedas.</p>'
+													'class' => '',
+													'title' => '<p>Frenos de disco en las cuatro ruedas.</p>',
+													'height' => 'height: 40px;'
 												),
 												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Frenos de disco en las cuatro ruedas.</p>'
+													'class' => '',
+													'title' => '<p>Frenos de disco en las cuatro ruedas.</p>',
+													'height' => 'height: 40px;'
 												),
 												'fourth' => array(
-													'class' => 'fourth',
-													'title' => '<p></p>'
+													'class' => 'last',
+													'title' => '<p></p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -2724,19 +2873,23 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p></p>'
+													'title' => '<p></p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Botón de arranque (Keyless start).</p>'
+													'class' => '',
+													'title' => '<p>Botón de arranque (Keyless start).</p>',
+													'height' => 'height: 40px;'
 												),
 												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Botón de arranque (Keyless start).</p>'
+													'class' => '',
+													'title' => '<p>Botón de arranque (Keyless start).</p>',
+													'height' => 'height: 40px;'
 												),
 												'fourth' => array(
-													'class' => 'fourth',
-													'title' => '<p></p>'
+													'class' => 'last',
+													'title' => '<p></p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -2746,19 +2899,23 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p></p>'
+													'title' => '<p></p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Aire acondicionado automático.</p>'
+													'class' => '',
+													'title' => '<p>Aire acondicionado automático.</p>',
+													'height' => 'height: 40px;'
 												),
 												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Aire acondicionado automático.</p>'
+													'class' => '',
+													'title' => '<p>Aire acondicionado automático.</p>',
+													'height' => 'height: 40px;'
 												),
 												'fourth' => array(
-													'class' => 'fourth',
-													'title' => '<p></p>'
+													'class' => 'last',
+													'title' => '<p></p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -2768,19 +2925,23 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p></p>'
+													'title' => '<p></p>',
+													'height' => 'height: 60px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Quemacocos eléctrico, corredizo de tres posiciones.</p>'
+													'class' => '',
+													'title' => '<p>Quemacocos eléctrico, corredizo de tres posiciones.</p>',
+													'height' => 'height: 60px;'
 												),
 												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Quemacocos eléctrico, corredizo de tres posiciones.</p>'
+													'class' => '',
+													'title' => '<p>Quemacocos eléctrico, corredizo de tres posiciones.</p>',
+													'height' => 'height: 60px;'
 												),
 												'fourth' => array(
-													'class' => 'fourth',
-													'title' => '<p></p>'
+													'class' => 'last',
+													'title' => '<p></p>',
+													'height' => 'height: 60px;'
 												)
 											)
 										),
@@ -2790,19 +2951,23 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p></p>'
+													'title' => '<p></p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Pantalla Touch de 6.1" WVGA.</p>'
+													'class' => '',
+													'title' => '<p>Pantalla Touch de 6.1" WVGA.</p>',
+													'height' => 'height: 40px;'
 												),
 												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Pantalla Touch de 6.1" WVGA.</p>'
+													'class' => '',
+													'title' => '<p>Pantalla Touch de 6.1" WVGA.</p>',
+													'height' => 'height: 40px;'
 												),
 												'fourth' => array(
-													'class' => 'fourth',
-													'title' => '<p></p>'
+													'class' => 'last',
+													'title' => '<p></p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -2812,19 +2977,23 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p></p>'
+													'title' => '<p></p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Conexión  Bluetooth&#174;</p>'
+													'class' => '',
+													'title' => '<p>Conexión  Bluetooth&#174;</p>',
+													'height' => 'height: 40px;'
 												),
 												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Conexión  Bluetooth&#174;</p>'
+													'class' => '',
+													'title' => '<p>Conexión  Bluetooth&#174;</p>',
+													'height' => 'height: 40px;'
 												),
 												'fourth' => array(
-													'class' => 'fourth',
-													'title' => '<p></p>'
+													'class' => 'last',
+													'title' => '<p></p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -2834,19 +3003,23 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p></p>'
+													'title' => '<p></p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Luces de circulación diurna (DRL).</p>'
+													'class' => '',
+													'title' => '<p>Luces de circulación diurna (DRL).</p>',
+													'height' => 'height: 40px;'
 												),
 												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Luces de circulación diurna (DRL).</p>'
+													'class' => '',
+													'title' => '<p>Luces de circulación diurna (DRL).</p>',
+													'height' => 'height: 40px;'
 												),
 												'fourth' => array(
-													'class' => 'fourth',
-													'title' => '<p></p>'
+													'class' => 'last',
+													'title' => '<p></p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -2856,19 +3029,23 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p></p>'
+													'title' => '<p></p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Biseles de faros de niebla con luces Led.</p>'
+													'class' => '',
+													'title' => '<p>Biseles de faros de niebla con luces Led.</p>',
+													'height' => 'height: 40px;'
 												),
 												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Biseles de faros de niebla con luces Led.</p>'
+													'class' => '',
+													'title' => '<p>Biseles de faros de niebla con luces Led.</p>',
+													'height' => 'height: 40px;'
 												),
 												'fourth' => array(
-													'class' => 'fourth',
-													'title' => '<p></p>'
+													'class' => 'last',
+													'title' => '<p></p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -2878,19 +3055,49 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p></p>'
+													'title' => '<p></p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p>Luz de freno central en 5ta puerta con Led.</p>'
+													'class' => '',
+													'title' => '<p>Luz de freno central en 5ta puerta con Led.</p>',
+													'height' => 'height: 40px;'
 												),
 												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Luz de freno central en 5ta puerta con Led.</p>'
+													'class' => '',
+													'title' => '<p>Luz de freno central en 5ta puerta con Led.</p>',
+													'height' => 'height: 40px;'
 												),
 												'fourth' => array(
-													'class' => 'fourth',
-													'title' => '<p></p>'
+													'class' => 'last',
+													'title' => '<p></p>',
+													'height' => 'height: 40px;'
+												)
+											)
+										),
+                                        array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p></p>',
+													'height' => 'height: 40px;'
+												),
+												'second' => array(
+													'class' => '',
+													'title' => '<p></p>',
+													'height' => 'height: 40px;'
+												),
+												'third' => array(
+													'class' => '',
+													'title' => '<p>Parrilla cromada.</p>',
+													'height' => 'height: 40px;'
+												),
+												'fourth' => array(
+													'class' => 'last',
+													'title' => '<p></p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -2900,19 +3107,49 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p></p>'
+													'title' => '<p></p>',
+													'height' => 'height: 40px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p></p>'
+													'class' => '',
+													'title' => '<p></p>',
+													'height' => 'height: 40px;'
 												),
 												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Parrilla cromada.</p>'
+													'class' => '',
+													'title' => '<p>Spoiler superior trasero.</p>',
+													'height' => 'height: 40px;'
 												),
 												'fourth' => array(
-													'class' => 'fourth',
-													'title' => '<p></p>'
+													'class' => 'last',
+													'title' => '<p></p>',
+													'height' => 'height: 40px;'
+												)
+											)
+										),
+                                        array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p></p>',
+													'height' => 'height: 40px;'
+												),
+												'second' => array(
+													'class' => '',
+													'title' => '<p></p>',
+													'height' => 'height: 40px;'
+												),
+												'third' => array(
+													'class' => '',
+													'title' => '<p>Asientos con tapicería tipo gamuza/piel.</p>',
+													'height' => 'height: 40px;'
+												),
+												'fourth' => array(
+													'class' => 'last',
+													'title' => '<p></p>',
+													'height' => 'height: 40px;'
 												)
 											)
 										),
@@ -2922,19 +3159,49 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p></p>'
+													'title' => '<p></p>',
+													'height' => 'height: 60px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p></p>'
+													'class' => '',
+													'title' => '<p></p>',
+													'height' => 'height: 60px;'
 												),
 												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Spoiler superior trasero.</p>'
+													'class' => '',
+													'title' => '<p>Costuras claras en asientos, volante y cubierta de palanca de velocidades.</p>',
+													'height' => 'height: 60px;'
 												),
 												'fourth' => array(
-													'class' => 'fourth',
-													'title' => '<p></p>'
+													'class' => 'last',
+													'title' => '<p></p>',
+													'height' => 'height: 60px;'
+												)
+											)
+										),
+                                        array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p></p>',
+													'height' => 'height: 60px;'
+												),
+												'second' => array(
+													'class' => '',
+													'title' => '<p></p>',
+													'height' => 'height: 60px;'
+												),
+												'third' => array(
+													'class' => '',
+													'title' => '<p>Tapicería tipo gamuza en puertas.</p>',
+													'height' => 'height: 60px;'
+												),
+												'fourth' => array(
+													'class' => 'last',
+													'title' => '<p></p>',
+													'height' => 'height: 60px;'
 												)
 											)
 										),
@@ -2944,85 +3211,23 @@
 												'class' => 'light',
 												'first' => array(
 													'class' => 'first',
-													'title' => '<p></p>'
+													'title' => '<p></p>',
+													'height' => 'height: 80px;'
 												),
 												'second' => array(
-													'class' => 'second',
-													'title' => '<p></p>'
+													'class' => '',
+													'title' => '<p></p>',
+													'height' => 'height: 80px;'
 												),
 												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Asientos con tapicería tipo gamuza/piel.</p>'
+													'class' => '',
+													'title' => '<p>Estéreo Pioneer AVH-X8850BT con pantalla touch a color de 7" (panel desmontable).</p>',
+													'height' => 'height: 80px;'
 												),
 												'fourth' => array(
-													'class' => 'fourth',
-													'title' => '<p></p>'
-												)
-											)
-										),
-                                        array(
-											'class' => 'light',
-											'cell' => array(
-												'class' => 'light',
-												'first' => array(
-													'class' => 'first',
-													'title' => '<p></p>'
-												),
-												'second' => array(
-													'class' => 'second',
-													'title' => '<p></p>'
-												),
-												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Costuras claras en asientos, volante y cubierta de '
-												),
-												'fourth' => array(
-													'class' => 'fourth',
-													'title' => '<p></p>'
-												)
-											)
-										),
-                                        array(
-											'class' => 'light',
-											'cell' => array(
-												'class' => 'light',
-												'first' => array(
-													'class' => 'first',
-													'title' => '<p></p>'
-												),
-												'second' => array(
-													'class' => 'second',
-													'title' => '<p></p>'
-												),
-												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Tapicería tipo gamuza en puertas.</p>'
-												),
-												'fourth' => array(
-													'class' => 'fourth',
-													'title' => '<p></p>'
-												)
-											)
-										),
-                                        array(
-											'class' => 'light',
-											'cell' => array(
-												'class' => 'light',
-												'first' => array(
-													'class' => 'first',
-													'title' => '<p></p>'
-												),
-												'second' => array(
-													'class' => 'second',
-													'title' => '<p></p>'
-												),
-												'third' => array(
-													'class' => 'third',
-													'title' => '<p>Estéreo Pioneer AVH-X8850BT con pantalla touch a color '
-												),
-												'fourth' => array(
-													'class' => 'fourth',
-													'title' => '<p></p>'
+													'class' => 'last',
+													'title' => '<p></p>',
+													'height' => 'height: 80px;'
 												)
 											)
 										)
@@ -3035,7 +3240,7 @@
 									'ga' => 'ficha-swift-sport',
 									'href' => 'catalogo-swift-2017.pdf'
 								),
-							),
+							)
 						)
 					),
 					'mantenimieto' => array(
@@ -4060,17 +4265,17 @@
 									)
 								),
 								'event' => array(
-									'ga' => 'ficha-swift-sport',
-									'href' => 'catalogo-swift-2017.pdf'
+									'ga' => 'ficha_grand-vitara',
+									'href' => 'catalogo-kizashi-2016.pdf'
 								)
-							),
+							)
 						)
 					),
 					'mantenimieto' => array(
 						'main' => array(
-							'image' => 'swift-sport.png',
-							'key' => 'swift-sport',
-							'name' => 'Swift Sport',
+							'image' => 'kizashi.png',
+							'key' => 'kizashi',
+							'name' => 'Kizashi',
 							'maintenance_prices' => array(
 								'section_maintenance_prices' => array(
 									'title' => 'PRECIOS DE MANTENIMIENTO'
@@ -4389,7 +4594,7 @@
 						'main' => array(
 							'section_gallery' => array(
 								'title' => 'Accesorios',
-								'description' => 'Aerodinámico y divertido para ti que buscas diseño y agilidad en un solo auto.'
+								'description' => '"Algo grande está por venir". Imponente diseño con finos acabados que roban miradas.'
 							),
 							'grid' => array(
 								'boxes' => array(
@@ -4496,19 +4701,3943 @@
 								)
 							),
 							'event' => array(
-								'ga' => 'Accesorios_swift',
-								'href' => 'swift.pdf'
+								'ga' => 'Accesorios_kizashi',
+								'href' => 'kizashi.pdf'
 							)
 						)
 					)
 				),
 				'grand-vitara' => array(
+					'key' => 'grand-vitara',
+					'name' => 'Grand Vitara',
+					'id' => '5',
+					'inicio' => array(
+						'main' => array(
+							'image' => 'grand-vitara.png',
+							'title' => 'Grand Vitara 2017',
+							'slogan' => 'Experimenta libertad.',
+							'price' => 'Seguridad, control y poder. El balance perfecto en una SUV.'
+						)
+					),
+					'caracteristicas' => array(
+						'main' => array(
+							'section_features' => array(
+								'title' => 'Características',
+								'description' => 'Detalles que hacen de un auto una experiencia'
+							),
+							'specifications' => array(
+								'banner' => array(
+									array(
+										'image' => 'grand-vitara-2013-aire-acondicionado.jpg',
+										'title' => 'Aire acondicionado automático',
+										'description' => 'Prográmalo para tener siempre la temperatura deseada sin importar los cambios de clima exterior.'
+									),
+									array(
+										'image' => 'grand-vitara-2013-quemacocos.jpg',
+										'title' => 'Quemacocos',
+										'description' => 'Eléctrico de 3 posiciones con cubierta deslizable interior. Vive la libertad en todo momento desde el interior de tu Grand Vitara. *Sólo para GLS y 4X4.'
+									),
+									array(
+										'image' => 'grand-vitara-2013-traccion-trasera.jpg',
+										'title' => 'Tracción trasera',
+										'description' => 'Capacidad de arrastre de 1,360 kg. La fuerza necesaria para lograr cualquier objetivo.'
+									),
+									array(
+										'image' => 'grand-vitara-2013-navegacion.jpg',
+										'title' => 'Sistema de navegación',
+										'description' => 'Pantalla táctil de 6.1” con reconocimiento de voz para llegar a tu destino sin contratiempos. *Sólo para GLS y 4X4.'
+									),
+									array(
+										'image' => 'grand-vitara-2013-rines-18.jpg',
+										'title' => 'Rines de 18”',
+										'description' => 'Brindan la altura necesaria para recorrer cualquier camino con total confianza.'
+									),
+									array(
+										'image' => 'grand-vitara-2013-keyless-start.jpg',
+										'title' => 'Keyless Start & Entry',
+										'description' => 'No tendrás que insertar la llave para abrir ni encender tu auto. Basta con tenerla contigo y presionar el botón correspondiente para disfrutar tu auto. *Sólo para GLS y 4X4'
+									)
+								)
+							)
+						)
+					),
+					'galeria' => array(
+						'main' => array(
+							'section_gallery' => array(
+								'title' => 'Galería',
+								'description' => 'Experimenta libertad.'
+							),
+							'grid' => array(
+								'boxes' => array(
+									array(
+										'class' => 'box-1',
+										'image' => 'box-1.png',
+										'mask' => array(
+											'class' => 'interior',
+											'href' => 'foto-07.png',
+										)
+									),
+									array(
+										'class' => 'box-2',
+										'image' => 'box-2.png',
+										'mask' => array(
+											'class' => 'interior',
+											'href' => 'foto-06.png',
+										)
+									),
+									array(
+										'class' => 'box-3',
+										'image' => 'box-3.png',
+										'mask' => array(
+											'class' => 'interior',
+											'href' => 'foto-04.png',
+										)
+									),
+									array(
+										'class' => 'box-4',
+										'image' => 'box-4.png',
+										'mask' => array(
+											'class' => 'exterior',
+											'href' => 'foto-10.png',
+										)
+									),
+									array(
+										'class' => 'box-5',
+										'image' => 'box-5.png',
+										'mask' => array(
+											'class' => 'exterior',
+											'href' => 'foto-05.png',
+										)
+									),
+									array(
+										'class' => 'box-6',
+										'image' => 'box-6.png',
+										'mask' => array(
+											'class' => 'exterior',
+											'href' => 'foto-02.png',
+										)
+									),
+									array(
+										'class' => 'box-7',
+										'image' => 'box-7.png',
+										'mask' => array(
+											'class' => 'interior',
+											'href' => 'foto-08.png',
+										)
+									),
+									array(
+										'class' => 'box-8',
+										'image' => 'box-8.png',
+										'mask' => array(
+											'class' => 'exterior',
+											'href' => 'foto-09.png',
+										)
+									)
+								),
+								'fancybox' => array(
+									'int' => array(
+										array(
+											'group' => 'interior',
+											'img' => 'foto-01-mini.png',
+											'href' => 'foto-01.png'
+										),
+										array(
+											'group' => 'interior',
+											'img' => 'foto-04-mini.png',
+											'href' => 'foto-04.png'
+										),
+										array(
+											'group' => 'interior',
+											'img' => 'foto-06-mini.png',
+											'href' => 'foto-06.png'
+										),
+										array(
+											'group' => 'interior',
+											'img' => 'foto-07-mini.png',
+											'href' => 'foto-07.png'
+										)
+									),
+									'ext' => array(
+										array(
+											'group' => 'exterior',
+											'img' => 'foto-02-mini.png',
+											'href' => 'foto-02.png'
+										),
+										array(
+											'group' => 'exterior',
+											'img' => 'foto-03-mini.png',
+											'href' => 'foto-03.png'
+										),
+										array(
+											'group' => 'exterior',
+											'img' => 'foto-05-mini.png',
+											'href' => 'foto-05.png'
+										),
+										array(
+											'group' => 'exterior',
+											'img' => 'foto-08-mini.png',
+											'href' => 'foto-08.png'
+										),
+										array(
+											'group' => 'exterior',
+											'img' => 'foto-09-mini.png',
+											'href' => 'foto-09.png'
+										),
+										array(
+											'group' => 'exterior',
+											'img' => 'foto-10-mini.png',
+											'href' => 'foto-10.png'
+										)
+									)
+								)
+							)
+						)
+					),
+					'precios' => array(
+						'main' => array(
+							'section_prices' => array(
+								'title' => 'VERSIONES Y PRECIOS SUGERIDOS',
+								'description' => 'Detalles que hacen de un auto una experiencia.'
+							),
+							'model_prices' => array(
+								'columns' => '1',
+								'head' => array(
+									'row' => array(
+										'class' => 'dark'
+									),
+									'col' => array(
+										'class' => '1'
+									),
+									'cell' => array(
+										'class' => 'light',
+										'first' => array(
+											'class' => 'last first',
+											'image' => 'kizashi-special.png',
+											'title' => 'Kizashi Edición Especial'
+										)
+									)
+								),
+								'body' => array(
+									'row' => array(
+										array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'price' => array(
+														'class' => 'price'
+													),
+													'class' => 'first',
+													'title' => '<p><span>2016 $374,500.00</span></p>'
+												)
+											)
+										),
+										array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Motor: 4 cilindros, 2.4 litros VVT, 16 válvulas.</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Transmisión CVT.</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Potencia neta (hp@rpm): 176 hp@6,500 rpm.</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Rines: Nuevo diseño de 18".</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Aire acondicionado automático de doble zona.</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Botón de arranque (Keyless start).</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Controles de audio y velocidad crucero iluminados en el volante.</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Dirección Eléctricamente Asistida, sensible a la velocidad (EPS).</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Sistema Antibloqueo de Frenos (ABS).</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Distribución Electrónica de Fuerza de Frenado (EBD).</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Programa Electrónico de Estabilidad (ESP® ).</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Luces de circulación diurna (DRL).</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Pantalla touch de 6.1" WVGA.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Bolsas de aire frontales (x2), laterales delanteras y traseras (x4) y tipo cortina (x2).</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Faros de niebla delanteros.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Asistencia de frenado.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Frenos de disco en las 4 ruedas con pastillas de freno Akebono®.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Palancas de cambio de velocidades en el volante (Paddle Shifter).</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Suspensión delantera: McPherson.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Suspensión trasera: Multilink.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Sensor de reversa con cámara integrada.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Sistema de manos libres Bluetooth®.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Quemacocos eléctrico con cubierta interna deslizable.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Asientos cubiertos con piel.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Asientos delanteros con ajusre eléctrico de conductor y pasajero.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Nuevo diseño de volante con insertos plateados y piel perforada.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Costuras claras en volante, cubierta de palanca de velocidades y cubierta de freno de estacionamiento.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Nuevo diseño de Fascia con parrilla doble (superior e inferior)</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Biseles cromados para faros de niebla.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Molduras cromadas en los costados y nuevo diseño de estribos.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Spoiler traser para tapa de la cajuela.</p>'
+												)
+											)
+										)
+									),
+									'col' => array(
+										'class' => '1'
+									)
+								),
+								'event' => array(
+									'ga' => 'ficha_grand-vitara',
+									'href' => 'catalogo-kizashi-2016.pdf'
+								)
+							)
+						)
+					),
+					'mantenimiento' => array(
+						'main' => array(
+							'image' => 'kizashi.png',
+							'key' => 'kizashi',
+							'name' => 'Kizashi',
+							'maintenance_prices' => array(
+								'section_maintenance_prices' => array(
+									'title' => 'PRECIOS DE MANTENIMIENTO'
+								),
+								'table' => array(
+									'columns' => '3',
+									'body' => array(
+										'row' => array(
+											array(
+												'id' => '1',
+												'class' => 'dark',
+												'cell' => array(
+													'first' => array(
+														'head_class' => 'maintenance-head title',
+														'col' => 'light',
+														'class' => 'first',
+														'title' => 'KM'
+													),
+													'second' => array(
+														'head_class' => 'maintenance-head title',
+														'col' => 'dark',
+														'class' => '',
+														'title' => 'Meses'
+													),
+													'third' => array(
+														'head_class' => 'maintenance-head title',
+														'col' => 'light',
+														'class' => 'last',
+														'title' => 'Kizashi'
+													)
+												)
+											),
+											array(
+												'id' => '2',
+												'class' => 'light',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '5,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '3'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$1,150.00'
+													)
+												)
+											),
+											array(
+												'id' => '3',
+												'class' => 'dark',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '10,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '6'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$1,285.00'
+													)
+												)
+											),
+											array(
+												'id' => '4',
+												'class' => 'light',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '20,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '12'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$1,815.00'
+													)
+												)
+											),
+											array(
+												'id' => '5',
+												'class' => 'dark',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '30,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '18'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$3,665.00'
+													)
+												)
+											),
+											array(
+												'id' => '6',
+												'class' => 'light',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '40,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '24'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$1,755.00'
+													)
+												)
+											),
+											array(
+												'id' => '7',
+												'class' => 'dark',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '50,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '30'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$2,925.00'
+													)
+												)
+											),
+											array(
+												'id' => '8',
+												'class' => 'light',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '60,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '36'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$1,925.00'
+													)
+												)
+											),
+											array(
+												'id' => '9',
+												'class' => 'dark',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '70,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '42'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$3,355.00'
+													)
+												)
+											),
+											array(
+												'id' => '10',
+												'class' => 'light',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '80,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '48'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$1,845.00'
+													)
+												)
+											),
+											array(
+												'id' => '11',
+												'class' => 'dark',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '90,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '54'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$3,675.00'
+													)
+												)
+											),
+											array(
+												'id' => '12',
+												'class' => 'light',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '100,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '60'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$3,450.00'
+													)
+												)
+											),
+											array(
+												'id' => '13',
+												'class' => 'dark',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '110,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '66'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$1,295.00'
+													)
+												)
+											),
+											array(
+												'id' => '14',
+												'class' => 'light',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '120,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '72'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$1,675.00'
+													)
+												)
+											)
+										),
+										'col' => array(
+											'class' => '3'
+										)
+									)
+								)
+							)
+						)
+					),
+					'accesorios' => array(
+						'main' => array(
+							'section_gallery' => array(
+								'title' => 'Accesorios',
+								'description' => '"Algo grande está por venir". Imponente diseño con finos acabados que roban miradas.'
+							),
+							'grid' => array(
+								'boxes' => array(
+									array(
+										'class' => 'box-1',
+										'image' => 'box-1.png',
+										'mask' => array(
+											'href' => 'foto-01.png',
+											'span' => '1'
+										)
+									),
+									array(
+										'class' => 'box-2',
+										'image' => 'box-2.png',
+										'mask' => array(
+											'href' => 'foto-02.png',
+											'span' => '2'
+										)
+									),
+									array(
+										'class' => 'box-3',
+										'image' => 'box-3.png',
+										'mask' => array(
+											'href' => 'foto-03.png',
+											'span' => '3'
+										)
+									),
+									array(
+										'class' => 'box-4',
+										'image' => 'box-4.png',
+										'mask' => array(
+											'href' => 'foto-04.png',
+											'span' => '4'
+										)
+									),
+									array(
+										'class' => 'box-5',
+										'image' => 'box-5.png',
+										'mask' => array(
+											'href' => 'foto-05.png',
+											'span' => '5'
+										)
+									),
+									array(
+										'class' => 'box-6',
+										'image' => 'box-6.png',
+										'mask' => array(
+											'href' => 'foto-06.png',
+											'span' => '6'
+										)
+									),
+									array(
+										'class' => 'box-7',
+										'image' => 'box-7.png',
+										'mask' => array(
+											'href' => 'foto-07.png',
+											'span' => '7'
+										)
+									),
+									array(
+										'class' => 'box-8',
+										'image' => 'box-8.png',
+										'mask' => array(
+											'href' => 'foto-08.png',
+											'span' => '8'
+										)
+									)
+								),
+								'fancybox' => array(
+									'thumbs' => array(
+										array(
+											'img' => 'foto-01-mini.png',
+											'href' => 'foto-01.png'
+										),
+										array(
+											'img' => 'foto-02-mini.png',
+											'href' => 'foto-02.png'
+										),
+										array(
+											'img' => 'foto-03-mini.png',
+											'href' => 'foto-03.png'
+										),
+										array(
+											'img' => 'foto-04-mini.png',
+											'href' => 'foto-04.png'
+										),
+										array(
+											'img' => 'foto-05-mini.png',
+											'href' => 'foto-05.png'
+										),
+										array(
+											'img' => 'foto-06-mini.png',
+											'href' => 'foto-06.png'
+										),
+										array(
+											'img' => 'foto-07-mini.png',
+											'href' => 'foto-07.png'
+										),
+										array(
+											'img' => 'foto-08-mini.png',
+											'href' => 'foto-08.png'
+										)
+									)
+								)
+							),
+							'event' => array(
+								'ga' => 'Accesorios_kizashi',
+								'href' => 'kizashi.pdf'
+							)
+						)
+					)
 				),
 				's-cross' => array(
+					'key' => 's-cross',
+					'name' => 'S-Cross',
+					'id' => '6',
+					'inicio' => array(
+						'main' => array(
+							'image' => '',
+							'title' => '',
+							'slogan' => '',
+							'price' => ''
+						)
+					),
+					'caracteristicas' => array(
+						'main' => array(
+							'section_features' => array(
+								'title' => 'Características',
+								'description' => ''
+							),
+							'specifications' => array(
+								'banner' => array(
+									array(
+										'image' => '',
+										'title' => '',
+										'description' => ''
+									),
+									array(
+										'image' => '',
+										'title' => '',
+										'description' => ''
+									),
+									array(
+										'image' => '',
+										'title' => '',
+										'description' => ''
+									),
+									array(
+										'image' => '',
+										'title' => '',
+										'description' => ''
+									),
+									array(
+										'image' => '',
+										'title' => '',
+										'description' => ''
+									),
+									array(
+										'image' => '',
+										'title' => '',
+										'description' => ''
+									)
+								)
+							)
+						)
+					),
+					'galeria' => array(
+						'main' => array(
+							'section_gallery' => array(
+								'title' => 'Galería',
+								'description' => 'Experimenta evolución. Distinción a primera vista.'
+							),
+							'grid' => array(
+								'boxes' => array(
+									array(
+										'class' => 'box-1',
+										'image' => 'box-1.png',
+										'mask' => array(
+											'class' => 'interior',
+											'href' => 'foto-07.png',
+										)
+									),
+									array(
+										'class' => 'box-2',
+										'image' => 'box-2.png',
+										'mask' => array(
+											'class' => 'interior',
+											'href' => 'foto-06.png',
+										)
+									),
+									array(
+										'class' => 'box-3',
+										'image' => 'box-3.png',
+										'mask' => array(
+											'class' => 'interior',
+											'href' => 'foto-04.png',
+										)
+									),
+									array(
+										'class' => 'box-4',
+										'image' => 'box-4.png',
+										'mask' => array(
+											'class' => 'exterior',
+											'href' => 'foto-10.png',
+										)
+									),
+									array(
+										'class' => 'box-5',
+										'image' => 'box-5.png',
+										'mask' => array(
+											'class' => 'exterior',
+											'href' => 'foto-05.png',
+										)
+									),
+									array(
+										'class' => 'box-6',
+										'image' => 'box-6.png',
+										'mask' => array(
+											'class' => 'exterior',
+											'href' => 'foto-02.png',
+										)
+									),
+									array(
+										'class' => 'box-7',
+										'image' => 'box-7.png',
+										'mask' => array(
+											'class' => 'interior',
+											'href' => 'foto-08.png',
+										)
+									),
+									array(
+										'class' => 'box-8',
+										'image' => 'box-8.png',
+										'mask' => array(
+											'class' => 'exterior',
+											'href' => 'foto-09.png',
+										)
+									)
+								),
+								'fancybox' => array(
+									'int' => array(
+										array(
+											'group' => 'interior',
+											'img' => 'foto-01-mini.png',
+											'href' => 'foto-01.png'
+										),
+										array(
+											'group' => 'interior',
+											'img' => 'foto-04-mini.png',
+											'href' => 'foto-04.png'
+										),
+										array(
+											'group' => 'interior',
+											'img' => 'foto-06-mini.png',
+											'href' => 'foto-06.png'
+										),
+										array(
+											'group' => 'interior',
+											'img' => 'foto-07-mini.png',
+											'href' => 'foto-07.png'
+										)
+									),
+									'ext' => array(
+										array(
+											'group' => 'exterior',
+											'img' => 'foto-02-mini.png',
+											'href' => 'foto-02.png'
+										),
+										array(
+											'group' => 'exterior',
+											'img' => 'foto-03-mini.png',
+											'href' => 'foto-03.png'
+										),
+										array(
+											'group' => 'exterior',
+											'img' => 'foto-05-mini.png',
+											'href' => 'foto-05.png'
+										),
+										array(
+											'group' => 'exterior',
+											'img' => 'foto-08-mini.png',
+											'href' => 'foto-08.png'
+										),
+										array(
+											'group' => 'exterior',
+											'img' => 'foto-09-mini.png',
+											'href' => 'foto-09.png'
+										),
+										array(
+											'group' => 'exterior',
+											'img' => 'foto-10-mini.png',
+											'href' => 'foto-10.png'
+										)
+									)
+								)
+							)
+						)
+					),
+					'precios' => array(
+						'main' => array(
+							'section_prices' => array(
+								'title' => 'VERSIONES Y PRECIOS SUGERIDOS',
+								'description' => 'Detalles que hacen de un auto una experiencia.'
+							),
+							'model_prices' => array(
+								'columns' => '1',
+								'head' => array(
+									'row' => array(
+										'class' => 'dark'
+									),
+									'col' => array(
+										'class' => '1'
+									),
+									'cell' => array(
+										'class' => 'light',
+										'first' => array(
+											'class' => 'last first',
+											'image' => 'kizashi-special.png',
+											'title' => 'Kizashi Edición Especial'
+										)
+									)
+								),
+								'body' => array(
+									'row' => array(
+										array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'price' => array(
+														'class' => 'price'
+													),
+													'class' => 'first',
+													'title' => '<p><span>2016 $374,500.00</span></p>'
+												)
+											)
+										),
+										array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Motor: 4 cilindros, 2.4 litros VVT, 16 válvulas.</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Transmisión CVT.</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Potencia neta (hp@rpm): 176 hp@6,500 rpm.</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Rines: Nuevo diseño de 18".</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Aire acondicionado automático de doble zona.</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Botón de arranque (Keyless start).</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Controles de audio y velocidad crucero iluminados en el volante.</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Dirección Eléctricamente Asistida, sensible a la velocidad (EPS).</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Sistema Antibloqueo de Frenos (ABS).</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Distribución Electrónica de Fuerza de Frenado (EBD).</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Programa Electrónico de Estabilidad (ESP® ).</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Luces de circulación diurna (DRL).</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Pantalla touch de 6.1" WVGA.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Bolsas de aire frontales (x2), laterales delanteras y traseras (x4) y tipo cortina (x2).</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Faros de niebla delanteros.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Asistencia de frenado.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Frenos de disco en las 4 ruedas con pastillas de freno Akebono®.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Palancas de cambio de velocidades en el volante (Paddle Shifter).</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Suspensión delantera: McPherson.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Suspensión trasera: Multilink.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Sensor de reversa con cámara integrada.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Sistema de manos libres Bluetooth®.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Quemacocos eléctrico con cubierta interna deslizable.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Asientos cubiertos con piel.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Asientos delanteros con ajusre eléctrico de conductor y pasajero.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Nuevo diseño de volante con insertos plateados y piel perforada.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Costuras claras en volante, cubierta de palanca de velocidades y cubierta de freno de estacionamiento.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Nuevo diseño de Fascia con parrilla doble (superior e inferior)</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Biseles cromados para faros de niebla.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Molduras cromadas en los costados y nuevo diseño de estribos.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Spoiler traser para tapa de la cajuela.</p>'
+												)
+											)
+										)
+									),
+									'col' => array(
+										'class' => '1'
+									)
+								),
+								'event' => array(
+									'ga' => 'ficha_grand-vitara',
+									'href' => 'catalogo-kizashi-2016.pdf'
+								)
+							)
+						)
+					),
+					'mantenimiento' => array(
+						'main' => array(
+							'image' => 'kizashi.png',
+							'key' => 'kizashi',
+							'name' => 'Kizashi',
+							'maintenance_prices' => array(
+								'section_maintenance_prices' => array(
+									'title' => 'PRECIOS DE MANTENIMIENTO'
+								),
+								'table' => array(
+									'columns' => '3',
+									'body' => array(
+										'row' => array(
+											array(
+												'id' => '1',
+												'class' => 'dark',
+												'cell' => array(
+													'first' => array(
+														'head_class' => 'maintenance-head title',
+														'col' => 'light',
+														'class' => 'first',
+														'title' => 'KM'
+													),
+													'second' => array(
+														'head_class' => 'maintenance-head title',
+														'col' => 'dark',
+														'class' => '',
+														'title' => 'Meses'
+													),
+													'third' => array(
+														'head_class' => 'maintenance-head title',
+														'col' => 'light',
+														'class' => 'last',
+														'title' => 'Kizashi'
+													)
+												)
+											),
+											array(
+												'id' => '2',
+												'class' => 'light',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '5,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '3'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$1,150.00'
+													)
+												)
+											),
+											array(
+												'id' => '3',
+												'class' => 'dark',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '10,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '6'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$1,285.00'
+													)
+												)
+											),
+											array(
+												'id' => '4',
+												'class' => 'light',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '20,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '12'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$1,815.00'
+													)
+												)
+											),
+											array(
+												'id' => '5',
+												'class' => 'dark',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '30,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '18'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$3,665.00'
+													)
+												)
+											),
+											array(
+												'id' => '6',
+												'class' => 'light',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '40,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '24'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$1,755.00'
+													)
+												)
+											),
+											array(
+												'id' => '7',
+												'class' => 'dark',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '50,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '30'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$2,925.00'
+													)
+												)
+											),
+											array(
+												'id' => '8',
+												'class' => 'light',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '60,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '36'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$1,925.00'
+													)
+												)
+											),
+											array(
+												'id' => '9',
+												'class' => 'dark',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '70,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '42'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$3,355.00'
+													)
+												)
+											),
+											array(
+												'id' => '10',
+												'class' => 'light',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '80,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '48'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$1,845.00'
+													)
+												)
+											),
+											array(
+												'id' => '11',
+												'class' => 'dark',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '90,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '54'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$3,675.00'
+													)
+												)
+											),
+											array(
+												'id' => '12',
+												'class' => 'light',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '100,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '60'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$3,450.00'
+													)
+												)
+											),
+											array(
+												'id' => '13',
+												'class' => 'dark',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '110,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '66'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$1,295.00'
+													)
+												)
+											),
+											array(
+												'id' => '14',
+												'class' => 'light',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '120,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '72'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$1,675.00'
+													)
+												)
+											)
+										),
+										'col' => array(
+											'class' => '3'
+										)
+									)
+								)
+							)
+						)
+					),
+					'accesorios' => array(
+						'main' => array(
+							'section_gallery' => array(
+								'title' => 'Accesorios',
+								'description' => '"Algo grande está por venir". Imponente diseño con finos acabados que roban miradas.'
+							),
+							'grid' => array(
+								'boxes' => array(
+									array(
+										'class' => 'box-1',
+										'image' => 'box-1.png',
+										'mask' => array(
+											'href' => 'foto-01.png',
+											'span' => '1'
+										)
+									),
+									array(
+										'class' => 'box-2',
+										'image' => 'box-2.png',
+										'mask' => array(
+											'href' => 'foto-02.png',
+											'span' => '2'
+										)
+									),
+									array(
+										'class' => 'box-3',
+										'image' => 'box-3.png',
+										'mask' => array(
+											'href' => 'foto-03.png',
+											'span' => '3'
+										)
+									),
+									array(
+										'class' => 'box-4',
+										'image' => 'box-4.png',
+										'mask' => array(
+											'href' => 'foto-04.png',
+											'span' => '4'
+										)
+									),
+									array(
+										'class' => 'box-5',
+										'image' => 'box-5.png',
+										'mask' => array(
+											'href' => 'foto-05.png',
+											'span' => '5'
+										)
+									),
+									array(
+										'class' => 'box-6',
+										'image' => 'box-6.png',
+										'mask' => array(
+											'href' => 'foto-06.png',
+											'span' => '6'
+										)
+									),
+									array(
+										'class' => 'box-7',
+										'image' => 'box-7.png',
+										'mask' => array(
+											'href' => 'foto-07.png',
+											'span' => '7'
+										)
+									),
+									array(
+										'class' => 'box-8',
+										'image' => 'box-8.png',
+										'mask' => array(
+											'href' => 'foto-08.png',
+											'span' => '8'
+										)
+									)
+								),
+								'fancybox' => array(
+									'thumbs' => array(
+										array(
+											'img' => 'foto-01-mini.png',
+											'href' => 'foto-01.png'
+										),
+										array(
+											'img' => 'foto-02-mini.png',
+											'href' => 'foto-02.png'
+										),
+										array(
+											'img' => 'foto-03-mini.png',
+											'href' => 'foto-03.png'
+										),
+										array(
+											'img' => 'foto-04-mini.png',
+											'href' => 'foto-04.png'
+										),
+										array(
+											'img' => 'foto-05-mini.png',
+											'href' => 'foto-05.png'
+										),
+										array(
+											'img' => 'foto-06-mini.png',
+											'href' => 'foto-06.png'
+										),
+										array(
+											'img' => 'foto-07-mini.png',
+											'href' => 'foto-07.png'
+										),
+										array(
+											'img' => 'foto-08-mini.png',
+											'href' => 'foto-08.png'
+										)
+									)
+								)
+							),
+							'event' => array(
+								'ga' => 'Accesorios_kizashi',
+								'href' => 'kizashi.pdf'
+							)
+						)
+					)
 				),
 				'ciaz' => array(
+					'key' => 'ciaz',
+					'name' => 'Ciaz',
+					'id' => '7',
+					'inicio' => array(
+						'main' => array(
+							'image' => '',
+							'title' => '',
+							'slogan' => '',
+							'price' => ''
+						)
+					),
+					'caracteristicas' => array(
+						'main' => array(
+							'section_features' => array(
+								'title' => 'Características',
+								'description' => 'Detalles que hacen de un auto una experiencia.'
+							),
+							'specifications' => array(
+								'banner' => array(
+									array(
+										'image' => '',
+										'title' => '',
+										'description' => ''
+									),
+									array(
+										'image' => '',
+										'title' => '',
+										'description' => ''
+									),
+									array(
+										'image' => '',
+										'title' => '',
+										'description' => ''
+									),
+									array(
+										'image' => '',
+										'title' => '',
+										'description' => ''
+									),
+									array(
+										'image' => '',
+										'title' => '',
+										'description' => ''
+									),
+									array(
+										'image' => '',
+										'title' => '',
+										'description' => ''
+									)
+								)
+							)
+						)
+					),
+					'galeria' => array(
+						'main' => array(
+							'section_gallery' => array(
+								'title' => 'Galería',
+								'description' => 'Experimenta evolución. Distinción a primera vista.'
+							),
+							'grid' => array(
+								'boxes' => array(
+									array(
+										'class' => 'box-1',
+										'image' => 'box-1.png',
+										'mask' => array(
+											'class' => 'interior',
+											'href' => 'foto-07.png',
+										)
+									),
+									array(
+										'class' => 'box-2',
+										'image' => 'box-2.png',
+										'mask' => array(
+											'class' => 'interior',
+											'href' => 'foto-06.png',
+										)
+									),
+									array(
+										'class' => 'box-3',
+										'image' => 'box-3.png',
+										'mask' => array(
+											'class' => 'interior',
+											'href' => 'foto-04.png',
+										)
+									),
+									array(
+										'class' => 'box-4',
+										'image' => 'box-4.png',
+										'mask' => array(
+											'class' => 'exterior',
+											'href' => 'foto-10.png',
+										)
+									),
+									array(
+										'class' => 'box-5',
+										'image' => 'box-5.png',
+										'mask' => array(
+											'class' => 'exterior',
+											'href' => 'foto-05.png',
+										)
+									),
+									array(
+										'class' => 'box-6',
+										'image' => 'box-6.png',
+										'mask' => array(
+											'class' => 'exterior',
+											'href' => 'foto-02.png',
+										)
+									),
+									array(
+										'class' => 'box-7',
+										'image' => 'box-7.png',
+										'mask' => array(
+											'class' => 'interior',
+											'href' => 'foto-08.png',
+										)
+									),
+									array(
+										'class' => 'box-8',
+										'image' => 'box-8.png',
+										'mask' => array(
+											'class' => 'exterior',
+											'href' => 'foto-09.png',
+										)
+									)
+								),
+								'fancybox' => array(
+									'int' => array(
+										array(
+											'group' => 'interior',
+											'img' => 'foto-01-mini.png',
+											'href' => 'foto-01.png'
+										),
+										array(
+											'group' => 'interior',
+											'img' => 'foto-04-mini.png',
+											'href' => 'foto-04.png'
+										),
+										array(
+											'group' => 'interior',
+											'img' => 'foto-06-mini.png',
+											'href' => 'foto-06.png'
+										),
+										array(
+											'group' => 'interior',
+											'img' => 'foto-07-mini.png',
+											'href' => 'foto-07.png'
+										)
+									),
+									'ext' => array(
+										array(
+											'group' => 'exterior',
+											'img' => 'foto-02-mini.png',
+											'href' => 'foto-02.png'
+										),
+										array(
+											'group' => 'exterior',
+											'img' => 'foto-03-mini.png',
+											'href' => 'foto-03.png'
+										),
+										array(
+											'group' => 'exterior',
+											'img' => 'foto-05-mini.png',
+											'href' => 'foto-05.png'
+										),
+										array(
+											'group' => 'exterior',
+											'img' => 'foto-08-mini.png',
+											'href' => 'foto-08.png'
+										),
+										array(
+											'group' => 'exterior',
+											'img' => 'foto-09-mini.png',
+											'href' => 'foto-09.png'
+										),
+										array(
+											'group' => 'exterior',
+											'img' => 'foto-10-mini.png',
+											'href' => 'foto-10.png'
+										)
+									)
+								)
+							)
+						)
+					),
+					'precios' => array(
+						'main' => array(
+							'section_prices' => array(
+								'title' => 'VERSIONES Y PRECIOS SUGERIDOS',
+								'description' => 'Detalles que hacen de un auto una experiencia.'
+							),
+							'model_prices' => array(
+								'columns' => '1',
+								'head' => array(
+									'row' => array(
+										'class' => 'dark'
+									),
+									'col' => array(
+										'class' => '1'
+									),
+									'cell' => array(
+										'class' => 'light',
+										'first' => array(
+											'class' => 'last first',
+											'image' => 'kizashi-special.png',
+											'title' => 'Kizashi Edición Especial'
+										)
+									)
+								),
+								'body' => array(
+									'row' => array(
+										array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'price' => array(
+														'class' => 'price'
+													),
+													'class' => 'first',
+													'title' => '<p><span>2016 $374,500.00</span></p>'
+												)
+											)
+										),
+										array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Motor: 4 cilindros, 2.4 litros VVT, 16 válvulas.</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Transmisión CVT.</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Potencia neta (hp@rpm): 176 hp@6,500 rpm.</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Rines: Nuevo diseño de 18".</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Aire acondicionado automático de doble zona.</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Botón de arranque (Keyless start).</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Controles de audio y velocidad crucero iluminados en el volante.</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Dirección Eléctricamente Asistida, sensible a la velocidad (EPS).</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Sistema Antibloqueo de Frenos (ABS).</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Distribución Electrónica de Fuerza de Frenado (EBD).</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Programa Electrónico de Estabilidad (ESP® ).</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Luces de circulación diurna (DRL).</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Pantalla touch de 6.1" WVGA.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Bolsas de aire frontales (x2), laterales delanteras y traseras (x4) y tipo cortina (x2).</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Faros de niebla delanteros.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Asistencia de frenado.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Frenos de disco en las 4 ruedas con pastillas de freno Akebono®.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Palancas de cambio de velocidades en el volante (Paddle Shifter).</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Suspensión delantera: McPherson.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Suspensión trasera: Multilink.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Sensor de reversa con cámara integrada.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Sistema de manos libres Bluetooth®.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Quemacocos eléctrico con cubierta interna deslizable.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Asientos cubiertos con piel.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Asientos delanteros con ajusre eléctrico de conductor y pasajero.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Nuevo diseño de volante con insertos plateados y piel perforada.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Costuras claras en volante, cubierta de palanca de velocidades y cubierta de freno de estacionamiento.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Nuevo diseño de Fascia con parrilla doble (superior e inferior)</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Biseles cromados para faros de niebla.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Molduras cromadas en los costados y nuevo diseño de estribos.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Spoiler traser para tapa de la cajuela.</p>'
+												)
+											)
+										)
+									),
+									'col' => array(
+										'class' => '1'
+									)
+								),
+								'event' => array(
+									'ga' => 'ficha_grand-vitara',
+									'href' => 'catalogo-kizashi-2016.pdf'
+								)
+							)
+						)
+					),
+					'mantenimiento' => array(
+						'main' => array(
+							'image' => 'kizashi.png',
+							'key' => 'kizashi',
+							'name' => 'Kizashi',
+							'maintenance_prices' => array(
+								'section_maintenance_prices' => array(
+									'title' => 'PRECIOS DE MANTENIMIENTO'
+								),
+								'table' => array(
+									'columns' => '3',
+									'body' => array(
+										'row' => array(
+											array(
+												'id' => '1',
+												'class' => 'dark',
+												'cell' => array(
+													'first' => array(
+														'head_class' => 'maintenance-head title',
+														'col' => 'light',
+														'class' => 'first',
+														'title' => 'KM'
+													),
+													'second' => array(
+														'head_class' => 'maintenance-head title',
+														'col' => 'dark',
+														'class' => '',
+														'title' => 'Meses'
+													),
+													'third' => array(
+														'head_class' => 'maintenance-head title',
+														'col' => 'light',
+														'class' => 'last',
+														'title' => 'Kizashi'
+													)
+												)
+											),
+											array(
+												'id' => '2',
+												'class' => 'light',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '5,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '3'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$1,150.00'
+													)
+												)
+											),
+											array(
+												'id' => '3',
+												'class' => 'dark',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '10,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '6'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$1,285.00'
+													)
+												)
+											),
+											array(
+												'id' => '4',
+												'class' => 'light',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '20,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '12'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$1,815.00'
+													)
+												)
+											),
+											array(
+												'id' => '5',
+												'class' => 'dark',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '30,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '18'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$3,665.00'
+													)
+												)
+											),
+											array(
+												'id' => '6',
+												'class' => 'light',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '40,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '24'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$1,755.00'
+													)
+												)
+											),
+											array(
+												'id' => '7',
+												'class' => 'dark',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '50,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '30'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$2,925.00'
+													)
+												)
+											),
+											array(
+												'id' => '8',
+												'class' => 'light',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '60,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '36'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$1,925.00'
+													)
+												)
+											),
+											array(
+												'id' => '9',
+												'class' => 'dark',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '70,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '42'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$3,355.00'
+													)
+												)
+											),
+											array(
+												'id' => '10',
+												'class' => 'light',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '80,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '48'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$1,845.00'
+													)
+												)
+											),
+											array(
+												'id' => '11',
+												'class' => 'dark',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '90,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '54'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$3,675.00'
+													)
+												)
+											),
+											array(
+												'id' => '12',
+												'class' => 'light',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '100,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '60'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$3,450.00'
+													)
+												)
+											),
+											array(
+												'id' => '13',
+												'class' => 'dark',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '110,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '66'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$1,295.00'
+													)
+												)
+											),
+											array(
+												'id' => '14',
+												'class' => 'light',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '120,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '72'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$1,675.00'
+													)
+												)
+											)
+										),
+										'col' => array(
+											'class' => '3'
+										)
+									)
+								)
+							)
+						)
+					),
+					'accesorios' => array(
+						'main' => array(
+							'section_gallery' => array(
+								'title' => 'Accesorios',
+								'description' => '"Algo grande está por venir". Imponente diseño con finos acabados que roban miradas.'
+							),
+							'grid' => array(
+								'boxes' => array(
+									array(
+										'class' => 'box-1',
+										'image' => 'box-1.png',
+										'mask' => array(
+											'href' => 'foto-01.png',
+											'span' => '1'
+										)
+									),
+									array(
+										'class' => 'box-2',
+										'image' => 'box-2.png',
+										'mask' => array(
+											'href' => 'foto-02.png',
+											'span' => '2'
+										)
+									),
+									array(
+										'class' => 'box-3',
+										'image' => 'box-3.png',
+										'mask' => array(
+											'href' => 'foto-03.png',
+											'span' => '3'
+										)
+									),
+									array(
+										'class' => 'box-4',
+										'image' => 'box-4.png',
+										'mask' => array(
+											'href' => 'foto-04.png',
+											'span' => '4'
+										)
+									),
+									array(
+										'class' => 'box-5',
+										'image' => 'box-5.png',
+										'mask' => array(
+											'href' => 'foto-05.png',
+											'span' => '5'
+										)
+									),
+									array(
+										'class' => 'box-6',
+										'image' => 'box-6.png',
+										'mask' => array(
+											'href' => 'foto-06.png',
+											'span' => '6'
+										)
+									),
+									array(
+										'class' => 'box-7',
+										'image' => 'box-7.png',
+										'mask' => array(
+											'href' => 'foto-07.png',
+											'span' => '7'
+										)
+									),
+									array(
+										'class' => 'box-8',
+										'image' => 'box-8.png',
+										'mask' => array(
+											'href' => 'foto-08.png',
+											'span' => '8'
+										)
+									)
+								),
+								'fancybox' => array(
+									'thumbs' => array(
+										array(
+											'img' => 'foto-01-mini.png',
+											'href' => 'foto-01.png'
+										),
+										array(
+											'img' => 'foto-02-mini.png',
+											'href' => 'foto-02.png'
+										),
+										array(
+											'img' => 'foto-03-mini.png',
+											'href' => 'foto-03.png'
+										),
+										array(
+											'img' => 'foto-04-mini.png',
+											'href' => 'foto-04.png'
+										),
+										array(
+											'img' => 'foto-05-mini.png',
+											'href' => 'foto-05.png'
+										),
+										array(
+											'img' => 'foto-06-mini.png',
+											'href' => 'foto-06.png'
+										),
+										array(
+											'img' => 'foto-07-mini.png',
+											'href' => 'foto-07.png'
+										),
+										array(
+											'img' => 'foto-08-mini.png',
+											'href' => 'foto-08.png'
+										)
+									)
+								)
+							),
+							'event' => array(
+								'ga' => 'Accesorios_kizashi',
+								'href' => 'kizashi.pdf'
+							)
+						)
+					)
 				),
 				'nueva-vitara' => array(
+					'key' => 'nueva-vitara',
+					'name' => 'Nueva Vitara',
+					'id' => '8',
+					'inicio' => array(
+						'main' => array(
+							'image' => '',
+							'title' => '',
+							'slogan' => '',
+							'price' => ''
+						)
+					),
+					'caracteristicas' => array(
+						'main' => array(
+							'section_features' => array(
+								'title' => 'Características',
+								'description' => ''
+							),
+							'specifications' => array(
+								'banner' => array(
+									array(
+										'image' => '',
+										'title' => '',
+										'description' => ''
+									),
+									array(
+										'image' => '',
+										'title' => '',
+										'description' => ''
+									),
+									array(
+										'image' => '',
+										'title' => '',
+										'description' => ''
+									),
+									array(
+										'image' => '',
+										'title' => '',
+										'description' => ''
+									),
+									array(
+										'image' => '',
+										'title' => '',
+										'description' => ''
+									),
+									array(
+										'image' => '',
+										'title' => '',
+										'description' => ''
+									)
+								)
+							)
+						)
+					),
+					'galeria' => array(
+						'main' => array(
+							'section_gallery' => array(
+								'title' => 'Galería',
+								'description' => 'Experimenta evolución. Distinción a primera vista.'
+							),
+							'grid' => array(
+								'boxes' => array(
+									array(
+										'class' => 'box-1',
+										'image' => 'box-1.png',
+										'mask' => array(
+											'class' => 'interior',
+											'href' => 'foto-07.png',
+										)
+									),
+									array(
+										'class' => 'box-2',
+										'image' => 'box-2.png',
+										'mask' => array(
+											'class' => 'interior',
+											'href' => 'foto-06.png',
+										)
+									),
+									array(
+										'class' => 'box-3',
+										'image' => 'box-3.png',
+										'mask' => array(
+											'class' => 'interior',
+											'href' => 'foto-04.png',
+										)
+									),
+									array(
+										'class' => 'box-4',
+										'image' => 'box-4.png',
+										'mask' => array(
+											'class' => 'exterior',
+											'href' => 'foto-10.png',
+										)
+									),
+									array(
+										'class' => 'box-5',
+										'image' => 'box-5.png',
+										'mask' => array(
+											'class' => 'exterior',
+											'href' => 'foto-05.png',
+										)
+									),
+									array(
+										'class' => 'box-6',
+										'image' => 'box-6.png',
+										'mask' => array(
+											'class' => 'exterior',
+											'href' => 'foto-02.png',
+										)
+									),
+									array(
+										'class' => 'box-7',
+										'image' => 'box-7.png',
+										'mask' => array(
+											'class' => 'interior',
+											'href' => 'foto-08.png',
+										)
+									),
+									array(
+										'class' => 'box-8',
+										'image' => 'box-8.png',
+										'mask' => array(
+											'class' => 'exterior',
+											'href' => 'foto-09.png',
+										)
+									)
+								),
+								'fancybox' => array(
+									'int' => array(
+										array(
+											'group' => 'interior',
+											'img' => 'foto-01-mini.png',
+											'href' => 'foto-01.png'
+										),
+										array(
+											'group' => 'interior',
+											'img' => 'foto-04-mini.png',
+											'href' => 'foto-04.png'
+										),
+										array(
+											'group' => 'interior',
+											'img' => 'foto-06-mini.png',
+											'href' => 'foto-06.png'
+										),
+										array(
+											'group' => 'interior',
+											'img' => 'foto-07-mini.png',
+											'href' => 'foto-07.png'
+										)
+									),
+									'ext' => array(
+										array(
+											'group' => 'exterior',
+											'img' => 'foto-02-mini.png',
+											'href' => 'foto-02.png'
+										),
+										array(
+											'group' => 'exterior',
+											'img' => 'foto-03-mini.png',
+											'href' => 'foto-03.png'
+										),
+										array(
+											'group' => 'exterior',
+											'img' => 'foto-05-mini.png',
+											'href' => 'foto-05.png'
+										),
+										array(
+											'group' => 'exterior',
+											'img' => 'foto-08-mini.png',
+											'href' => 'foto-08.png'
+										),
+										array(
+											'group' => 'exterior',
+											'img' => 'foto-09-mini.png',
+											'href' => 'foto-09.png'
+										),
+										array(
+											'group' => 'exterior',
+											'img' => 'foto-10-mini.png',
+											'href' => 'foto-10.png'
+										)
+									)
+								)
+							)
+						)
+					),
+					'precios' => array(
+						'main' => array(
+							'section_prices' => array(
+								'title' => 'VERSIONES Y PRECIOS SUGERIDOS',
+								'description' => 'Detalles que hacen de un auto una experiencia.'
+							),
+							'model_prices' => array(
+								'columns' => '1',
+								'head' => array(
+									'row' => array(
+										'class' => 'dark'
+									),
+									'col' => array(
+										'class' => '1'
+									),
+									'cell' => array(
+										'class' => 'light',
+										'first' => array(
+											'class' => 'last first',
+											'image' => 'kizashi-special.png',
+											'title' => 'Kizashi Edición Especial'
+										)
+									)
+								),
+								'body' => array(
+									'row' => array(
+										array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'price' => array(
+														'class' => 'price'
+													),
+													'class' => 'first',
+													'title' => '<p><span>2016 $374,500.00</span></p>'
+												)
+											)
+										),
+										array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Motor: 4 cilindros, 2.4 litros VVT, 16 válvulas.</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Transmisión CVT.</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Potencia neta (hp@rpm): 176 hp@6,500 rpm.</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Rines: Nuevo diseño de 18".</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Aire acondicionado automático de doble zona.</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Botón de arranque (Keyless start).</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Controles de audio y velocidad crucero iluminados en el volante.</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Dirección Eléctricamente Asistida, sensible a la velocidad (EPS).</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Sistema Antibloqueo de Frenos (ABS).</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Distribución Electrónica de Fuerza de Frenado (EBD).</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Programa Electrónico de Estabilidad (ESP® ).</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Luces de circulación diurna (DRL).</p>'
+												)
+											)
+										),
+										array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Pantalla touch de 6.1" WVGA.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Bolsas de aire frontales (x2), laterales delanteras y traseras (x4) y tipo cortina (x2).</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Faros de niebla delanteros.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Asistencia de frenado.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Frenos de disco en las 4 ruedas con pastillas de freno Akebono®.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Palancas de cambio de velocidades en el volante (Paddle Shifter).</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Suspensión delantera: McPherson.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Suspensión trasera: Multilink.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Sensor de reversa con cámara integrada.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Sistema de manos libres Bluetooth®.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Quemacocos eléctrico con cubierta interna deslizable.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Asientos cubiertos con piel.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Asientos delanteros con ajusre eléctrico de conductor y pasajero.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Nuevo diseño de volante con insertos plateados y piel perforada.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Costuras claras en volante, cubierta de palanca de velocidades y cubierta de freno de estacionamiento.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Nuevo diseño de Fascia con parrilla doble (superior e inferior)</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Biseles cromados para faros de niebla.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'dark',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Molduras cromadas en los costados y nuevo diseño de estribos.</p>'
+												)
+											)
+										),
+                                        array(
+											'class' => 'light',
+											'cell' => array(
+												'class' => 'light',
+												'first' => array(
+													'class' => 'first',
+													'title' => '<p>Spoiler traser para tapa de la cajuela.</p>'
+												)
+											)
+										)
+									),
+									'col' => array(
+										'class' => '1'
+									)
+								),
+								'event' => array(
+									'ga' => 'ficha_grand-vitara',
+									'href' => 'catalogo-kizashi-2016.pdf'
+								)
+							)
+						)
+					),
+					'mantenimiento' => array(
+						'main' => array(
+							'image' => 'kizashi.png',
+							'key' => 'kizashi',
+							'name' => 'Kizashi',
+							'maintenance_prices' => array(
+								'section_maintenance_prices' => array(
+									'title' => 'PRECIOS DE MANTENIMIENTO'
+								),
+								'table' => array(
+									'columns' => '3',
+									'body' => array(
+										'row' => array(
+											array(
+												'id' => '1',
+												'class' => 'dark',
+												'cell' => array(
+													'first' => array(
+														'head_class' => 'maintenance-head title',
+														'col' => 'light',
+														'class' => 'first',
+														'title' => 'KM'
+													),
+													'second' => array(
+														'head_class' => 'maintenance-head title',
+														'col' => 'dark',
+														'class' => '',
+														'title' => 'Meses'
+													),
+													'third' => array(
+														'head_class' => 'maintenance-head title',
+														'col' => 'light',
+														'class' => 'last',
+														'title' => 'Kizashi'
+													)
+												)
+											),
+											array(
+												'id' => '2',
+												'class' => 'light',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '5,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '3'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$1,150.00'
+													)
+												)
+											),
+											array(
+												'id' => '3',
+												'class' => 'dark',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '10,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '6'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$1,285.00'
+													)
+												)
+											),
+											array(
+												'id' => '4',
+												'class' => 'light',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '20,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '12'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$1,815.00'
+													)
+												)
+											),
+											array(
+												'id' => '5',
+												'class' => 'dark',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '30,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '18'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$3,665.00'
+													)
+												)
+											),
+											array(
+												'id' => '6',
+												'class' => 'light',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '40,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '24'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$1,755.00'
+													)
+												)
+											),
+											array(
+												'id' => '7',
+												'class' => 'dark',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '50,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '30'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$2,925.00'
+													)
+												)
+											),
+											array(
+												'id' => '8',
+												'class' => 'light',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '60,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '36'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$1,925.00'
+													)
+												)
+											),
+											array(
+												'id' => '9',
+												'class' => 'dark',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '70,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '42'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$3,355.00'
+													)
+												)
+											),
+											array(
+												'id' => '10',
+												'class' => 'light',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '80,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '48'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$1,845.00'
+													)
+												)
+											),
+											array(
+												'id' => '11',
+												'class' => 'dark',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '90,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '54'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$3,675.00'
+													)
+												)
+											),
+											array(
+												'id' => '12',
+												'class' => 'light',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '100,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '60'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$3,450.00'
+													)
+												)
+											),
+											array(
+												'id' => '13',
+												'class' => 'dark',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '110,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '66'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$1,295.00'
+													)
+												)
+											),
+											array(
+												'id' => '14',
+												'class' => 'light',
+												'cell' => array(
+													'first' => array(
+														'col' => 'light',
+														'class' => 'first',
+														'title' => '120,000'
+													),
+													'second' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '72'
+													),
+													'third' => array(
+														'col' => 'light',
+														'class' => 'last',
+														'title' => '$1,675.00'
+													)
+												)
+											)
+										),
+										'col' => array(
+											'class' => '3'
+										)
+									)
+								)
+							)
+						)
+					),
+					'accesorios' => array(
+						'main' => array(
+							'section_gallery' => array(
+								'title' => 'Accesorios',
+								'description' => '"Algo grande está por venir". Imponente diseño con finos acabados que roban miradas.'
+							),
+							'grid' => array(
+								'boxes' => array(
+									array(
+										'class' => 'box-1',
+										'image' => 'box-1.png',
+										'mask' => array(
+											'href' => 'foto-01.png',
+											'span' => '1'
+										)
+									),
+									array(
+										'class' => 'box-2',
+										'image' => 'box-2.png',
+										'mask' => array(
+											'href' => 'foto-02.png',
+											'span' => '2'
+										)
+									),
+									array(
+										'class' => 'box-3',
+										'image' => 'box-3.png',
+										'mask' => array(
+											'href' => 'foto-03.png',
+											'span' => '3'
+										)
+									),
+									array(
+										'class' => 'box-4',
+										'image' => 'box-4.png',
+										'mask' => array(
+											'href' => 'foto-04.png',
+											'span' => '4'
+										)
+									),
+									array(
+										'class' => 'box-5',
+										'image' => 'box-5.png',
+										'mask' => array(
+											'href' => 'foto-05.png',
+											'span' => '5'
+										)
+									),
+									array(
+										'class' => 'box-6',
+										'image' => 'box-6.png',
+										'mask' => array(
+											'href' => 'foto-06.png',
+											'span' => '6'
+										)
+									),
+									array(
+										'class' => 'box-7',
+										'image' => 'box-7.png',
+										'mask' => array(
+											'href' => 'foto-07.png',
+											'span' => '7'
+										)
+									),
+									array(
+										'class' => 'box-8',
+										'image' => 'box-8.png',
+										'mask' => array(
+											'href' => 'foto-08.png',
+											'span' => '8'
+										)
+									)
+								),
+								'fancybox' => array(
+									'thumbs' => array(
+										array(
+											'img' => 'foto-01-mini.png',
+											'href' => 'foto-01.png'
+										),
+										array(
+											'img' => 'foto-02-mini.png',
+											'href' => 'foto-02.png'
+										),
+										array(
+											'img' => 'foto-03-mini.png',
+											'href' => 'foto-03.png'
+										),
+										array(
+											'img' => 'foto-04-mini.png',
+											'href' => 'foto-04.png'
+										),
+										array(
+											'img' => 'foto-05-mini.png',
+											'href' => 'foto-05.png'
+										),
+										array(
+											'img' => 'foto-06-mini.png',
+											'href' => 'foto-06.png'
+										),
+										array(
+											'img' => 'foto-07-mini.png',
+											'href' => 'foto-07.png'
+										),
+										array(
+											'img' => 'foto-08-mini.png',
+											'href' => 'foto-08.png'
+										)
+									)
+								)
+							),
+							'event' => array(
+								'ga' => 'Accesorios_kizashi',
+								'href' => 'kizashi.pdf'
+							)
+						)
+					)
 				)
 			);
 		}

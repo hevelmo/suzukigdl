@@ -177,18 +177,20 @@
             var cell_height = 0;
             $(this).find(".cell").each(function (index, Element) {
                 var val_cell = ($(this).height.length > 0) ? $(this).height() : 0;
-                cell_array[index] = val_cell;
+                //cell_array[index] = val_cell;
             });
-            cell_height = Math.max.apply( Math, cell_array );
-            $(this).find(".cell").css("height", cell_height);
+            cell_height = Math.min.apply( Math, cell_array );
+            //$(this).find(".cell").css("height", cell_height);
         });
     }
 /* ------------------------------------------------------ *\
     [functions] switch_menus
 \* ------------------------------------------------------ */
     function switch_menus( menu ){
+        var lugar, model_name;
+        lugar = SUK.getValue('#hidden_lugar');
         if( current_menu != menu ){
-            console.log(current_menu);
+            //console.log(current_menu);
             current_menu = menu;
             var new_h = ( menu == 'cars') ? 50 : 95;
             //console.log(menu);
@@ -224,6 +226,7 @@
             $td_flag =  $('#model-test-drive-flag'),
             $gotoup =   $('#back-to-top-button'),
             arrow_top = parseInt( $arrow.css('top') );
+            //console.log(arrow_top);
         if( yyy > 0 ){
             if( arrow_top != arrow_y ){
                 $gotoup.stop().hide().fadeIn();
@@ -315,6 +318,7 @@
             if( display_vct_class == $div.data('display-table') ){
                 $div.fadeOut().fadeIn(1000);
                 modifyHeight("#comparative-space-wrapper .suzuki-table .body .row");
+                modifyHeight("#features-space .suzuki-table .body .row");
             }else{
                 $div.hide();
             }
@@ -853,11 +857,11 @@
             ];
             SUK.appendMulti('head', seo_elements_ignis_elements);*/
 
-            link_ignis_Attributes = {'id': 'content-add-styles-swift-sport', 'rel': 'stylesheet', 'class': 'link-swift-sport', 'href': 'css/sections/models.css'}
-            SUK.appendOne('head', 'link', link_ignis_Attributes, '', 0);
+            //link_ignis_Attributes = {'id': 'content-add-styles-swift-sport', 'rel': 'stylesheet', 'class': 'link-swift-sport', 'href': 'css/sections/models.css'}
+            //SUK.appendOne('head', 'link', link_ignis_Attributes, '', 0);
 
-            $('body').prepend( patch_bar );
-            $('body').prepend( td_id_flag );
+            //$('body').prepend( patch_bar );
+            //$('body').prepend( td_id_flag );
         },
         addStyleModel_swift_sport : function () {
             seo_elements_swift_sport_elements = [
@@ -878,8 +882,8 @@
             link_swift_sport_Attributes = {'id': 'content-add-styles-swift-sport', 'rel': 'stylesheet', 'class': 'link-swift-sport', 'href': 'css/sections/models.css'}
             SUK.appendOne('head', 'link', link_swift_sport_Attributes, '', 0);
 
-            $('body').prepend( patch_bar );
-            $('body').prepend( td_id_flag );
+            //$('body').prepend( patch_bar );
+            //$('body').prepend( td_id_flag );
         },
         addStyleModel_swift : function () {
             seo_elements_swift_elements = [
@@ -900,8 +904,8 @@
             link_swift_Attributes = {'id': 'content-add-styles-swift', 'rel': 'stylesheet', 'class': 'link-swift', 'href': 'css/sections/models.css'}
             SUK.appendOne('head', 'link', link_swift_Attributes, '', 0);
 
-            $('body').prepend( patch_bar );
-            $('body').prepend( td_id_flag );
+            //$('body').prepend( patch_bar );
+            //$('body').prepend( td_id_flag );
         },
         addStyleModel_sx4_crossover : function () {
             seo_elements_sx4_crossover_elements = [
@@ -922,8 +926,8 @@
             link_sx4_crossover_Attributes = {'id': 'content-add-styles-sx4-crossover', 'rel': 'stylesheet', 'class': 'link-sx4-crossover', 'href': 'css/sections/models.css'}
             SUK.appendOne('head', 'link', link_sx4_crossover_Attributes, '', 0);
 
-            $('body').prepend( patch_bar );
-            $('body').prepend( td_id_flag );
+            //$('body').prepend( patch_bar );
+            //$('body').prepend( td_id_flag );
         },
         addStyleModel_sx4_sedan : function () {
             seo_elements_sx4_sedan_elements = [
@@ -944,8 +948,8 @@
             link_sx4_sedan_Attributes = {'id': 'content-add-styles-sx4-sedan', 'rel': 'stylesheet', 'class': 'link-sx4-sedan', 'href': 'css/sections/models.css'}
             SUK.appendOne('head', 'link', link_sx4_sedan_Attributes, '', 0);
 
-            $('body').prepend( patch_bar );
-            $('body').prepend( td_id_flag );
+            //$('body').prepend( patch_bar );
+            //$('body').prepend( td_id_flag );
         },
         addStyleModel_kizashi : function () {
             seo_elements_kizashi_elements = [
@@ -966,8 +970,8 @@
             link_kizashi_Attributes = {'id': 'content-add-styles-kizashi', 'rel': 'stylesheet', 'class': 'link-kizashi', 'href': 'css/sections/models.css'}
             SUK.appendOne('head', 'link', link_kizashi_Attributes, '', 0);
 
-            $('body').prepend( patch_bar );
-            $('body').prepend( td_id_flag );
+            //$('body').prepend( patch_bar );
+            //$('body').prepend( td_id_flag );
         },
         addStyleModel_grand_vitara : function () {
             seo_elements_grand_vitara_elements = [
@@ -988,8 +992,8 @@
             link_grand_vitara_Attributes = {'id': 'content-add-styles-grand-vitara', 'rel': 'stylesheet', 'class': 'link-grand-vitara', 'href': 'css/sections/models.css'}
             SUK.appendOne('head', 'link', link_grand_vitara_Attributes, '', 0);
 
-            $('body').prepend( patch_bar );
-            $('body').prepend( td_id_flag );
+            //$('body').prepend( patch_bar );
+            //$('body').prepend( td_id_flag );
         },
         addStyleModel_s_cross : function () {
             seo_elements_s_cross_elements = [
@@ -1010,8 +1014,8 @@
             link_s_cross_Attributes = {'id': 'content-add-styles-s-cross', 'rel': 'stylesheet', 'class': 'link-s-cross', 'href': 'css/sections/models.css'}
             SUK.appendOne('head', 'link', link_s_cross_Attributes, '', 0);
 
-            $('body').prepend( patch_bar );
-            $('body').prepend( td_id_flag );
+            //$('body').prepend( patch_bar );
+            //$('body').prepend( td_id_flag );
         },
         addStyleModel_ciaz : function () {
             seo_elements_ciaz_elements = [
@@ -1032,8 +1036,8 @@
             link_ciaz_Attributes = {'id': 'content-add-styles-ciaz', 'rel': 'stylesheet', 'class': 'link-ciaz', 'href': 'css/sections/models.css'}
             SUK.appendOne('head', 'link', link_ciaz_Attributes, '', 0);
 
-            $('body').prepend( patch_bar );
-            $('body').prepend( td_id_flag );
+            //$('body').prepend( patch_bar );
+            //$('body').prepend( td_id_flag );
         },
         addStyleModel_nueva_vitara : function () {
             seo_elements_nueva_vitara_elements = [
@@ -1054,8 +1058,8 @@
             link_nueva_vitara_Attributes = {'id': 'content-add-styles-nueva-vitara', 'rel': 'stylesheet', 'class': 'link-nueva-vitara', 'href': 'css/sections/models.css'}
             SUK.appendOne('head', 'link', link_nueva_vitara_Attributes, '', 0);
 
-            $('body').prepend( patch_bar );
-            $('body').prepend( td_id_flag );
+            //$('body').prepend( patch_bar );
+            //$('body').prepend( td_id_flag );
         },
         addStyleWarranty : function () {
             linkWarrantyAttributes = {'id': 'content-add-styles-warranty', 'rel': 'stylesheet', 'class': 'link-warranty', 'href': 'css/sections/warranty.css'}
@@ -1831,10 +1835,11 @@
             if( display_vct_class == $div.data('display-table') ){
                 $div.fadeOut().fadeIn(1000);
                 modifyHeight("#comparative-space-wrapper .suzuki-table .body .row");
-                //console.log(div);
+                modifyHeight("#features-space .suzuki-table .body .row");
+                console.log(div);
             }else{
                 $div.hide();
-                //console.log(div);
+                console.log(div);
             }
         });
     }
@@ -1970,10 +1975,48 @@
                     $.scroll_to('caracteristicas');
                 });
                 $.animate_arrow( $arrow2 )
+            } 
+            if( $('.next-link-text').length > 0 ) {
+                var $arrow1 = $('.next-link-text').children('a#galeria');
+                    //$arrow2 = $arrow1.clone();
+                $('.next-link-text').children('a#galeria').delegate('a','mousedown mouseup click', function( e ){
+                    e.preventDefault();
+                    $.scroll_to('galeria');
+                });
+                //$.animate_arrow( $arrow1 )
+            }
+            if( $('.next-link-text').length > 0 ) {
+                var $arrow1 = $('.next-link-text').children('a#precios');
+                    //$arrow2 = $arrow1.clone();
+                $('.next-link-text').children('a#precios').delegate('a','mousedown mouseup click', function( e ){
+                    e.preventDefault();
+                    $.scroll_to('precios');
+                });
+                //$.animate_arrow( $arrow1 )
+            }
+            if( $('.next-link-text').length > 0 ) {
+                var $arrow1 = $('.next-link-text').children('a#accesorios');
+                    //$arrow2 = $arrow1.clone();
+                $('.next-link-text').children('a#accesorios').delegate('a','mousedown mouseup click', function( e ){
+                    e.preventDefault();
+                    $.scroll_to('accesorios');
+                });
+                //$.animate_arrow( $arrow1 )
+            }
+            if( $('.next-link-text').length > 0 ) {
+                var $arrow1 = $('.next-link-text').children('a#prueba-de-manejo');
+                    //$arrow2 = $arrow1.clone();
+                $('.next-link-text').children('a#prueba-de-manejo').delegate('a','mousedown mouseup click', function( e ){
+                    e.preventDefault();
+                    $.scroll_to('prueba-de-manejo');
+                });
+                //$.animate_arrow( $arrow1 )
             }
         },
         changeNameModel : function (menu) {
             var car_main_model;
+            var section, model_name;
+            section = SUK.getValue('#hidden_section');
             switch (section) {
                 case 'ignis':
                     $("#versions-price-table").find(".pdf-download:gt(2)").css("visibility", "hidden");
@@ -1987,7 +2030,7 @@
                     switch_menus( menu );
                     switch_arrow( );
                     display_versions_comparative();
-                    modifyHeight("#features-space-wrapper .suzuki-table .body .row");
+                    modifyHeight("#features-space .suzuki-table .body .row");
 
 
                     input_hidden_test_drive_swift_sport_Attributes = [
@@ -2012,7 +2055,7 @@
                     switch_menus( menu );
                     switch_arrow( );
                     display_versions_comparative();
-                    modifyHeight("#features-space-wrapper .suzuki-table .body .row");
+                    modifyHeight("#features-space .suzuki-table .body .row");
 
 
                     input_hidden_test_drive_swift_sport_Attributes = [
@@ -2036,7 +2079,7 @@
                     modelsMenuMethods.scrollSwitchMethod();
                     switch_menus( menu );
                     switch_arrow( );
-                    modifyHeight("#features-space-wrapper .suzuki-table .body .row");
+                    modifyHeight("#features-space .suzuki-table .body .row");
                     display_versions_comparative();
 
                     input_hidden_test_drive_swift_Attributes = [
@@ -2059,7 +2102,7 @@
                     switch_menus( menu );
                     switch_arrow( );
                     display_versions_comparative();
-                    modifyHeight("#features-space-wrapper .suzuki-table .body .row");
+                    modifyHeight("#features-space .suzuki-table .body .row");
 
                     input_hidden_test_drive_sx4_crossover_Attributes = [
                         ['input', {'id':'test_drive_model_modelo', 'type':'hidden', 'name':'suk_gdl_test_drive_model_modelo', 'value':'sx4-crossover'}, '', 0],
@@ -2081,7 +2124,7 @@
                     switch_menus( menu );
                     switch_arrow( );
                     display_versions_comparative();
-                    modifyHeight("#features-space-wrapper .suzuki-table .body .row");
+                    modifyHeight("#features-space .suzuki-table .body .row");
 
                     input_hidden_test_drive_sx4_sedan_Attributes = [
                         ['input', {'id':'test_drive_model_modelo', 'type':'hidden', 'name':'suk_gdl_test_drive_model_modelo', 'value':'sx4-sedan'}, '', 0],
@@ -2105,7 +2148,7 @@
                     switch_menus( menu );
                     switch_arrow( );
                     display_versions_comparative();
-                    modifyHeight("#features-space-wrapper .suzuki-table .body .row");
+                    modifyHeight("#features-space .suzuki-table .body .row");
 
                     input_hidden_test_drive_kizashi_Attributes = [
                         ['input', {'id':'test_drive_model_modelo', 'type':'hidden', 'name':'suk_gdl_test_drive_model_modelo', 'value':'kizashi'}, '', 0],
@@ -2129,7 +2172,7 @@
                     switch_menus( menu );
                     switch_arrow( );
                     display_versions_comparative();
-                    modifyHeight("#features-space-wrapper .suzuki-table .body .row");
+                    modifyHeight("#features-space .suzuki-table .body .row");
 
                     input_hidden_test_drive_grand_vitara_Attributes = [
                         ['input', {'id':'test_drive_model_modelo', 'type':'hidden', 'name':'suk_gdl_test_drive_model_modelo', 'value':'grand-vitara'}, '', 0],
@@ -2153,7 +2196,7 @@
                     switch_menus( menu );
                     switch_arrow( );
                     display_versions_comparative();
-                    modifyHeight("#features-space-wrapper .suzuki-table .body .row");
+                    modifyHeight("#features-space .suzuki-table .body .row");
 
                     input_hidden_test_drive_s_cross_Attributes = [
                         ['input', {'id':'test_drive_model_modelo', 'type':'hidden', 'name':'suk_gdl_test_drive_model_modelo', 'value':'s-cross'}, '', 0],
@@ -2177,7 +2220,7 @@
                     switch_menus( menu );
                     switch_arrow( );
                     display_versions_comparative();
-                    modifyHeight("#features-space-wrapper .suzuki-table .body .row");
+                    modifyHeight("#features-space .suzuki-table .body .row");
 
                     input_hidden_test_drive_ciaz_Attributes = [
                         ['input', {'id':'test_drive_model_modelo', 'type':'hidden', 'name':'suk_gdl_test_drive_model_modelo', 'value':'ciaz'}, '', 0],
@@ -2201,7 +2244,7 @@
                     switch_menus( menu );
                     switch_arrow( );
                     display_versions_comparative();
-                    modifyHeight("#features-space-wrapper .suzuki-table .body .row");
+                    modifyHeight("#features-space .suzuki-table .body .row");
 
                     input_hidden_test_drive_nueva_vitara_Attributes = [
                         ['input', {'id':'test_drive_model_modelo', 'type':'hidden', 'name':'suk_gdl_test_drive_model_modelo', 'value':'nueva-vitara'}, '', 0],

@@ -6,6 +6,9 @@
 {% block section %}
     <input type="hidden" id="hidden_section" value="404">
 {% endblock %}
+{% block menu_patch %}    
+	<div class="menu-patch" id="patch">&nbsp;</div>
+{% endblock %}
 {% block navbar %}
     {% embed "super_navbar.twig" %}{% endembed %}
 {% endblock %}
