@@ -29,7 +29,7 @@ class __TwigTemplate_c5f19925684a395beb7292fa1eb519d2dee277a18551c9e97f5a4e84926
             // line 6
             echo "            <a class=\"section-separator\" name=\"inicio\"></a>
             <div class=\"full-size-section gray-degree window-adaptable model-section\" data-min-height=\"650\">
-                <div class=\"car-main \" style=\"background: url('";
+                <div class=\"car-main big-main\" style=\"background: url('";
             // line 8
             echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
             echo "img/sections/models/main/";
@@ -220,12 +220,12 @@ class __TwigTemplate_c5f19925684a395beb7292fa1eb519d2dee277a18551c9e97f5a4e84926
             echo "                    ";
             $context["special"] = $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["gallery"]) ? $context["gallery"] : null), "main", array()), "grid", array()), "fancybox", array()), "special", array());
             // line 84
-            echo "                    <div class=\"hidden-list\">
-                        ";
-            // line 85
+            echo "                    ";
             if ((isset($context["exterior"]) ? $context["exterior"] : null)) {
+                // line 85
+                echo "                        <div class=\"hidden-list\">
+                            ";
                 // line 86
-                echo "                            ";
                 $context['_parent'] = $context;
                 $context['_seq'] = twig_ensure_traversable((isset($context["exterior"]) ? $context["exterior"] : null));
                 foreach ($context['_seq'] as $context["_key"] => $context["ext"]) {
@@ -258,16 +258,16 @@ class __TwigTemplate_c5f19925684a395beb7292fa1eb519d2dee277a18551c9e97f5a4e84926
                 unset($context['_seq'], $context['_iterated'], $context['_key'], $context['ext'], $context['_parent'], $context['loop']);
                 $context = array_intersect_key($context, $_parent) + $_parent;
                 // line 91
-                echo "                        ";
+                echo "                        </div>
+                    ";
             }
-            // line 92
-            echo "                    </div>
-                    <div class=\"hidden-list\">
-                        ";
-            // line 94
+            // line 93
+            echo "                    ";
             if ((isset($context["interior"]) ? $context["interior"] : null)) {
+                // line 94
+                echo "                        <div class=\"hidden-list\">
+                            ";
                 // line 95
-                echo "                            ";
                 $context['_parent'] = $context;
                 $context['_seq'] = twig_ensure_traversable((isset($context["interior"]) ? $context["interior"] : null));
                 foreach ($context['_seq'] as $context["_key"] => $context["int"]) {
@@ -300,16 +300,16 @@ class __TwigTemplate_c5f19925684a395beb7292fa1eb519d2dee277a18551c9e97f5a4e84926
                 unset($context['_seq'], $context['_iterated'], $context['_key'], $context['int'], $context['_parent'], $context['loop']);
                 $context = array_intersect_key($context, $_parent) + $_parent;
                 // line 100
-                echo "                        ";
+                echo "                        </div>
+                    ";
             }
-            // line 101
-            echo "                    </div>
-                    <div class=\"hidden-list\">
-                        ";
-            // line 103
+            // line 102
+            echo "                    ";
             if ((isset($context["special"]) ? $context["special"] : null)) {
+                // line 103
+                echo "                        <div class=\"hidden-list\">
+                            ";
                 // line 104
-                echo "                            ";
                 $context['_parent'] = $context;
                 $context['_seq'] = twig_ensure_traversable((isset($context["special"]) ? $context["special"] : null));
                 foreach ($context['_seq'] as $context["_key"] => $context["spe"]) {
@@ -342,11 +342,11 @@ class __TwigTemplate_c5f19925684a395beb7292fa1eb519d2dee277a18551c9e97f5a4e84926
                 unset($context['_seq'], $context['_iterated'], $context['_key'], $context['spe'], $context['_parent'], $context['loop']);
                 $context = array_intersect_key($context, $_parent) + $_parent;
                 // line 109
-                echo "                        ";
+                echo "                        </div>
+                    ";
             }
-            // line 110
-            echo "                    </div>
-                </div>
+            // line 111
+            echo "                </div>
                 <div class=\"next-link-text prices\" style=\"margin-top: 40px;\">
                     <a class=\"scroll-in-site\" id=\"precios\" href=\"";
             // line 113
@@ -756,18 +756,19 @@ class __TwigTemplate_c5f19925684a395beb7292fa1eb519d2dee277a18551c9e97f5a4e84926
                                         ";
             }
             // line 254
-            echo "                                        <a style='text-align: center; margin: 30px auto 0 auto; display: block' onclick=ga('send', 'event', 'Material de apoyo', 'Descarga', '";
+            echo "                                    </div>
+                                </div>
+                            </div>
+                            <a style='text-align: center; margin: 30px auto 0 auto; display: block' onclick=ga('send', 'event', 'Material de apoyo', 'Descarga', '";
+            // line 257
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["model"]) ? $context["model"] : null), "precios", array()), "main", array()), "model_prices", array()), "event", array()), "ga", array()), "html", null, true);
             echo "' ); href=\"";
             echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
             echo "files/fichas/";
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["model"]) ? $context["model"] : null), "precios", array()), "main", array()), "model_prices", array()), "event", array()), "href", array()), "html", null, true);
             echo "\" target=\"_blank\">
-                                            <span class=\"entypo\">&#128196;</span><span>Descargar ficha completa en PDF</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                                <span class=\"entypo\">&#128196;</span><span>Descargar ficha completa en PDF</span>
+                            </a>
                             ";
             // line 261
             echo "                                ";
@@ -1025,7 +1026,11 @@ class __TwigTemplate_c5f19925684a395beb7292fa1eb519d2dee277a18551c9e97f5a4e84926
                     echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "key", array()), "html", null, true);
                     echo "/";
                     echo twig_escape_filter($this->env, $this->getAttribute($context["thumb"], "href", array()), "html", null, true);
-                    echo "\" data-fancybox-group=\"accesorios\" title=\". . .\" alt=\". . .\">
+                    echo "\" data-fancybox-group=\"accesorios\" title=\"";
+                    echo twig_escape_filter($this->env, $this->getAttribute($context["thumb"], "title", array()), "html", null, true);
+                    echo "\" alt=\"";
+                    echo twig_escape_filter($this->env, $this->getAttribute($context["thumb"], "title", array()), "html", null, true);
+                    echo "\">
                                     <img src=\"";
                     // line 354
                     echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
@@ -1086,7 +1091,7 @@ class __TwigTemplate_c5f19925684a395beb7292fa1eb519d2dee277a18551c9e97f5a4e84926
             <div id=\"test-drive-models\">
                 <div class=\"section-title\">
                     <div class=\"title\">Agendar prueba de manejo</div>
-                    <div class=\"description\">En dos sencillos pasos podrás agendar tu prueba de manejo y vivir la experiencia Suzuki.</div>
+                    <div class=\"description\">Contactanos para agendar tu prueba de manejo y vivir la experiencia Suzuki.</div>
                 </div>
                 <div id=\"test-drive-steps\">
                     <div id=\"header-prueba-manejo-modelos\">
@@ -1144,7 +1149,7 @@ class __TwigTemplate_c5f19925684a395beb7292fa1eb519d2dee277a18551c9e97f5a4e84926
 
     public function getDebugInfo()
     {
-        return array (  1131 => 406,  1123 => 399,  1114 => 392,  1106 => 391,  1098 => 386,  1083 => 373,  1081 => 372,  1079 => 371,  1069 => 366,  1066 => 365,  1056 => 362,  1052 => 360,  1050 => 359,  1047 => 358,  1044 => 357,  1031 => 354,  1022 => 353,  1017 => 352,  1015 => 351,  1012 => 350,  1010 => 349,  1007 => 348,  989 => 342,  980 => 340,  975 => 339,  971 => 338,  966 => 336,  961 => 334,  957 => 333,  952 => 330,  949 => 329,  946 => 328,  944 => 327,  942 => 326,  931 => 320,  914 => 316,  909 => 313,  902 => 307,  895 => 305,  888 => 301,  878 => 299,  875 => 298,  868 => 294,  858 => 292,  855 => 291,  848 => 287,  838 => 285,  835 => 284,  828 => 280,  818 => 278,  816 => 277,  807 => 276,  803 => 275,  797 => 272,  792 => 270,  787 => 267,  784 => 266,  781 => 265,  777 => 263,  775 => 262,  773 => 261,  759 => 254,  755 => 252,  748 => 250,  745 => 249,  740 => 246,  734 => 245,  728 => 243,  725 => 242,  720 => 241,  714 => 239,  712 => 238,  700 => 236,  697 => 235,  692 => 232,  686 => 231,  680 => 229,  677 => 228,  672 => 227,  666 => 225,  664 => 224,  652 => 222,  649 => 221,  644 => 218,  638 => 217,  632 => 215,  629 => 214,  624 => 213,  618 => 211,  616 => 210,  604 => 208,  601 => 207,  596 => 204,  590 => 203,  584 => 201,  581 => 200,  576 => 199,  570 => 197,  568 => 196,  556 => 194,  553 => 193,  551 => 192,  544 => 191,  540 => 190,  537 => 189,  534 => 188,  530 => 186,  526 => 184,  523 => 183,  516 => 179,  508 => 176,  500 => 174,  497 => 173,  490 => 169,  482 => 166,  476 => 164,  473 => 163,  466 => 159,  458 => 156,  452 => 154,  449 => 153,  442 => 149,  434 => 146,  426 => 144,  423 => 143,  421 => 142,  414 => 141,  412 => 140,  409 => 139,  407 => 138,  402 => 136,  399 => 135,  396 => 134,  393 => 133,  391 => 132,  381 => 125,  377 => 124,  372 => 121,  369 => 120,  366 => 119,  364 => 118,  362 => 117,  353 => 113,  348 => 110,  345 => 109,  330 => 106,  317 => 105,  312 => 104,  310 => 103,  306 => 101,  303 => 100,  288 => 97,  275 => 96,  270 => 95,  268 => 94,  264 => 92,  261 => 91,  246 => 88,  233 => 87,  228 => 86,  226 => 85,  223 => 84,  220 => 83,  217 => 82,  215 => 81,  212 => 80,  192 => 74,  183 => 72,  178 => 71,  174 => 70,  169 => 68,  164 => 66,  160 => 65,  155 => 62,  152 => 61,  149 => 60,  147 => 59,  145 => 58,  136 => 54,  123 => 43,  113 => 39,  106 => 35,  97 => 32,  93 => 31,  86 => 27,  82 => 26,  77 => 23,  74 => 22,  71 => 21,  69 => 20,  67 => 19,  58 => 15,  53 => 13,  49 => 12,  45 => 11,  41 => 10,  34 => 8,  30 => 6,  27 => 5,  24 => 4,  21 => 2,  19 => 1,);
+        return array (  1136 => 406,  1128 => 399,  1119 => 392,  1111 => 391,  1103 => 386,  1088 => 373,  1086 => 372,  1084 => 371,  1074 => 366,  1071 => 365,  1061 => 362,  1057 => 360,  1055 => 359,  1052 => 358,  1049 => 357,  1036 => 354,  1023 => 353,  1018 => 352,  1016 => 351,  1013 => 350,  1011 => 349,  1008 => 348,  990 => 342,  981 => 340,  976 => 339,  972 => 338,  967 => 336,  962 => 334,  958 => 333,  953 => 330,  950 => 329,  947 => 328,  945 => 327,  943 => 326,  932 => 320,  915 => 316,  910 => 313,  903 => 307,  896 => 305,  889 => 301,  879 => 299,  876 => 298,  869 => 294,  859 => 292,  856 => 291,  849 => 287,  839 => 285,  836 => 284,  829 => 280,  819 => 278,  817 => 277,  808 => 276,  804 => 275,  798 => 272,  793 => 270,  788 => 267,  785 => 266,  782 => 265,  778 => 263,  776 => 262,  774 => 261,  764 => 257,  759 => 254,  755 => 252,  748 => 250,  745 => 249,  740 => 246,  734 => 245,  728 => 243,  725 => 242,  720 => 241,  714 => 239,  712 => 238,  700 => 236,  697 => 235,  692 => 232,  686 => 231,  680 => 229,  677 => 228,  672 => 227,  666 => 225,  664 => 224,  652 => 222,  649 => 221,  644 => 218,  638 => 217,  632 => 215,  629 => 214,  624 => 213,  618 => 211,  616 => 210,  604 => 208,  601 => 207,  596 => 204,  590 => 203,  584 => 201,  581 => 200,  576 => 199,  570 => 197,  568 => 196,  556 => 194,  553 => 193,  551 => 192,  544 => 191,  540 => 190,  537 => 189,  534 => 188,  530 => 186,  526 => 184,  523 => 183,  516 => 179,  508 => 176,  500 => 174,  497 => 173,  490 => 169,  482 => 166,  476 => 164,  473 => 163,  466 => 159,  458 => 156,  452 => 154,  449 => 153,  442 => 149,  434 => 146,  426 => 144,  423 => 143,  421 => 142,  414 => 141,  412 => 140,  409 => 139,  407 => 138,  402 => 136,  399 => 135,  396 => 134,  393 => 133,  391 => 132,  381 => 125,  377 => 124,  372 => 121,  369 => 120,  366 => 119,  364 => 118,  362 => 117,  353 => 113,  349 => 111,  345 => 109,  330 => 106,  317 => 105,  313 => 104,  310 => 103,  307 => 102,  303 => 100,  288 => 97,  275 => 96,  271 => 95,  268 => 94,  265 => 93,  261 => 91,  246 => 88,  233 => 87,  229 => 86,  226 => 85,  223 => 84,  220 => 83,  217 => 82,  215 => 81,  212 => 80,  192 => 74,  183 => 72,  178 => 71,  174 => 70,  169 => 68,  164 => 66,  160 => 65,  155 => 62,  152 => 61,  149 => 60,  147 => 59,  145 => 58,  136 => 54,  123 => 43,  113 => 39,  106 => 35,  97 => 32,  93 => 31,  86 => 27,  82 => 26,  77 => 23,  74 => 22,  71 => 21,  69 => 20,  67 => 19,  58 => 15,  53 => 13,  49 => 12,  45 => 11,  41 => 10,  34 => 8,  30 => 6,  27 => 5,  24 => 4,  21 => 2,  19 => 1,);
     }
 }
 /* {% set model = mdopa %}*/
@@ -1154,7 +1159,7 @@ class __TwigTemplate_c5f19925684a395beb7292fa1eb519d2dee277a18551c9e97f5a4e84926
 /*         {% if begin %}*/
 /*             <a class="section-separator" name="inicio"></a>*/
 /*             <div class="full-size-section gray-degree window-adaptable model-section" data-min-height="650">*/
-/*                 <div class="car-main " style="background: url('{{ _host }}img/sections/models/main/{{ begin.main.image }}') center 175px no-repeat">*/
+/*                 <div class="car-main big-main" style="background: url('{{ _host }}img/sections/models/main/{{ begin.main.image }}') center 175px no-repeat">*/
 /*                     <div class="car-main-title">*/
 /*                         <div class="title">{{ begin.main.title }}</div>*/
 /*                         <div class="slogan">{{ begin.main.slogan }}</div>*/
@@ -1230,33 +1235,33 @@ class __TwigTemplate_c5f19925684a395beb7292fa1eb519d2dee277a18551c9e97f5a4e84926
 /*                     {% set exterior = gallery.main.grid.fancybox.ext %}*/
 /*                     {% set interior = gallery.main.grid.fancybox.int %}*/
 /*                     {% set special = gallery.main.grid.fancybox.special %}*/
-/*                     <div class="hidden-list">*/
-/*                         {% if exterior %}*/
+/*                     {% if exterior %}*/
+/*                         <div class="hidden-list">*/
 /*                             {% for ext in exterior %}*/
 /*                                 <a class="fancybox-thumbs" href="{{ _host }}img/sections/models/gallery/{{ model.key }}/{{ ext.group }}/{{ ext.href }}" data-fancybox-group="{{ ext.group }}" title=". . ." alt=". . .">*/
 /*                                     <img src="{{ _host }}img/sections/models/gallery/{{ model.key }}/{{ ext.group }}/{{ ext.img }}" alt=". . ."/>*/
 /*                                 </a>*/
 /*                             {% endfor %}*/
-/*                         {% endif %}*/
-/*                     </div>*/
-/*                     <div class="hidden-list">*/
-/*                         {% if interior %}*/
+/*                         </div>*/
+/*                     {% endif %}*/
+/*                     {% if interior %}*/
+/*                         <div class="hidden-list">*/
 /*                             {% for int in interior %}*/
 /*                                 <a class="fancybox-thumbs" href="{{ _host }}img/sections/models/gallery/{{ model.key }}/{{ int.group }}/{{ int.href }}" data-fancybox-group="{{ int.group }}" title=". . ." alt=". . .">*/
 /*                                     <img src="{{ _host }}img/sections/models/gallery/{{ model.key }}/{{ int.group }}/{{ int.img }}" alt=". . ."/>*/
 /*                                 </a>*/
 /*                             {% endfor %}*/
-/*                         {% endif %}*/
-/*                     </div>*/
-/*                     <div class="hidden-list">*/
-/*                         {% if special %}*/
+/*                         </div>*/
+/*                     {% endif %}*/
+/*                     {% if special %}*/
+/*                         <div class="hidden-list">*/
 /*                             {% for spe in special %}*/
 /*                                 <a class="fancybox-thumbs" href="{{ _host }}img/sections/models/gallery/{{ model.key }}/{{ spe.group }}/{{ spe.href }}" data-fancybox-group="{{ spe.group }}" title=". . ." alt=". . .">*/
 /*                                     <img src="{{ _host }}img/sections/models/gallery/{{ model.key }}/{{ spe.group }}/{{ spe.img }}" alt=". . ."/>*/
 /*                                 </a>*/
 /*                             {% endfor %}*/
-/*                         {% endif %}*/
-/*                     </div>*/
+/*                         </div>*/
+/*                     {% endif %}*/
 /*                 </div>*/
 /*                 <div class="next-link-text prices" style="margin-top: 40px;">*/
 /*                     <a class="scroll-in-site" id="precios" href="{{ _host }}modelos/{{ model.key }}#precios"><span>Visita Versiones</span></a>*/
@@ -1400,12 +1405,12 @@ class __TwigTemplate_c5f19925684a395beb7292fa1eb519d2dee277a18551c9e97f5a4e84926
 /*                                                 {% endfor %}*/
 /*                                             </div>*/
 /*                                         {% endif %}*/
-/*                                         <a style='text-align: center; margin: 30px auto 0 auto; display: block' onclick=ga('send', 'event', 'Material de apoyo', 'Descarga', '{{ model.precios.main.model_prices.event.ga }}' ); href="{{ _host }}files/fichas/{{ model.precios.main.model_prices.event.href }}" target="_blank">*/
-/*                                             <span class="entypo">&#128196;</span><span>Descargar ficha completa en PDF</span>*/
-/*                                         </a>*/
 /*                                     </div>*/
 /*                                 </div>*/
 /*                             </div>*/
+/*                             <a style='text-align: center; margin: 30px auto 0 auto; display: block' onclick=ga('send', 'event', 'Material de apoyo', 'Descarga', '{{ model.precios.main.model_prices.event.ga }}' ); href="{{ _host }}files/fichas/{{ model.precios.main.model_prices.event.href }}" target="_blank">*/
+/*                                 <span class="entypo">&#128196;</span><span>Descargar ficha completa en PDF</span>*/
+/*                             </a>*/
 /*                             {#<div class="comparative-button-wrapper">#}*/
 /*                                 {#<a class="swap-display-tables button blue" data-display-table="comparative">Comparar con otros modelos</a>#}*/
 /*                             {#</div>#}*/
@@ -1499,7 +1504,7 @@ class __TwigTemplate_c5f19925684a395beb7292fa1eb519d2dee277a18551c9e97f5a4e84926
 /*                     <div class="hidden-list">*/
 /*                         {% if interior %}*/
 /*                             {% for thumb in interior %}*/
-/*                                 <a class="fancybox-thumbs" href="{{ _host }}img/sections/models/accessories/{{ model.key }}/{{ thumb.href }}" data-fancybox-group="accesorios" title=". . ." alt=". . .">*/
+/*                                 <a class="fancybox-thumbs" href="{{ _host }}img/sections/models/accessories/{{ model.key }}/{{ thumb.href }}" data-fancybox-group="accesorios" title="{{ thumb.title }}" alt="{{ thumb.title }}">*/
 /*                                     <img src="{{ _host }}img/sections/models/accessories/{{ model.key }}/{{ thumb.img }}" alt=". . ."/>*/
 /*                                 </a>*/
 /*                             {% endfor %}*/
@@ -1525,7 +1530,7 @@ class __TwigTemplate_c5f19925684a395beb7292fa1eb519d2dee277a18551c9e97f5a4e84926
 /*             <div id="test-drive-models">*/
 /*                 <div class="section-title">*/
 /*                     <div class="title">Agendar prueba de manejo</div>*/
-/*                     <div class="description">En dos sencillos pasos podrás agendar tu prueba de manejo y vivir la experiencia Suzuki.</div>*/
+/*                     <div class="description">Contactanos para agendar tu prueba de manejo y vivir la experiencia Suzuki.</div>*/
 /*                 </div>*/
 /*                 <div id="test-drive-steps">*/
 /*                     <div id="header-prueba-manejo-modelos">*/

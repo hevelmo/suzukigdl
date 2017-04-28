@@ -39,5 +39,11 @@ $(document).ready(function() {
     /* ------------------------------------------------------ *\
         EVENT CONTROL
     \* ------------------------------------------------------ */
-    
+
+    $('body').on('click', "#header-mobile i", is_mobileMethods.clickHeaderMobile);
+    $('body').on('click', "#mobile-menu a", is_mobileMethods.clickMobileMenuLink);
+    $('body').on('click', "#footer-content .row-1 .footer-column", is_mobileMethods.clickFooterContent);
+    $('body').on('click', ".header-column", is_mobileMethods.clickHeaderColumn);
+    $('body').on('click', ".back-list-arrow", is_mobileMethods.clickBackListArrow);
+
 });

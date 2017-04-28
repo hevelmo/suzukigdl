@@ -5,7 +5,7 @@
         {% if begin %}
             <a class="section-separator" name="inicio"></a>
             <div class="full-size-section gray-degree window-adaptable model-section" data-min-height="650">
-                <div class="car-main " style="background: url('{{ _host }}img/sections/models/main/{{ begin.main.image }}') center 175px no-repeat">
+                <div class="car-main big-main" style="background: url('{{ _host }}img/sections/models/main/{{ begin.main.image }}') center 175px no-repeat">
                     <div class="car-main-title">
                         <div class="title">{{ begin.main.title }}</div>
                         <div class="slogan">{{ begin.main.slogan }}</div>
@@ -81,33 +81,33 @@
                     {% set exterior = gallery.main.grid.fancybox.ext %}
                     {% set interior = gallery.main.grid.fancybox.int %}
                     {% set special = gallery.main.grid.fancybox.special %}
-                    <div class="hidden-list">
-                        {% if exterior %}
+                    {% if exterior %}
+                        <div class="hidden-list">
                             {% for ext in exterior %}
                                 <a class="fancybox-thumbs" href="{{ _host }}img/sections/models/gallery/{{ model.key }}/{{ ext.group }}/{{ ext.href }}" data-fancybox-group="{{ ext.group }}" title=". . ." alt=". . .">
                                     <img src="{{ _host }}img/sections/models/gallery/{{ model.key }}/{{ ext.group }}/{{ ext.img }}" alt=". . ."/>
                                 </a>
                             {% endfor %}
-                        {% endif %}
-                    </div>
-                    <div class="hidden-list">
-                        {% if interior %}
+                        </div>
+                    {% endif %}
+                    {% if interior %}
+                        <div class="hidden-list">
                             {% for int in interior %}
                                 <a class="fancybox-thumbs" href="{{ _host }}img/sections/models/gallery/{{ model.key }}/{{ int.group }}/{{ int.href }}" data-fancybox-group="{{ int.group }}" title=". . ." alt=". . .">
                                     <img src="{{ _host }}img/sections/models/gallery/{{ model.key }}/{{ int.group }}/{{ int.img }}" alt=". . ."/>
                                 </a>
                             {% endfor %}
-                        {% endif %}
-                    </div>
-                    <div class="hidden-list">
-                        {% if special %}
+                        </div>
+                    {% endif %}
+                    {% if special %}
+                        <div class="hidden-list">
                             {% for spe in special %}
                                 <a class="fancybox-thumbs" href="{{ _host }}img/sections/models/gallery/{{ model.key }}/{{ spe.group }}/{{ spe.href }}" data-fancybox-group="{{ spe.group }}" title=". . ." alt=". . .">
                                     <img src="{{ _host }}img/sections/models/gallery/{{ model.key }}/{{ spe.group }}/{{ spe.img }}" alt=". . ."/>
                                 </a>
                             {% endfor %}
-                        {% endif %}
-                    </div>
+                        </div>
+                    {% endif %}
                 </div>
                 <div class="next-link-text prices" style="margin-top: 40px;">
                     <a class="scroll-in-site" id="precios" href="{{ _host }}modelos/{{ model.key }}#precios"><span>Visita Versiones</span></a>
@@ -251,12 +251,12 @@
                                                 {% endfor %}
                                             </div>
                                         {% endif %}
-                                        <a style='text-align: center; margin: 30px auto 0 auto; display: block' onclick=ga('send', 'event', 'Material de apoyo', 'Descarga', '{{ model.precios.main.model_prices.event.ga }}' ); href="{{ _host }}files/fichas/{{ model.precios.main.model_prices.event.href }}" target="_blank">
-                                            <span class="entypo">&#128196;</span><span>Descargar ficha completa en PDF</span>
-                                        </a>
                                     </div>
                                 </div>
                             </div>
+                            <a style='text-align: center; margin: 30px auto 0 auto; display: block' onclick=ga('send', 'event', 'Material de apoyo', 'Descarga', '{{ model.precios.main.model_prices.event.ga }}' ); href="{{ _host }}files/fichas/{{ model.precios.main.model_prices.event.href }}" target="_blank">
+                                <span class="entypo">&#128196;</span><span>Descargar ficha completa en PDF</span>
+                            </a>
                             {#<div class="comparative-button-wrapper">#}
                                 {#<a class="swap-display-tables button blue" data-display-table="comparative">Comparar con otros modelos</a>#}
                             {#</div>#}
@@ -350,7 +350,7 @@
                     <div class="hidden-list">
                         {% if interior %}
                             {% for thumb in interior %}
-                                <a class="fancybox-thumbs" href="{{ _host }}img/sections/models/accessories/{{ model.key }}/{{ thumb.href }}" data-fancybox-group="accesorios" title=". . ." alt=". . .">
+                                <a class="fancybox-thumbs" href="{{ _host }}img/sections/models/accessories/{{ model.key }}/{{ thumb.href }}" data-fancybox-group="accesorios" title="{{ thumb.title }}" alt="{{ thumb.title }}">
                                     <img src="{{ _host }}img/sections/models/accessories/{{ model.key }}/{{ thumb.img }}" alt=". . ."/>
                                 </a>
                             {% endfor %}
@@ -376,7 +376,7 @@
             <div id="test-drive-models">
                 <div class="section-title">
                     <div class="title">Agendar prueba de manejo</div>
-                    <div class="description">En dos sencillos pasos podrás agendar tu prueba de manejo y vivir la experiencia Suzuki.</div>
+                    <div class="description">Contactanos para agendar tu prueba de manejo y vivir la experiencia Suzuki.</div>
                 </div>
                 <div id="test-drive-steps">
                     <div id="header-prueba-manejo-modelos">

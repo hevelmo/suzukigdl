@@ -279,7 +279,7 @@
         if( target_name != 'top' ){
             target = $( 'a[name="' + target_name + '"]' );
             dest = target.offset().top - header_height - 35;
-            if (IS_MOBILE) {
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
                 dest += 75;
             }
         }else{
@@ -4735,7 +4735,7 @@
         is_mobile : function () {
             if( IS_MOBILE ) {
                 // tasks to do if it is a Mobile Device
-                SUK.loadTemplate(tempsNames.tmp_mobile_menu, '#mobile-menu');
+                //SUK.loadTemplate(tempsNames.tmp_mobile_menu, '#mobile-menu');
                 is_mobileMethods.adEventListener();
 
                 //console.log('You are using a mobile device!');

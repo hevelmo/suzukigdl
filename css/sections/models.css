@@ -79,6 +79,15 @@
     margin:380px auto 0;
     width:82px;
 }
+.car-main.big-main .car-next-step {
+    height: 210px;
+    margin: 470px auto 0;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .car-main .car-next-step {
+        margin: 0px auto 0 !important;
+    }
+}
 .car-main .car-next-step a {
     background:url("../../img/sections/models/next-step.png") left top no-repeat;
     display:block;
@@ -584,13 +593,13 @@
     opacity:1;
     filter:alpha(opacity=100);
 }
-.galery-of-s-cross .view {
+/*.galery-of-s-cross .view {
     cursor:pointer;
     height:190px;
     margin:0 1px 1px 0;
     overflow:hidden;
     width:190px;
-}
+}*/
 .galery-of-s-cross .view img {
     display:block;
     height:auto;
@@ -631,6 +640,7 @@
 .galery-of-s-cross .view .mask a.info.social {
     background:url("../../img/sections/models/common/black_social.png") center center no-repeat;
 }
+/*
 .galery-of-s-cross .view.box-1, .galery-of-s-cross .view.box-2, .galery-of-s-cross .view.box-3, .galery-of-s-cross .view.box-4, .galery-of-s-cross .view.box-5, .galery-of-s-cross .view.box-6, .galery-of-s-cross .view.box-7, .galery-of-s-cross .view.box-8, .galery-of-s-cross .view.box-360 {
     float:left;
 }
@@ -678,7 +688,7 @@
 }
 .galery-of-s-cross .view.box-3 {
     margin:138px 0 0 -321px;
-}
+}*/
 .galery-of-s-cross .view:hover .mask {
     opacity:1;
     filter:alpha(opacity=100);
@@ -1644,6 +1654,7 @@ table.suzuki-grid tbody tr td.light p {
     }
     .model-section .specifications-wrapper .specifications .specification {
         background-size:100% auto;
+        margin-bottom: 35px;
     }
     .model-section .specifications-wrapper .specifications .specification .title-wrapper {
         width:100%;
