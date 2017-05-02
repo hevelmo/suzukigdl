@@ -1,6 +1,6 @@
 detectNavigatorMethods.IE10();
 is_mobileMethods.is_mobile();
-modifyHeight("#features-space .suzuki-table .body .row");
+//modifyHeight("#features-space .suzuki-table .body .row");
 features_tables.init_is_mobile();
 is_mobileMethods.is_mobile_versions_price_table();
 
@@ -85,7 +85,7 @@ modelsMenuMethods.scrollSwitchMethod();
             if( display_vct_class == $div.data('display-table') ){
                 $div.fadeOut().fadeIn(1000);
                 //modifyHeight("#comparative-space-wrapper .suzuki-table .body .row");
-                modifyHeight("#features-space .suzuki-table .body .row");
+                //modifyHeight("#features-space .suzuki-table .body .row");
             }else{
                 $div.hide();
             }
@@ -100,6 +100,16 @@ modelsMenuMethods.scrollSwitchMethod();
         }, 900 );
     });
     display_versions_comparative();
+    /*$.fn.equalHeights = function(){
+        var max_height = 0;
+        $(this).each(function(){
+            max_height = Math.max($(this).height(), max_height);
+        });
+        $(this).each(function(){
+            $(this).height(max_height);
+        });
+    };
+    $('#features-space .suzuki-table .body .row .cell.equal-height').equalHeights();*/
 
     $('body').on('click', '#model-test-drive-flag-link', modelsMenuMethods.preventDefault_flag_link);
     $('body').on('click', '#prueba-de-manejo', modelsMenuMethods.preventDefault_test_drive);

@@ -427,7 +427,7 @@ $app = new \Slim\App($container);
             $modelo = $args["modelo"];
             $modelo = str_replace("-", " ", ucfirst($modelo));
 
-            parent::getTemplate()->addToMasterConfigArray("title", "Suzuki Autos " . _LOC . ":" . $modelo);
+            parent::getTemplate()->addToMasterConfigArray("title", "Suzuki Autos " . _LOC . ": " . $modelo);
 
             parent::getTemplate()->display();
             //echo "<pre>", print_r(parent::getTemplate()->getMasterConfigArray()), "</pre>";

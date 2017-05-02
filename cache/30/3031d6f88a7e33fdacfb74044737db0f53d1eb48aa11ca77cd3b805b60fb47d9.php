@@ -104,7 +104,7 @@ class __TwigTemplate_b38d6c1e45c49dec9b60f6cd8ab3e14712d22464e270b19dc3295319340
     {
         // line 27
         echo "    ";
-        $this->loadTemplate("modelos/modelo/_model.twig", "modelos/modelo/_model.twig", 27, "207432880")->display($context);
+        $this->loadTemplate("modelos/modelo/_model.twig", "modelos/modelo/_model.twig", 27, "421058067")->display($context);
     }
 
     // line 42
@@ -112,7 +112,7 @@ class __TwigTemplate_b38d6c1e45c49dec9b60f6cd8ab3e14712d22464e270b19dc3295319340
     {
         // line 43
         echo "    ";
-        $this->loadTemplate("modelos/modelo/_model.twig", "modelos/modelo/_model.twig", 43, "2132755811")->display($context);
+        $this->loadTemplate("modelos/modelo/_model.twig", "modelos/modelo/_model.twig", 43, "1533122957")->display($context);
     }
 
     // line 45
@@ -120,7 +120,7 @@ class __TwigTemplate_b38d6c1e45c49dec9b60f6cd8ab3e14712d22464e270b19dc3295319340
     {
         // line 46
         echo "    ";
-        $this->loadTemplate("modelos/modelo/_model.twig", "modelos/modelo/_model.twig", 46, "1874550816")->display($context);
+        $this->loadTemplate("modelos/modelo/_model.twig", "modelos/modelo/_model.twig", 46, "577123852")->display($context);
     }
 
     // line 48
@@ -142,8 +142,6 @@ class __TwigTemplate_b38d6c1e45c49dec9b60f6cd8ab3e14712d22464e270b19dc3295319340
     public function block_load_scripts($context, array $blocks = array())
     {
         // line 54
-        echo "\t";
-        // line 55
         echo "\ttoHtmlMethod.toHtml();
 ";
     }
@@ -160,13 +158,13 @@ class __TwigTemplate_b38d6c1e45c49dec9b60f6cd8ab3e14712d22464e270b19dc3295319340
 
     public function getDebugInfo()
     {
-        return array (  147 => 55,  145 => 54,  142 => 53,  135 => 51,  132 => 50,  127 => 48,  122 => 46,  119 => 45,  114 => 43,  111 => 42,  106 => 27,  103 => 26,  95 => 23,  83 => 16,  76 => 12,  73 => 11,  65 => 8,  62 => 7,  59 => 6,  48 => 4,  45 => 3,  39 => 2,  11 => 1,);
+        return array (  145 => 54,  142 => 53,  135 => 51,  132 => 50,  127 => 48,  122 => 46,  119 => 45,  114 => 43,  111 => 42,  106 => 27,  103 => 26,  95 => 23,  83 => 16,  76 => 12,  73 => 11,  65 => 8,  62 => 7,  59 => 6,  48 => 4,  45 => 3,  39 => 2,  11 => 1,);
     }
 }
 
 
 /* modelos/modelo/_model.twig */
-class __TwigTemplate_b38d6c1e45c49dec9b60f6cd8ab3e14712d22464e270b19dc3295319340f8313_207432880 extends Twig_Template
+class __TwigTemplate_b38d6c1e45c49dec9b60f6cd8ab3e14712d22464e270b19dc3295319340f8313_421058067 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -219,13 +217,13 @@ class __TwigTemplate_b38d6c1e45c49dec9b60f6cd8ab3e14712d22464e270b19dc3295319340
 
     public function getDebugInfo()
     {
-        return array (  206 => 38,  203 => 37,  199 => 36,  197 => 29,  194 => 28,  176 => 27,  147 => 55,  145 => 54,  142 => 53,  135 => 51,  132 => 50,  127 => 48,  122 => 46,  119 => 45,  114 => 43,  111 => 42,  106 => 27,  103 => 26,  95 => 23,  83 => 16,  76 => 12,  73 => 11,  65 => 8,  62 => 7,  59 => 6,  48 => 4,  45 => 3,  39 => 2,  11 => 1,);
+        return array (  204 => 38,  201 => 37,  197 => 36,  195 => 29,  192 => 28,  174 => 27,  145 => 54,  142 => 53,  135 => 51,  132 => 50,  127 => 48,  122 => 46,  119 => 45,  114 => 43,  111 => 42,  106 => 27,  103 => 26,  95 => 23,  83 => 16,  76 => 12,  73 => 11,  65 => 8,  62 => 7,  59 => 6,  48 => 4,  45 => 3,  39 => 2,  11 => 1,);
     }
 }
 
 
 /* modelos/modelo/_model.twig */
-class __TwigTemplate_b38d6c1e45c49dec9b60f6cd8ab3e14712d22464e270b19dc3295319340f8313_2132755811 extends Twig_Template
+class __TwigTemplate_b38d6c1e45c49dec9b60f6cd8ab3e14712d22464e270b19dc3295319340f8313_1533122957 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -259,13 +257,13 @@ class __TwigTemplate_b38d6c1e45c49dec9b60f6cd8ab3e14712d22464e270b19dc3295319340
 
     public function getDebugInfo()
     {
-        return array (  235 => 43,  206 => 38,  203 => 37,  199 => 36,  197 => 29,  194 => 28,  176 => 27,  147 => 55,  145 => 54,  142 => 53,  135 => 51,  132 => 50,  127 => 48,  122 => 46,  119 => 45,  114 => 43,  111 => 42,  106 => 27,  103 => 26,  95 => 23,  83 => 16,  76 => 12,  73 => 11,  65 => 8,  62 => 7,  59 => 6,  48 => 4,  45 => 3,  39 => 2,  11 => 1,);
+        return array (  233 => 43,  204 => 38,  201 => 37,  197 => 36,  195 => 29,  192 => 28,  174 => 27,  145 => 54,  142 => 53,  135 => 51,  132 => 50,  127 => 48,  122 => 46,  119 => 45,  114 => 43,  111 => 42,  106 => 27,  103 => 26,  95 => 23,  83 => 16,  76 => 12,  73 => 11,  65 => 8,  62 => 7,  59 => 6,  48 => 4,  45 => 3,  39 => 2,  11 => 1,);
     }
 }
 
 
 /* modelos/modelo/_model.twig */
-class __TwigTemplate_b38d6c1e45c49dec9b60f6cd8ab3e14712d22464e270b19dc3295319340f8313_1874550816 extends Twig_Template
+class __TwigTemplate_b38d6c1e45c49dec9b60f6cd8ab3e14712d22464e270b19dc3295319340f8313_577123852 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -299,7 +297,7 @@ class __TwigTemplate_b38d6c1e45c49dec9b60f6cd8ab3e14712d22464e270b19dc3295319340
 
     public function getDebugInfo()
     {
-        return array (  275 => 46,  235 => 43,  206 => 38,  203 => 37,  199 => 36,  197 => 29,  194 => 28,  176 => 27,  147 => 55,  145 => 54,  142 => 53,  135 => 51,  132 => 50,  127 => 48,  122 => 46,  119 => 45,  114 => 43,  111 => 42,  106 => 27,  103 => 26,  95 => 23,  83 => 16,  76 => 12,  73 => 11,  65 => 8,  62 => 7,  59 => 6,  48 => 4,  45 => 3,  39 => 2,  11 => 1,);
+        return array (  273 => 46,  233 => 43,  204 => 38,  201 => 37,  197 => 36,  195 => 29,  192 => 28,  174 => 27,  145 => 54,  142 => 53,  135 => 51,  132 => 50,  127 => 48,  122 => 46,  119 => 45,  114 => 43,  111 => 42,  106 => 27,  103 => 26,  95 => 23,  83 => 16,  76 => 12,  73 => 11,  65 => 8,  62 => 7,  59 => 6,  48 => 4,  45 => 3,  39 => 2,  11 => 1,);
     }
 }
 /* {% extends "super.twig" %}*/
@@ -355,6 +353,5 @@ class __TwigTemplate_b38d6c1e45c49dec9b60f6cd8ab3e14712d22464e270b19dc3295319340
 /* 	<script src="{{ _host }}js/sections/models.js"></script>*/
 /* {% endblock %}*/
 /* {% block load_scripts %}*/
-/* 	{#$('.seleccionar').chosen();#}*/
 /* 	toHtmlMethod.toHtml();*/
 /* {% endblock %}*/

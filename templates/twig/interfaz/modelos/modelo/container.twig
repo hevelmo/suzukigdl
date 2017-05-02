@@ -142,7 +142,7 @@
                                                         {% if head.cell %}
                                                             {% if head.cell.first %}
                                                                 <div class="cell  col-{{ head.cell.class }} {{ head.cell.first.class }}">
-                                                                    <div class="image">
+                                                                    <div class="image" {% if head.cell.first.style %}style="{{ head.cell.first.style }}"{% endif %}>
                                                                         <img src="{{ _host }}img/sections/models/prices/mini-models/{{ head.cell.first.image }}" />
                                                                     </div>
                                                                     <div class="title">
@@ -152,7 +152,7 @@
                                                             {% endif %}
                                                             {% if head.cell.second %}
                                                                 <div class="cell  col-{{ head.cell.class }}">
-                                                                    <div class="image">
+                                                                    <div class="image" {% if head.cell.second.style %}style="{{ head.cell.second.style }}"{% endif %}>
                                                                         <img src="{{ _host }}img/sections/models/prices/mini-models/{{ head.cell.second.image }}" />
                                                                     </div>
                                                                     <div class="title">
@@ -162,7 +162,7 @@
                                                             {% endif %}
                                                             {% if head.cell.third %}
                                                                 <div class="cell  col-{{ head.cell.class }}">
-                                                                    <div class="image">
+                                                                    <div class="image" {% if head.cell.third.style %}style="{{ head.cell.third.style }}"{% endif %}>
                                                                         <img src="{{ _host }}img/sections/models/prices/mini-models/{{ head.cell.third.image }}" />
                                                                     </div>
                                                                     <div class="title">
@@ -172,7 +172,7 @@
                                                             {% endif %}
                                                             {% if head.cell.fourth %}
                                                                 <div class="cell  col-{{ head.cell.class }} {{ head.cell.fourth.class }}">
-                                                                    <div class="image">
+                                                                    <div class="image" {% if head.cell.fourth.style %}style="{{ head.cell.fourth.style }}"{% endif %}>
                                                                         <img src="{{ _host }}img/sections/models/prices/mini-models/{{ head.cell.fourth.image }}" />
                                                                     </div>
                                                                     <div class="title">
@@ -191,7 +191,7 @@
                                                     <div class="row  row-{{ rows.class }} cols-{{ body.col.class }}">
                                                         {% if rows.cell.first %}
                                                             {% if rows.cell.first or rows.cell.first.price %}
-                                                                <div class="cell {{ rows.cell.first.price.class }} col-{{ rows.cell.class }} {{ rows.cell.first.class }}" style="{{ rows.cell.first.height }}">
+                                                                <div class="cell equal-height {{ rows.cell.first.price.class }} col-{{ rows.cell.class }} {{ rows.cell.first.class }}">
                                                                     <div class="title to-html">
                                                                         {% if rows.cell.first.title %}
                                                                             {{ rows.cell.first.title }}
@@ -205,7 +205,7 @@
                                                                 </div>
                                                             {% endif %}
                                                             {% if rows.cell.second or rows.cell.second.price %}
-                                                                <div class="cell {{ rows.cell.second.price.class }} col-{{ rows.cell.class }} {{ rows.cell.second.class }}" style="{{ rows.cell.second.height }}">
+                                                                <div class="cell equal-height {{ rows.cell.second.price.class }} col-{{ rows.cell.class }} {{ rows.cell.second.class }}">
                                                                     <div class="title to-html">
                                                                         {% if rows.cell.second.title %}
                                                                             {{ rows.cell.second.title }}
@@ -219,7 +219,7 @@
                                                                 </div>
                                                             {% endif %}
                                                             {% if rows.cell.third or rows.cell.third.price %}
-                                                                <div class="cell {{ rows.cell.third.price.class }} col-{{ rows.cell.class }} {{ rows.cell.third.class }}" style="{{ rows.cell.third.height }}">
+                                                                <div class="cell equal-height {{ rows.cell.third.price.class }} col-{{ rows.cell.class }} {{ rows.cell.third.class }}">
                                                                     <div class="title to-html">
                                                                         {% if rows.cell.third.title %}
                                                                             {{ rows.cell.third.title }}
@@ -233,7 +233,7 @@
                                                                 </div>
                                                             {% endif %}
                                                             {% if rows.cell.fourth or rows.cell.fourth.price %}
-                                                                <div class="cell {{ rows.cell.fourth.price.class }} col-{{ rows.cell.class }} {{ rows.cell.fourth.class }}" style="{{ rows.cell.fourth.height }}">
+                                                                <div class="cell equal-height {{ rows.cell.fourth.price.class }} col-{{ rows.cell.class }} {{ rows.cell.fourth.class }}">
                                                                     <div class="title to-html">
                                                                         {% if rows.cell.fourth.title %}
                                                                             {{ rows.cell.fourth.title }}
@@ -299,6 +299,13 @@
                                                     <div class="cell {{ rows.cell.fourth.head_class }} col-{{ rows.cell.fourth.col }} {{ rows.cell.fourth.class }}">
                                                         <div class="title">
                                                             <p>{{ rows.cell.fourth.title }}</p>
+                                                        </div>
+                                                    </div>
+                                                {% endif %}
+                                                {% if not rows.cell or rows.cell.fifth.head_class or rows.cell.fifth %}
+                                                    <div class="cell {{ rows.cell.fifth.head_class }} col-{{ rows.cell.fifth.col }} {{ rows.cell.fifth.class }}">
+                                                        <div class="title">
+                                                            <p>{{ rows.cell.fifth.title }}</p>
                                                         </div>
                                                     </div>
                                                 {% endif %}
