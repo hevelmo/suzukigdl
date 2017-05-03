@@ -46,4 +46,6 @@ $(document).ready(function() {
     $('body').on('click', ".header-column", is_mobileMethods.clickHeaderColumn);
     $('body').on('click', ".back-list-arrow", is_mobileMethods.clickBackListArrow);
 
+    $('body').on('click', ".scroll-up", up.init);
+
 });

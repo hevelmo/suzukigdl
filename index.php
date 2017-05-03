@@ -38,13 +38,23 @@ $app = new \Slim\App($container);
  * [ROOM]
  */
     $app->get("/", "ControlHome:__invoke");
+    // GRUPO SUZUKI
     $app->get("/grupo", "ControlGroup:__invoke");
+    // CATALOGOS
     $app->get("/catalogos", "ControlCatalogs:__invoke");
+    // CONCESIONARIAS
     $app->get("/concesionarias", "ControlConcessionaires:__invoke");
+    // CONTACTO
     $app->get("/contactanos", "ControlContact:__invoke");
+    // MODELOS
     $app->get("/modelos", "ControlModels:__invoke");
     $app->get("/modelos/{modelo}", "ControlByModel:__invoke");
-    $app->get("/aviso-de-privacidad", "ControlPrivacyNotice:__invoke");
+    // FINANCIAMIENTO
+    $app->get("/financiamiento", "ControlFinancing:__invoke");
+    $app->get("/financiamiento/{modelo}", "ControlFinancingByModel:__invoke");
+    // TERMINOS LEGALES Y AVISO DE PRIVACIDAD
+    $app->get("/terminos-legales", "ControlLegal:__invoke");
+    $app->get("/aviso-de-privacidad", "ControlPrivacy:__invoke");
     $app->run();
 /**
  * CONTROL MASTER
@@ -433,10 +443,134 @@ $app = new \Slim\App($container);
             //echo "<pre>", print_r(parent::getTemplate()->getMasterConfigArray()), "</pre>";
         }
     }
+    /**
+     * CONTROL FINANCING
+    **/
+    class ControlFinancing extends ControlMaster {    
+        function __construct() {
+            parent::__construct(
+                array(
+                    "title" => "Suzuki Autos " . _LOC . ": Financiamiento",
+                    "title_header" => "Suzuki Autos " . _LOC . ": Financiamiento"
+                ),
+                array(),
+                "financiamiento/_financiamiento.twig"
+            );
+            // Facebook Metatags
+            parent::getTemplate()->makeFacebookTags(
+                "Suzuki Autos " . _LOC . ": Financiamiento",
+                "Suzuki Autos " . _LOC,
+                "Suzuki Autos " . _LOC . ": Financiamiento",
+                _HOST . "img/template/common/header/horizontal_logo.png"
+            );
+        }
+        /**
+         * This inherited method don't do nothing however is mandatory to implement it
+         * Because the parent method is an abstract one.
+         * 
+         * @param   Slim\Http\Request       $request 
+         * @param   Slim\Http\Response      $response 
+         * @param   array                   $args
+        **/
+        public function __invoke($request, $response, $args) {
+            parent::getRouter()->setRouteParams($request, $response, $args);
+            parent::getTemplate()->addToMasterConfigArray(parent::getRouter()->getArgs());
+
+            $modelos = parent::getSite()->getGamma();
+            parent::getTemplate()->addToMasterConfigArray('mdopa', $modelos);
+
+            parent::getTemplate()->display();
+            //echo "<pre>", print_r(parent::getTemplate()->getMasterConfigArray()), "</pre>";
+        }
+    }
+    /**
+     * CONTROL FINANCING BY MODEL
+    **/
+    class ControlFinancingByModel extends ControlMaster {    
+        function __construct() {
+            parent::__construct(
+                array(
+                    "title" => "Suzuki Autos " . _LOC . ": Financiamiento",
+                    "title_header" => "Suzuki Autos " . _LOC . ": Financiamiento"
+                ),
+                array(),
+                "financiamiento/modelo/_modelo.twig"
+            );
+            // Facebook Metatags
+            parent::getTemplate()->makeFacebookTags(
+                "Suzuki Autos " . _LOC . ": Financiamiento",
+                "Suzuki Autos " . _LOC,
+                "Suzuki Autos " . _LOC . ": Financiamiento",
+                _HOST . "img/template/common/header/horizontal_logo.png"
+            );
+        }
+        /**
+         * This inherited method don't do nothing however is mandatory to implement it
+         * Because the parent method is an abstract one.
+         * 
+         * @param   Slim\Http\Request       $request 
+         * @param   Slim\Http\Response      $response 
+         * @param   array                   $args
+        **/
+        public function __invoke($request, $response, $args) {
+            parent::getRouter()->setRouteParams($request, $response, $args);
+            parent::getTemplate()->addToMasterConfigArray(parent::getRouter()->getArgs());
+
+            $modelos = parent::getSite()->getGamma();
+            parent::getTemplate()->addToMasterConfigArray('mdopa', $modelos);
+
+            $modelo = parent::getRouter()->getArgs('modelo');
+            $detalle = parent::getSite()->getModelos($modelo);
+            parent::getTemplate()->addToMasterConfigArray('mdopa', $detalle);
+
+            $modelo = $args["modelo"];
+            $modelo = str_replace("-", " ", ucfirst($modelo));
+
+            parent::getTemplate()->addToMasterConfigArray("title", "Suzuki Autos " . _LOC . ": " . $modelo);
+
+            parent::getTemplate()->display();
+            //echo "<pre>", print_r(parent::getTemplate()->getMasterConfigArray()), "</pre>";
+        }
+    }
     
-    
-    // CONTROL PRIVACY NOTICE
-    class ControlPrivacyNotice extends ControlMaster {
+    /**
+     * CONTROL LEGAL
+    **/
+    class ControlLegal extends ControlMaster {
+        function __construct() {
+            parent::__construct(
+                array(
+                    "title" => "TERMINOS LEGALES",
+                    "title_header" => "TERMINOS LEGALES"
+                ),
+                array(),
+                "legales/_legales.twig"
+            );
+            //Facebook Metatags
+            parent::getTemplate()->makeFacebookTags(
+                "TERMINOS LEGALES", 
+                "Suzuki Autos " . _LOC,
+                "TERMINOS LEGALES",
+                _HOST . "img/template/common/header/horizontal_logo.png"
+            );
+        }
+        /**
+         * This inherited method don't do nothing however is mandatory to implement it
+         * Because the parent method is an abstract one.
+         * 
+         * @param   Slim\Http\Request       $request 
+         * @param   Slim\Http\Response      $response 
+         * @param   array                   $args
+        **/
+        public function __invoke($request, $response, $args) {            
+            parent::getTemplate()->display();
+            //echo "<pre>", print_r(parent::getTemplate()->getMasterConfigArray()), "</pre>";
+        }
+    }
+    /**
+     * CONTROL PRIVACY NOTICE
+    **/
+    class ControlPrivacy extends ControlMaster {
         function __construct() {
             parent::__construct(
                 array(

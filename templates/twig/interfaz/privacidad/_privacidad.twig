@@ -1,0 +1,30 @@
+{% extends "super.twig" %}
+{% block title %}{{ title }}{% endblock %}
+{% block section_stylessheet %}
+	<link id="legals" rel="stylesheet" class="link-legals" href="{{ _host }}css/sections/legals.css">
+{% endblock %}
+{% block section %}
+    <input type="hidden" id="hidden_section" value="privacy-notice">
+{% endblock %}
+{% block menu_patch %}    
+	<div class="menu-patch" id="patch">&nbsp;</div>
+{% endblock %}
+{% block navbar %}
+    {% embed "super_navbar.twig" %}
+		{% block models_header %}
+			{#{% embed "menus/models_menu.twig" %}{% endembed %}#}
+	    {% endblock %}
+    {% endembed %}
+{% endblock %}
+{% block content_current %}
+    {% embed "privacidad/container.twig" %}{% endembed %}
+{% endblock %}
+{% block footer %}
+    {% embed "super_footer.twig" %}{% endembed %}
+{% endblock %}
+{% block script_load_js %}
+{% endblock %}
+{% block section_scripts %}
+{% endblock %}
+{% block load_scripts %}
+{% endblock %}

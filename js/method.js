@@ -291,6 +291,12 @@
         //console.log(dest);
         $('html,body').stop().animate({ scrollTop : dest}, 800 , 'easeOutSine');
     };
+
+    var up = {
+        init: function(event) {
+            $('html,body').stop().animate({ scrollTop : 0}, 800 , 'easeOutSine');
+        }
+    }
 /* ------------------------------------------------------ *\
     [functions] animate_arrow
 \* ------------------------------------------------------ */
@@ -5378,7 +5384,7 @@
                 $("#fake-calculate").on('click', financingByModelMethods.preventDefault_fakeCaculate);
                 $("#modify-calc").on('click', financingByModelMethods.preventDefault_modifyCalc);
             }
-            //console.log(fuh_data.key);
+            console.log(fuh_data.key);
         },
         // EVENTS
         preventDefault_panelTabsNav: function(event) {

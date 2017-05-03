@@ -5122,7 +5122,7 @@
                 width: 140px;
                 margin: 50px auto 10px;*/
                 overflow: hidden;
-                background: #fff url("../img/arrowdown.gif") no-repeat 96% 40%;
+                background: #fff url("../img/arrowdown.gif") no-repeat 90% 40%;
             }
             .select select.form-control {
                 -webkit-appearance: button;

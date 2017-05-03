@@ -14,6 +14,7 @@ class __TwigTemplate_e340bdb3135ad83dfe48c931e601d877ce70727ab0771e007c82a17152a
             'section_stylessheet' => array($this, 'block_section_stylessheet'),
             'social_bar' => array($this, 'block_social_bar'),
             'section' => array($this, 'block_section'),
+            'menu_patch' => array($this, 'block_menu_patch'),
             'navbar' => array($this, 'block_navbar'),
             'content_current' => array($this, 'block_content_current'),
             'footer' => array($this, 'block_footer'),
@@ -62,44 +63,52 @@ class __TwigTemplate_e340bdb3135ad83dfe48c931e601d877ce70727ab0771e007c82a17152a
     }
 
     // line 11
-    public function block_navbar($context, array $blocks = array())
+    public function block_menu_patch($context, array $blocks = array())
     {
-        // line 12
-        echo "    ";
-        $this->loadTemplate("concesionarias/_concesionarias.twig", "concesionarias/_concesionarias.twig", 12, "1014658596")->display($context);
+        echo "    
+    <div class=\"menu-patch\" id=\"patch\">&nbsp;</div>
+";
     }
 
-    // line 19
-    public function block_content_current($context, array $blocks = array())
+    // line 14
+    public function block_navbar($context, array $blocks = array())
     {
-        // line 20
+        // line 15
         echo "    ";
+        $this->loadTemplate("concesionarias/_concesionarias.twig", "concesionarias/_concesionarias.twig", 15, "23001343")->display($context);
     }
 
     // line 22
-    public function block_footer($context, array $blocks = array())
+    public function block_content_current($context, array $blocks = array())
     {
         // line 23
         echo "    ";
-        $this->loadTemplate("concesionarias/_concesionarias.twig", "concesionarias/_concesionarias.twig", 23, "661595369")->display($context);
     }
 
     // line 25
+    public function block_footer($context, array $blocks = array())
+    {
+        // line 26
+        echo "    ";
+        $this->loadTemplate("concesionarias/_concesionarias.twig", "concesionarias/_concesionarias.twig", 26, "1283790180")->display($context);
+    }
+
+    // line 28
     public function block_script_load_js($context, array $blocks = array())
     {
     }
 
-    // line 27
+    // line 30
     public function block_section_scripts($context, array $blocks = array())
     {
-        // line 28
+        // line 31
         echo "    ";
     }
 
-    // line 30
+    // line 33
     public function block_load_scripts($context, array $blocks = array())
     {
-        // line 31
+        // line 34
         echo "    \$('body').prepend( patch_bar );
     detectNavigatorMethods.IE10();
 ";
@@ -117,20 +126,20 @@ class __TwigTemplate_e340bdb3135ad83dfe48c931e601d877ce70727ab0771e007c82a17152a
 
     public function getDebugInfo()
     {
-        return array (  103 => 31,  100 => 30,  96 => 28,  93 => 27,  88 => 25,  83 => 23,  80 => 22,  76 => 20,  73 => 19,  68 => 12,  65 => 11,  60 => 9,  57 => 8,  50 => 6,  46 => 4,  43 => 3,  37 => 2,  11 => 1,);
+        return array (  112 => 34,  109 => 33,  105 => 31,  102 => 30,  97 => 28,  92 => 26,  89 => 25,  85 => 23,  82 => 22,  77 => 15,  74 => 14,  66 => 11,  61 => 9,  58 => 8,  51 => 6,  47 => 4,  44 => 3,  38 => 2,  11 => 1,);
     }
 }
 
 
 /* concesionarias/_concesionarias.twig */
-class __TwigTemplate_e340bdb3135ad83dfe48c931e601d877ce70727ab0771e007c82a17152a88f22_1014658596 extends Twig_Template
+class __TwigTemplate_e340bdb3135ad83dfe48c931e601d877ce70727ab0771e007c82a17152a88f22_23001343 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
-        // line 12
-        $this->parent = $this->loadTemplate("super_navbar.twig", "concesionarias/_concesionarias.twig", 12);
+        // line 15
+        $this->parent = $this->loadTemplate("super_navbar.twig", "concesionarias/_concesionarias.twig", 15);
         $this->blocks = array(
             'phone_call' => array($this, 'block_phone_call'),
             'models_header' => array($this, 'block_models_header'),
@@ -147,17 +156,17 @@ class __TwigTemplate_e340bdb3135ad83dfe48c931e601d877ce70727ab0771e007c82a17152a
         $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
 
-    // line 13
+    // line 16
     public function block_phone_call($context, array $blocks = array())
     {
-        // line 14
+        // line 17
         echo "        ";
     }
 
-    // line 15
+    // line 18
     public function block_models_header($context, array $blocks = array())
     {
-        // line 16
+        // line 19
         echo "\t\t";
     }
 
@@ -173,20 +182,20 @@ class __TwigTemplate_e340bdb3135ad83dfe48c931e601d877ce70727ab0771e007c82a17152a
 
     public function getDebugInfo()
     {
-        return array (  161 => 16,  158 => 15,  154 => 14,  151 => 13,  133 => 12,  103 => 31,  100 => 30,  96 => 28,  93 => 27,  88 => 25,  83 => 23,  80 => 22,  76 => 20,  73 => 19,  68 => 12,  65 => 11,  60 => 9,  57 => 8,  50 => 6,  46 => 4,  43 => 3,  37 => 2,  11 => 1,);
+        return array (  170 => 19,  167 => 18,  163 => 17,  160 => 16,  142 => 15,  112 => 34,  109 => 33,  105 => 31,  102 => 30,  97 => 28,  92 => 26,  89 => 25,  85 => 23,  82 => 22,  77 => 15,  74 => 14,  66 => 11,  61 => 9,  58 => 8,  51 => 6,  47 => 4,  44 => 3,  38 => 2,  11 => 1,);
     }
 }
 
 
 /* concesionarias/_concesionarias.twig */
-class __TwigTemplate_e340bdb3135ad83dfe48c931e601d877ce70727ab0771e007c82a17152a88f22_661595369 extends Twig_Template
+class __TwigTemplate_e340bdb3135ad83dfe48c931e601d877ce70727ab0771e007c82a17152a88f22_1283790180 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
-        // line 23
-        $this->parent = $this->loadTemplate("super_footer.twig", "concesionarias/_concesionarias.twig", 23);
+        // line 26
+        $this->parent = $this->loadTemplate("super_footer.twig", "concesionarias/_concesionarias.twig", 26);
         $this->blocks = array(
         );
     }
@@ -213,7 +222,7 @@ class __TwigTemplate_e340bdb3135ad83dfe48c931e601d877ce70727ab0771e007c82a17152a
 
     public function getDebugInfo()
     {
-        return array (  189 => 23,  161 => 16,  158 => 15,  154 => 14,  151 => 13,  133 => 12,  103 => 31,  100 => 30,  96 => 28,  93 => 27,  88 => 25,  83 => 23,  80 => 22,  76 => 20,  73 => 19,  68 => 12,  65 => 11,  60 => 9,  57 => 8,  50 => 6,  46 => 4,  43 => 3,  37 => 2,  11 => 1,);
+        return array (  198 => 26,  170 => 19,  167 => 18,  163 => 17,  160 => 16,  142 => 15,  112 => 34,  109 => 33,  105 => 31,  102 => 30,  97 => 28,  92 => 26,  89 => 25,  85 => 23,  82 => 22,  77 => 15,  74 => 14,  66 => 11,  61 => 9,  58 => 8,  51 => 6,  47 => 4,  44 => 3,  38 => 2,  11 => 1,);
     }
 }
 /* {% extends "super.twig" %}*/
@@ -225,6 +234,9 @@ class __TwigTemplate_e340bdb3135ad83dfe48c931e601d877ce70727ab0771e007c82a17152a
 /* {% endblock %}*/
 /* {% block section %}*/
 /*     <input type="hidden" id="hidden_section" value="concessionaires">*/
+/* {% endblock %}*/
+/* {% block menu_patch %}    */
+/*     <div class="menu-patch" id="patch">&nbsp;</div>*/
 /* {% endblock %}*/
 /* {% block navbar %}*/
 /*     {% embed "super_navbar.twig" %}*/

@@ -8876,9 +8876,9 @@
 					),
 					'mantenimieto' => array(
 						'main' => array(
-							'image' => 'kizashi.png',
-							'key' => 'kizashi',
-							'name' => 'Kizashi',
+							'image' => 'nueva-vitara.png',
+							'key' => 'nueva-vitara',
+							'name' => 'Nueva Vitara',
 							'maintenance_prices' => array(
 								'section_maintenance_prices' => array(
 									'title' => 'PRECIOS DE MANTENIMIENTO'
@@ -8939,8 +8939,18 @@
 													),
 													'third' => array(
 														'col' => 'light',
+														'class' => '',
+														'title' => '$995.00'
+													),
+													'fourth' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '$995.00'
+													),
+													'fifth' => array(
+														'col' => 'light',
 														'class' => 'last',
-														'title' => '$1,150.00'
+														'title' => '$995.00'
 													)
 												)
 											),
@@ -8960,8 +8970,18 @@
 													),
 													'third' => array(
 														'col' => 'light',
+														'class' => '',
+														'title' => '$1,060.00'
+													),
+													'fourth' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '$1,060.00'
+													),
+													'fifth' => array(
+														'col' => 'light',
 														'class' => 'last',
-														'title' => '$1,285.00'
+														'title' => '$1,060.00'
 													)
 												)
 											),
@@ -8981,8 +9001,18 @@
 													),
 													'third' => array(
 														'col' => 'light',
+														'class' => '',
+														'title' => '$1,590.00'
+													),
+													'fourth' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '$1,590.00'
+													),
+													'fifth' => array(
+														'col' => 'light',
 														'class' => 'last',
-														'title' => '$1,815.00'
+														'title' => '$1,590.00'
 													)
 												)
 											),
@@ -9002,8 +9032,18 @@
 													),
 													'third' => array(
 														'col' => 'light',
+														'class' => '',
+														'title' => '$3,370.00'
+													),
+													'fourth' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '$3,370.00'
+													),
+													'fifth' => array(
+														'col' => 'light',
 														'class' => 'last',
-														'title' => '$3,665.00'
+														'title' => '$3,370.00'
 													)
 												)
 											),
@@ -9023,8 +9063,18 @@
 													),
 													'third' => array(
 														'col' => 'light',
+														'class' => '',
+														'title' => '$2,810.00'
+													),
+													'fourth' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '$1,610.00'
+													),
+													'fifth' => array(
+														'col' => 'light',
 														'class' => 'last',
-														'title' => '$1,755.00'
+														'title' => '$1,610.00'
 													)
 												)
 											),
@@ -9044,8 +9094,18 @@
 													),
 													'third' => array(
 														'col' => 'light',
+														'class' => '',
+														'title' => '$2,765.00'
+													),
+													'fourth' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '$2,765.00'
+													),
+													'fifth' => array(
+														'col' => 'light',
 														'class' => 'last',
-														'title' => '$2,925.00'
+														'title' => '$2,765.00'
 													)
 												)
 											),
@@ -9065,8 +9125,18 @@
 													),
 													'third' => array(
 														'col' => 'light',
+														'class' => '',
+														'title' => '$1,640.00'
+													),
+													'fourth' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '$1,640.00'
+													),
+													'fifth' => array(
+														'col' => 'light',
 														'class' => 'last',
-														'title' => '$1,925.00'
+														'title' => '$2,840.00'
 													)
 												)
 											),
@@ -9086,8 +9156,18 @@
 													),
 													'third' => array(
 														'col' => 'light',
+														'class' => '',
+														'title' => '$3,110.00'
+													),
+													'fourth' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '$3,110.00'
+													),
+													'fifth' => array(
+														'col' => 'light',
 														'class' => 'last',
-														'title' => '$3,355.00'
+														'title' => '$3,110.00'
 													)
 												)
 											),
@@ -9107,8 +9187,18 @@
 													),
 													'third' => array(
 														'col' => 'light',
+														'class' => '',
+														'title' => '$2,850.00'
+													),
+													'fourth' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '$1,650.00'
+													),
+													'fifth' => array(
+														'col' => 'light',
 														'class' => 'last',
-														'title' => '$1,845.00'
+														'title' => '$1,650.00'
 													)
 												)
 											),
@@ -9128,8 +9218,18 @@
 													),
 													'third' => array(
 														'col' => 'light',
+														'class' => '',
+														'title' => '$3,480.00'
+													),
+													'fourth' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '$3,480.00'
+													),
+													'fifth' => array(
+														'col' => 'light',
 														'class' => 'last',
-														'title' => '$3,675.00'
+														'title' => '$3,480.00'
 													)
 												)
 											),
@@ -9149,8 +9249,18 @@
 													),
 													'third' => array(
 														'col' => 'light',
+														'class' => '',
+														'title' => '$3,315.00'
+													),
+													'fourth' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '$3,315.00'
+													),
+													'fifth' => array(
+														'col' => 'light',
 														'class' => 'last',
-														'title' => '$3,450.00'
+														'title' => '$3,315.00'
 													)
 												)
 											),
@@ -9170,8 +9280,18 @@
 													),
 													'third' => array(
 														'col' => 'light',
+														'class' => '',
+														'title' => '$1,125.00'
+													),
+													'fourth' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '$1,125.00'
+													),
+													'fifth' => array(
+														'col' => 'light',
 														'class' => 'last',
-														'title' => '$1,295.00'
+														'title' => '$1,125.00'
 													)
 												)
 											),
@@ -9191,8 +9311,18 @@
 													),
 													'third' => array(
 														'col' => 'light',
+														'class' => '',
+														'title' => '$2,960.00'
+													),
+													'fourth' => array(
+														'col' => 'dark',
+														'class' => '',
+														'title' => '$1,760.00'
+													),
+													'fifth' => array(
+														'col' => 'light',
 														'class' => 'last',
-														'title' => '$1,675.00'
+														'title' => '$2,960.00'
 													)
 												)
 											)
@@ -9210,7 +9340,7 @@
 							'class' => 'accessories',
 							'section_gallery' => array(
 								'title' => 'Accesorios',
-								'description' => '"Algo grande está por venir". Imponente diseño con finos acabados que roban miradas.'
+								'description' => 'La vida tiene más de un tono'
 							),
 							'grid' => array(
 								'boxes' => array(
@@ -9218,7 +9348,7 @@
 										'class' => 'box-1',
 										'image' => 'box-1.png',
 										'mask' => array(
-											'href' => 'foto-01.png',
+											'href' => 'foto-01.png.jpeg',
 											'span' => '1'
 										)
 									),
@@ -9226,7 +9356,7 @@
 										'class' => 'box-2',
 										'image' => 'box-2.png',
 										'mask' => array(
-											'href' => 'foto-02.png',
+											'href' => 'foto-02.png.jpeg',
 											'span' => '2'
 										)
 									),
@@ -9234,7 +9364,7 @@
 										'class' => 'box-3',
 										'image' => 'box-3.png',
 										'mask' => array(
-											'href' => 'foto-03.png',
+											'href' => 'foto-03.png.jpeg',
 											'span' => '3'
 										)
 									),
@@ -9242,7 +9372,7 @@
 										'class' => 'box-4',
 										'image' => 'box-4.png',
 										'mask' => array(
-											'href' => 'foto-04.png',
+											'href' => 'foto-04.png.jpeg',
 											'span' => '4'
 										)
 									),
@@ -9250,7 +9380,7 @@
 										'class' => 'box-5',
 										'image' => 'box-5.png',
 										'mask' => array(
-											'href' => 'foto-05.png',
+											'href' => 'foto-05.png.jpeg',
 											'span' => '5'
 										)
 									),
@@ -9258,7 +9388,7 @@
 										'class' => 'box-6',
 										'image' => 'box-6.png',
 										'mask' => array(
-											'href' => 'foto-06.png',
+											'href' => 'foto-06.png.jpeg',
 											'span' => '6'
 										)
 									),
@@ -9266,7 +9396,7 @@
 										'class' => 'box-7',
 										'image' => 'box-7.png',
 										'mask' => array(
-											'href' => 'foto-07.png',
+											'href' => 'foto-07.png.jpeg',
 											'span' => '7'
 										)
 									),
@@ -9274,7 +9404,7 @@
 										'class' => 'box-8',
 										'image' => 'box-8.png',
 										'mask' => array(
-											'href' => 'foto-08.png',
+											'href' => 'foto-08.png.jpeg',
 											'span' => '8'
 										)
 									)
@@ -9282,43 +9412,43 @@
 								'fancybox' => array(
 									'thumbs' => array(
 										array(
-											'img' => 'foto-01-mini.png',
-											'href' => 'foto-01.png'
+											'img' => '01-mini.jpg',
+											'href' => 'foto-01.png.jpeg'
 										),
 										array(
-											'img' => 'foto-02-mini.png',
-											'href' => 'foto-02.png'
+											'img' => '02-mini.jpg',
+											'href' => 'foto-02.png.jpeg'
 										),
 										array(
-											'img' => 'foto-03-mini.png',
-											'href' => 'foto-03.png'
+											'img' => '03-mini.jpg',
+											'href' => 'foto-03.png.jpeg'
 										),
 										array(
-											'img' => 'foto-04-mini.png',
-											'href' => 'foto-04.png'
+											'img' => '04-mini.jpg',
+											'href' => 'foto-04.png.jpeg'
 										),
 										array(
-											'img' => 'foto-05-mini.png',
-											'href' => 'foto-05.png'
+											'img' => '05-mini.jpg',
+											'href' => 'foto-05.png.jpeg'
 										),
 										array(
-											'img' => 'foto-06-mini.png',
-											'href' => 'foto-06.png'
+											'img' => '06-mini.jpg',
+											'href' => 'foto-06.png.jpeg'
 										),
 										array(
-											'img' => 'foto-07-mini.png',
-											'href' => 'foto-07.png'
+											'img' => '07-mini.jpg',
+											'href' => 'foto-07.png.jpeg'
 										),
 										array(
-											'img' => 'foto-08-mini.png',
-											'href' => 'foto-08.png'
+											'img' => '08-mini.jpg',
+											'href' => 'foto-08.png.jpeg'
 										)
 									)
 								)
 							),
 							'event' => array(
-								'ga' => 'Accesorios_kizashi',
-								'href' => 'kizashi.pdf'
+								'ga' => 'Accesorios_nueva-vitara',
+								'href' => 'nueva-vitara.pdf'
 							)
 						)
 					)

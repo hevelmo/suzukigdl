@@ -26,7 +26,7 @@ class __TwigTemplate_df2f507a9a4f8fc48c31d931a8f017e873e2e4dbcb91f5d151c1f9ab1c2
                         <a href=\"";
         // line 9
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "modelos\">
+        echo "modelos\" class=\"scroll-up\">
                             <span>Modelos</span>
                         </a>
                     </li>
@@ -34,7 +34,7 @@ class __TwigTemplate_df2f507a9a4f8fc48c31d931a8f017e873e2e4dbcb91f5d151c1f9ab1c2
                         <a href=\"";
         // line 14
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "catalogos\">
+        echo "catalogos\" class=\"scroll-up\">
                             <span>Catálogos</span>
                         </a>
                     </li>
@@ -62,7 +62,7 @@ class __TwigTemplate_df2f507a9a4f8fc48c31d931a8f017e873e2e4dbcb91f5d151c1f9ab1c2
                         <a href=\"";
         // line 40
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "modelos/swift-sport\">
+        echo "modelos/swift-sport\" class=\"scroll-up\">
                             <span>Swift Sport</span>
                         </a>
                     </li>
@@ -70,7 +70,7 @@ class __TwigTemplate_df2f507a9a4f8fc48c31d931a8f017e873e2e4dbcb91f5d151c1f9ab1c2
                         <a href=\"";
         // line 45
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "modelos/swift\">
+        echo "modelos/swift\" class=\"scroll-up\">
                             <span>Swift</span>
                         </a>
                     </li>
@@ -78,7 +78,7 @@ class __TwigTemplate_df2f507a9a4f8fc48c31d931a8f017e873e2e4dbcb91f5d151c1f9ab1c2
                         <a href=\"";
         // line 50
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "modelos/kizashi\">
+        echo "modelos/kizashi\" class=\"scroll-up\">
                             <span>Kizashi</span>
                         </a>
                     </li>
@@ -86,7 +86,7 @@ class __TwigTemplate_df2f507a9a4f8fc48c31d931a8f017e873e2e4dbcb91f5d151c1f9ab1c2
                         <a href=\"";
         // line 55
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "modelos/s-cross\">
+        echo "modelos/s-cross\" class=\"scroll-up\">
                             <span>S-Cross</span>
                         </a>
                     </li>
@@ -96,7 +96,7 @@ class __TwigTemplate_df2f507a9a4f8fc48c31d931a8f017e873e2e4dbcb91f5d151c1f9ab1c2
                         <a href=\"";
         // line 62
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "modelos/grand-vitara\">
+        echo "modelos/grand-vitara\" class=\"scroll-up\">
                             <span>Grand Vitara</span>
                         </a>
                     </li>
@@ -104,7 +104,7 @@ class __TwigTemplate_df2f507a9a4f8fc48c31d931a8f017e873e2e4dbcb91f5d151c1f9ab1c2
                         <a href=\"";
         // line 67
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "modelos/ciaz\">
+        echo "modelos/ciaz\" class=\"scroll-up\">
                             <span>Ciaz</span>
                         </a>
                     </li>
@@ -112,7 +112,7 @@ class __TwigTemplate_df2f507a9a4f8fc48c31d931a8f017e873e2e4dbcb91f5d151c1f9ab1c2
                         <a href=\"";
         // line 72
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "modelos/nueva-vitara\">
+        echo "modelos/nueva-vitara\" class=\"scroll-up\">
                             <span>Nueva Vitara</span>
                         </a>
                     </li>
@@ -120,7 +120,7 @@ class __TwigTemplate_df2f507a9a4f8fc48c31d931a8f017e873e2e4dbcb91f5d151c1f9ab1c2
                         <a href=\"";
         // line 77
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "modelos/ignis\">
+        echo "modelos/ignis\" class=\"scroll-up\">
                             <span>Ignis</span>
                         </a>
                     </li>
@@ -255,8 +255,14 @@ class __TwigTemplate_df2f507a9a4f8fc48c31d931a8f017e873e2e4dbcb91f5d151c1f9ab1c2
             </div>
             <div class=\"footer-legals\">
                 <ul class=\"links\">
-                    <li><a id=\"go-legal-terms\"><span>Términos legales</span></a></li>
-                    <li><a id=\"go-privacy-notice\"><span>Aviso de privacidad</span></a></li>
+                    <li><a href=\"";
+        // line 198
+        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
+        echo "terminos-legales\" id=\"go-legal-terms\" class=\"scroll-up\"><span>Términos legales</span></a></li>
+                    <li><a href=\"";
+        // line 199
+        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
+        echo "aviso-de-privacidad\" id=\"go-privacy-notice\" class=\"scroll-up\"><span>Aviso de privacidad</span></a></li>
                     <li class=\"last\"><a target=\"_blank\" href=\"http://www.globalsuzuki.com/\"><span>Suzuki Global</span></a></li>
                 </ul>
             </div>
@@ -279,7 +285,7 @@ class __TwigTemplate_df2f507a9a4f8fc48c31d931a8f017e873e2e4dbcb91f5d151c1f9ab1c2
 
     public function getDebugInfo()
     {
-        return array (  251 => 194,  237 => 182,  224 => 171,  211 => 160,  198 => 149,  185 => 138,  174 => 130,  168 => 126,  161 => 120,  140 => 100,  132 => 93,  122 => 77,  114 => 72,  106 => 67,  98 => 62,  88 => 55,  80 => 50,  72 => 45,  64 => 40,  43 => 21,  36 => 14,  28 => 9,  19 => 2,);
+        return array (  264 => 199,  260 => 198,  251 => 194,  237 => 182,  224 => 171,  211 => 160,  198 => 149,  185 => 138,  174 => 130,  168 => 126,  161 => 120,  140 => 100,  132 => 93,  122 => 77,  114 => 72,  106 => 67,  98 => 62,  88 => 55,  80 => 50,  72 => 45,  64 => 40,  43 => 21,  36 => 14,  28 => 9,  19 => 2,);
     }
 }
 /* {# Begin: Footer #}*/
@@ -290,12 +296,12 @@ class __TwigTemplate_df2f507a9a4f8fc48c31d931a8f017e873e2e4dbcb91f5d151c1f9ab1c2
 /*                 <div class="footer-title">Comprar un Suzuki <i class="fa fa-plus" style="font-size: 15px; margin: 5px 20px;" id="panel-before-buy"></i></div>*/
 /*                 <ul class="links" id="links-before-buy">*/
 /*                     <li>*/
-/*                         <a href="{{ _host }}modelos">*/
+/*                         <a href="{{ _host }}modelos" class="scroll-up">*/
 /*                             <span>Modelos</span>*/
 /*                         </a>*/
 /*                     </li>*/
 /*                     <li>*/
-/*                         <a href="{{ _host }}catalogos">*/
+/*                         <a href="{{ _host }}catalogos" class="scroll-up">*/
 /*                             <span>Catálogos</span>*/
 /*                         </a>*/
 /*                     </li>*/
@@ -321,44 +327,44 @@ class __TwigTemplate_df2f507a9a4f8fc48c31d931a8f017e873e2e4dbcb91f5d151c1f9ab1c2
 /*                 </div>*/
 /*                 <ul class="links links-s-1 links_catalog" id="links-catalog">*/
 /*                     <li>*/
-/*                         <a href="{{ _host }}modelos/swift-sport">*/
+/*                         <a href="{{ _host }}modelos/swift-sport" class="scroll-up">*/
 /*                             <span>Swift Sport</span>*/
 /*                         </a>*/
 /*                     </li>*/
 /*                     <li>*/
-/*                         <a href="{{ _host }}modelos/swift">*/
+/*                         <a href="{{ _host }}modelos/swift" class="scroll-up">*/
 /*                             <span>Swift</span>*/
 /*                         </a>*/
 /*                     </li>*/
 /*                     <li>*/
-/*                         <a href="{{ _host }}modelos/kizashi">*/
+/*                         <a href="{{ _host }}modelos/kizashi" class="scroll-up">*/
 /*                             <span>Kizashi</span>*/
 /*                         </a>*/
 /*                     </li>*/
 /*                     <li>*/
-/*                         <a href="{{ _host }}modelos/s-cross">*/
+/*                         <a href="{{ _host }}modelos/s-cross" class="scroll-up">*/
 /*                             <span>S-Cross</span>*/
 /*                         </a>*/
 /*                     </li>*/
 /*                 </ul>*/
 /*                 <ul class="links links-s-2 links_catalog">*/
 /*                     <li>*/
-/*                         <a href="{{ _host }}modelos/grand-vitara">*/
+/*                         <a href="{{ _host }}modelos/grand-vitara" class="scroll-up">*/
 /*                             <span>Grand Vitara</span>*/
 /*                         </a>*/
 /*                     </li>*/
 /*                     <li>*/
-/*                         <a href="{{ _host }}modelos/ciaz">*/
+/*                         <a href="{{ _host }}modelos/ciaz" class="scroll-up">*/
 /*                             <span>Ciaz</span>*/
 /*                         </a>*/
 /*                     </li>*/
 /*                     <li>*/
-/*                         <a href="{{ _host }}modelos/nueva-vitara">*/
+/*                         <a href="{{ _host }}modelos/nueva-vitara" class="scroll-up">*/
 /*                             <span>Nueva Vitara</span>*/
 /*                         </a>*/
 /*                     </li>*/
 /*                     <li>*/
-/*                         <a href="{{ _host }}modelos/ignis">*/
+/*                         <a href="{{ _host }}modelos/ignis" class="scroll-up">*/
 /*                             <span>Ignis</span>*/
 /*                         </a>*/
 /*                     </li>*/
@@ -479,8 +485,8 @@ class __TwigTemplate_df2f507a9a4f8fc48c31d931a8f017e873e2e4dbcb91f5d151c1f9ab1c2
 /*             </div>*/
 /*             <div class="footer-legals">*/
 /*                 <ul class="links">*/
-/*                     <li><a id="go-legal-terms"><span>Términos legales</span></a></li>*/
-/*                     <li><a id="go-privacy-notice"><span>Aviso de privacidad</span></a></li>*/
+/*                     <li><a href="{{ _host }}terminos-legales" id="go-legal-terms" class="scroll-up"><span>Términos legales</span></a></li>*/
+/*                     <li><a href="{{ _host }}aviso-de-privacidad" id="go-privacy-notice" class="scroll-up"><span>Aviso de privacidad</span></a></li>*/
 /*                     <li class="last"><a target="_blank" href="http://www.globalsuzuki.com/"><span>Suzuki Global</span></a></li>*/
 /*                 </ul>*/
 /*             </div>*/
