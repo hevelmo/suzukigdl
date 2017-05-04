@@ -873,7 +873,8 @@
 									),
 									'col' => array(
 										'class' => '2'
-									)
+									),
+									'height' => 'equal-height'
 								),
 								'event' => array(
 									'ga' => 'ficha-ignis',
@@ -1683,7 +1684,8 @@
 									),
 									'col' => array(
 										'class' => '1'
-									)
+									),
+									'height' => ''
 								),
 								'event' => array(
 									'ga' => 'ficha-swift-sport',
@@ -3030,7 +3032,8 @@
 									),
 									'col' => array(
 										'class' => '4'
-									)
+									),
+									'height' => 'equal-height'
 								),
 								'event' => array(
 									'ga' => 'ficha-swift-sport',
@@ -3740,7 +3743,7 @@
 													'price' => array(
 														'class' => 'price'
 													),
-													'class' => 'first',
+													'class' => 'last first',
 													'title' => '<p><span>2016 $374,500.00</span></p>'
 												)
 											)
@@ -3750,7 +3753,7 @@
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
-													'class' => 'first',
+													'class' => 'last first',
 													'title' => '<p>Motor: 4 cilindros, 2.4 litros VVT, 16 válvulas.</p>'
 												)
 											)
@@ -3760,7 +3763,7 @@
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
-													'class' => 'first',
+													'class' => 'last first',
 													'title' => '<p>Transmisión CVT.</p>'
 												)
 											)
@@ -3770,7 +3773,7 @@
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
-													'class' => 'first',
+													'class' => 'last first',
 													'title' => '<p>Potencia neta (hp@rpm): 176 hp@6,500 rpm.</p>'
 												)
 											)
@@ -3780,7 +3783,7 @@
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
-													'class' => 'first',
+													'class' => 'last first',
 													'title' => '<p>Rines: Nuevo diseño de 18".</p>'
 												)
 											)
@@ -3790,7 +3793,7 @@
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
-													'class' => 'first',
+													'class' => 'last first',
 													'title' => '<p>Aire acondicionado automático de doble zona.</p>'
 												)
 											)
@@ -3800,7 +3803,7 @@
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
-													'class' => 'first',
+													'class' => 'last first',
 													'title' => '<p>Botón de arranque (Keyless start).</p>'
 												)
 											)
@@ -3810,7 +3813,7 @@
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
-													'class' => 'first',
+													'class' => 'last first',
 													'title' => '<p>Controles de audio y velocidad crucero iluminados en el volante.</p>'
 												)
 											)
@@ -3820,7 +3823,7 @@
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
-													'class' => 'first',
+													'class' => 'last first',
 													'title' => '<p>Dirección Eléctricamente Asistida, sensible a la velocidad (EPS).</p>'
 												)
 											)
@@ -3830,7 +3833,7 @@
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
-													'class' => 'first',
+													'class' => 'last first',
 													'title' => '<p>Sistema Antibloqueo de Frenos (ABS).</p>'
 												)
 											)
@@ -3840,7 +3843,7 @@
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
-													'class' => 'first',
+													'class' => 'last first',
 													'title' => '<p>Distribución Electrónica de Fuerza de Frenado (EBD).</p>'
 												)
 											)
@@ -3850,7 +3853,7 @@
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
-													'class' => 'first',
+													'class' => 'last first',
 													'title' => '<p>Programa Electrónico de Estabilidad (ESP® ).</p>'
 												)
 											)
@@ -3860,7 +3863,7 @@
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
-													'class' => 'first',
+													'class' => 'last first',
 													'title' => '<p>Luces de circulación diurna (DRL).</p>'
 												)
 											)
@@ -3870,7 +3873,7 @@
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
-													'class' => 'first',
+													'class' => 'last first',
 													'title' => '<p>Pantalla touch de 6.1" WVGA.</p>'
 												)
 											)
@@ -3880,7 +3883,7 @@
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
-													'class' => 'first',
+													'class' => 'last first',
 													'title' => '<p>Bolsas de aire frontales (x2), laterales delanteras y traseras (x4) y tipo cortina (x2).</p>'
 												)
 											)
@@ -3890,7 +3893,7 @@
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
-													'class' => 'first',
+													'class' => 'last first',
 													'title' => '<p>Faros de niebla delanteros.</p>'
 												)
 											)
@@ -3900,7 +3903,7 @@
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
-													'class' => 'first',
+													'class' => 'last first',
 													'title' => '<p>Asistencia de frenado.</p>'
 												)
 											)
@@ -3910,7 +3913,7 @@
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
-													'class' => 'first',
+													'class' => 'last first',
 													'title' => '<p>Frenos de disco en las 4 ruedas con pastillas de freno Akebono®.</p>'
 												)
 											)
@@ -3920,7 +3923,7 @@
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
-													'class' => 'first',
+													'class' => 'last first',
 													'title' => '<p>Palancas de cambio de velocidades en el volante (Paddle Shifter).</p>'
 												)
 											)
@@ -3930,7 +3933,7 @@
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
-													'class' => 'first',
+													'class' => 'last first',
 													'title' => '<p>Suspensión delantera: McPherson.</p>'
 												)
 											)
@@ -3940,7 +3943,7 @@
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
-													'class' => 'first',
+													'class' => 'last first',
 													'title' => '<p>Suspensión trasera: Multilink.</p>'
 												)
 											)
@@ -3950,7 +3953,7 @@
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
-													'class' => 'first',
+													'class' => 'last first',
 													'title' => '<p>Sensor de reversa con cámara integrada.</p>'
 												)
 											)
@@ -3960,7 +3963,7 @@
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
-													'class' => 'first',
+													'class' => 'last first',
 													'title' => '<p>Sistema de manos libres Bluetooth®.</p>'
 												)
 											)
@@ -3970,7 +3973,7 @@
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
-													'class' => 'first',
+													'class' => 'last first',
 													'title' => '<p>Quemacocos eléctrico con cubierta interna deslizable.</p>'
 												)
 											)
@@ -3980,7 +3983,7 @@
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
-													'class' => 'first',
+													'class' => 'last first',
 													'title' => '<p>Asientos cubiertos con piel.</p>'
 												)
 											)
@@ -3990,7 +3993,7 @@
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
-													'class' => 'first',
+													'class' => 'last first',
 													'title' => '<p>Asientos delanteros con ajusre eléctrico de conductor y pasajero.</p>'
 												)
 											)
@@ -4000,7 +4003,7 @@
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
-													'class' => 'first',
+													'class' => 'last first',
 													'title' => '<p>Nuevo diseño de volante con insertos plateados y piel perforada.</p>'
 												)
 											)
@@ -4010,7 +4013,7 @@
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
-													'class' => 'first',
+													'class' => 'last first',
 													'title' => '<p>Costuras claras en volante, cubierta de palanca de velocidades y cubierta de freno de estacionamiento.</p>'
 												)
 											)
@@ -4020,7 +4023,7 @@
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
-													'class' => 'first',
+													'class' => 'last first',
 													'title' => '<p>Nuevo diseño de Fascia con parrilla doble (superior e inferior)</p>'
 												)
 											)
@@ -4030,7 +4033,7 @@
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
-													'class' => 'first',
+													'class' => 'last first',
 													'title' => '<p>Biseles cromados para faros de niebla.</p>'
 												)
 											)
@@ -4040,7 +4043,7 @@
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
-													'class' => 'first',
+													'class' => 'last first',
 													'title' => '<p>Molduras cromadas en los costados y nuevo diseño de estribos.</p>'
 												)
 											)
@@ -4050,7 +4053,7 @@
 											'cell' => array(
 												'class' => 'light',
 												'first' => array(
-													'class' => 'first',
+													'class' => 'last first',
 													'title' => '<p>Spoiler traser para tapa de la cajuela.</p>'
 												)
 											)
@@ -4058,7 +4061,8 @@
 									),
 									'col' => array(
 										'class' => '1'
-									)
+									),
+									'height' => ''
 								),
 								'event' => array(
 									'ga' => 'ficha_grand-vitara',
@@ -5306,8 +5310,9 @@
 										)
 									),
 									'col' => array(
-										'class' => '1'
-									)
+										'class' => '3'
+									),
+									'height' => 'equal-height'
 								),
 								'event' => array(
 									'ga' => 'ficha-grand-vitara',
@@ -6338,7 +6343,8 @@
 									),
 									'col' => array(
 										'class' => '3'
-									)
+									),
+									'height' => 'equal-height'
 								),
 								'event' => array(
 									'ga' => 'ficha-s-cross',
@@ -7589,7 +7595,8 @@
 									),
 									'col' => array(
 										'class' => '3'
-									)
+									),
+									'height' => 'equal-height'
 								),
 								'event' => array(
 									'ga' => 'ficha_ciaz',
@@ -8865,7 +8872,8 @@
 									),
 									'col' => array(
 										'class' => '3'
-									)
+									),
+									'height' => 'equal-height'
 								),
 								'event' => array(
 									'ga' => 'ficha-nueva-vitara',

@@ -81,9 +81,9 @@
             }
             .button {
                 border:1px solid #d8d8d8;
-                -moz-border-radius:3px;
-                -webkit-border-radius:3px;
-                border-radius:3px;
+                -moz-border-radius:0px;
+                -webkit-border-radius:0px;
+                border-radius:0px;
                 -moz-background-clip:padding;
                 -webkit-background-clip:padding-box;
                 background-clip:padding-box;
@@ -187,9 +187,9 @@
                 display:block;
                 color:#3f3f3f;
             }
-            fieldset input, fieldset textarea {
+            fieldset input, fieldset textarea, fieldset select {
                 border:1px solid #ccc;
-                background:#fff;
+                background:transparent;
                 padding:10px 15px;
                 color:#3f3f3f;
                 font-size:14px;
@@ -5122,8 +5122,19 @@
                 width: 140px;
                 margin: 50px auto 10px;*/
                 overflow: hidden;
-                background: #fff url("../img/arrowdown.gif") no-repeat 90% 40%;
+                background: #fff url("../img/arrowdown.gif") no-repeat 96% 40%;
             }
+            .select select.form-control {
+                -webkit-appearance: button;
+                -moz-appearance: button;
+                appearance: button;
+                border-radius: 0px;
+            }
+            select.form-control {
+                appearance: button;
+                -webkit-appearance: button;
+            }
+            .select select,
             .select select.form-control {
                 -webkit-appearance: button;
                 -moz-appearance: button;

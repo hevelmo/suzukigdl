@@ -2624,6 +2624,17 @@
 /* ------------------------------------------------------ *\
     [Methods] formTestDrive general
 \* ------------------------------------------------------ */
+    var _datepicker = {
+        init: function() {
+            $('.model_date').datepicker({
+                minDate: '+1d',
+                maxDate: '+1m',
+                minLength: 0,
+                delay: 0,
+                dateFormat: 'yy-mm-dd'
+            });
+        }
+    }
 /* ------------------------------------------------------ *\
     [Methods] formTestDrive
 \* ------------------------------------------------------ */

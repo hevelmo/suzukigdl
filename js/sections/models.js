@@ -110,6 +110,7 @@ modelsMenuMethods.scrollSwitchMethod();
         });
     };
     $('#features-space .suzuki-table .body .row .cell.equal-height').equalHeights();*/
+    modelsMenuMethods.changeNameModel($(this));
 
     $('body').on('click', '#model-test-drive-flag-link', modelsMenuMethods.preventDefault_flag_link);
     $('body').on('click', '#prueba-de-manejo', modelsMenuMethods.preventDefault_test_drive);

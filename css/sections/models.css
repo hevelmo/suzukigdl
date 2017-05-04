@@ -1,4 +1,6 @@
-#features-space .suzuki-table .data-wrapper .body .row {
+#features-space .suzuki-table .data-wrapper .body .row.cols-2,
+#features-space .suzuki-table .data-wrapper .body .row.cols-3,
+#features-space .suzuki-table .data-wrapper .body .row.cols-4 {
     display: table;
 }
 #features-space .suzuki-table .data-wrapper .body .row .cell.equal-height {

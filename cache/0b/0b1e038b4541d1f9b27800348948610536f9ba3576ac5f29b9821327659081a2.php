@@ -52,34 +52,38 @@ class __TwigTemplate_b44fc0d195be6de85ffafe1beb1cff6624c9bd1d6b8736f4cc2aa6fd34e
         echo "\" href=\"";
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
         echo "css/sections/models.css\">
+\t<link id=\"financing-test-drive\" rel=\"stylesheet\" class=\"link-financing-test-drive\" href=\"";
+        // line 5
+        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
+        echo "css/sections/test-drive-selection.css\">
 ";
     }
 
-    // line 6
+    // line 7
     public function block_section($context, array $blocks = array())
     {
-        // line 7
+        // line 8
         echo "\t";
         $context["model"] = (isset($context["mdopa"]) ? $context["mdopa"] : null);
-        // line 8
+        // line 9
         echo "    <input type=\"hidden\" id=\"hidden_section\" value=\"";
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "key", array()), "html", null, true);
         echo "\">
-    <input type=\"hidden\" id=\"hidden_lugar\" value=\"modelo\">
+    <input type=\"hidden\" id=\"hidden_lugar\" value=\"modelos\">
 ";
     }
 
-    // line 11
+    // line 12
     public function block_section_arrow($context, array $blocks = array())
     {
-        // line 12
+        // line 13
         echo "\t<div id=\"model-section-arrow\" style=\"display: none; top: 0px; margin-left: -403px; opacity: 1;\">
 \t\t<span>&nbsp;</span>
 \t</div>
 ";
     }
 
-    // line 16
+    // line 17
     public function block_testdrive_flag($context, array $blocks = array())
     {
         echo "            
@@ -91,7 +95,7 @@ class __TwigTemplate_b44fc0d195be6de85ffafe1beb1cff6624c9bd1d6b8736f4cc2aa6fd34e
 ";
     }
 
-    // line 23
+    // line 24
     public function block_menu_patch($context, array $blocks = array())
     {
         echo "    
@@ -99,51 +103,51 @@ class __TwigTemplate_b44fc0d195be6de85ffafe1beb1cff6624c9bd1d6b8736f4cc2aa6fd34e
 ";
     }
 
-    // line 26
+    // line 27
     public function block_navbar($context, array $blocks = array())
     {
-        // line 27
+        // line 28
         echo "    ";
-        $this->loadTemplate("modelos/modelo/_modelo.twig", "modelos/modelo/_modelo.twig", 27, "1324527381")->display($context);
+        $this->loadTemplate("modelos/modelo/_modelo.twig", "modelos/modelo/_modelo.twig", 28, "144044722")->display($context);
     }
 
-    // line 34
+    // line 35
     public function block_content_current($context, array $blocks = array())
     {
-        // line 35
+        // line 36
         echo "    ";
-        $this->loadTemplate("modelos/modelo/_modelo.twig", "modelos/modelo/_modelo.twig", 35, "1225874898")->display($context);
+        $this->loadTemplate("modelos/modelo/_modelo.twig", "modelos/modelo/_modelo.twig", 36, "1902691420")->display($context);
     }
 
-    // line 37
+    // line 38
     public function block_footer($context, array $blocks = array())
     {
-        // line 38
+        // line 39
         echo "    ";
-        $this->loadTemplate("modelos/modelo/_modelo.twig", "modelos/modelo/_modelo.twig", 38, "1651653139")->display($context);
+        $this->loadTemplate("modelos/modelo/_modelo.twig", "modelos/modelo/_modelo.twig", 39, "1986449630")->display($context);
     }
 
-    // line 40
+    // line 41
     public function block_script_load_js($context, array $blocks = array())
     {
     }
 
-    // line 42
+    // line 43
     public function block_section_scripts($context, array $blocks = array())
     {
-        // line 43
+        // line 44
         echo "\t<script src=\"";
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
         echo "js/sections/models.js\"></script>
 ";
     }
 
-    // line 45
+    // line 46
     public function block_load_scripts($context, array $blocks = array())
     {
-        // line 46
+        // line 47
         echo "\ttoHtmlMethod.toHtml();
-\tmodelsMenuMethods.changeNameModel(\$(this));
+\t_datepicker.init();
 ";
     }
 
@@ -159,20 +163,20 @@ class __TwigTemplate_b44fc0d195be6de85ffafe1beb1cff6624c9bd1d6b8736f4cc2aa6fd34e
 
     public function getDebugInfo()
     {
-        return array (  145 => 46,  142 => 45,  135 => 43,  132 => 42,  127 => 40,  122 => 38,  119 => 37,  114 => 35,  111 => 34,  106 => 27,  103 => 26,  95 => 23,  83 => 16,  76 => 12,  73 => 11,  65 => 8,  62 => 7,  59 => 6,  48 => 4,  45 => 3,  39 => 2,  11 => 1,);
+        return array (  149 => 47,  146 => 46,  139 => 44,  136 => 43,  131 => 41,  126 => 39,  123 => 38,  118 => 36,  115 => 35,  110 => 28,  107 => 27,  99 => 24,  87 => 17,  80 => 13,  77 => 12,  69 => 9,  66 => 8,  63 => 7,  57 => 5,  48 => 4,  45 => 3,  39 => 2,  11 => 1,);
     }
 }
 
 
 /* modelos/modelo/_modelo.twig */
-class __TwigTemplate_b44fc0d195be6de85ffafe1beb1cff6624c9bd1d6b8736f4cc2aa6fd34e0bfce_1324527381 extends Twig_Template
+class __TwigTemplate_b44fc0d195be6de85ffafe1beb1cff6624c9bd1d6b8736f4cc2aa6fd34e0bfce_144044722 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
-        // line 27
-        $this->parent = $this->loadTemplate("super_navbar.twig", "modelos/modelo/_modelo.twig", 27);
+        // line 28
+        $this->parent = $this->loadTemplate("super_navbar.twig", "modelos/modelo/_modelo.twig", 28);
         $this->blocks = array(
             'phone_call' => array($this, 'block_phone_call'),
             'models_header' => array($this, 'block_models_header'),
@@ -189,14 +193,14 @@ class __TwigTemplate_b44fc0d195be6de85ffafe1beb1cff6624c9bd1d6b8736f4cc2aa6fd34e
         $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
 
-    // line 28
+    // line 29
     public function block_phone_call($context, array $blocks = array())
     {
-        // line 29
+        // line 30
         echo "\t\t";
     }
 
-    // line 30
+    // line 31
     public function block_models_header($context, array $blocks = array())
     {
         echo "\t\t\t
@@ -215,20 +219,20 @@ class __TwigTemplate_b44fc0d195be6de85ffafe1beb1cff6624c9bd1d6b8736f4cc2aa6fd34e
 
     public function getDebugInfo()
     {
-        return array (  200 => 30,  196 => 29,  193 => 28,  175 => 27,  145 => 46,  142 => 45,  135 => 43,  132 => 42,  127 => 40,  122 => 38,  119 => 37,  114 => 35,  111 => 34,  106 => 27,  103 => 26,  95 => 23,  83 => 16,  76 => 12,  73 => 11,  65 => 8,  62 => 7,  59 => 6,  48 => 4,  45 => 3,  39 => 2,  11 => 1,);
+        return array (  204 => 31,  200 => 30,  197 => 29,  179 => 28,  149 => 47,  146 => 46,  139 => 44,  136 => 43,  131 => 41,  126 => 39,  123 => 38,  118 => 36,  115 => 35,  110 => 28,  107 => 27,  99 => 24,  87 => 17,  80 => 13,  77 => 12,  69 => 9,  66 => 8,  63 => 7,  57 => 5,  48 => 4,  45 => 3,  39 => 2,  11 => 1,);
     }
 }
 
 
 /* modelos/modelo/_modelo.twig */
-class __TwigTemplate_b44fc0d195be6de85ffafe1beb1cff6624c9bd1d6b8736f4cc2aa6fd34e0bfce_1225874898 extends Twig_Template
+class __TwigTemplate_b44fc0d195be6de85ffafe1beb1cff6624c9bd1d6b8736f4cc2aa6fd34e0bfce_1902691420 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
-        // line 35
-        $this->parent = $this->loadTemplate("modelos/modelo/container.twig", "modelos/modelo/_modelo.twig", 35);
+        // line 36
+        $this->parent = $this->loadTemplate("modelos/modelo/container.twig", "modelos/modelo/_modelo.twig", 36);
         $this->blocks = array(
         );
     }
@@ -255,20 +259,20 @@ class __TwigTemplate_b44fc0d195be6de85ffafe1beb1cff6624c9bd1d6b8736f4cc2aa6fd34e
 
     public function getDebugInfo()
     {
-        return array (  231 => 35,  200 => 30,  196 => 29,  193 => 28,  175 => 27,  145 => 46,  142 => 45,  135 => 43,  132 => 42,  127 => 40,  122 => 38,  119 => 37,  114 => 35,  111 => 34,  106 => 27,  103 => 26,  95 => 23,  83 => 16,  76 => 12,  73 => 11,  65 => 8,  62 => 7,  59 => 6,  48 => 4,  45 => 3,  39 => 2,  11 => 1,);
+        return array (  235 => 36,  204 => 31,  200 => 30,  197 => 29,  179 => 28,  149 => 47,  146 => 46,  139 => 44,  136 => 43,  131 => 41,  126 => 39,  123 => 38,  118 => 36,  115 => 35,  110 => 28,  107 => 27,  99 => 24,  87 => 17,  80 => 13,  77 => 12,  69 => 9,  66 => 8,  63 => 7,  57 => 5,  48 => 4,  45 => 3,  39 => 2,  11 => 1,);
     }
 }
 
 
 /* modelos/modelo/_modelo.twig */
-class __TwigTemplate_b44fc0d195be6de85ffafe1beb1cff6624c9bd1d6b8736f4cc2aa6fd34e0bfce_1651653139 extends Twig_Template
+class __TwigTemplate_b44fc0d195be6de85ffafe1beb1cff6624c9bd1d6b8736f4cc2aa6fd34e0bfce_1986449630 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
-        // line 38
-        $this->parent = $this->loadTemplate("super_footer.twig", "modelos/modelo/_modelo.twig", 38);
+        // line 39
+        $this->parent = $this->loadTemplate("super_footer.twig", "modelos/modelo/_modelo.twig", 39);
         $this->blocks = array(
         );
     }
@@ -295,18 +299,19 @@ class __TwigTemplate_b44fc0d195be6de85ffafe1beb1cff6624c9bd1d6b8736f4cc2aa6fd34e
 
     public function getDebugInfo()
     {
-        return array (  271 => 38,  231 => 35,  200 => 30,  196 => 29,  193 => 28,  175 => 27,  145 => 46,  142 => 45,  135 => 43,  132 => 42,  127 => 40,  122 => 38,  119 => 37,  114 => 35,  111 => 34,  106 => 27,  103 => 26,  95 => 23,  83 => 16,  76 => 12,  73 => 11,  65 => 8,  62 => 7,  59 => 6,  48 => 4,  45 => 3,  39 => 2,  11 => 1,);
+        return array (  275 => 39,  235 => 36,  204 => 31,  200 => 30,  197 => 29,  179 => 28,  149 => 47,  146 => 46,  139 => 44,  136 => 43,  131 => 41,  126 => 39,  123 => 38,  118 => 36,  115 => 35,  110 => 28,  107 => 27,  99 => 24,  87 => 17,  80 => 13,  77 => 12,  69 => 9,  66 => 8,  63 => 7,  57 => 5,  48 => 4,  45 => 3,  39 => 2,  11 => 1,);
     }
 }
 /* {% extends "super.twig" %}*/
 /* {% block title %}{{ title }}{% endblock %}*/
 /* {% block section_stylessheet %}*/
 /* 	<link id="model-{{ model.key }}" rel="stylesheet" class="link-model-{{ model.key }}" href="{{ _host }}css/sections/models.css">*/
+/* 	<link id="financing-test-drive" rel="stylesheet" class="link-financing-test-drive" href="{{ _host }}css/sections/test-drive-selection.css">*/
 /* {% endblock %}*/
 /* {% block section %}*/
 /* 	{% set model = mdopa %}*/
 /*     <input type="hidden" id="hidden_section" value="{{ model.key }}">*/
-/*     <input type="hidden" id="hidden_lugar" value="modelo">*/
+/*     <input type="hidden" id="hidden_lugar" value="modelos">*/
 /* {% endblock %}*/
 /* {% block section_arrow %}*/
 /* 	<div id="model-section-arrow" style="display: none; top: 0px; margin-left: -403px; opacity: 1;">*/
@@ -344,5 +349,5 @@ class __TwigTemplate_b44fc0d195be6de85ffafe1beb1cff6624c9bd1d6b8736f4cc2aa6fd34e
 /* {% endblock %}*/
 /* {% block load_scripts %}*/
 /* 	toHtmlMethod.toHtml();*/
-/* 	modelsMenuMethods.changeNameModel($(this));*/
+/* 	_datepicker.init();*/
 /* {% endblock %}*/

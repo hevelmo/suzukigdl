@@ -2,11 +2,12 @@
 {% block title %}{{ title }}{% endblock %}
 {% block section_stylessheet %}
 	<link id="model-{{ model.key }}" rel="stylesheet" class="link-model-{{ model.key }}" href="{{ _host }}css/sections/models.css">
+	<link id="financing-test-drive" rel="stylesheet" class="link-financing-test-drive" href="{{ _host }}css/sections/test-drive-selection.css">
 {% endblock %}
 {% block section %}
 	{% set model = mdopa %}
     <input type="hidden" id="hidden_section" value="{{ model.key }}">
-    <input type="hidden" id="hidden_lugar" value="modelo">
+    <input type="hidden" id="hidden_lugar" value="modelos">
 {% endblock %}
 {% block section_arrow %}
 	<div id="model-section-arrow" style="display: none; top: 0px; margin-left: -403px; opacity: 1;">
@@ -44,5 +45,5 @@
 {% endblock %}
 {% block load_scripts %}
 	toHtmlMethod.toHtml();
-	modelsMenuMethods.changeNameModel($(this));
+	_datepicker.init();
 {% endblock %}
