@@ -53,15 +53,15 @@ class __TwigTemplate_5f65f3060813c27e930f2cdd1899ec740ff19ca0180e4664deb434e440c
     public function block_section($context, array $blocks = array())
     {
         // line 7
-        echo "    <input type=\"hidden\" id=\"hidden_section\" value=\"models\">
+        echo "    <input type=\"hidden\" id=\"hidden_section\" value=\"modelos\">
 ";
     }
 
     // line 9
     public function block_menu_patch($context, array $blocks = array())
     {
-        echo "    
-\t<div class=\"menu-patch\" id=\"patch\">&nbsp;</div>
+        // line 10
+        echo "\t<div class=\"menu-patch\" id=\"patch\">&nbsp;</div>
 ";
     }
 
@@ -70,41 +70,41 @@ class __TwigTemplate_5f65f3060813c27e930f2cdd1899ec740ff19ca0180e4664deb434e440c
     {
         // line 13
         echo "    ";
-        $this->loadTemplate("modelos/_modelos.twig", "modelos/_modelos.twig", 13, "1181915903")->display($context);
+        $this->loadTemplate("modelos/_modelos.twig", "modelos/_modelos.twig", 13, "2098443331")->display($context);
     }
 
-    // line 28
+    // line 20
     public function block_content_current($context, array $blocks = array())
     {
-        // line 29
+        // line 21
         echo "    ";
-        $this->loadTemplate("modelos/_modelos.twig", "modelos/_modelos.twig", 29, "1205937829")->display($context);
+        $this->loadTemplate("modelos/_modelos.twig", "modelos/_modelos.twig", 21, "703842825")->display($context);
     }
 
-    // line 31
+    // line 23
     public function block_footer($context, array $blocks = array())
     {
-        // line 32
+        // line 24
         echo "    ";
-        $this->loadTemplate("modelos/_modelos.twig", "modelos/_modelos.twig", 32, "753220707")->display($context);
+        $this->loadTemplate("modelos/_modelos.twig", "modelos/_modelos.twig", 24, "930497694")->display($context);
     }
 
-    // line 34
+    // line 26
     public function block_script_load_js($context, array $blocks = array())
     {
     }
 
-    // line 36
+    // line 28
     public function block_section_scripts($context, array $blocks = array())
     {
     }
 
-    // line 38
+    // line 30
     public function block_load_scripts($context, array $blocks = array())
     {
-        // line 39
+        // line 31
         echo "\t";
-        // line 40
+        // line 32
         echo "\ttoHtmlMethod.toHtml();
 ";
     }
@@ -121,13 +121,13 @@ class __TwigTemplate_5f65f3060813c27e930f2cdd1899ec740ff19ca0180e4664deb434e440c
 
     public function getDebugInfo()
     {
-        return array (  108 => 40,  106 => 39,  103 => 38,  98 => 36,  93 => 34,  88 => 32,  85 => 31,  80 => 29,  77 => 28,  72 => 13,  69 => 12,  61 => 9,  56 => 7,  53 => 6,  46 => 4,  43 => 3,  37 => 2,  11 => 1,);
+        return array (  108 => 32,  106 => 31,  103 => 30,  98 => 28,  93 => 26,  88 => 24,  85 => 23,  80 => 21,  77 => 20,  72 => 13,  69 => 12,  64 => 10,  61 => 9,  56 => 7,  53 => 6,  46 => 4,  43 => 3,  37 => 2,  11 => 1,);
     }
 }
 
 
 /* modelos/_modelos.twig */
-class __TwigTemplate_5f65f3060813c27e930f2cdd1899ec740ff19ca0180e4664deb434e440c7c28e_1181915903 extends Twig_Template
+class __TwigTemplate_5f65f3060813c27e930f2cdd1899ec740ff19ca0180e4664deb434e440c7c28e_2098443331 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -155,17 +155,13 @@ class __TwigTemplate_5f65f3060813c27e930f2cdd1899ec740ff19ca0180e4664deb434e440c
     public function block_phone_call($context, array $blocks = array())
     {
         // line 15
-        echo "\t\t\t";
-        // line 22
         echo "\t\t";
     }
 
-    // line 23
+    // line 16
     public function block_models_header($context, array $blocks = array())
     {
-        // line 24
-        echo "\t\t\t";
-        // line 25
+        // line 17
         echo "\t    ";
     }
 
@@ -181,20 +177,20 @@ class __TwigTemplate_5f65f3060813c27e930f2cdd1899ec740ff19ca0180e4664deb434e440c
 
     public function getDebugInfo()
     {
-        return array (  169 => 25,  167 => 24,  164 => 23,  160 => 22,  158 => 15,  155 => 14,  137 => 13,  108 => 40,  106 => 39,  103 => 38,  98 => 36,  93 => 34,  88 => 32,  85 => 31,  80 => 29,  77 => 28,  72 => 13,  69 => 12,  61 => 9,  56 => 7,  53 => 6,  46 => 4,  43 => 3,  37 => 2,  11 => 1,);
+        return array (  165 => 17,  162 => 16,  158 => 15,  155 => 14,  137 => 13,  108 => 32,  106 => 31,  103 => 30,  98 => 28,  93 => 26,  88 => 24,  85 => 23,  80 => 21,  77 => 20,  72 => 13,  69 => 12,  64 => 10,  61 => 9,  56 => 7,  53 => 6,  46 => 4,  43 => 3,  37 => 2,  11 => 1,);
     }
 }
 
 
 /* modelos/_modelos.twig */
-class __TwigTemplate_5f65f3060813c27e930f2cdd1899ec740ff19ca0180e4664deb434e440c7c28e_1205937829 extends Twig_Template
+class __TwigTemplate_5f65f3060813c27e930f2cdd1899ec740ff19ca0180e4664deb434e440c7c28e_703842825 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
-        // line 29
-        $this->parent = $this->loadTemplate("modelos/container.twig", "modelos/_modelos.twig", 29);
+        // line 21
+        $this->parent = $this->loadTemplate("modelos/container.twig", "modelos/_modelos.twig", 21);
         $this->blocks = array(
         );
     }
@@ -221,20 +217,20 @@ class __TwigTemplate_5f65f3060813c27e930f2cdd1899ec740ff19ca0180e4664deb434e440c
 
     public function getDebugInfo()
     {
-        return array (  197 => 29,  169 => 25,  167 => 24,  164 => 23,  160 => 22,  158 => 15,  155 => 14,  137 => 13,  108 => 40,  106 => 39,  103 => 38,  98 => 36,  93 => 34,  88 => 32,  85 => 31,  80 => 29,  77 => 28,  72 => 13,  69 => 12,  61 => 9,  56 => 7,  53 => 6,  46 => 4,  43 => 3,  37 => 2,  11 => 1,);
+        return array (  193 => 21,  165 => 17,  162 => 16,  158 => 15,  155 => 14,  137 => 13,  108 => 32,  106 => 31,  103 => 30,  98 => 28,  93 => 26,  88 => 24,  85 => 23,  80 => 21,  77 => 20,  72 => 13,  69 => 12,  64 => 10,  61 => 9,  56 => 7,  53 => 6,  46 => 4,  43 => 3,  37 => 2,  11 => 1,);
     }
 }
 
 
 /* modelos/_modelos.twig */
-class __TwigTemplate_5f65f3060813c27e930f2cdd1899ec740ff19ca0180e4664deb434e440c7c28e_753220707 extends Twig_Template
+class __TwigTemplate_5f65f3060813c27e930f2cdd1899ec740ff19ca0180e4664deb434e440c7c28e_930497694 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
-        // line 32
-        $this->parent = $this->loadTemplate("super_footer.twig", "modelos/_modelos.twig", 32);
+        // line 24
+        $this->parent = $this->loadTemplate("super_footer.twig", "modelos/_modelos.twig", 24);
         $this->blocks = array(
         );
     }
@@ -261,7 +257,7 @@ class __TwigTemplate_5f65f3060813c27e930f2cdd1899ec740ff19ca0180e4664deb434e440c
 
     public function getDebugInfo()
     {
-        return array (  237 => 32,  197 => 29,  169 => 25,  167 => 24,  164 => 23,  160 => 22,  158 => 15,  155 => 14,  137 => 13,  108 => 40,  106 => 39,  103 => 38,  98 => 36,  93 => 34,  88 => 32,  85 => 31,  80 => 29,  77 => 28,  72 => 13,  69 => 12,  61 => 9,  56 => 7,  53 => 6,  46 => 4,  43 => 3,  37 => 2,  11 => 1,);
+        return array (  233 => 24,  193 => 21,  165 => 17,  162 => 16,  158 => 15,  155 => 14,  137 => 13,  108 => 32,  106 => 31,  103 => 30,  98 => 28,  93 => 26,  88 => 24,  85 => 23,  80 => 21,  77 => 20,  72 => 13,  69 => 12,  64 => 10,  61 => 9,  56 => 7,  53 => 6,  46 => 4,  43 => 3,  37 => 2,  11 => 1,);
     }
 }
 /* {% extends "super.twig" %}*/
@@ -270,24 +266,16 @@ class __TwigTemplate_5f65f3060813c27e930f2cdd1899ec740ff19ca0180e4664deb434e440c
 /* 	<link id="models" rel="stylesheet" class="link-models" href="{{ _host }}css/sections/models_gama.css">*/
 /* {% endblock %}*/
 /* {% block section %}*/
-/*     <input type="hidden" id="hidden_section" value="models">*/
+/*     <input type="hidden" id="hidden_section" value="modelos">*/
 /* {% endblock %}*/
-/* {% block menu_patch %}    */
+/* {% block menu_patch %}*/
 /* 	<div class="menu-patch" id="patch">&nbsp;</div>*/
 /* {% endblock %}*/
 /* {% block navbar %}*/
 /*     {% embed "super_navbar.twig" %}*/
 /* 		{% block phone_call %}*/
-/* 			{#<div id="phone-call">*/
-/* 				<a href="tel: +013337771989">*/
-/* 					<span style="color: #ffffff;">*/
-/* 				    	Tel. 01(33)3777-1989*/
-/* 					</span>*/
-/* 				</a>*/
-/* 			</div>#}*/
 /* 		{% endblock %}*/
 /* 		{% block models_header %}*/
-/* 			{#{% embed "menus/models_menu.twig" %}{% endembed %}#}*/
 /* 	    {% endblock %}*/
 /*     {% endembed %}*/
 /* {% endblock %}*/

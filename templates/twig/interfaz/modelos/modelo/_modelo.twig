@@ -6,7 +6,7 @@
 {% block section %}
 	{% set model = mdopa %}
     <input type="hidden" id="hidden_section" value="{{ model.key }}">
-    <input type="hidden" id="hidden_lugar" value="modelos">
+    <input type="hidden" id="hidden_lugar" value="modelo">
 {% endblock %}
 {% block section_arrow %}
 	<div id="model-section-arrow" style="display: none; top: 0px; margin-left: -403px; opacity: 1;">
@@ -26,21 +26,13 @@
 {% block navbar %}
     {% embed "super_navbar.twig" %}
 		{% block phone_call %}
-			{#<div id="phone-call">
-				<a href="tel: +013337771989">
-					<span style="color: #ffffff;">
-				    	Tel. 01(33)3777-1989
-					</span>
-				</a>
-			</div>#}
 		{% endblock %}
-		{% block models_header %}
-			
+		{% block models_header %}			
 	    {% endblock %}
     {% endembed %}
 {% endblock %}
 {% block content_current %}
-    {% embed "financiamiento/modelo/container.twig" %}{% endembed %}
+    {% embed "modelos/modelo/container.twig" %}{% endembed %}
 {% endblock %}
 {% block footer %}
     {% embed "super_footer.twig" %}{% endembed %}
@@ -52,4 +44,5 @@
 {% endblock %}
 {% block load_scripts %}
 	toHtmlMethod.toHtml();
+	modelsMenuMethods.changeNameModel($(this));
 {% endblock %}

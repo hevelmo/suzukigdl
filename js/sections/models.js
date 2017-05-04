@@ -4,7 +4,7 @@ is_mobileMethods.is_mobile();
 features_tables.init_is_mobile();
 is_mobileMethods.is_mobile_versions_price_table();
 
-modelsMenuMethods.changeNameModel();
+
 //addStylesMethods.addStyleModel_ignis();
 modelsMenuMethods.scrollSwitchMethod();
 

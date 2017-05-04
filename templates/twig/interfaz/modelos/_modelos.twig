@@ -4,24 +4,16 @@
 	<link id="models" rel="stylesheet" class="link-models" href="{{ _host }}css/sections/models_gama.css">
 {% endblock %}
 {% block section %}
-    <input type="hidden" id="hidden_section" value="models">
+    <input type="hidden" id="hidden_section" value="modelos">
 {% endblock %}
-{% block menu_patch %}    
+{% block menu_patch %}
 	<div class="menu-patch" id="patch">&nbsp;</div>
 {% endblock %}
 {% block navbar %}
     {% embed "super_navbar.twig" %}
 		{% block phone_call %}
-			{#<div id="phone-call">
-				<a href="tel: +013337771989">
-					<span style="color: #ffffff;">
-				    	Tel. 01(33)3777-1989
-					</span>
-				</a>
-			</div>#}
 		{% endblock %}
 		{% block models_header %}
-			{#{% embed "menus/models_menu.twig" %}{% endembed %}#}
 	    {% endblock %}
     {% endembed %}
 {% endblock %}

@@ -142,7 +142,7 @@
                                                         {% if head.cell %}
                                                             {% if head.cell.first %}
                                                                 <div class="cell  col-{{ head.cell.class }} {{ head.cell.first.class }}">
-                                                                    <div class="image" {% if head.cell.first.style %}style="{{ head.cell.first.style }}"{% endif %}>
+                                                                    <div class="image" {% if head.cell.first.style %} style="{{ head.cell.first.style }}" {% endif %}>
                                                                         <img src="{{ _host }}img/sections/models/prices/mini-models/{{ head.cell.first.image }}" />
                                                                     </div>
                                                                     <div class="title">
@@ -152,7 +152,7 @@
                                                             {% endif %}
                                                             {% if head.cell.second %}
                                                                 <div class="cell  col-{{ head.cell.class }}">
-                                                                    <div class="image" {% if head.cell.second.style %}style="{{ head.cell.second.style }}"{% endif %}>
+                                                                    <div class="image" {% if head.cell.second.style %} style="{{ head.cell.second.style }}" {% endif %}>
                                                                         <img src="{{ _host }}img/sections/models/prices/mini-models/{{ head.cell.second.image }}" />
                                                                     </div>
                                                                     <div class="title">
@@ -162,7 +162,7 @@
                                                             {% endif %}
                                                             {% if head.cell.third %}
                                                                 <div class="cell  col-{{ head.cell.class }}">
-                                                                    <div class="image" {% if head.cell.third.style %}style="{{ head.cell.third.style }}"{% endif %}>
+                                                                    <div class="image" {% if head.cell.third.style %} style="{{ head.cell.third.style }}" {% endif %}>
                                                                         <img src="{{ _host }}img/sections/models/prices/mini-models/{{ head.cell.third.image }}" />
                                                                     </div>
                                                                     <div class="title">
@@ -172,7 +172,7 @@
                                                             {% endif %}
                                                             {% if head.cell.fourth %}
                                                                 <div class="cell  col-{{ head.cell.class }} {{ head.cell.fourth.class }}">
-                                                                    <div class="image" {% if head.cell.fourth.style %}style="{{ head.cell.fourth.style }}"{% endif %}>
+                                                                    <div class="image" {% if head.cell.fourth.style %} style="{{ head.cell.fourth.style }}" {% endif %}>
                                                                         <img src="{{ _host }}img/sections/models/prices/mini-models/{{ head.cell.fourth.image }}" />
                                                                     </div>
                                                                     <div class="title">
@@ -395,7 +395,7 @@
                                     </a>
                                 </li>
                                 <li class="test-tabs model-test-tab bg-button-fuinancing active">
-                                    <a class="model-change-tab" id="go-financing-{{ model.key }}" data-gama-model-key="{{ model.key }}" data-gama-model-id="{{ model.id }}">
+                                    <a class="model-change-tab" href="{{ _host }}financiamiento/{{ model.key }}" id="go-financing-{{ model.key }}" data-gama-model-key="{{ model.key }}" data-gama-model-id="{{ model.id }}">
                                         Pide tu cotización y estrena un Suzuki {{ model.name }}.
                                     </a>
                                 </li>

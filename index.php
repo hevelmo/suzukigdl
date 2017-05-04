@@ -36,7 +36,7 @@ $app = new \Slim\App($container);
 
 /**
  * [ROOM]
- */
+**/
     $app->get("/", "ControlHome:__invoke");
     // GRUPO SUZUKI
     $app->get("/grupo", "ControlGroup:__invoke");
@@ -408,7 +408,7 @@ $app = new \Slim\App($container);
                     "title_header" => "Suzuki Autos " . _LOC
                 ),
                 array(),
-                "modelos/modelo/_model.twig"
+                "modelos/modelo/_modelo.twig"
             );
             // Facebook Metatags
             parent::getTemplate()->makeFacebookTags(
