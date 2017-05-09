@@ -48,4 +48,14 @@ $(document).ready(function() {
 
     $('body').on('click', ".scroll-up", up.init);
 
+    // EVENT CLICK GO OWNERS
+    $('body').on('click', '#header-owners-button', openPanelMenuMethods.clickOwnersPanel);
+    // EVENT CLICK GO BEFORE BYU
+    $('body').on('click', domEl.header_before_buy_button, openPanelMenuMethods.clickBeforeByPanel);
+    // EVENT CLICK GO CLOSE PANEL
+    $('body').on('click', domEl.button_close_model_panel_menu, closePanelMenuMethods.closePanelModels);
+    $('body').on('click', domEl.button_close_financing_panel_menu, closePanelMenuMethods.closePanelFinancing);
+    $('body').on('click', domEl.button_close_owners_panel_menu, closePanelMenuMethods.closePanelOwners);
+    $('body').on('click', domEl.button_close_before_buy_panel_menu, closePanelMenuMethods.closePanelBeforeBuy);
+
 });

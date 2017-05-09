@@ -11,6 +11,7 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
 
         $this->blocks = array(
             'phone_call' => array($this, 'block_phone_call'),
+            'menu_panel' => array($this, 'block_menu_panel'),
         );
     }
 
@@ -147,7 +148,12 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
                 <i class=\"fa fa-bars\"></i>
             </div>
             <div id=\"header-panel\" class=\"header-panel\">
-                <div id=\"header-sections-wrapper\" class=\"current-sections-wrapper\"></div>
+                <div id=\"header-sections-wrapper\" class=\"current-sections-wrapper\">
+                    ";
+        // line 100
+        $this->displayBlock('menu_panel', $context, $blocks);
+        // line 104
+        echo "                </div>
             </div>
         </div>
     </section>
@@ -162,6 +168,19 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
         echo "                                        ";
     }
 
+    // line 100
+    public function block_menu_panel($context, array $blocks = array())
+    {
+        // line 101
+        echo "                        ";
+        $this->loadTemplate("super_navbar.twig", "super_navbar.twig", 101, "727028466")->display($context);
+        // line 102
+        echo "                        ";
+        $this->loadTemplate("super_navbar.twig", "super_navbar.twig", 102, "491180918")->display($context);
+        // line 103
+        echo "                    ";
+    }
+
     public function getTemplateName()
     {
         return "super_navbar.twig";
@@ -174,7 +193,87 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
 
     public function getDebugInfo()
     {
-        return array (  162 => 45,  159 => 44,  143 => 95,  104 => 59,  96 => 54,  86 => 46,  84 => 44,  71 => 34,  63 => 29,  55 => 24,  47 => 19,  34 => 9,  28 => 8,  20 => 2,);
+        return array (  181 => 103,  178 => 102,  175 => 101,  172 => 100,  168 => 45,  165 => 44,  156 => 104,  154 => 100,  144 => 95,  105 => 59,  97 => 54,  87 => 46,  85 => 44,  72 => 34,  64 => 29,  56 => 24,  48 => 19,  35 => 9,  29 => 8,  21 => 2,);
+    }
+}
+
+
+/* super_navbar.twig */
+class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11ac4cd_727028466 extends Twig_Template
+{
+    public function __construct(Twig_Environment $env)
+    {
+        parent::__construct($env);
+
+        // line 101
+        $this->parent = $this->loadTemplate("menus/panel_menu_before_buy.twig", "super_navbar.twig", 101);
+        $this->blocks = array(
+        );
+    }
+
+    protected function doGetParent(array $context)
+    {
+        return "menus/panel_menu_before_buy.twig";
+    }
+
+    protected function doDisplay(array $context, array $blocks = array())
+    {
+        $this->parent->display($context, array_merge($this->blocks, $blocks));
+    }
+
+    public function getTemplateName()
+    {
+        return "super_navbar.twig";
+    }
+
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  209 => 101,  181 => 103,  178 => 102,  175 => 101,  172 => 100,  168 => 45,  165 => 44,  156 => 104,  154 => 100,  144 => 95,  105 => 59,  97 => 54,  87 => 46,  85 => 44,  72 => 34,  64 => 29,  56 => 24,  48 => 19,  35 => 9,  29 => 8,  21 => 2,);
+    }
+}
+
+
+/* super_navbar.twig */
+class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11ac4cd_491180918 extends Twig_Template
+{
+    public function __construct(Twig_Environment $env)
+    {
+        parent::__construct($env);
+
+        // line 102
+        $this->parent = $this->loadTemplate("menus/panel_menu_owners.twig", "super_navbar.twig", 102);
+        $this->blocks = array(
+        );
+    }
+
+    protected function doGetParent(array $context)
+    {
+        return "menus/panel_menu_owners.twig";
+    }
+
+    protected function doDisplay(array $context, array $blocks = array())
+    {
+        $this->parent->display($context, array_merge($this->blocks, $blocks));
+    }
+
+    public function getTemplateName()
+    {
+        return "super_navbar.twig";
+    }
+
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  249 => 102,  209 => 101,  181 => 103,  178 => 102,  175 => 101,  172 => 100,  168 => 45,  165 => 44,  156 => 104,  154 => 100,  144 => 95,  105 => 59,  97 => 54,  87 => 46,  85 => 44,  72 => 34,  64 => 29,  56 => 24,  48 => 19,  35 => 9,  29 => 8,  21 => 2,);
     }
 }
 /* {# Begin: Header #}*/
@@ -275,7 +374,12 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
 /*                 <i class="fa fa-bars"></i>*/
 /*             </div>*/
 /*             <div id="header-panel" class="header-panel">*/
-/*                 <div id="header-sections-wrapper" class="current-sections-wrapper"></div>*/
+/*                 <div id="header-sections-wrapper" class="current-sections-wrapper">*/
+/*                     {% block menu_panel %}*/
+/*                         {% embed "menus/panel_menu_before_buy.twig" %}{% endembed %}*/
+/*                         {% embed "menus/panel_menu_owners.twig" %}{% endembed %}*/
+/*                     {% endblock %}*/
+/*                 </div>*/
 /*             </div>*/
 /*         </div>*/
 /*     </section>*/

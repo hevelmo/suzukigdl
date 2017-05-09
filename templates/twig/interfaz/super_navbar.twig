@@ -96,7 +96,12 @@
                 <i class="fa fa-bars"></i>
             </div>
             <div id="header-panel" class="header-panel">
-                <div id="header-sections-wrapper" class="current-sections-wrapper"></div>
+                <div id="header-sections-wrapper" class="current-sections-wrapper">
+                    {% block menu_panel %}
+                        {% embed "menus/panel_menu_before_buy.twig" %}{% endembed %}
+                        {% embed "menus/panel_menu_owners.twig" %}{% endembed %}
+                    {% endblock %}
+                </div>
             </div>
         </div>
     </section>
