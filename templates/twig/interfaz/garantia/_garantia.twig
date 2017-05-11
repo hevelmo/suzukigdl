@@ -1,26 +1,25 @@
 {% extends "super.twig" %}
 {% block title %}{{ title }}{% endblock %}
 {% block section_stylessheet %}
-    <link id="catalogs" rel="stylesheet" class="link-catalogs" href="{{ _host }}css/sections/concessionaires.css">
+	<link id="home" rel="stylesheet" class="link-home" href="{{ _host }}css/sections/warranty.css">
 {% endblock %}
-{% block social_bar %} 
-{% endblock %}
+
 {% block section %}
-    <input type="hidden" id="hidden_section" value="concessionaires">
+    <input type="hidden" id="hidden_section" value="reasons">
 {% endblock %}
 {% block menu_patch %}    
-    <div class="menu-patch" id="patch">&nbsp;</div>
+	<div class="menu-patch" id="patch">&nbsp;</div>
 {% endblock %}
 {% block navbar %}
     {% embed "super_navbar.twig" %}
 		{% block phone_call %}
-        {% endblock %}
-        {% block models_header %}
 		{% endblock %}
+		{% block models_header %}
+	    {% endblock %}
     {% endembed %}
 {% endblock %}
 {% block content_current %}
-    {% embed "concesionarias/container.twig" %}{% endembed %}
+    {% embed "garantia/container.twig" %}{% endembed %}
 {% endblock %}
 {% block footer %}
     {% embed "super_footer.twig" %}{% endembed %}
@@ -28,9 +27,7 @@
 {% block script_load_js %}
 {% endblock %}
 {% block section_scripts %}
-    <script src="{{ _host }}js/sections/concessionaires.js"></script>
+	<script src="{{ _host }}js/sections/warranty.js"></script>
 {% endblock %}
 {% block load_scripts %}
-    $('body').prepend( patch_bar );
-    detectNavigatorMethods.IE10();
 {% endblock %}

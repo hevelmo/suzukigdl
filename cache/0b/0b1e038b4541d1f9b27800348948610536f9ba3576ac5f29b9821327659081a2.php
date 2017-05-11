@@ -108,44 +108,44 @@ class __TwigTemplate_b44fc0d195be6de85ffafe1beb1cff6624c9bd1d6b8736f4cc2aa6fd34e
     {
         // line 28
         echo "    ";
-        $this->loadTemplate("modelos/modelo/_modelo.twig", "modelos/modelo/_modelo.twig", 28, "144044722")->display($context);
+        $this->loadTemplate("modelos/modelo/_modelo.twig", "modelos/modelo/_modelo.twig", 28, "454288110")->display($context);
     }
 
-    // line 35
+    // line 36
     public function block_content_current($context, array $blocks = array())
     {
-        // line 36
+        // line 37
         echo "    ";
-        $this->loadTemplate("modelos/modelo/_modelo.twig", "modelos/modelo/_modelo.twig", 36, "1902691420")->display($context);
+        $this->loadTemplate("modelos/modelo/_modelo.twig", "modelos/modelo/_modelo.twig", 37, "759675065")->display($context);
     }
 
-    // line 38
+    // line 39
     public function block_footer($context, array $blocks = array())
     {
-        // line 39
+        // line 40
         echo "    ";
-        $this->loadTemplate("modelos/modelo/_modelo.twig", "modelos/modelo/_modelo.twig", 39, "1986449630")->display($context);
+        $this->loadTemplate("modelos/modelo/_modelo.twig", "modelos/modelo/_modelo.twig", 40, "1072339792")->display($context);
     }
 
-    // line 41
+    // line 42
     public function block_script_load_js($context, array $blocks = array())
     {
     }
 
-    // line 43
+    // line 44
     public function block_section_scripts($context, array $blocks = array())
     {
-        // line 44
+        // line 45
         echo "\t<script src=\"";
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
         echo "js/sections/models.js\"></script>
 ";
     }
 
-    // line 46
+    // line 47
     public function block_load_scripts($context, array $blocks = array())
     {
-        // line 47
+        // line 48
         echo "\ttoHtmlMethod.toHtml();
 \t_datepicker.init();
 ";
@@ -163,13 +163,13 @@ class __TwigTemplate_b44fc0d195be6de85ffafe1beb1cff6624c9bd1d6b8736f4cc2aa6fd34e
 
     public function getDebugInfo()
     {
-        return array (  149 => 47,  146 => 46,  139 => 44,  136 => 43,  131 => 41,  126 => 39,  123 => 38,  118 => 36,  115 => 35,  110 => 28,  107 => 27,  99 => 24,  87 => 17,  80 => 13,  77 => 12,  69 => 9,  66 => 8,  63 => 7,  57 => 5,  48 => 4,  45 => 3,  39 => 2,  11 => 1,);
+        return array (  149 => 48,  146 => 47,  139 => 45,  136 => 44,  131 => 42,  126 => 40,  123 => 39,  118 => 37,  115 => 36,  110 => 28,  107 => 27,  99 => 24,  87 => 17,  80 => 13,  77 => 12,  69 => 9,  66 => 8,  63 => 7,  57 => 5,  48 => 4,  45 => 3,  39 => 2,  11 => 1,);
     }
 }
 
 
 /* modelos/modelo/_modelo.twig */
-class __TwigTemplate_b44fc0d195be6de85ffafe1beb1cff6624c9bd1d6b8736f4cc2aa6fd34e0bfce_144044722 extends Twig_Template
+class __TwigTemplate_b44fc0d195be6de85ffafe1beb1cff6624c9bd1d6b8736f4cc2aa6fd34e0bfce_454288110 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -203,8 +203,11 @@ class __TwigTemplate_b44fc0d195be6de85ffafe1beb1cff6624c9bd1d6b8736f4cc2aa6fd34e
     // line 31
     public function block_models_header($context, array $blocks = array())
     {
-        echo "\t\t\t
-\t    ";
+        // line 32
+        echo "\t\t\t";
+        $this->loadTemplate("modelos/modelo/_modelo.twig", "modelos/modelo/_modelo.twig", 32, "415499572")->display($context);
+        // line 33
+        echo "\t    ";
     }
 
     public function getTemplateName()
@@ -219,20 +222,60 @@ class __TwigTemplate_b44fc0d195be6de85ffafe1beb1cff6624c9bd1d6b8736f4cc2aa6fd34e
 
     public function getDebugInfo()
     {
-        return array (  204 => 31,  200 => 30,  197 => 29,  179 => 28,  149 => 47,  146 => 46,  139 => 44,  136 => 43,  131 => 41,  126 => 39,  123 => 38,  118 => 36,  115 => 35,  110 => 28,  107 => 27,  99 => 24,  87 => 17,  80 => 13,  77 => 12,  69 => 9,  66 => 8,  63 => 7,  57 => 5,  48 => 4,  45 => 3,  39 => 2,  11 => 1,);
+        return array (  210 => 33,  207 => 32,  204 => 31,  200 => 30,  197 => 29,  179 => 28,  149 => 48,  146 => 47,  139 => 45,  136 => 44,  131 => 42,  126 => 40,  123 => 39,  118 => 37,  115 => 36,  110 => 28,  107 => 27,  99 => 24,  87 => 17,  80 => 13,  77 => 12,  69 => 9,  66 => 8,  63 => 7,  57 => 5,  48 => 4,  45 => 3,  39 => 2,  11 => 1,);
     }
 }
 
 
 /* modelos/modelo/_modelo.twig */
-class __TwigTemplate_b44fc0d195be6de85ffafe1beb1cff6624c9bd1d6b8736f4cc2aa6fd34e0bfce_1902691420 extends Twig_Template
+class __TwigTemplate_b44fc0d195be6de85ffafe1beb1cff6624c9bd1d6b8736f4cc2aa6fd34e0bfce_415499572 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
-        // line 36
-        $this->parent = $this->loadTemplate("modelos/modelo/container.twig", "modelos/modelo/_modelo.twig", 36);
+        // line 32
+        $this->parent = $this->loadTemplate("menus/models_menu.twig", "modelos/modelo/_modelo.twig", 32);
+        $this->blocks = array(
+        );
+    }
+
+    protected function doGetParent(array $context)
+    {
+        return "menus/models_menu.twig";
+    }
+
+    protected function doDisplay(array $context, array $blocks = array())
+    {
+        $this->parent->display($context, array_merge($this->blocks, $blocks));
+    }
+
+    public function getTemplateName()
+    {
+        return "modelos/modelo/_modelo.twig";
+    }
+
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  238 => 32,  210 => 33,  207 => 32,  204 => 31,  200 => 30,  197 => 29,  179 => 28,  149 => 48,  146 => 47,  139 => 45,  136 => 44,  131 => 42,  126 => 40,  123 => 39,  118 => 37,  115 => 36,  110 => 28,  107 => 27,  99 => 24,  87 => 17,  80 => 13,  77 => 12,  69 => 9,  66 => 8,  63 => 7,  57 => 5,  48 => 4,  45 => 3,  39 => 2,  11 => 1,);
+    }
+}
+
+
+/* modelos/modelo/_modelo.twig */
+class __TwigTemplate_b44fc0d195be6de85ffafe1beb1cff6624c9bd1d6b8736f4cc2aa6fd34e0bfce_759675065 extends Twig_Template
+{
+    public function __construct(Twig_Environment $env)
+    {
+        parent::__construct($env);
+
+        // line 37
+        $this->parent = $this->loadTemplate("modelos/modelo/container.twig", "modelos/modelo/_modelo.twig", 37);
         $this->blocks = array(
         );
     }
@@ -259,20 +302,20 @@ class __TwigTemplate_b44fc0d195be6de85ffafe1beb1cff6624c9bd1d6b8736f4cc2aa6fd34e
 
     public function getDebugInfo()
     {
-        return array (  235 => 36,  204 => 31,  200 => 30,  197 => 29,  179 => 28,  149 => 47,  146 => 46,  139 => 44,  136 => 43,  131 => 41,  126 => 39,  123 => 38,  118 => 36,  115 => 35,  110 => 28,  107 => 27,  99 => 24,  87 => 17,  80 => 13,  77 => 12,  69 => 9,  66 => 8,  63 => 7,  57 => 5,  48 => 4,  45 => 3,  39 => 2,  11 => 1,);
+        return array (  278 => 37,  238 => 32,  210 => 33,  207 => 32,  204 => 31,  200 => 30,  197 => 29,  179 => 28,  149 => 48,  146 => 47,  139 => 45,  136 => 44,  131 => 42,  126 => 40,  123 => 39,  118 => 37,  115 => 36,  110 => 28,  107 => 27,  99 => 24,  87 => 17,  80 => 13,  77 => 12,  69 => 9,  66 => 8,  63 => 7,  57 => 5,  48 => 4,  45 => 3,  39 => 2,  11 => 1,);
     }
 }
 
 
 /* modelos/modelo/_modelo.twig */
-class __TwigTemplate_b44fc0d195be6de85ffafe1beb1cff6624c9bd1d6b8736f4cc2aa6fd34e0bfce_1986449630 extends Twig_Template
+class __TwigTemplate_b44fc0d195be6de85ffafe1beb1cff6624c9bd1d6b8736f4cc2aa6fd34e0bfce_1072339792 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
-        // line 39
-        $this->parent = $this->loadTemplate("super_footer.twig", "modelos/modelo/_modelo.twig", 39);
+        // line 40
+        $this->parent = $this->loadTemplate("super_footer.twig", "modelos/modelo/_modelo.twig", 40);
         $this->blocks = array(
         );
     }
@@ -299,7 +342,7 @@ class __TwigTemplate_b44fc0d195be6de85ffafe1beb1cff6624c9bd1d6b8736f4cc2aa6fd34e
 
     public function getDebugInfo()
     {
-        return array (  275 => 39,  235 => 36,  204 => 31,  200 => 30,  197 => 29,  179 => 28,  149 => 47,  146 => 46,  139 => 44,  136 => 43,  131 => 41,  126 => 39,  123 => 38,  118 => 36,  115 => 35,  110 => 28,  107 => 27,  99 => 24,  87 => 17,  80 => 13,  77 => 12,  69 => 9,  66 => 8,  63 => 7,  57 => 5,  48 => 4,  45 => 3,  39 => 2,  11 => 1,);
+        return array (  318 => 40,  278 => 37,  238 => 32,  210 => 33,  207 => 32,  204 => 31,  200 => 30,  197 => 29,  179 => 28,  149 => 48,  146 => 47,  139 => 45,  136 => 44,  131 => 42,  126 => 40,  123 => 39,  118 => 37,  115 => 36,  110 => 28,  107 => 27,  99 => 24,  87 => 17,  80 => 13,  77 => 12,  69 => 9,  66 => 8,  63 => 7,  57 => 5,  48 => 4,  45 => 3,  39 => 2,  11 => 1,);
     }
 }
 /* {% extends "super.twig" %}*/
@@ -332,7 +375,8 @@ class __TwigTemplate_b44fc0d195be6de85ffafe1beb1cff6624c9bd1d6b8736f4cc2aa6fd34e
 /*     {% embed "super_navbar.twig" %}*/
 /* 		{% block phone_call %}*/
 /* 		{% endblock %}*/
-/* 		{% block models_header %}			*/
+/* 		{% block models_header %}*/
+/* 			{% embed "menus/models_menu.twig" %}{% endembed %}*/
 /* 	    {% endblock %}*/
 /*     {% endembed %}*/
 /* {% endblock %}*/

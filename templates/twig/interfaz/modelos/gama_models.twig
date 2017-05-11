@@ -10,7 +10,7 @@
 		    <div class="models-wrapper">
 		    	{% for gama in modelo %}
 			    	<div class="model {{ gama.key }}">
-			            <a href="{{ _host }}modelos/{{ gama.key }}" class="gama-model cur-hover" id="go-model-{{ gama.key }}" data-gama-model="{{ gama.key }}" data-gama-id="{{ gama.id }}">
+			            <a href="{{ _host }}modelos/{{ gama.key }}" onclick="ga('send', 'event', 'Gamma Suzuki {{ gama.title }}', 'Liga_interna', '{{ gama.title }} - {{ gama.slogan }}');" class="gama-model cur-hover" id="go-model-{{ gama.key }}" data-gama-model="{{ gama.key }}" data-gama-id="{{ gama.id }}">
 			                <div class="car-preview">
 			                    <span>&nbsp;</span>
 			                </div>

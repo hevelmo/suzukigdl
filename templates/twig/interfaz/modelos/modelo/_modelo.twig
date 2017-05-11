@@ -28,7 +28,8 @@
     {% embed "super_navbar.twig" %}
 		{% block phone_call %}
 		{% endblock %}
-		{% block models_header %}			
+		{% block models_header %}
+			{% embed "menus/models_menu.twig" %}{% endembed %}
 	    {% endblock %}
     {% endembed %}
 {% endblock %}

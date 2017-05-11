@@ -7,7 +7,7 @@
  * @copyright 2017
  */
 	class Site {
-		private $banner, $gamma_model, $modelos;
+		private $banner, $gamma_model, $modelos, $concessionaires;
 		function __construct() {
 			$this->gamma_model = array(
 				array(
@@ -9462,6 +9462,123 @@
 					)
 				)
 			);
+			$this->concessionaires = array(
+				'suzuki-vallarta' => array(
+					'id' => '1',
+					'name' => 'Suzuki Vallarta',
+					'addrress' => 'Av. Vallarta Núm. 5300 Col. Jardines  Vallarta, Zapopan, Jalisco.',
+					'key' => 'suzuki-vallarta',
+					'phone' => '01-(33)-3777-1989',
+					'call' => '013337771989',
+					'state' => 'Jalisco',
+					'key_state' => 'jal',
+					'emails' => 'coconnor@suzukivallarta.com.mx,postventa@suzukivallarta.com.mx,refacciones@suzukivallarta.com.mx,asistenteventas@suzukivallarta.com.mx',
+					'sociales' => array(
+						'website' => 'http://www.suzukivallarta.com.mx',
+						'facebook' => 'https://www.facebook.com/SuzukiGuadalajaraLopezMateosYAvVallarta',
+						'twitter' => 'https://twitter.com/Suzuki_Gdl'
+					),
+					'maps' => array(
+						'latitud' => '20.6801',
+						'longitud' => '-103.426',
+						'zip' => '45027'
+					),
+					'img_small' => 'vallarta-small.jpg',
+					'img_big' => 'vallarta-big.jpg'
+				),
+				'suzuki-lopez-mateos' => array(
+					'id' => '1',
+					'name' => 'Suzuki López Mateos',
+					'addrress' => 'Av. López Mateos N\u00fam. 5654 Col. Arboledas, Zapopan, Jalisco.',
+					'key' => 'suzuki-lopez-mateos',
+					'phone' => '01-(33)-3884-8200',
+					'call' => '013338848200',
+					'state' => 'Jalisco',
+					'key_state' => 'jal',
+					'emails' => 'coconnor@suzukivallarta.com.mx,coordinador@suzuki-lm.com.mx,posventa@suzuki-lm.com.mx,refacciones@suzuki-lm.com.mx,asistenteventas@suzukivallarta.com.mx',
+					'sociales' => array(
+						'website' => 'http://www.suzuki-lm.com.mx',
+						'facebook' => 'https://www.facebook.com/SuzukiGuadalajaraLopezMateosYAvVallarta',
+						'twitter' => 'https://twitter.com/Suzuki_Gdl'
+					),
+					'maps' => array(
+						'latitud' => '20.6244',
+						'longitud' => '-103.421',
+						'zip' => '45070'
+					),
+					'img_small' => 'lopez-mateos-small.jpg',
+					'img_big' => 'lopez-mateos-big.jpg'
+				),
+				'suzuki-morelia' => array(
+					'id' => '3',
+					'name' => 'Suzuki Morelia',
+					'addrress' => 'Periférico Paseo de la República 3169',
+					'key' => 'suzuki-morelia',
+					'phone' => '01-(443)-500-53-00',
+					'call' => '014435005300',
+					'state' => 'Michoacán',
+					'key_state' => 'mich',
+					'emails' => 'rrivas@suzukimorelia.com.mx,asistventas@suzukimorelia.com.mx',
+					'sociales' => array(
+						'website' => 'http://www.suzukimorelia.com.mx',
+						'facebook' => 'https://www.facebook.com/pages/Suzuki-Morelia/1458185144458990',
+						'twitter' => 'https://twitter.com/SuzukiMorelia'
+					),
+					'maps' => array(
+						'latitud' => '19.6892569',
+						'longitud' => '-101.1540819',
+						'zip' => '58270'
+					),
+					'img_small' => 'morelia-small.jpg',
+					'img_big' => 'morelia-big.jpg'
+				),
+				'suzuki-colima' => array(
+					'id' => '4',
+					'name' => 'Suzuki Colima',
+					'addrress' => 'Av. Felipe Sevilla del Río Núm. 536, Col. Lomas de Circunvalación, Colima, Colima.',
+					'key' => 'suzuki-colima',
+					'phone' => '01-(312)-316-3263',
+					'call' => '013123163263',
+					'state' => 'Colima',
+					'key_state' => 'col',
+					'emails' => 'gtecomercial@suzukicolima.com.mx',
+					'sociales' => array(
+						'website' => 'http://www.suzukicolima.com.mx',
+						'facebook' => 'https://www.facebook.com/pages/Suzuki-Colima/415132885190230',
+						'twitter' => ''
+					),
+					'maps' => array(
+						'latitud' => '19.2505',
+						'longitud' => '-103.71',
+						'zip' => '28010'
+					),
+					'img_small' => 'colima-small.jpg',
+					'img_big' => 'colima-big.jpg'
+				),
+				'suzuki-manzanillo' => array(
+					'id' => '5',
+					'name' => 'Suzuki Manzanillo',
+					'address' => 'BLV. Miguel de la Madrid Hurtado 1058, Col. Soleares Manzanillo, Colima.',
+					'key' => 'suzuki-manzanillo',
+					'phone' => '01-(314)-33-30-370',
+					'call' => '013143330370',
+					'state' => 'Colima',
+					'key-state' => 'col',
+					'emails' => '',
+					'sociales' => array(
+						'website' => '',
+						'facebook' => '',
+						'titter' => ''
+					),
+					'maps' => array(
+						'latitud' => '19.0955573',
+						'longitud' => '-104.3225125',
+						'zip' => '28010'
+					),
+					'img_small' => 'manzanillo-small.jpg',
+					'img_big' => 'manzanillo-big.jpg'
+				)
+			);
 		}
 		public function getGamma() {
 			return $this->gamma_model;
@@ -9473,6 +9590,17 @@
 				//echo "<pre>", print_r($models), "</pre>";
 			}
 			return $models;
+		}
+		public function getConcessionaires() {
+			return $this->gamma_model;
+		}
+		public function getConcessionairesByKey($key) {
+			$concessionaires = array();
+			if (array_key_exists($key, $this->concessionaires)) {
+				$concessionaires = $this->concessionaires[$key];
+				//echo "<pre>", print_r($concessionaires), "</pre>";
+			}
+			return $concessionaires;
 		}
 	}
 ?>

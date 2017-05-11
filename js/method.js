@@ -1643,14 +1643,17 @@
             openPanelMenuMethods.animatePanelMenu();
             if ($(this).hasClass('active')) {
                 $('a.expand-header').removeClass('active');
-                $(domEl.div_header_panel).removeClass('header_panel_active');
+                $('.header-panel').removeClass('header_panel_active');
+                $('#header-sections-wrapper').hide();
+                $('.header-section.nav_owners').hide();
+                closePanelMenuMethods.cleanHeight();
             } else {
                 $('a.expand-header').removeClass('active');
-                $(domEl.div_header_panel).addClass('header_panel_active');
+                $('.header-panel').addClass('header_panel_active');
                 $(this).addClass('active');
             }
         },
-        clickModelsPanel : function (event) {
+        /*clickModelsPanel : function (event) {
             if ($(this).hasClass('active')) {
                 var sukModelData;
                 $('#header-spacer').css('height','325px');
@@ -1693,7 +1696,7 @@
             closePanelMenuMethods.closePanelFinancing();
             $('body,html').animate({ scrollTop: "0" }, 999, 'easeOutExpo' );
             Finch.navigate('/financiamiento');
-        },
+        },*/
         clickOwnersPanel : function (event) {
             if ($(this).hasClass('active')) {
                 $('#header-spacer').css('height','340px');
@@ -1702,15 +1705,18 @@
                     'opacity':'1'
                 });
                 //SUK.loadTemplate(tempsNames.tmp_panel_menu_owners, domEl.div_recurrent_panel_menu);
-                $('.nav_owners').css('display', 'block');
+                $('.header-section.nav_owners').css('display', 'block');
+                $('.header-section.nav_before_buy').css('display', 'none');
             } else {
                 $('#header-spacer').css('height','0px');
                 $('.header_section').css({
                     'display':'none',
                     'opacity':'0'
                 });
-                $('.nav_owners').css('display', 'none');
+                $('.header-section.nav_owners').css('display', 'none');
+                $('.header-section.nav_before_buy').css('display', 'block');
                 //SUK.setHTML(domEl.div_recurrent_panel_menu, '');
+                $('#header-sections-wrapper').hide();
             }
         },
         clickBeforeByPanel : function (event) {
@@ -1721,19 +1727,22 @@
                     'opacity':'1'
                 });
                 //SUK.loadTemplate(tempsNames.tmp_panel_menu_before_buy, domEl.div_recurrent_panel_menu);
-                $('.nav_before_buy').css('display', 'block');                
+                $('.header-section.nav_before_buy').css('display', 'block');
+                $('.header-section.nav_owners').css('display', 'none');
             } else {
                 $('#header-spacer').css('height','0px');
                 $('.header_section').css({
                     'display':'none',
                     'opacity':'0'
                 });
-                $('.nav_before_buy').css('display', 'none');
+                $('.header-section.nav_before_buy').css('display', 'none');
+                $('.header-section.nav_owners').css('display', 'block');
                 //SUK.setHTML(domEl.div_recurrent_panel_menu, '');
+                $('#header-sections-wrapper').hide();
             }
         },
         animatePanelMenu : function () {
-            $(domEl.div_recurrent_panel_menu).stop().hide().fadeIn();
+            $('#header-sections-wrapper').stop().hide().fadeIn();
         }
     }
 /* ------------------------------------------------------ *\
@@ -1743,7 +1752,7 @@
         cleanHeight : function () {
             $('#header-spacer').css('height','0px');
         },
-        closePanelModels : function (event) {
+        /*closePanelModels : function (event) {
             $(domEl.action_model_expand_header).removeClass('active');
             $(domEl.div_header_panel).removeClass('header_panel_active');
             SUK.setHTML(domEl.div_recurrent_panel_menu, '');
@@ -1754,17 +1763,23 @@
             $(domEl.div_header_panel).removeClass('header_panel_active');
             SUK.setHTML(domEl.div_recurrent_panel_menu, '');
             closePanelMenuMethods.cleanHeight();
-        },
+        },*/
         closePanelOwners : function (event) {
-            $(domEl.action_owners_expand_header).removeClass('active');
-            $(domEl.div_header_panel).removeClass('header_panel_active');
-            SUK.setHTML(domEl.div_recurrent_panel_menu, '');
+            $('a.owners.expand-header').removeClass('active');
+            $('.header-panel').removeClass('header_panel_active');
+            $('.header-section.nav_owners').css('display', 'none');
+            $('.header-section.nav_before_buy').css('display', 'none');
+            //SUK.setHTML('#header-sections-wrapper', '');
+            $('#header-sections-wrapper').hide();
             closePanelMenuMethods.cleanHeight();
         },
         closePanelBeforeBuy : function (event) {
-            $(domEl.action_before_buy_expand_header).removeClass('active');
-            $(domEl.div_header_panel).removeClass('header_panel_active');
-            SUK.setHTML(domEl.div_recurrent_panel_menu, '');
+            $('a.before-buy.expand-header').removeClass('active');
+            $('.header-panel').removeClass('header_panel_active');
+            $('.header-section.nav_owners').css('display', 'none');
+            $('.header-section.nav_before_buy').css('display', 'none');
+            //SUK.setHTML('#header-sections-wrapper', '');
+            $('#header-sections-wrapper').hide();
             closePanelMenuMethods.cleanHeight();
         }
     }

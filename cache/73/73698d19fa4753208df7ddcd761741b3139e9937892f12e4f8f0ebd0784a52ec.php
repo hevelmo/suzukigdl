@@ -40,7 +40,13 @@ class __TwigTemplate_c78e9af6708b38380fcf8c14aea69d50648d32cdb3f55c3784ea2698725
             echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
             echo "modelos/";
             echo twig_escape_filter($this->env, $this->getAttribute($context["gama"], "key", array()), "html", null, true);
-            echo "\" class=\"gama-model cur-hover\" id=\"go-model-";
+            echo "\" onclick=\"ga('send', 'event', 'Gamma Suzuki ";
+            echo twig_escape_filter($this->env, $this->getAttribute($context["gama"], "title", array()), "html", null, true);
+            echo "', 'Liga_interna', '";
+            echo twig_escape_filter($this->env, $this->getAttribute($context["gama"], "title", array()), "html", null, true);
+            echo " - ";
+            echo twig_escape_filter($this->env, $this->getAttribute($context["gama"], "slogan", array()), "html", null, true);
+            echo "');\" class=\"gama-model cur-hover\" id=\"go-model-";
             echo twig_escape_filter($this->env, $this->getAttribute($context["gama"], "key", array()), "html", null, true);
             echo "\" data-gama-model=\"";
             echo twig_escape_filter($this->env, $this->getAttribute($context["gama"], "key", array()), "html", null, true);
@@ -107,7 +113,7 @@ class __TwigTemplate_c78e9af6708b38380fcf8c14aea69d50648d32cdb3f55c3784ea2698725
 
     public function getDebugInfo()
     {
-        return array (  83 => 33,  69 => 25,  63 => 22,  57 => 19,  40 => 13,  35 => 12,  31 => 11,  21 => 3,  19 => 2,);
+        return array (  89 => 33,  75 => 25,  69 => 22,  63 => 19,  40 => 13,  35 => 12,  31 => 11,  21 => 3,  19 => 2,);
     }
 }
 /* {# Begin: Modelos #}*/
@@ -122,7 +128,7 @@ class __TwigTemplate_c78e9af6708b38380fcf8c14aea69d50648d32cdb3f55c3784ea2698725
 /* 		    <div class="models-wrapper">*/
 /* 		    	{% for gama in modelo %}*/
 /* 			    	<div class="model {{ gama.key }}">*/
-/* 			            <a href="{{ _host }}modelos/{{ gama.key }}" class="gama-model cur-hover" id="go-model-{{ gama.key }}" data-gama-model="{{ gama.key }}" data-gama-id="{{ gama.id }}">*/
+/* 			            <a href="{{ _host }}modelos/{{ gama.key }}" onclick="ga('send', 'event', 'Gamma Suzuki {{ gama.title }}', 'Liga_interna', '{{ gama.title }} - {{ gama.slogan }}');" class="gama-model cur-hover" id="go-model-{{ gama.key }}" data-gama-model="{{ gama.key }}" data-gama-id="{{ gama.id }}">*/
 /* 			                <div class="car-preview">*/
 /* 			                    <span>&nbsp;</span>*/
 /* 			                </div>*/

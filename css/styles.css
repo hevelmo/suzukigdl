@@ -30,6 +30,10 @@
             .hide{display:none!important;}
             .show{display:block!important;}
 
+            .cur-hover {
+                cursor: pointer;
+            }
+
             body {
                 font-family:"Lato";
             }

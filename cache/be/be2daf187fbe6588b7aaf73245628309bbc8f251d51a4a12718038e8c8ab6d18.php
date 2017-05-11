@@ -19,7 +19,7 @@ class __TwigTemplate_0ca5b47d7428e4f06b17fe06b2e5403b1f1f4c8b9b3d2351268e45c01eb
         echo "\t<div class=\"header-section nav_owners\" style=\"display: none;\">
 \t\t<div class=\"header-section-content-wrapper\">
 \t\t\t<div class=\"close-menu-box\">
-\t\t\t\t<a id=\"close-owners-panel\">Cerrar<span>&nbsp;</span></a>
+\t\t\t\t<a id=\"close-owners-panel\" class=\"cur-hover\">Cerrar<span>&nbsp;</span></a>
 \t\t\t</div>
 \t\t\t<div class=\"header-section-content owners\">
 \t\t\t    <div class=\"header-title\">Mi Suzuki</div>
@@ -31,7 +31,10 @@ class __TwigTemplate_0ca5b47d7428e4f06b17fe06b2e5403b1f1f4c8b9b3d2351268e45c01eb
 \t\t\t                Descubre las ventajas que tienes al comprar un Suzuki.
 \t\t\t            </div>
 \t\t\t            <ul class=\"links-list\">
-\t\t\t                <li><a href=\"#/garantia-suzuki\"><span>Ver garantía</span><i></i></a></li>
+\t\t\t                <li><a href=\"";
+        // line 17
+        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
+        echo "garantia-suzuki\" onclick=\"ga('send', 'event', 'Garantía Suzuki', 'Liga_interna', 'Descubre las ventajas que tienes al comprar un Suzuki');\"><span>Ver garantía</span><i></i></a></li>
 \t\t\t            </ul>
 \t\t\t            <i class=\"header-column-arrow\"></i>
 \t\t\t        </div>
@@ -61,16 +64,21 @@ class __TwigTemplate_0ca5b47d7428e4f06b17fe06b2e5403b1f1f4c8b9b3d2351268e45c01eb
         return "menus/panel_menu_owners.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  40 => 33,  19 => 2,);
+        return array (  43 => 33,  36 => 17,  19 => 2,);
     }
 }
 /* {# Begin: owners #}*/
 /* 	<div class="header-section nav_owners" style="display: none;">*/
 /* 		<div class="header-section-content-wrapper">*/
 /* 			<div class="close-menu-box">*/
-/* 				<a id="close-owners-panel">Cerrar<span>&nbsp;</span></a>*/
+/* 				<a id="close-owners-panel" class="cur-hover">Cerrar<span>&nbsp;</span></a>*/
 /* 			</div>*/
 /* 			<div class="header-section-content owners">*/
 /* 			    <div class="header-title">Mi Suzuki</div>*/
@@ -82,7 +90,7 @@ class __TwigTemplate_0ca5b47d7428e4f06b17fe06b2e5403b1f1f4c8b9b3d2351268e45c01eb
 /* 			                Descubre las ventajas que tienes al comprar un Suzuki.*/
 /* 			            </div>*/
 /* 			            <ul class="links-list">*/
-/* 			                <li><a href="#/garantia-suzuki"><span>Ver garantía</span><i></i></a></li>*/
+/* 			                <li><a href="{{ _host }}garantia-suzuki" onclick="ga('send', 'event', 'Garantía Suzuki', 'Liga_interna', 'Descubre las ventajas que tienes al comprar un Suzuki');"><span>Ver garantía</span><i></i></a></li>*/
 /* 			            </ul>*/
 /* 			            <i class="header-column-arrow"></i>*/
 /* 			        </div>*/

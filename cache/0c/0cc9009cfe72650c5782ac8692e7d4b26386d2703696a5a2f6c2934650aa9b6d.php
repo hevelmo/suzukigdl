@@ -11,6 +11,7 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
 
         $this->blocks = array(
             'phone_call' => array($this, 'block_phone_call'),
+            'models_header' => array($this, 'block_models_header'),
             'menu_panel' => array($this, 'block_menu_panel'),
         );
     }
@@ -46,7 +47,7 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
                                         <a href=\"";
         // line 19
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "grupo\" title=\"Grupo\">
+        echo "grupo\" title=\"Grupo\" onclick=\"ga('send', 'event', 'Grupo', 'Liga_interna', 'Grupo Suzuki');\">
                                             <span>Grupo</span>
                                         </a>
                                     </li>
@@ -54,7 +55,7 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
                                         <a href=\"";
         // line 24
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "concesionarias\" title=\"Concesionarias\">
+        echo "concesionarias\" title=\"Concesionarias\" onclick=\"ga('send', 'event', 'Concesionarias', 'Liga_interna', 'Ubica nuestras concesionarias');\">
                                             <span>Concesionarias</span>
                                         </a>
                                     </li>
@@ -62,7 +63,7 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
                                         <a href=\"";
         // line 29
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "catalogos\" title=\"Catalogos\">
+        echo "catalogos\" title=\"Catalogos\" onclick=\"ga('send', 'event', 'Catalogo', 'Liga_interna', 'Conoce nuestro catalogo Suzuki');\">
                                             <span>Catálogos</span>
                                         </a>
                                     </li>
@@ -70,12 +71,12 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
                                         <a href=\"";
         // line 34
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "contactanos\" title=\"Contactános\">
+        echo "contactanos\" title=\"Contactános\" onclick=\"ga('send', 'event', 'Contactanos', 'Liga_interna', 'Contactanos');\">
                                             <span>Contáctanos</span>
                                         </a>
                                     </li>
                                     <li class=\"last\">
-                                        <a href=\"http://suzukigdl.com.mx/seminuevos/\" title=\"Seminuevos López Mateos\">
+                                        <a href=\"http://suzukigdl.com.mx/seminuevos/\" title=\"Seminuevos López Mateos\" onclick=\"ga('send', 'event', 'Seminuevos', 'Liga_interna', 'Seminuevos Suzuki');\">
                                             <span>Seminuevos</span>
                                         </a>
                                     </li>
@@ -95,7 +96,7 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
                                         <a href=\"";
         // line 54
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "modelos\" title=\"Modelos\">
+        echo "modelos\" title=\"Modelos\"onclick=\"ga('send', 'event', 'Modelos', 'Liga_interna', 'Descubre nuestra gamma de modelos Suzuki');\">
                                             <span>Modelos</span>
                                         </a>
                                     </li>
@@ -103,17 +104,17 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
                                         <a href=\"";
         // line 59
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "financiamiento\" title=\"Financiamiento\">
+        echo "financiamiento\" title=\"Financiamiento\" onclick=\"ga('send', 'event', 'Financiamento', 'Liga_interna', 'Financiamiento');\">
                                             <span>Financiamiento</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a id=\"header-owners-button\" title=\"Propietarios\" class=\"owners expand-header\">
+                                        <a id=\"header-owners-button\" title=\"Propietarios\" class=\"owners expand-header cur-hover\">
                                             <span>Mi Suzuki</span>
                                         </a>
                                     </li>
                                     <li class=\"last\">
-                                        <a id=\"header-before-buy-button\" title=\"Antes de comprar\" class=\"before-buy expand-header\">
+                                        <a id=\"header-before-buy-button\" title=\"Antes de comprar\" class=\"before-buy expand-header cur-hover\">
                                             <span>Comprar un Suzuki</span>
                                         </a>
                                     </li>
@@ -124,35 +125,30 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
                     </div>
                 </div>
                 <div id=\"models-header\">
-                    <div class=\"content\" id=\"content-models-header\">
-                        <ul class=\"models-menu\">
-                            <li class=\"first\"><a id=\"change-model\" class=\"scroll-in-site top\" href=\"#top\"></a></li>
-                            <li class=\"features current\"><a class=\"scroll-in-site\" id=\"caracteristicas\" href=\"#caracteristicas\">Características</a></li>
-                            <li class=\"gallery\"><a class=\"scroll-in-site\" id=\"galeria\" href=\"#galeria\">Galería</a></li>
-                            <li class=\"prices\"><a class=\"scroll-in-site\" id=\"precios\" href=\"#precios\">Versiones y precios</a></li>
-                            <li class=\"accessories\"><a class=\"scroll-in-site\" id=\"accesorios\" href=\"#accesorios\">Accesorios</a></li>
-                            <!--<li class=\"cotízalo\"><a class=\"scroll-in-site\" id=\"cotizalo\" href=\"#cotizalo\">Cotízalo</a></li>-->
-                            <li class=\"top\" id=\"back-to-top-button\"><a class=\"scroll-in-site\" id=\"top\" href=\"#top\"><span>Top</span></a></li>
-                            <li class=\"clearfix\"></li>
-                        </ul>
-                    </div>
-                </div>
+                    ";
+        // line 80
+        $this->displayBlock('models_header', $context, $blocks);
+        // line 82
+        echo "                </div>
             </header>
             <div id=\"header-mobile\">
                 <a href=\"";
-        // line 95
+        // line 85
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "\"><img src=\"";
+        echo "\">
+                    <img src=\"";
+        // line 86
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "img/template/common/header/horizontal_logo.png\" alt=\"Logo Suzuki\"></a>
+        echo "img/template/common/header/horizontal_logo.png\" alt=\"Logo Suzuki\">
+                </a>
                 <i class=\"fa fa-bars\"></i>
             </div>
             <div id=\"header-panel\" class=\"header-panel\">
                 <div id=\"header-sections-wrapper\" class=\"current-sections-wrapper\">
                     ";
-        // line 100
+        // line 92
         $this->displayBlock('menu_panel', $context, $blocks);
-        // line 104
+        // line 96
         echo "                </div>
             </div>
         </div>
@@ -168,16 +164,23 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
         echo "                                        ";
     }
 
-    // line 100
+    // line 80
+    public function block_models_header($context, array $blocks = array())
+    {
+        // line 81
+        echo "                    ";
+    }
+
+    // line 92
     public function block_menu_panel($context, array $blocks = array())
     {
-        // line 101
+        // line 93
         echo "                        ";
-        $this->loadTemplate("super_navbar.twig", "super_navbar.twig", 101, "727028466")->display($context);
-        // line 102
+        $this->loadTemplate("super_navbar.twig", "super_navbar.twig", 93, "1375747776")->display($context);
+        // line 94
         echo "                        ";
-        $this->loadTemplate("super_navbar.twig", "super_navbar.twig", 102, "491180918")->display($context);
-        // line 103
+        $this->loadTemplate("super_navbar.twig", "super_navbar.twig", 94, "36255503")->display($context);
+        // line 95
         echo "                    ";
     }
 
@@ -193,20 +196,20 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
 
     public function getDebugInfo()
     {
-        return array (  181 => 103,  178 => 102,  175 => 101,  172 => 100,  168 => 45,  165 => 44,  156 => 104,  154 => 100,  144 => 95,  105 => 59,  97 => 54,  87 => 46,  85 => 44,  72 => 34,  64 => 29,  56 => 24,  48 => 19,  35 => 9,  29 => 8,  21 => 2,);
+        return array (  184 => 95,  181 => 94,  178 => 93,  175 => 92,  171 => 81,  168 => 80,  164 => 45,  161 => 44,  152 => 96,  150 => 92,  141 => 86,  137 => 85,  132 => 82,  130 => 80,  106 => 59,  98 => 54,  88 => 46,  86 => 44,  73 => 34,  65 => 29,  57 => 24,  49 => 19,  36 => 9,  30 => 8,  22 => 2,);
     }
 }
 
 
 /* super_navbar.twig */
-class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11ac4cd_727028466 extends Twig_Template
+class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11ac4cd_1375747776 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
-        // line 101
-        $this->parent = $this->loadTemplate("menus/panel_menu_before_buy.twig", "super_navbar.twig", 101);
+        // line 93
+        $this->parent = $this->loadTemplate("menus/panel_menu_before_buy.twig", "super_navbar.twig", 93);
         $this->blocks = array(
         );
     }
@@ -233,20 +236,20 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
 
     public function getDebugInfo()
     {
-        return array (  209 => 101,  181 => 103,  178 => 102,  175 => 101,  172 => 100,  168 => 45,  165 => 44,  156 => 104,  154 => 100,  144 => 95,  105 => 59,  97 => 54,  87 => 46,  85 => 44,  72 => 34,  64 => 29,  56 => 24,  48 => 19,  35 => 9,  29 => 8,  21 => 2,);
+        return array (  212 => 93,  184 => 95,  181 => 94,  178 => 93,  175 => 92,  171 => 81,  168 => 80,  164 => 45,  161 => 44,  152 => 96,  150 => 92,  141 => 86,  137 => 85,  132 => 82,  130 => 80,  106 => 59,  98 => 54,  88 => 46,  86 => 44,  73 => 34,  65 => 29,  57 => 24,  49 => 19,  36 => 9,  30 => 8,  22 => 2,);
     }
 }
 
 
 /* super_navbar.twig */
-class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11ac4cd_491180918 extends Twig_Template
+class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11ac4cd_36255503 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
-        // line 102
-        $this->parent = $this->loadTemplate("menus/panel_menu_owners.twig", "super_navbar.twig", 102);
+        // line 94
+        $this->parent = $this->loadTemplate("menus/panel_menu_owners.twig", "super_navbar.twig", 94);
         $this->blocks = array(
         );
     }
@@ -273,7 +276,7 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
 
     public function getDebugInfo()
     {
-        return array (  249 => 102,  209 => 101,  181 => 103,  178 => 102,  175 => 101,  172 => 100,  168 => 45,  165 => 44,  156 => 104,  154 => 100,  144 => 95,  105 => 59,  97 => 54,  87 => 46,  85 => 44,  72 => 34,  64 => 29,  56 => 24,  48 => 19,  35 => 9,  29 => 8,  21 => 2,);
+        return array (  252 => 94,  212 => 93,  184 => 95,  181 => 94,  178 => 93,  175 => 92,  171 => 81,  168 => 80,  164 => 45,  161 => 44,  152 => 96,  150 => 92,  141 => 86,  137 => 85,  132 => 82,  130 => 80,  106 => 59,  98 => 54,  88 => 46,  86 => 44,  73 => 34,  65 => 29,  57 => 24,  49 => 19,  36 => 9,  30 => 8,  22 => 2,);
     }
 }
 /* {# Begin: Header #}*/
@@ -294,27 +297,27 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
 /*                             <nav>*/
 /*                                 <ul>*/
 /*                                     <li>*/
-/*                                         <a href="{{ _host }}grupo" title="Grupo">*/
+/*                                         <a href="{{ _host }}grupo" title="Grupo" onclick="ga('send', 'event', 'Grupo', 'Liga_interna', 'Grupo Suzuki');">*/
 /*                                             <span>Grupo</span>*/
 /*                                         </a>*/
 /*                                     </li>*/
 /*                                     <li>*/
-/*                                         <a href="{{ _host }}concesionarias" title="Concesionarias">*/
+/*                                         <a href="{{ _host }}concesionarias" title="Concesionarias" onclick="ga('send', 'event', 'Concesionarias', 'Liga_interna', 'Ubica nuestras concesionarias');">*/
 /*                                             <span>Concesionarias</span>*/
 /*                                         </a>*/
 /*                                     </li>*/
 /*                                     <li>*/
-/*                                         <a href="{{ _host }}catalogos" title="Catalogos">*/
+/*                                         <a href="{{ _host }}catalogos" title="Catalogos" onclick="ga('send', 'event', 'Catalogo', 'Liga_interna', 'Conoce nuestro catalogo Suzuki');">*/
 /*                                             <span>Catálogos</span>*/
 /*                                         </a>*/
 /*                                     </li>*/
 /*                                     <li class="last">*/
-/*                                         <a href="{{ _host }}contactanos" title="Contactános">*/
+/*                                         <a href="{{ _host }}contactanos" title="Contactános" onclick="ga('send', 'event', 'Contactanos', 'Liga_interna', 'Contactanos');">*/
 /*                                             <span>Contáctanos</span>*/
 /*                                         </a>*/
 /*                                     </li>*/
 /*                                     <li class="last">*/
-/*                                         <a href="http://suzukigdl.com.mx/seminuevos/" title="Seminuevos López Mateos">*/
+/*                                         <a href="http://suzukigdl.com.mx/seminuevos/" title="Seminuevos López Mateos" onclick="ga('send', 'event', 'Seminuevos', 'Liga_interna', 'Seminuevos Suzuki');">*/
 /*                                             <span>Seminuevos</span>*/
 /*                                         </a>*/
 /*                                     </li>*/
@@ -329,22 +332,22 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
 /*                             <nav>*/
 /*                                 <ul>*/
 /*                                     <li>*/
-/*                                         <a href="{{ _host }}modelos" title="Modelos">*/
+/*                                         <a href="{{ _host }}modelos" title="Modelos"onclick="ga('send', 'event', 'Modelos', 'Liga_interna', 'Descubre nuestra gamma de modelos Suzuki');">*/
 /*                                             <span>Modelos</span>*/
 /*                                         </a>*/
 /*                                     </li>*/
 /*                                     <li>*/
-/*                                         <a href="{{ _host }}financiamiento" title="Financiamiento">*/
+/*                                         <a href="{{ _host }}financiamiento" title="Financiamiento" onclick="ga('send', 'event', 'Financiamento', 'Liga_interna', 'Financiamiento');">*/
 /*                                             <span>Financiamiento</span>*/
 /*                                         </a>*/
 /*                                     </li>*/
 /*                                     <li>*/
-/*                                         <a id="header-owners-button" title="Propietarios" class="owners expand-header">*/
+/*                                         <a id="header-owners-button" title="Propietarios" class="owners expand-header cur-hover">*/
 /*                                             <span>Mi Suzuki</span>*/
 /*                                         </a>*/
 /*                                     </li>*/
 /*                                     <li class="last">*/
-/*                                         <a id="header-before-buy-button" title="Antes de comprar" class="before-buy expand-header">*/
+/*                                         <a id="header-before-buy-button" title="Antes de comprar" class="before-buy expand-header cur-hover">*/
 /*                                             <span>Comprar un Suzuki</span>*/
 /*                                         </a>*/
 /*                                     </li>*/
@@ -355,22 +358,14 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
 /*                     </div>*/
 /*                 </div>*/
 /*                 <div id="models-header">*/
-/*                     <div class="content" id="content-models-header">*/
-/*                         <ul class="models-menu">*/
-/*                             <li class="first"><a id="change-model" class="scroll-in-site top" href="#top"></a></li>*/
-/*                             <li class="features current"><a class="scroll-in-site" id="caracteristicas" href="#caracteristicas">Características</a></li>*/
-/*                             <li class="gallery"><a class="scroll-in-site" id="galeria" href="#galeria">Galería</a></li>*/
-/*                             <li class="prices"><a class="scroll-in-site" id="precios" href="#precios">Versiones y precios</a></li>*/
-/*                             <li class="accessories"><a class="scroll-in-site" id="accesorios" href="#accesorios">Accesorios</a></li>*/
-/*                             <!--<li class="cotízalo"><a class="scroll-in-site" id="cotizalo" href="#cotizalo">Cotízalo</a></li>-->*/
-/*                             <li class="top" id="back-to-top-button"><a class="scroll-in-site" id="top" href="#top"><span>Top</span></a></li>*/
-/*                             <li class="clearfix"></li>*/
-/*                         </ul>*/
-/*                     </div>*/
+/*                     {% block models_header %}*/
+/*                     {% endblock %}*/
 /*                 </div>*/
 /*             </header>*/
 /*             <div id="header-mobile">*/
-/*                 <a href="{{ _host }}"><img src="{{ _host }}img/template/common/header/horizontal_logo.png" alt="Logo Suzuki"></a>*/
+/*                 <a href="{{ _host }}">*/
+/*                     <img src="{{ _host }}img/template/common/header/horizontal_logo.png" alt="Logo Suzuki">*/
+/*                 </a>*/
 /*                 <i class="fa fa-bars"></i>*/
 /*             </div>*/
 /*             <div id="header-panel" class="header-panel">*/

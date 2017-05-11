@@ -48,14 +48,18 @@ $(document).ready(function() {
 
     $('body').on('click', ".scroll-up", up.init);
 
+    // HEADER PANEL
+    $('body').on('click', 'a.expand-header', openPanelMenuMethods.clickPanel_general);
+    //$('#footer-wrapper').on('click', domEl.header_models_button, openPanelMenuMethods.clickPanel_general);
+
     // EVENT CLICK GO OWNERS
     $('body').on('click', '#header-owners-button', openPanelMenuMethods.clickOwnersPanel);
     // EVENT CLICK GO BEFORE BYU
-    $('body').on('click', domEl.header_before_buy_button, openPanelMenuMethods.clickBeforeByPanel);
-    // EVENT CLICK GO CLOSE PANEL
-    $('body').on('click', domEl.button_close_model_panel_menu, closePanelMenuMethods.closePanelModels);
-    $('body').on('click', domEl.button_close_financing_panel_menu, closePanelMenuMethods.closePanelFinancing);
-    $('body').on('click', domEl.button_close_owners_panel_menu, closePanelMenuMethods.closePanelOwners);
-    $('body').on('click', domEl.button_close_before_buy_panel_menu, closePanelMenuMethods.closePanelBeforeBuy);
+    $('body').on('click', '#header-before-buy-button', openPanelMenuMethods.clickBeforeByPanel);
 
+    // EVENT CLICK GO CLOSE PANEL
+    //$('body').on('click', domEl.button_close_model_panel_menu, closePanelMenuMethods.closePanelModels);
+    //$('body').on('click', domEl.button_close_financing_panel_menu, closePanelMenuMethods.closePanelFinancing);
+    $('body').on('click', '#close-owners-panel', closePanelMenuMethods.closePanelOwners);
+    $('body').on('click', '#close-before-buy-panel', closePanelMenuMethods.closePanelBeforeBuy);
 });

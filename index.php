@@ -52,6 +52,10 @@ $app = new \Slim\App($container);
     // FINANCIAMIENTO
     $app->get("/financiamiento", "ControlFinancing:__invoke");
     $app->get("/financiamiento/{modelo}", "ControlFinancingByModel:__invoke");
+    // RAZONES
+    $app->get("/razones", "ControlReasons:__invoke");
+    // Garantia
+    $app->get("/garantia-suzuki", "ControlWarranty:__invoke");
     // TERMINOS LEGALES Y AVISO DE PRIVACIDAD
     $app->get("/terminos-legales", "ControlLegal:__invoke");
     $app->get("/aviso-de-privacidad", "ControlPrivacy:__invoke");
@@ -532,7 +536,74 @@ $app = new \Slim\App($container);
             //echo "<pre>", print_r(parent::getTemplate()->getMasterConfigArray()), "</pre>";
         }
     }
-    
+    /**
+     * CONTROL REASONS
+    **/
+    class ControlReasons extends ControlMaster {    
+        function __construct() {
+            parent::__construct(
+                array(
+                    "title" => "Suzuki Autos " . _LOC . ": Razones",
+                    "title_header" => "Suzuki Autos " . _LOC . ": Razones"
+                ),
+                array(),
+                "razones/_razones.twig"
+            );
+            // Facebook Metatags
+            parent::getTemplate()->makeFacebookTags(
+                "Suzuki Autos " . _LOC . ": Razones",
+                "Suzuki Autos " . _LOC,
+                "Suzuki Autos " . _LOC . ": Razones",
+                _HOST . "img/template/common/header/horizontal_logo.png"
+            );
+        }
+        /**
+         * This inherited method don't do nothing however is mandatory to implement it
+         * Because the parent method is an abstract one.
+         * 
+         * @param   Slim\Http\Request       $request 
+         * @param   Slim\Http\Response      $response 
+         * @param   array                   $args
+        **/
+        public function __invoke($request, $response, $args) {
+            parent::getTemplate()->display();
+            //echo "<pre>", print_r(parent::getTemplate()->getMasterConfigArray()), "</pre>";
+        }
+    }
+    /**
+     * CONTROL WARRANTY
+    **/
+    class ControlWarranty extends ControlMaster {    
+        function __construct() {
+            parent::__construct(
+                array(
+                    "title" => "Suzuki Autos " . _LOC . ": Garantía",
+                    "title_header" => "Suzuki Autos " . _LOC . ": Garantía"
+                ),
+                array(),
+                "garantia/_garantia.twig"
+            );
+            // Facebook Metatags
+            parent::getTemplate()->makeFacebookTags(
+                "Suzuki Autos " . _LOC . ": Garantía",
+                "Suzuki Autos " . _LOC,
+                "Suzuki Autos " . _LOC . ": Garantía",
+                _HOST . "img/template/common/header/horizontal_logo.png"
+            );
+        }
+        /**
+         * This inherited method don't do nothing however is mandatory to implement it
+         * Because the parent method is an abstract one.
+         * 
+         * @param   Slim\Http\Request       $request 
+         * @param   Slim\Http\Response      $response 
+         * @param   array                   $args
+        **/
+        public function __invoke($request, $response, $args) {
+            parent::getTemplate()->display();
+            //echo "<pre>", print_r(parent::getTemplate()->getMasterConfigArray()), "</pre>";
+        }
+    }
     /**
      * CONTROL LEGAL
     **/

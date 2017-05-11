@@ -19,7 +19,7 @@ class __TwigTemplate_2e6de55c389b1299366861cc1f34fc0a23172741ffeeeed61d0788abba2
         echo "\t<div class=\"header-section nav_before_buy\" style=\"display: none;\">
 \t\t<div class=\"header-section-content-wrapper\">
 \t\t\t<div class=\"close-menu-box\">
-\t\t\t\t<a id=\"close-before-buy-panel\">Cerrar<span>&nbsp;</span></a>
+\t\t\t\t<a id=\"close-before-buy-panel\" class=\"cur-hover\">Cerrar<span>&nbsp;</span></a>
 \t\t\t</div>
 \t\t\t<div class=\"header-section-content before-buy\">
 \t\t\t    <div class=\"header-title\">Comprar un Suzuki</div>
@@ -34,7 +34,10 @@ class __TwigTemplate_2e6de55c389b1299366861cc1f34fc0a23172741ffeeeed61d0788abba2
 \t\t\t            </div>
 \t\t\t            <ul class=\"links-list\">
 \t\t\t                <li>
-\t\t\t                    <a href=\"#/razones\"><span>Conócelas</span><i></i></a>
+\t\t\t                    <a href=\"";
+        // line 47
+        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
+        echo "razones\" onclick=\"ga('send', 'event', '10 Razones', 'Liga_interna', 'Conoce las 10 razones para comprar un Suzuki');\"><span>Conócelas</span><i></i></a>
 \t\t\t                </li>
 \t\t\t            </ul>
 \t\t\t            <i class=\"header-column-arrow\"></i>
@@ -73,16 +76,21 @@ class __TwigTemplate_2e6de55c389b1299366861cc1f34fc0a23172741ffeeeed61d0788abba2
         return "menus/panel_menu_before_buy.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  30 => 40,  19 => 2,);
+        return array (  39 => 47,  30 => 40,  19 => 2,);
     }
 }
 /* {# Begin: before buy #}*/
 /* 	<div class="header-section nav_before_buy" style="display: none;">*/
 /* 		<div class="header-section-content-wrapper">*/
 /* 			<div class="close-menu-box">*/
-/* 				<a id="close-before-buy-panel">Cerrar<span>&nbsp;</span></a>*/
+/* 				<a id="close-before-buy-panel" class="cur-hover">Cerrar<span>&nbsp;</span></a>*/
 /* 			</div>*/
 /* 			<div class="header-section-content before-buy">*/
 /* 			    <div class="header-title">Comprar un Suzuki</div>*/
@@ -124,7 +132,7 @@ class __TwigTemplate_2e6de55c389b1299366861cc1f34fc0a23172741ffeeeed61d0788abba2
 /* 			            </div>*/
 /* 			            <ul class="links-list">*/
 /* 			                <li>*/
-/* 			                    <a href="#/razones"><span>Conócelas</span><i></i></a>*/
+/* 			                    <a href="{{ _host}}razones" onclick="ga('send', 'event', '10 Razones', 'Liga_interna', 'Conoce las 10 razones para comprar un Suzuki');"><span>Conócelas</span><i></i></a>*/
 /* 			                </li>*/
 /* 			            </ul>*/
 /* 			            <i class="header-column-arrow"></i>*/

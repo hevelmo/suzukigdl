@@ -1,14 +1,14 @@
 <?php
 
-/* modelos/_modelos.twig */
-class __TwigTemplate_5f65f3060813c27e930f2cdd1899ec740ff19ca0180e4664deb434e440c7c28e extends Twig_Template
+/* razones/_razones.twig */
+class __TwigTemplate_640f5318304426e6a8f12b14bbeab31260c422d545384f2ad6122b6a1093d121 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("super.twig", "modelos/_modelos.twig", 1);
+        $this->parent = $this->loadTemplate("super.twig", "razones/_razones.twig", 1);
         $this->blocks = array(
             'title' => array($this, 'block_title'),
             'section_stylessheet' => array($this, 'block_section_stylessheet'),
@@ -43,75 +43,75 @@ class __TwigTemplate_5f65f3060813c27e930f2cdd1899ec740ff19ca0180e4664deb434e440c
     public function block_section_stylessheet($context, array $blocks = array())
     {
         // line 4
-        echo "\t<link id=\"models\" rel=\"stylesheet\" class=\"link-models\" href=\"";
+        echo "\t<link id=\"home\" rel=\"stylesheet\" class=\"link-home\" href=\"";
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "css/sections/models_gama.css\">
+        echo "css/sections/10reasons.css\">
 ";
     }
 
-    // line 6
+    // line 7
     public function block_section($context, array $blocks = array())
     {
-        // line 7
-        echo "    <input type=\"hidden\" id=\"hidden_section\" value=\"modelos\">
+        // line 8
+        echo "    <input type=\"hidden\" id=\"hidden_section\" value=\"reasons\">
 ";
     }
 
-    // line 9
+    // line 10
     public function block_menu_patch($context, array $blocks = array())
     {
-        // line 10
-        echo "\t<div class=\"menu-patch\" id=\"patch\">&nbsp;</div>
+        echo "    
+\t<div class=\"menu-patch\" id=\"patch\">&nbsp;</div>
 ";
     }
 
-    // line 12
+    // line 13
     public function block_navbar($context, array $blocks = array())
     {
-        // line 13
+        // line 14
         echo "    ";
-        $this->loadTemplate("modelos/_modelos.twig", "modelos/_modelos.twig", 13, "603236472")->display($context);
+        $this->loadTemplate("razones/_razones.twig", "razones/_razones.twig", 14, "767506473")->display($context);
     }
 
-    // line 20
+    // line 21
     public function block_content_current($context, array $blocks = array())
     {
-        // line 21
+        // line 22
         echo "    ";
-        $this->loadTemplate("modelos/_modelos.twig", "modelos/_modelos.twig", 21, "438515958")->display($context);
+        $this->loadTemplate("razones/_razones.twig", "razones/_razones.twig", 22, "1010923376")->display($context);
     }
 
-    // line 23
+    // line 24
     public function block_footer($context, array $blocks = array())
     {
-        // line 24
+        // line 25
         echo "    ";
-        $this->loadTemplate("modelos/_modelos.twig", "modelos/_modelos.twig", 24, "248758798")->display($context);
+        $this->loadTemplate("razones/_razones.twig", "razones/_razones.twig", 25, "1259342141")->display($context);
     }
 
-    // line 26
+    // line 27
     public function block_script_load_js($context, array $blocks = array())
     {
     }
 
-    // line 28
+    // line 29
     public function block_section_scripts($context, array $blocks = array())
     {
+        // line 30
+        echo "\t<script src=\"";
+        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
+        echo "js/sections/reasons.js\"></script>
+";
     }
 
-    // line 30
+    // line 32
     public function block_load_scripts($context, array $blocks = array())
     {
-        // line 31
-        echo "\t";
-        // line 32
-        echo "\ttoHtmlMethod.toHtml();
-";
     }
 
     public function getTemplateName()
     {
-        return "modelos/_modelos.twig";
+        return "razones/_razones.twig";
     }
 
     public function isTraitable()
@@ -121,20 +121,20 @@ class __TwigTemplate_5f65f3060813c27e930f2cdd1899ec740ff19ca0180e4664deb434e440c
 
     public function getDebugInfo()
     {
-        return array (  108 => 32,  106 => 31,  103 => 30,  98 => 28,  93 => 26,  88 => 24,  85 => 23,  80 => 21,  77 => 20,  72 => 13,  69 => 12,  64 => 10,  61 => 9,  56 => 7,  53 => 6,  46 => 4,  43 => 3,  37 => 2,  11 => 1,);
+        return array (  108 => 32,  101 => 30,  98 => 29,  93 => 27,  88 => 25,  85 => 24,  80 => 22,  77 => 21,  72 => 14,  69 => 13,  61 => 10,  56 => 8,  53 => 7,  46 => 4,  43 => 3,  37 => 2,  11 => 1,);
     }
 }
 
 
-/* modelos/_modelos.twig */
-class __TwigTemplate_5f65f3060813c27e930f2cdd1899ec740ff19ca0180e4664deb434e440c7c28e_603236472 extends Twig_Template
+/* razones/_razones.twig */
+class __TwigTemplate_640f5318304426e6a8f12b14bbeab31260c422d545384f2ad6122b6a1093d121_767506473 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
-        // line 13
-        $this->parent = $this->loadTemplate("super_navbar.twig", "modelos/_modelos.twig", 13);
+        // line 14
+        $this->parent = $this->loadTemplate("super_navbar.twig", "razones/_razones.twig", 14);
         $this->blocks = array(
             'phone_call' => array($this, 'block_phone_call'),
             'models_header' => array($this, 'block_models_header'),
@@ -151,23 +151,23 @@ class __TwigTemplate_5f65f3060813c27e930f2cdd1899ec740ff19ca0180e4664deb434e440c
         $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
 
-    // line 14
+    // line 15
     public function block_phone_call($context, array $blocks = array())
     {
-        // line 15
+        // line 16
         echo "\t\t";
     }
 
-    // line 16
+    // line 17
     public function block_models_header($context, array $blocks = array())
     {
-        // line 17
+        // line 18
         echo "\t    ";
     }
 
     public function getTemplateName()
     {
-        return "modelos/_modelos.twig";
+        return "razones/_razones.twig";
     }
 
     public function isTraitable()
@@ -177,27 +177,27 @@ class __TwigTemplate_5f65f3060813c27e930f2cdd1899ec740ff19ca0180e4664deb434e440c
 
     public function getDebugInfo()
     {
-        return array (  165 => 17,  162 => 16,  158 => 15,  155 => 14,  137 => 13,  108 => 32,  106 => 31,  103 => 30,  98 => 28,  93 => 26,  88 => 24,  85 => 23,  80 => 21,  77 => 20,  72 => 13,  69 => 12,  64 => 10,  61 => 9,  56 => 7,  53 => 6,  46 => 4,  43 => 3,  37 => 2,  11 => 1,);
+        return array (  165 => 18,  162 => 17,  158 => 16,  155 => 15,  137 => 14,  108 => 32,  101 => 30,  98 => 29,  93 => 27,  88 => 25,  85 => 24,  80 => 22,  77 => 21,  72 => 14,  69 => 13,  61 => 10,  56 => 8,  53 => 7,  46 => 4,  43 => 3,  37 => 2,  11 => 1,);
     }
 }
 
 
-/* modelos/_modelos.twig */
-class __TwigTemplate_5f65f3060813c27e930f2cdd1899ec740ff19ca0180e4664deb434e440c7c28e_438515958 extends Twig_Template
+/* razones/_razones.twig */
+class __TwigTemplate_640f5318304426e6a8f12b14bbeab31260c422d545384f2ad6122b6a1093d121_1010923376 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
-        // line 21
-        $this->parent = $this->loadTemplate("modelos/container.twig", "modelos/_modelos.twig", 21);
+        // line 22
+        $this->parent = $this->loadTemplate("razones/container.twig", "razones/_razones.twig", 22);
         $this->blocks = array(
         );
     }
 
     protected function doGetParent(array $context)
     {
-        return "modelos/container.twig";
+        return "razones/container.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
@@ -207,7 +207,7 @@ class __TwigTemplate_5f65f3060813c27e930f2cdd1899ec740ff19ca0180e4664deb434e440c
 
     public function getTemplateName()
     {
-        return "modelos/_modelos.twig";
+        return "razones/_razones.twig";
     }
 
     public function isTraitable()
@@ -217,20 +217,20 @@ class __TwigTemplate_5f65f3060813c27e930f2cdd1899ec740ff19ca0180e4664deb434e440c
 
     public function getDebugInfo()
     {
-        return array (  193 => 21,  165 => 17,  162 => 16,  158 => 15,  155 => 14,  137 => 13,  108 => 32,  106 => 31,  103 => 30,  98 => 28,  93 => 26,  88 => 24,  85 => 23,  80 => 21,  77 => 20,  72 => 13,  69 => 12,  64 => 10,  61 => 9,  56 => 7,  53 => 6,  46 => 4,  43 => 3,  37 => 2,  11 => 1,);
+        return array (  193 => 22,  165 => 18,  162 => 17,  158 => 16,  155 => 15,  137 => 14,  108 => 32,  101 => 30,  98 => 29,  93 => 27,  88 => 25,  85 => 24,  80 => 22,  77 => 21,  72 => 14,  69 => 13,  61 => 10,  56 => 8,  53 => 7,  46 => 4,  43 => 3,  37 => 2,  11 => 1,);
     }
 }
 
 
-/* modelos/_modelos.twig */
-class __TwigTemplate_5f65f3060813c27e930f2cdd1899ec740ff19ca0180e4664deb434e440c7c28e_248758798 extends Twig_Template
+/* razones/_razones.twig */
+class __TwigTemplate_640f5318304426e6a8f12b14bbeab31260c422d545384f2ad6122b6a1093d121_1259342141 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
-        // line 24
-        $this->parent = $this->loadTemplate("super_footer.twig", "modelos/_modelos.twig", 24);
+        // line 25
+        $this->parent = $this->loadTemplate("super_footer.twig", "razones/_razones.twig", 25);
         $this->blocks = array(
         );
     }
@@ -247,7 +247,7 @@ class __TwigTemplate_5f65f3060813c27e930f2cdd1899ec740ff19ca0180e4664deb434e440c
 
     public function getTemplateName()
     {
-        return "modelos/_modelos.twig";
+        return "razones/_razones.twig";
     }
 
     public function isTraitable()
@@ -257,18 +257,19 @@ class __TwigTemplate_5f65f3060813c27e930f2cdd1899ec740ff19ca0180e4664deb434e440c
 
     public function getDebugInfo()
     {
-        return array (  233 => 24,  193 => 21,  165 => 17,  162 => 16,  158 => 15,  155 => 14,  137 => 13,  108 => 32,  106 => 31,  103 => 30,  98 => 28,  93 => 26,  88 => 24,  85 => 23,  80 => 21,  77 => 20,  72 => 13,  69 => 12,  64 => 10,  61 => 9,  56 => 7,  53 => 6,  46 => 4,  43 => 3,  37 => 2,  11 => 1,);
+        return array (  233 => 25,  193 => 22,  165 => 18,  162 => 17,  158 => 16,  155 => 15,  137 => 14,  108 => 32,  101 => 30,  98 => 29,  93 => 27,  88 => 25,  85 => 24,  80 => 22,  77 => 21,  72 => 14,  69 => 13,  61 => 10,  56 => 8,  53 => 7,  46 => 4,  43 => 3,  37 => 2,  11 => 1,);
     }
 }
 /* {% extends "super.twig" %}*/
 /* {% block title %}{{ title }}{% endblock %}*/
 /* {% block section_stylessheet %}*/
-/* 	<link id="models" rel="stylesheet" class="link-models" href="{{ _host }}css/sections/models_gama.css">*/
+/* 	<link id="home" rel="stylesheet" class="link-home" href="{{ _host }}css/sections/10reasons.css">*/
 /* {% endblock %}*/
+/* */
 /* {% block section %}*/
-/*     <input type="hidden" id="hidden_section" value="modelos">*/
+/*     <input type="hidden" id="hidden_section" value="reasons">*/
 /* {% endblock %}*/
-/* {% block menu_patch %}*/
+/* {% block menu_patch %}    */
 /* 	<div class="menu-patch" id="patch">&nbsp;</div>*/
 /* {% endblock %}*/
 /* {% block navbar %}*/
@@ -280,7 +281,7 @@ class __TwigTemplate_5f65f3060813c27e930f2cdd1899ec740ff19ca0180e4664deb434e440c
 /*     {% endembed %}*/
 /* {% endblock %}*/
 /* {% block content_current %}*/
-/*     {% embed "modelos/container.twig" %}{% endembed %}*/
+/*     {% embed "razones/container.twig" %}{% endembed %}*/
 /* {% endblock %}*/
 /* {% block footer %}*/
 /*     {% embed "super_footer.twig" %}{% endembed %}*/
@@ -288,8 +289,7 @@ class __TwigTemplate_5f65f3060813c27e930f2cdd1899ec740ff19ca0180e4664deb434e440c
 /* {% block script_load_js %}*/
 /* {% endblock %}*/
 /* {% block section_scripts %}*/
+/* 	<script src="{{ _host }}js/sections/reasons.js"></script>*/
 /* {% endblock %}*/
 /* {% block load_scripts %}*/
-/* 	{#$('.seleccionar').chosen();#}*/
-/* 	toHtmlMethod.toHtml();*/
 /* {% endblock %}*/
