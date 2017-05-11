@@ -1,3 +1,4 @@
 $( document ).ready( function(){
-    concessionairesMethods.get_concessionaries_list('');
+    $.adjust_map_width();
+    initialize_map();
 });
