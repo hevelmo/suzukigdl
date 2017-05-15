@@ -21,6 +21,9 @@
 {% block content_current %}
     {% embed "razones/container.twig" %}{% endembed %}
 {% endblock %}
+{% block scroll_to_top %}
+    {% embed "menus/scrolltotop.twig" %}{% endembed %}
+{% endblock %}
 {% block footer %}
     {% embed "super_footer.twig" %}{% endembed %}
 {% endblock %}
@@ -28,6 +31,8 @@
 {% endblock %}
 {% block section_scripts %}
 	<script src="{{ _host }}js/sections/reasons.js"></script>
+	<script src="{{ _host }}js/sections/totop.js"></script>
 {% endblock %}
 {% block load_scripts %}
+
 {% endblock %}

@@ -15,12 +15,16 @@
 {% block content_current %}
     {% embed "404/container.twig" %}{% endembed %}	
 {% endblock %}
+{% block scroll_to_top %}
+    {% embed "menus/scrolltotop.twig" %}{% endembed %}
+{% endblock %}
 {% block footer %}
     {% embed "super_footer.twig" %}{% endembed %}
 {% endblock %}
 {% block script_load_js %}
 {% endblock %}
-{% block section_scripts %}                
+{% block section_scripts %}
+    <script src="{{ _host }}js/sections/totop.js"></script>
 {% endblock %}
 {% block load_scripts %}
 {% endblock %}

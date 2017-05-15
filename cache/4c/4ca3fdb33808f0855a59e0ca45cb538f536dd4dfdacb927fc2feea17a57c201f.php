@@ -24,8 +24,9 @@ class __TwigTemplate_3fdcfe40e717cbe6ef07cc279a3bf3e2739389736124d0d67082ff9b13c
 \t    <li class=\"prices\"><a class=\"scroll-in-site\" id=\"precios\" href=\"#precios\">Versiones y precios</a></li>
 \t    <li class=\"accessories\"><a class=\"scroll-in-site\" id=\"accesorios\" href=\"#accesorios\">Accesorios</a></li>
 \t    <!--<li class=\"cotízalo\"><a class=\"scroll-in-site\" id=\"cotizalo\" href=\"#cotizalo\">Cotízalo</a></li>-->
-\t    <li class=\"top\" id=\"back-to-top-button\"><a class=\"scroll-in-site\" id=\"top\" href=\"#top\"><span>Top</span></a></li>
-\t    <li class=\"clearfix\"></li>
+\t    ";
+        // line 10
+        echo "\t    <li class=\"clearfix\"></li>
 \t</ul>
 </div>";
     }
@@ -37,7 +38,7 @@ class __TwigTemplate_3fdcfe40e717cbe6ef07cc279a3bf3e2739389736124d0d67082ff9b13c
 
     public function getDebugInfo()
     {
-        return array (  19 => 1,);
+        return array (  29 => 10,  19 => 1,);
     }
 }
 /* <div class="content" id="content-models-header">*/
@@ -48,7 +49,7 @@ class __TwigTemplate_3fdcfe40e717cbe6ef07cc279a3bf3e2739389736124d0d67082ff9b13c
 /* 	    <li class="prices"><a class="scroll-in-site" id="precios" href="#precios">Versiones y precios</a></li>*/
 /* 	    <li class="accessories"><a class="scroll-in-site" id="accesorios" href="#accesorios">Accesorios</a></li>*/
 /* 	    <!--<li class="cotízalo"><a class="scroll-in-site" id="cotizalo" href="#cotizalo">Cotízalo</a></li>-->*/
-/* 	    <li class="top" id="back-to-top-button"><a class="scroll-in-site" id="top" href="#top"><span>Top</span></a></li>*/
+/* 	    {#<li class="top" id="back-to-top-button"><a class="scroll-in-site" id="top" href="#top"><span>Top</span></a></li>#}*/
 /* 	    <li class="clearfix"></li>*/
 /* 	</ul>*/
 /* </div>*/

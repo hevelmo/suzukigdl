@@ -873,8 +873,8 @@
 									),
 									'col' => array(
 										'class' => '2'
-									),
-									'height' => 'equal-height'
+									)/*,
+									'height' => 'equal-height'*/
 								),
 								'event' => array(
 									'ga' => 'ficha-ignis',
@@ -1684,8 +1684,8 @@
 									),
 									'col' => array(
 										'class' => '1'
-									),
-									'height' => ''
+									)/*,
+									'height' => ''*/
 								),
 								'event' => array(
 									'ga' => 'ficha-swift-sport',
@@ -3032,8 +3032,8 @@
 									),
 									'col' => array(
 										'class' => '4'
-									),
-									'height' => 'equal-height'
+									)/*,
+									'height' => 'equal-height'*/
 								),
 								'event' => array(
 									'ga' => 'ficha-swift-sport',
@@ -4061,8 +4061,8 @@
 									),
 									'col' => array(
 										'class' => '1'
-									),
-									'height' => ''
+									)/*,
+									'height' => ''*/
 								),
 								'event' => array(
 									'ga' => 'ficha_grand-vitara',
@@ -5311,8 +5311,8 @@
 									),
 									'col' => array(
 										'class' => '3'
-									),
-									'height' => 'equal-height'
+									)/*,
+									'height' => 'equal-height'*/
 								),
 								'event' => array(
 									'ga' => 'ficha-grand-vitara',
@@ -6343,8 +6343,8 @@
 									),
 									'col' => array(
 										'class' => '3'
-									),
-									'height' => 'equal-height'
+									)/*,
+									'height' => 'equal-height'*/
 								),
 								'event' => array(
 									'ga' => 'ficha-s-cross',
@@ -7595,8 +7595,8 @@
 									),
 									'col' => array(
 										'class' => '3'
-									),
-									'height' => 'equal-height'
+									)/*,
+									'height' => 'equal-height'*/
 								),
 								'event' => array(
 									'ga' => 'ficha_ciaz',
@@ -8872,8 +8872,8 @@
 									),
 									'col' => array(
 										'class' => '3'
-									),
-									'height' => 'equal-height'
+									)/*,
+									'height' => 'equal-height'*/
 								),
 								'event' => array(
 									'ga' => 'ficha-nueva-vitara',

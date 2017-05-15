@@ -16,6 +16,7 @@ class __TwigTemplate_b2f3c399226d11076cb5fbe99ff264deb0ce8564d4d466ede2c447e629f
             'menu_patch' => array($this, 'block_menu_patch'),
             'navbar' => array($this, 'block_navbar'),
             'content_current' => array($this, 'block_content_current'),
+            'scroll_to_top' => array($this, 'block_scroll_to_top'),
             'footer' => array($this, 'block_footer'),
             'script_load_js' => array($this, 'block_script_load_js'),
             'section_scripts' => array($this, 'block_section_scripts'),
@@ -46,18 +47,22 @@ class __TwigTemplate_b2f3c399226d11076cb5fbe99ff264deb0ce8564d4d466ede2c447e629f
         echo "\t<link id=\"home\" rel=\"stylesheet\" class=\"link-home\" href=\"";
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
         echo "css/sections/home.css\">
+\t<link id=\"home\" rel=\"stylesheet\" class=\"link-home\" href=\"";
+        // line 5
+        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
+        echo "css/sections/models-home.css\">
 ";
     }
 
-    // line 7
+    // line 8
     public function block_section($context, array $blocks = array())
     {
-        // line 8
+        // line 9
         echo "    <input type=\"hidden\" id=\"hidden_section\" value=\"home\">
 ";
     }
 
-    // line 10
+    // line 11
     public function block_menu_patch($context, array $blocks = array())
     {
         echo "    
@@ -65,78 +70,73 @@ class __TwigTemplate_b2f3c399226d11076cb5fbe99ff264deb0ce8564d4d466ede2c447e629f
 ";
     }
 
-    // line 13
+    // line 14
     public function block_navbar($context, array $blocks = array())
     {
-        // line 14
+        // line 15
         echo "    ";
-        $this->loadTemplate("home/_home.twig", "home/_home.twig", 14, "212970761")->display($context);
+        $this->loadTemplate("home/_home.twig", "home/_home.twig", 15, "980030418")->display($context);
     }
 
-    // line 29
+    // line 30
     public function block_content_current($context, array $blocks = array())
     {
-        // line 30
-        echo "    ";
-        $this->loadTemplate("home/_home.twig", "home/_home.twig", 30, "1010781180")->display($context);
+        // line 31
+        echo "\t<div id=\"content-content\">
+\t\t<div class=\"promos-wrapper-shide_s-cross\">
+\t\t\t<div class=\"promos-container\">
+\t\t\t\t<div class=\"promotion\">
+\t\t\t\t\t<div id=\"content-section-slider-home\">
+    \t\t\t\t\t";
+        // line 36
+        $this->loadTemplate("home/_home.twig", "home/_home.twig", 36, "327495713")->display($context);
+        // line 37
+        echo "\t\t\t\t\t</div>
+\t\t\t\t</div>
+\t\t\t</div>
+\t\t</div>
+\t</div>
+";
     }
 
-    // line 32
+    // line 43
+    public function block_scroll_to_top($context, array $blocks = array())
+    {
+        // line 44
+        echo "    ";
+        $this->loadTemplate("home/_home.twig", "home/_home.twig", 44, "453810848")->display($context);
+    }
+
+    // line 46
     public function block_footer($context, array $blocks = array())
     {
-        // line 33
+        // line 47
         echo "    ";
-        $this->loadTemplate("home/_home.twig", "home/_home.twig", 33, "164495719")->display($context);
+        $this->loadTemplate("home/_home.twig", "home/_home.twig", 47, "1098856036")->display($context);
     }
 
-    // line 35
+    // line 49
     public function block_script_load_js($context, array $blocks = array())
     {
     }
 
-    // line 37
+    // line 51
     public function block_section_scripts($context, array $blocks = array())
     {
+        // line 52
+        echo "\t<script src=\"";
+        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
+        echo "js/sections/home.js\"></script>
+\t<script src=\"";
+        // line 53
+        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
+        echo "js/sections/totop.js\"></script>
+";
     }
 
-    // line 39
+    // line 55
     public function block_load_scripts($context, array $blocks = array())
     {
-        // line 40
-        echo "\t//Specifications Slider controls and functionality
-\tvar specifications_i = 0;
-\tvar specifications_total =  \$('.specifications-wrapper .specification').length - 1;
-\t\$(\"body\").on('click', 'a.specifications-controls', function( e ){
-\t    e.preventDefault();
-\t    var direction, fake_div, copy_div;
-\t    \$('.specifications-wrapper .fake_div').remove();
-\t    if( \$(this).attr('href') == '#left' ){
-\t        if( specifications_i > 0 ){
-\t            specifications_i--;
-\t        }else{
-\t            specifications_i = specifications_total ;
-\t            fake_div = true;
-\t            copy_div = \$('#features-wrapper .specification').eq( 0).clone();
-\t            copy_div.addClass('fake_div');
-\t            \$('#features-wrapper').append( copy_div ).css({marginLeft: ( ( specifications_i + 1 ) * -100 )+'%' }).stop().animate({marginLeft: ( specifications_i * -100) + '%' });
-\t        }
-\t    }else{
-\t        if( specifications_i < specifications_total ){
-\t            specifications_i++;
-\t        }else{
-\t            fake_div = true;
-\t            specifications_i = 0;
-\t            copy_div = \$('#features-wrapper .specification').eq( specifications_i -1  ).clone();
-\t            \$('#features-wrapper').prepend( copy_div ).css({marginLeft: '100%' }).stop();
-\t            copy_div.addClass('fake_div').css({marginLeft:\"-99%\", position:\"absolute\", width: \"100%\"}).stop().animate({marginLeft:'-100%'} );
-\t            \$('#features-wrapper').animate({marginLeft: '0'});
-\t        }
-\t    }
-\t    if( !fake_div ){
-\t        \$('.specifications-wrapper .specifications').stop().animate({marginLeft: ( specifications_i * -100) + '%' });
-\t    }
-\t});
-";
     }
 
     public function getTemplateName()
@@ -151,20 +151,20 @@ class __TwigTemplate_b2f3c399226d11076cb5fbe99ff264deb0ce8564d4d466ede2c447e629f
 
     public function getDebugInfo()
     {
-        return array (  106 => 40,  103 => 39,  98 => 37,  93 => 35,  88 => 33,  85 => 32,  80 => 30,  77 => 29,  72 => 14,  69 => 13,  61 => 10,  56 => 8,  53 => 7,  46 => 4,  43 => 3,  37 => 2,  11 => 1,);
+        return array (  138 => 55,  132 => 53,  127 => 52,  124 => 51,  119 => 49,  114 => 47,  111 => 46,  106 => 44,  103 => 43,  94 => 37,  92 => 36,  85 => 31,  82 => 30,  77 => 15,  74 => 14,  66 => 11,  61 => 9,  58 => 8,  52 => 5,  47 => 4,  44 => 3,  38 => 2,  11 => 1,);
     }
 }
 
 
 /* home/_home.twig */
-class __TwigTemplate_b2f3c399226d11076cb5fbe99ff264deb0ce8564d4d466ede2c447e629fcfd5b_212970761 extends Twig_Template
+class __TwigTemplate_b2f3c399226d11076cb5fbe99ff264deb0ce8564d4d466ede2c447e629fcfd5b_980030418 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
-        // line 14
-        $this->parent = $this->loadTemplate("super_navbar.twig", "home/_home.twig", 14);
+        // line 15
+        $this->parent = $this->loadTemplate("super_navbar.twig", "home/_home.twig", 15);
         $this->blocks = array(
             'phone_call' => array($this, 'block_phone_call'),
             'models_header' => array($this, 'block_models_header'),
@@ -181,10 +181,10 @@ class __TwigTemplate_b2f3c399226d11076cb5fbe99ff264deb0ce8564d4d466ede2c447e629f
         $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
 
-    // line 15
+    // line 16
     public function block_phone_call($context, array $blocks = array())
     {
-        // line 16
+        // line 17
         echo "\t\t\t<div id=\"phone-call\">
 \t\t\t\t<a href=\"tel: +013337771989\">
 \t\t\t\t\t<span style=\"color: #ffffff;\">
@@ -195,12 +195,12 @@ class __TwigTemplate_b2f3c399226d11076cb5fbe99ff264deb0ce8564d4d466ede2c447e629f
 \t\t";
     }
 
-    // line 24
+    // line 25
     public function block_models_header($context, array $blocks = array())
     {
-        // line 25
-        echo "\t\t\t";
         // line 26
+        echo "\t\t\t";
+        // line 27
         echo "\t    ";
     }
 
@@ -216,20 +216,20 @@ class __TwigTemplate_b2f3c399226d11076cb5fbe99ff264deb0ce8564d4d466ede2c447e629f
 
     public function getDebugInfo()
     {
-        return array (  204 => 26,  202 => 25,  199 => 24,  188 => 16,  185 => 15,  167 => 14,  106 => 40,  103 => 39,  98 => 37,  93 => 35,  88 => 33,  85 => 32,  80 => 30,  77 => 29,  72 => 14,  69 => 13,  61 => 10,  56 => 8,  53 => 7,  46 => 4,  43 => 3,  37 => 2,  11 => 1,);
+        return array (  204 => 27,  202 => 26,  199 => 25,  188 => 17,  185 => 16,  167 => 15,  138 => 55,  132 => 53,  127 => 52,  124 => 51,  119 => 49,  114 => 47,  111 => 46,  106 => 44,  103 => 43,  94 => 37,  92 => 36,  85 => 31,  82 => 30,  77 => 15,  74 => 14,  66 => 11,  61 => 9,  58 => 8,  52 => 5,  47 => 4,  44 => 3,  38 => 2,  11 => 1,);
     }
 }
 
 
 /* home/_home.twig */
-class __TwigTemplate_b2f3c399226d11076cb5fbe99ff264deb0ce8564d4d466ede2c447e629fcfd5b_1010781180 extends Twig_Template
+class __TwigTemplate_b2f3c399226d11076cb5fbe99ff264deb0ce8564d4d466ede2c447e629fcfd5b_327495713 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
-        // line 30
-        $this->parent = $this->loadTemplate("home/container.twig", "home/_home.twig", 30);
+        // line 36
+        $this->parent = $this->loadTemplate("home/container.twig", "home/_home.twig", 36);
         $this->blocks = array(
         );
     }
@@ -256,20 +256,60 @@ class __TwigTemplate_b2f3c399226d11076cb5fbe99ff264deb0ce8564d4d466ede2c447e629f
 
     public function getDebugInfo()
     {
-        return array (  232 => 30,  204 => 26,  202 => 25,  199 => 24,  188 => 16,  185 => 15,  167 => 14,  106 => 40,  103 => 39,  98 => 37,  93 => 35,  88 => 33,  85 => 32,  80 => 30,  77 => 29,  72 => 14,  69 => 13,  61 => 10,  56 => 8,  53 => 7,  46 => 4,  43 => 3,  37 => 2,  11 => 1,);
+        return array (  232 => 36,  204 => 27,  202 => 26,  199 => 25,  188 => 17,  185 => 16,  167 => 15,  138 => 55,  132 => 53,  127 => 52,  124 => 51,  119 => 49,  114 => 47,  111 => 46,  106 => 44,  103 => 43,  94 => 37,  92 => 36,  85 => 31,  82 => 30,  77 => 15,  74 => 14,  66 => 11,  61 => 9,  58 => 8,  52 => 5,  47 => 4,  44 => 3,  38 => 2,  11 => 1,);
     }
 }
 
 
 /* home/_home.twig */
-class __TwigTemplate_b2f3c399226d11076cb5fbe99ff264deb0ce8564d4d466ede2c447e629fcfd5b_164495719 extends Twig_Template
+class __TwigTemplate_b2f3c399226d11076cb5fbe99ff264deb0ce8564d4d466ede2c447e629fcfd5b_453810848 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
-        // line 33
-        $this->parent = $this->loadTemplate("super_footer.twig", "home/_home.twig", 33);
+        // line 44
+        $this->parent = $this->loadTemplate("menus/scrolltotop.twig", "home/_home.twig", 44);
+        $this->blocks = array(
+        );
+    }
+
+    protected function doGetParent(array $context)
+    {
+        return "menus/scrolltotop.twig";
+    }
+
+    protected function doDisplay(array $context, array $blocks = array())
+    {
+        $this->parent->display($context, array_merge($this->blocks, $blocks));
+    }
+
+    public function getTemplateName()
+    {
+        return "home/_home.twig";
+    }
+
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  272 => 44,  232 => 36,  204 => 27,  202 => 26,  199 => 25,  188 => 17,  185 => 16,  167 => 15,  138 => 55,  132 => 53,  127 => 52,  124 => 51,  119 => 49,  114 => 47,  111 => 46,  106 => 44,  103 => 43,  94 => 37,  92 => 36,  85 => 31,  82 => 30,  77 => 15,  74 => 14,  66 => 11,  61 => 9,  58 => 8,  52 => 5,  47 => 4,  44 => 3,  38 => 2,  11 => 1,);
+    }
+}
+
+
+/* home/_home.twig */
+class __TwigTemplate_b2f3c399226d11076cb5fbe99ff264deb0ce8564d4d466ede2c447e629fcfd5b_1098856036 extends Twig_Template
+{
+    public function __construct(Twig_Environment $env)
+    {
+        parent::__construct($env);
+
+        // line 47
+        $this->parent = $this->loadTemplate("super_footer.twig", "home/_home.twig", 47);
         $this->blocks = array(
         );
     }
@@ -296,13 +336,14 @@ class __TwigTemplate_b2f3c399226d11076cb5fbe99ff264deb0ce8564d4d466ede2c447e629f
 
     public function getDebugInfo()
     {
-        return array (  272 => 33,  232 => 30,  204 => 26,  202 => 25,  199 => 24,  188 => 16,  185 => 15,  167 => 14,  106 => 40,  103 => 39,  98 => 37,  93 => 35,  88 => 33,  85 => 32,  80 => 30,  77 => 29,  72 => 14,  69 => 13,  61 => 10,  56 => 8,  53 => 7,  46 => 4,  43 => 3,  37 => 2,  11 => 1,);
+        return array (  312 => 47,  272 => 44,  232 => 36,  204 => 27,  202 => 26,  199 => 25,  188 => 17,  185 => 16,  167 => 15,  138 => 55,  132 => 53,  127 => 52,  124 => 51,  119 => 49,  114 => 47,  111 => 46,  106 => 44,  103 => 43,  94 => 37,  92 => 36,  85 => 31,  82 => 30,  77 => 15,  74 => 14,  66 => 11,  61 => 9,  58 => 8,  52 => 5,  47 => 4,  44 => 3,  38 => 2,  11 => 1,);
     }
 }
 /* {% extends "super.twig" %}*/
 /* {% block title %}{{ title }}{% endblock %}*/
 /* {% block section_stylessheet %}*/
 /* 	<link id="home" rel="stylesheet" class="link-home" href="{{ _host }}css/sections/home.css">*/
+/* 	<link id="home" rel="stylesheet" class="link-home" href="{{ _host }}css/sections/models-home.css">*/
 /* {% endblock %}*/
 /* */
 /* {% block section %}*/
@@ -328,7 +369,20 @@ class __TwigTemplate_b2f3c399226d11076cb5fbe99ff264deb0ce8564d4d466ede2c447e629f
 /*     {% endembed %}*/
 /* {% endblock %}*/
 /* {% block content_current %}*/
-/*     {% embed "home/container.twig" %}{% endembed %}*/
+/* 	<div id="content-content">*/
+/* 		<div class="promos-wrapper-shide_s-cross">*/
+/* 			<div class="promos-container">*/
+/* 				<div class="promotion">*/
+/* 					<div id="content-section-slider-home">*/
+/*     					{% embed "home/container.twig" %}{% endembed %}*/
+/* 					</div>*/
+/* 				</div>*/
+/* 			</div>*/
+/* 		</div>*/
+/* 	</div>*/
+/* {% endblock %}*/
+/* {% block scroll_to_top %}*/
+/*     {% embed "menus/scrolltotop.twig" %}{% endembed %}*/
 /* {% endblock %}*/
 /* {% block footer %}*/
 /*     {% embed "super_footer.twig" %}{% endembed %}*/
@@ -336,39 +390,8 @@ class __TwigTemplate_b2f3c399226d11076cb5fbe99ff264deb0ce8564d4d466ede2c447e629f
 /* {% block script_load_js %}*/
 /* {% endblock %}*/
 /* {% block section_scripts %}*/
+/* 	<script src="{{ _host }}js/sections/home.js"></script>*/
+/* 	<script src="{{ _host }}js/sections/totop.js"></script>*/
 /* {% endblock %}*/
 /* {% block load_scripts %}*/
-/* 	//Specifications Slider controls and functionality*/
-/* 	var specifications_i = 0;*/
-/* 	var specifications_total =  $('.specifications-wrapper .specification').length - 1;*/
-/* 	$("body").on('click', 'a.specifications-controls', function( e ){*/
-/* 	    e.preventDefault();*/
-/* 	    var direction, fake_div, copy_div;*/
-/* 	    $('.specifications-wrapper .fake_div').remove();*/
-/* 	    if( $(this).attr('href') == '#left' ){*/
-/* 	        if( specifications_i > 0 ){*/
-/* 	            specifications_i--;*/
-/* 	        }else{*/
-/* 	            specifications_i = specifications_total ;*/
-/* 	            fake_div = true;*/
-/* 	            copy_div = $('#features-wrapper .specification').eq( 0).clone();*/
-/* 	            copy_div.addClass('fake_div');*/
-/* 	            $('#features-wrapper').append( copy_div ).css({marginLeft: ( ( specifications_i + 1 ) * -100 )+'%' }).stop().animate({marginLeft: ( specifications_i * -100) + '%' });*/
-/* 	        }*/
-/* 	    }else{*/
-/* 	        if( specifications_i < specifications_total ){*/
-/* 	            specifications_i++;*/
-/* 	        }else{*/
-/* 	            fake_div = true;*/
-/* 	            specifications_i = 0;*/
-/* 	            copy_div = $('#features-wrapper .specification').eq( specifications_i -1  ).clone();*/
-/* 	            $('#features-wrapper').prepend( copy_div ).css({marginLeft: '100%' }).stop();*/
-/* 	            copy_div.addClass('fake_div').css({marginLeft:"-99%", position:"absolute", width: "100%"}).stop().animate({marginLeft:'-100%'} );*/
-/* 	            $('#features-wrapper').animate({marginLeft: '0'});*/
-/* 	        }*/
-/* 	    }*/
-/* 	    if( !fake_div ){*/
-/* 	        $('.specifications-wrapper .specifications').stop().animate({marginLeft: ( specifications_i * -100) + '%' });*/
-/* 	    }*/
-/* 	});*/
 /* {% endblock %}*/

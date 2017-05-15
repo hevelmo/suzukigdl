@@ -190,7 +190,13 @@
             {% endblock %}
             
         {% endblock %}
-        <script>{% block load_scripts %}toHtmlMethod.toHtml();{% endblock %}</script>
+        <script>
+            {% block load_scripts %}
+                toHtmlMethod.toHtml();
+                //hide or show the "back to top" link
+                $(window).scroll(scrolltotop.windowScroll());
+            {% endblock %}
+        </script>
 
         {# GOOGLE CODE PARA ETIQUETAS DE REMARKETING #}
         <script type="text/javascript">

@@ -16,6 +16,7 @@ class __TwigTemplate_71840695947a6af0c29f715b263ec0a7d735581a07b8b1e5535b0fcfe8e
             'menu_patch' => array($this, 'block_menu_patch'),
             'navbar' => array($this, 'block_navbar'),
             'content_current' => array($this, 'block_content_current'),
+            'scroll_to_top' => array($this, 'block_scroll_to_top'),
             'footer' => array($this, 'block_footer'),
             'script_load_js' => array($this, 'block_script_load_js'),
             'section_scripts' => array($this, 'block_section_scripts'),
@@ -70,7 +71,7 @@ class __TwigTemplate_71840695947a6af0c29f715b263ec0a7d735581a07b8b1e5535b0fcfe8e
     {
         // line 14
         echo "    ";
-        $this->loadTemplate("garantia/_garantia.twig", "garantia/_garantia.twig", 14, "1333044996")->display($context);
+        $this->loadTemplate("garantia/_garantia.twig", "garantia/_garantia.twig", 14, "1334233074")->display($context);
     }
 
     // line 21
@@ -78,33 +79,45 @@ class __TwigTemplate_71840695947a6af0c29f715b263ec0a7d735581a07b8b1e5535b0fcfe8e
     {
         // line 22
         echo "    ";
-        $this->loadTemplate("garantia/_garantia.twig", "garantia/_garantia.twig", 22, "413224444")->display($context);
+        $this->loadTemplate("garantia/_garantia.twig", "garantia/_garantia.twig", 22, "1996390386")->display($context);
     }
 
     // line 24
-    public function block_footer($context, array $blocks = array())
+    public function block_scroll_to_top($context, array $blocks = array())
     {
         // line 25
         echo "    ";
-        $this->loadTemplate("garantia/_garantia.twig", "garantia/_garantia.twig", 25, "1729281133")->display($context);
+        $this->loadTemplate("garantia/_garantia.twig", "garantia/_garantia.twig", 25, "959680974")->display($context);
     }
 
     // line 27
+    public function block_footer($context, array $blocks = array())
+    {
+        // line 28
+        echo "    ";
+        $this->loadTemplate("garantia/_garantia.twig", "garantia/_garantia.twig", 28, "1562182747")->display($context);
+    }
+
+    // line 30
     public function block_script_load_js($context, array $blocks = array())
     {
     }
 
-    // line 29
+    // line 32
     public function block_section_scripts($context, array $blocks = array())
     {
-        // line 30
+        // line 33
         echo "\t<script src=\"";
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
         echo "js/sections/warranty.js\"></script>
+    <script src=\"";
+        // line 34
+        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
+        echo "js/sections/totop.js\"></script>
 ";
     }
 
-    // line 32
+    // line 36
     public function block_load_scripts($context, array $blocks = array())
     {
     }
@@ -121,13 +134,13 @@ class __TwigTemplate_71840695947a6af0c29f715b263ec0a7d735581a07b8b1e5535b0fcfe8e
 
     public function getDebugInfo()
     {
-        return array (  108 => 32,  101 => 30,  98 => 29,  93 => 27,  88 => 25,  85 => 24,  80 => 22,  77 => 21,  72 => 14,  69 => 13,  61 => 10,  56 => 8,  53 => 7,  46 => 4,  43 => 3,  37 => 2,  11 => 1,);
+        return array (  121 => 36,  115 => 34,  110 => 33,  107 => 32,  102 => 30,  97 => 28,  94 => 27,  89 => 25,  86 => 24,  81 => 22,  78 => 21,  73 => 14,  70 => 13,  62 => 10,  57 => 8,  54 => 7,  47 => 4,  44 => 3,  38 => 2,  11 => 1,);
     }
 }
 
 
 /* garantia/_garantia.twig */
-class __TwigTemplate_71840695947a6af0c29f715b263ec0a7d735581a07b8b1e5535b0fcfe8e08ded_1333044996 extends Twig_Template
+class __TwigTemplate_71840695947a6af0c29f715b263ec0a7d735581a07b8b1e5535b0fcfe8e08ded_1334233074 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -177,13 +190,13 @@ class __TwigTemplate_71840695947a6af0c29f715b263ec0a7d735581a07b8b1e5535b0fcfe8e
 
     public function getDebugInfo()
     {
-        return array (  165 => 18,  162 => 17,  158 => 16,  155 => 15,  137 => 14,  108 => 32,  101 => 30,  98 => 29,  93 => 27,  88 => 25,  85 => 24,  80 => 22,  77 => 21,  72 => 14,  69 => 13,  61 => 10,  56 => 8,  53 => 7,  46 => 4,  43 => 3,  37 => 2,  11 => 1,);
+        return array (  178 => 18,  175 => 17,  171 => 16,  168 => 15,  150 => 14,  121 => 36,  115 => 34,  110 => 33,  107 => 32,  102 => 30,  97 => 28,  94 => 27,  89 => 25,  86 => 24,  81 => 22,  78 => 21,  73 => 14,  70 => 13,  62 => 10,  57 => 8,  54 => 7,  47 => 4,  44 => 3,  38 => 2,  11 => 1,);
     }
 }
 
 
 /* garantia/_garantia.twig */
-class __TwigTemplate_71840695947a6af0c29f715b263ec0a7d735581a07b8b1e5535b0fcfe8e08ded_413224444 extends Twig_Template
+class __TwigTemplate_71840695947a6af0c29f715b263ec0a7d735581a07b8b1e5535b0fcfe8e08ded_1996390386 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -217,20 +230,60 @@ class __TwigTemplate_71840695947a6af0c29f715b263ec0a7d735581a07b8b1e5535b0fcfe8e
 
     public function getDebugInfo()
     {
-        return array (  193 => 22,  165 => 18,  162 => 17,  158 => 16,  155 => 15,  137 => 14,  108 => 32,  101 => 30,  98 => 29,  93 => 27,  88 => 25,  85 => 24,  80 => 22,  77 => 21,  72 => 14,  69 => 13,  61 => 10,  56 => 8,  53 => 7,  46 => 4,  43 => 3,  37 => 2,  11 => 1,);
+        return array (  206 => 22,  178 => 18,  175 => 17,  171 => 16,  168 => 15,  150 => 14,  121 => 36,  115 => 34,  110 => 33,  107 => 32,  102 => 30,  97 => 28,  94 => 27,  89 => 25,  86 => 24,  81 => 22,  78 => 21,  73 => 14,  70 => 13,  62 => 10,  57 => 8,  54 => 7,  47 => 4,  44 => 3,  38 => 2,  11 => 1,);
     }
 }
 
 
 /* garantia/_garantia.twig */
-class __TwigTemplate_71840695947a6af0c29f715b263ec0a7d735581a07b8b1e5535b0fcfe8e08ded_1729281133 extends Twig_Template
+class __TwigTemplate_71840695947a6af0c29f715b263ec0a7d735581a07b8b1e5535b0fcfe8e08ded_959680974 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
         // line 25
-        $this->parent = $this->loadTemplate("super_footer.twig", "garantia/_garantia.twig", 25);
+        $this->parent = $this->loadTemplate("menus/scrolltotop.twig", "garantia/_garantia.twig", 25);
+        $this->blocks = array(
+        );
+    }
+
+    protected function doGetParent(array $context)
+    {
+        return "menus/scrolltotop.twig";
+    }
+
+    protected function doDisplay(array $context, array $blocks = array())
+    {
+        $this->parent->display($context, array_merge($this->blocks, $blocks));
+    }
+
+    public function getTemplateName()
+    {
+        return "garantia/_garantia.twig";
+    }
+
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  246 => 25,  206 => 22,  178 => 18,  175 => 17,  171 => 16,  168 => 15,  150 => 14,  121 => 36,  115 => 34,  110 => 33,  107 => 32,  102 => 30,  97 => 28,  94 => 27,  89 => 25,  86 => 24,  81 => 22,  78 => 21,  73 => 14,  70 => 13,  62 => 10,  57 => 8,  54 => 7,  47 => 4,  44 => 3,  38 => 2,  11 => 1,);
+    }
+}
+
+
+/* garantia/_garantia.twig */
+class __TwigTemplate_71840695947a6af0c29f715b263ec0a7d735581a07b8b1e5535b0fcfe8e08ded_1562182747 extends Twig_Template
+{
+    public function __construct(Twig_Environment $env)
+    {
+        parent::__construct($env);
+
+        // line 28
+        $this->parent = $this->loadTemplate("super_footer.twig", "garantia/_garantia.twig", 28);
         $this->blocks = array(
         );
     }
@@ -257,7 +310,7 @@ class __TwigTemplate_71840695947a6af0c29f715b263ec0a7d735581a07b8b1e5535b0fcfe8e
 
     public function getDebugInfo()
     {
-        return array (  233 => 25,  193 => 22,  165 => 18,  162 => 17,  158 => 16,  155 => 15,  137 => 14,  108 => 32,  101 => 30,  98 => 29,  93 => 27,  88 => 25,  85 => 24,  80 => 22,  77 => 21,  72 => 14,  69 => 13,  61 => 10,  56 => 8,  53 => 7,  46 => 4,  43 => 3,  37 => 2,  11 => 1,);
+        return array (  286 => 28,  246 => 25,  206 => 22,  178 => 18,  175 => 17,  171 => 16,  168 => 15,  150 => 14,  121 => 36,  115 => 34,  110 => 33,  107 => 32,  102 => 30,  97 => 28,  94 => 27,  89 => 25,  86 => 24,  81 => 22,  78 => 21,  73 => 14,  70 => 13,  62 => 10,  57 => 8,  54 => 7,  47 => 4,  44 => 3,  38 => 2,  11 => 1,);
     }
 }
 /* {% extends "super.twig" %}*/
@@ -283,6 +336,9 @@ class __TwigTemplate_71840695947a6af0c29f715b263ec0a7d735581a07b8b1e5535b0fcfe8e
 /* {% block content_current %}*/
 /*     {% embed "garantia/container.twig" %}{% endembed %}*/
 /* {% endblock %}*/
+/* {% block scroll_to_top %}*/
+/*     {% embed "menus/scrolltotop.twig" %}{% endembed %}*/
+/* {% endblock %}*/
 /* {% block footer %}*/
 /*     {% embed "super_footer.twig" %}{% endembed %}*/
 /* {% endblock %}*/
@@ -290,6 +346,7 @@ class __TwigTemplate_71840695947a6af0c29f715b263ec0a7d735581a07b8b1e5535b0fcfe8e
 /* {% endblock %}*/
 /* {% block section_scripts %}*/
 /* 	<script src="{{ _host }}js/sections/warranty.js"></script>*/
+/*     <script src="{{ _host }}js/sections/totop.js"></script>*/
 /* {% endblock %}*/
 /* {% block load_scripts %}*/
 /* {% endblock %}*/

@@ -74,6 +74,15 @@
     //
     var year_model;
     year_model = '2017';
+    // SCROLL TO TOP
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
 /* ------------------------------------------------------ *\
     [functions] instant_drive_available_time
 \* ------------------------------------------------------ */
@@ -175,7 +184,8 @@
             var cell_height = 0;
             $(this).find(".cell").each(function (index, Element) {
                 var val_cell = ($(this).height.length > 0) ? $(this).height() : 0;
-                //cell_array[index] = val_cell;
+                console.log(val_cell);
+                cell_array[index] = val_cell;
             });
             cell_height = Math.min.apply( Math, cell_array );
             $(this).find(".cell").css("height", cell_height);
@@ -608,39 +618,6 @@
         }catch( error ){
             console.warn('  No hay Instant Drive =(')
         }
-    }
-/* ------------------------------------------------------ *\
-    [Metodos] Favicon
-\* ------------------------------------------------------ */
-    var favicon = {
-        load_favicon: function() {
-            favicon.change("img/favicon.ico");
-        },
-        change: function(iconURL, optionalDocTitle) {
-            if (arguments.length == 2) {
-              document.title =  optionamDocTitle;
-            }
-            this.addLink(iconURL, "shortcur icon");
-        },
-        addLink: function(iconURL, relValue) {
-            var link = document.createElement("link");
-            link.type = "image/x-icon";
-            link.rel = relValue;
-            link.href = iconURL;
-            this.removeLinkIfExists(relValue);
-            this.docHead.appendChild(link);
-        },
-        removeLinkIfExists: function(relValue) {
-            var links = this.docHead.getElementsByTagName("link");
-            for (var i=0; i<links .length; i++) {
-              var link = links[i];
-              if (link.type=="image/x-icon" && link.rel==relValue) {
-                this.docHead.removeChild(link);
-                return; // Assuming only one match at most.
-              }
-            }
-        },
-        docHead:document.getElementsByTagName("head")[0]
     }
 /* ------------------------------------------------------ *\
     [Methods] detectNavigatorMethods
@@ -1527,7 +1504,7 @@
 \* ------------------------------------------------------ */
     var addDelegatMethods = {
         transitions : function () {
-            //addDelegatMethods.delegate();
+            addDelegatMethods.delegate();
         },
         delegate : function () {
 
@@ -1616,14 +1593,14 @@
             //console.log(pages);
 
             var init_slide_load = location.hash.slice(1);
-            //console.log(location.hash.slice(0));
-            //console.log(location.hash);
+            console.log(location.hash.slice(0));
+            console.log(location.hash);
             $('.catalog_cars_wrapper').find('.catalog_car').each(function( index ) {
                 if( $(this).hasClass(init_slide_load) )
                     init_slide_load = index;
                     //console.log(init_slide_load);
             });
-            $(domEl.div_recurrent).delegate('a.switch-catalog', 'click', '.catalog_cars_wrapper', function( e ){
+            $('.catalog_cars_wrapper').delegate('a.switch-catalog', 'click', function( e ){
                 e.preventDefault();
                 var car_key = $(this).data('key');
                 var slide = $("#catalog-"+ car_key);
@@ -2453,189 +2430,7 @@
             $(window).trigger('scroll');
         }
     }
-/* ------------------------------------------------------ *\
-    [Methods] inputVal
-\* ------------------------------------------------------ */
-    var inputValMetdods = {
-        isIntegerKP: function (event) {
-            var key, numeros, teclado, especiales, teclado_especial, i;
 
-            key = event.keyCode || event.which;
-            teclado = String.fromCharCode(key);
-            numeros = '0123456789';
-            especiales = [8,9,37,38,39,40,46]; // array
-            teclado_especial = false;
-
-            for ( i in especiales ) {
-                if ( key == especiales[i] ) {
-                    teclado_especial = true;
-                }
-            }
-            if ( numeros.indexOf(teclado) == -1 && !teclado_especial ) {
-                return false;
-            }
-        },
-        //http://www.lawebdelprogramador.com/foros/JavaScript/1074741-introducir_solo_numero_dos_decimales.html
-        isDecimalKP: function(event) {
-            var key, value;
-            value = $(this).val();
-            key = event.keyCode ? event.keyCode : event.which;
-
-            // backspace
-            if(key == 8) {
-                return true;
-            }
-            // 0-9
-            if(key > 47 && key < 58) {
-                if(value == '') {
-                    return true;
-                }
-                regexp = /.[0-9]{15}$/;
-                return !(regexp.test(value));
-            }
-            // .
-            if(key == 46) {
-                if(value == '') {
-                    return false;
-                }
-                regexp = /^[0-9]+$/;
-                return regexp.test(value);
-            }
-            // other key
-            return false;
-        },
-        roundDecimalBlur: function(event) {
-            var value;
-            value = $(this).val();
-            value = CAMAD.roundNDecimalFormat(value, 2);
-            $(this).val(value);
-        }
-    }
-/* ------------------------------------------------------ *\
-    [Methods] validations_regexp
-\* ------------------------------------------------------ */
-    var validations_regexp = {
-        address : new RegExp( /^[a-zá-úüñ,#0-9. -]{2,}$/i ),
-        date    : new RegExp( /^(\d{4})-(\d{1,2})-(\d{1,2})$/ ),
-        email   : new RegExp( /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/ ),
-        name    : new RegExp( /^[a-zá-úüñ. ]{2,}$/i ),
-        phone   : new RegExp( /^[0-9\s\-]{7,13}$/ )
-    }
-/* ------------------------------------------------------ *\
-    [Methods] validation_messages
-\* ------------------------------------------------------ */
-    var validation_messages = {
-        date            : 'Debe ser aaaa-mm-dd',
-        date_tomorrow   : 'Sólo a partir de mañana',
-        email           : 'Verifica tu correo',
-        general         : 'Campo no válido',
-        not_config      : 'Tipo desconocido',
-        not_null        : 'No puede ser nulo',
-        phone           : 'Verifica que tu número sea de 10 dígitos',
-        required        : 'Campo requerido',
-        empty           : 'Campo vacío'
-    }
-/* ------------------------------------------------------ *\
-    [Methods] validate
-\* ------------------------------------------------------ */
-    var validateMethods = {
-        validate : function(value, rules, required, custom_message) {
-            var r = { valid : false, message : '' },
-            null_value = value == undefined || value === '' ,
-            ii, rule;
-            required = required === true ? true: false;
-            if( required ){
-                if( null_value ){
-                    r.message = validation_messages.required;
-                }
-            }else{
-                if( null_value ){
-                    r.valid = true;
-                }
-            }
-            if( !r.valid && r.message === '' ){
-                ii = rules.length;
-                while( ii-- ){
-                    rule = rules[ii];
-                    switch( rule ){
-                        case 'email':
-                            if( !validations_regexp.email.test( value ) ){
-                                r.message = validation_messages.email;
-                            }
-                            break;
-                        case 'name':
-                            if( !validations_regexp.name.exec( value ) ){
-                                r.message = validation_messages.general;
-                            }
-                            break;
-                        case 'address':
-                            if( !validations_regexp.address.exec( value ) ){
-                                r.message = validation_messages.general;
-                            }
-                            break;
-                        case 'car_key':
-                            if(  !is_model_name( value ) ){
-                                r.message = validation_messages.general;
-                            }
-                            break;
-                        case 'date':
-                            if( !validations_regexp.date.exec( value ) ){
-                                r.message = validation_messages.date;
-                            }
-                            break;
-                        case 'phone':
-                            if( !validations_regexp.phone.exec( value ) ){
-                                r.message = validation_messages.phone;
-                            }
-                            break;
-                        default:
-                            r.message = validations_regexp.not_config;
-                            break;
-                    }
-                }
-                if( r.message === '' ){
-                    r.valid = true;
-                }
-            }
-            if( custom_message && !r.valid ){
-                r.message = custom_message;
-            }
-            return r;
-        },
-        //Display Input errors
-        error_bubble : function( $label, show, message ){
-            var $p = $label.parent().children('p.invalid-message');
-            if( show ){
-                if( message ){
-                    $p.html( message + '<span>&nbsp;</span>' ).stop().hide().fadeIn();
-                }else{
-                    $p.stop().hide().fadeIn();
-                }
-            }else{
-                $p.hide();
-            }
-        },
-        validate_input : function(event) {
-            var target = $(event.target);
-            //console.log(target);
-            if( target.is('input') || target.is('textarea') ){
-                var valid_data = target.data('validation-data');
-                var val_data    = valid_data.split('|'),
-                    required    = val_data.indexOf('required');
-                if( required >= 0 ){
-                    val_data.splice(required, 1);
-                }
-                var value = target.val(),
-                    validation = validateMethods.validate( value, val_data, ( required >= 0 )  );
-                validateMethods.error_bubble( target, !validation.valid, validation.message );
-                return validation.valid;
-            }else{
-                var is_valid = !( target.val() === null );
-                validateMethods.error_bubble( target, !is_valid, validation_messages.required );
-                return is_valid;
-            }
-        }
-    }
 /* ------------------------------------------------------ *\
     [Methods] formTestDrive general
 \* ------------------------------------------------------ */
@@ -2650,6 +2445,9 @@
             });
         }
     }
+/* ------------------------------------------------------ *\
+    [Methods] formTestDrive
+\* ------------------------------------------------------ */
 /* ------------------------------------------------------ *\
     [Methods] formTestDrive
 \* ------------------------------------------------------ */
@@ -3043,7 +2841,6 @@
             }
         }
     }
-
 /* ------------------------------------------------------ *\
     [functions] getAbsolutePath
 \* ------------------------------------------------------ */
@@ -3313,7 +3110,6 @@
             }
         }
     }
-
 /* ------------------------------------------------------ *\
     [Methods] formFinancing General Models
 \* ------------------------------------------------------ */
@@ -3640,7 +3436,7 @@
             }
         },
         clickHeaderColumn : function(event) {
-            if( IS_MOBILE ) {
+            if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
                 if (!$(this).hasClass("header-column-open")) {
                     $('html, body').animate({scrollTop: '0px'}, 400);
                     $(".header-links-list").addClass("header-links-open");
@@ -4692,7 +4488,7 @@
             concessionaires = newConcessionaires;
 
             //console.log('5: concessionaires');
-            //console.log(concessionaires);
+            console.log(concessionaires);
             //setup all markers
             var i1;
             var icon_latLon, conce, conce_select_html,
@@ -5305,7 +5101,6 @@
             SEG.loadTemplate(tempsNames.birthday_select_year, domEl.div_top_action_birthday_select_year);
         }
     }
-
 /* ------------------------------------------------------ *\
     [Metodos] toHtmlMethod
 \* ------------------------------------------------------ */
@@ -5320,5 +5115,23 @@
                 html = SUK.replaceAll(html, '&gt;', '>');
                 SUK.setHTML(element, html);
             });
+        }
+    }
+/* ------------------------------------------------------ *\
+    [Metodos] scrolltotop
+\* ------------------------------------------------------ */
+    var scrolltotop = {
+        init: function(event) {
+            event.preventDefault();
+            $('body,html').animate({
+                scrollTop: 0 ,
+                }, scroll_top_duration
+            );
+        },
+        windowScroll: function() {
+            ( $(this).scrollTop() > offset ) ? $('.cd-top').addClass('cd-is-visible') : $('.cd-top').removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                $('.cd-top').addClass('cd-fade-out');
+            }
         }
     }

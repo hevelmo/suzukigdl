@@ -62,4 +62,7 @@ $(document).ready(function() {
     //$('body').on('click', domEl.button_close_financing_panel_menu, closePanelMenuMethods.closePanelFinancing);
     $('body').on('click', '#close-owners-panel', closePanelMenuMethods.closePanelOwners);
     $('body').on('click', '#close-before-buy-panel', closePanelMenuMethods.closePanelBeforeBuy);
+
+    //smooth scroll to top
+    $("body").on('click', '.cd-top', scrolltotop.init);
 });
