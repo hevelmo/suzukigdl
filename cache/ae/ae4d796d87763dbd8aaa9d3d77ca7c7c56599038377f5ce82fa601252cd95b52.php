@@ -16,6 +16,8 @@ class __TwigTemplate_90225f1196336bf4f917957083ad6f21b4056331bf45680a2732d49c454
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
+        $context["model"] = (isset($context["mdopa"]) ? $context["mdopa"] : null);
+        // line 2
         echo "<div class=\"panel_tabs_container\">
     <br><br><br>
     <div class=\"panel_tabs\" id=\"\">
@@ -31,8 +33,9 @@ class __TwigTemplate_90225f1196336bf4f917957083ad6f21b4056331bf45680a2732d49c454
                     <div class=\"financing_content\">
                         <form id=\"test_drive\">
                             <p>Para mejorar tu experiencia nos gustaría conocerte.<br>Proporciónanos los siguientes datos para poder comunicarnos contigo.</p>
-                            <!-- test drive -->
-                            <div class=\"financing_elements\">
+                            ";
+        // line 18
+        echo "                            <div class=\"financing_elements\">
                                 <div class=\"financing_element a\">
                                     <fieldset>
                                         <label for=\"suk_agn\" style=\"display: none;\">
@@ -93,7 +96,7 @@ class __TwigTemplate_90225f1196336bf4f917957083ad6f21b4056331bf45680a2732d49c454
                                         <label for=\"suk_phone\" style=\"display: none;\">
                                             <span style=\"color: red;\" class=\"fa fa-asterisk\"></span> Número de celular
                                         </label>
-                                        <input type=\"text\" id=\"suk_phone\" name=\"apellido\" class=\"validate-required\" placeholder=\"Número de celular\" data-validation-data=\"required|name\">
+                                        <input type=\"text\" id=\"suk_phone\" name=\"telefono\" class=\"validate-required\" placeholder=\"Número de celular\" data-validation-data=\"required|name\">
                                         <p class=\"invalid-message\" id=\"error_name\">Este campo es obligatorio<span>&nbsp;</span></p>
                                     </fieldset>
                                 </div>
@@ -101,17 +104,34 @@ class __TwigTemplate_90225f1196336bf4f917957083ad6f21b4056331bf45680a2732d49c454
                             <div class=\"financing_elements\">
                                 <div class=\"financing_element a\">
                                     <fieldset class=\"fieldset-radio-checkbox\" style=\"clear: both;\">
-                                        <label for=\"test_drive_model_newsletter\" class=\"label-checkbox\">
+                                        <label for=\"suk_model_newsletter\" class=\"label-checkbox\">
                                             <input
                                                 type=\"checkbox\"
-                                                id=\"test_drive_model_newsletter\"
-                                                name=\"suk_gdl_test_drive_model_newsletter\"
+                                                id=\"suk_model_newsletter\"
+                                                name=\"model_newsletter\"
                                                 value=\"\"> Deseo recibir noticias y promociones.
                                         </label>
                                     </fieldset>
                                 </div>
                                 <div class=\"financing_element b\">
                                     <fieldset id=\"fields_hidden\">
+                                        <input type=\"hidden\" name=\"producto\" id=\"suk_producto\" value=\"Prueba de manejo - ";
+        // line 98
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "name", array()), "html", null, true);
+        echo "\">
+                                        <input type=\"hidden\" name=\"modelo\" id=\"suk_modelo\" value=\"";
+        // line 99
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "key", array()), "html", null, true);
+        echo "\">
+                                        <input type=\"hidden\" name=\"concesionaria\" id=\"suk_concesionaria\" value=\"Suzuki Autos ";
+        // line 100
+        echo twig_escape_filter($this->env, (isset($context["_loc"]) ? $context["_loc"] : null), "html", null, true);
+        echo "\">
+                                        <input type=\"hidden\" name=\"imagen\" id=\"suk_imagen\" value=\"";
+        // line 101
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "key", array()), "html", null, true);
+        echo ".jpg\">
+                                        <input type=\"hidden\" name=\"news\" id=\"suk_news\" value=\"0\">
                                     </fieldset>
                                 </div>
                             </div>
@@ -138,7 +158,10 @@ class __TwigTemplate_90225f1196336bf4f917957083ad6f21b4056331bf45680a2732d49c454
                             <div class=\"financing_element ab\">
                                 <fieldset>
                                     <p>
-                                        Tus datos están a salvo.<br>Para mayor información revisa nuestro <a id=\"go-privacy-notice\">Aviso de Privacidad</a>
+                                        Tus datos están a salvo.<br>Para mayor información revisa nuestro <a href=\"";
+        // line 129
+        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
+        echo "aviso-de-privacidad\" id=\"go-privacy-notice\">Aviso de Privacidad</a>
                                     </p>
                                 </fieldset>
                             </div>
@@ -157,11 +180,17 @@ class __TwigTemplate_90225f1196336bf4f917957083ad6f21b4056331bf45680a2732d49c454
         return "modelos/modelo/testdrive_form.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  19 => 1,);
+        return array (  163 => 129,  132 => 101,  128 => 100,  124 => 99,  120 => 98,  38 => 18,  21 => 2,  19 => 1,);
     }
 }
+/* {% set model = mdopa %}*/
 /* <div class="panel_tabs_container">*/
 /*     <br><br><br>*/
 /*     <div class="panel_tabs" id="">*/
@@ -177,7 +206,7 @@ class __TwigTemplate_90225f1196336bf4f917957083ad6f21b4056331bf45680a2732d49c454
 /*                     <div class="financing_content">*/
 /*                         <form id="test_drive">*/
 /*                             <p>Para mejorar tu experiencia nos gustaría conocerte.<br>Proporciónanos los siguientes datos para poder comunicarnos contigo.</p>*/
-/*                             <!-- test drive -->*/
+/*                             {# test drive #}*/
 /*                             <div class="financing_elements">*/
 /*                                 <div class="financing_element a">*/
 /*                                     <fieldset>*/
@@ -239,7 +268,7 @@ class __TwigTemplate_90225f1196336bf4f917957083ad6f21b4056331bf45680a2732d49c454
 /*                                         <label for="suk_phone" style="display: none;">*/
 /*                                             <span style="color: red;" class="fa fa-asterisk"></span> Número de celular*/
 /*                                         </label>*/
-/*                                         <input type="text" id="suk_phone" name="apellido" class="validate-required" placeholder="Número de celular" data-validation-data="required|name">*/
+/*                                         <input type="text" id="suk_phone" name="telefono" class="validate-required" placeholder="Número de celular" data-validation-data="required|name">*/
 /*                                         <p class="invalid-message" id="error_name">Este campo es obligatorio<span>&nbsp;</span></p>*/
 /*                                     </fieldset>*/
 /*                                 </div>*/
@@ -247,17 +276,22 @@ class __TwigTemplate_90225f1196336bf4f917957083ad6f21b4056331bf45680a2732d49c454
 /*                             <div class="financing_elements">*/
 /*                                 <div class="financing_element a">*/
 /*                                     <fieldset class="fieldset-radio-checkbox" style="clear: both;">*/
-/*                                         <label for="test_drive_model_newsletter" class="label-checkbox">*/
+/*                                         <label for="suk_model_newsletter" class="label-checkbox">*/
 /*                                             <input*/
 /*                                                 type="checkbox"*/
-/*                                                 id="test_drive_model_newsletter"*/
-/*                                                 name="suk_gdl_test_drive_model_newsletter"*/
+/*                                                 id="suk_model_newsletter"*/
+/*                                                 name="model_newsletter"*/
 /*                                                 value=""> Deseo recibir noticias y promociones.*/
 /*                                         </label>*/
 /*                                     </fieldset>*/
 /*                                 </div>*/
 /*                                 <div class="financing_element b">*/
 /*                                     <fieldset id="fields_hidden">*/
+/*                                         <input type="hidden" name="producto" id="suk_producto" value="Prueba de manejo - {{ model.name }}">*/
+/*                                         <input type="hidden" name="modelo" id="suk_modelo" value="{{ model.key }}">*/
+/*                                         <input type="hidden" name="concesionaria" id="suk_concesionaria" value="Suzuki Autos {{ _loc }}">*/
+/*                                         <input type="hidden" name="imagen" id="suk_imagen" value="{{ model.key }}.jpg">*/
+/*                                         <input type="hidden" name="news" id="suk_news" value="0">*/
 /*                                     </fieldset>*/
 /*                                 </div>*/
 /*                             </div>*/
@@ -284,7 +318,7 @@ class __TwigTemplate_90225f1196336bf4f917957083ad6f21b4056331bf45680a2732d49c454
 /*                             <div class="financing_element ab">*/
 /*                                 <fieldset>*/
 /*                                     <p>*/
-/*                                         Tus datos están a salvo.<br>Para mayor información revisa nuestro <a id="go-privacy-notice">Aviso de Privacidad</a>*/
+/*                                         Tus datos están a salvo.<br>Para mayor información revisa nuestro <a href="{{ _host }}aviso-de-privacidad" id="go-privacy-notice">Aviso de Privacidad</a>*/
 /*                                     </p>*/
 /*                                 </fieldset>*/
 /*                             </div>*/

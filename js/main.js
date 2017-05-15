@@ -40,6 +40,10 @@ $(document).ready(function() {
         EVENT CONTROL
     \* ------------------------------------------------------ */
 
+    // GENERAL CLICK RADIO & CHECKBOX
+    $(":checkbox").on('change', changeInputsMethods.clickChangeCheckbox);
+    //$('body').on('click', ".label-radio", changeInputsMethods.clcikChangeRadio);
+
     $('body').on('click', "#header-mobile i", is_mobileMethods.clickHeaderMobile);
     $('body').on('click', "#mobile-menu a", is_mobileMethods.clickMobileMenuLink);
     $('body').on('click', "#footer-content .row-1 .footer-column", is_mobileMethods.clickFooterContent);
@@ -65,4 +69,6 @@ $(document).ready(function() {
 
     //smooth scroll to top
     $("body").on('click', '.cd-top', scrolltotop.init);
+    // 
+    $('#suk_model_newsletter').on('click', testDriveForm.news);
 });
