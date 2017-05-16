@@ -49,6 +49,9 @@
         		{# stylesheet #}
                 <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900" />
                 <link id="main" rel="stylesheet" class="link-main"  rel="stylesheet" href="{{ _host }}css/styles.css">
+                <link id="main" rel="stylesheet" class="link-main"  rel="stylesheet" href="{{ _host }}css/alertify/alertify.css">
+                <link id="main" rel="stylesheet" class="link-main"  rel="stylesheet" href="{{ _host }}css/alertify/themes/default.css">
+                <link id="main" rel="stylesheet" class="link-main"  rel="stylesheet" href="{{ _host }}css/plugins/datepicker.css">
                 {% block section_stylessheet %}{% endblock %}
 
                 <link rel="shortcut icon" href="{{ _host }}img/favicon.ico">             
@@ -195,6 +198,7 @@
                 toHtmlMethod.toHtml();
                 //hide or show the "back to top" link
                 $(window).scroll(scrolltotop.windowScroll());
+                
             {% endblock %}
         </script>
 

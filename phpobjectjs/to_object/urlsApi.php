@@ -39,6 +39,6 @@ function urlsApi() {
         'snd_fin' => "$root/$snd/$fin",
 
         // SEND TESTDRIVE
-        'snd_drv' => "$root/$snd/$q"
+        'snd_drv' => "$root/$snd/$drv"
     );
 }

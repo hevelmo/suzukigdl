@@ -522,16 +522,19 @@ $app = new \Slim\App($container);
     // SEND FINANCING
     class SendFinancing extends SendMaster {
         function __construct() {
-            parent::__construct(array(), array(), "financiamiento.twig");
+            parent::__construct(array(), array(), "financing.twig");
         }
         public function __invoke($request, $response, $args) {
+            $domain = "gdl";
+            $url  = "http://suzuki". $domain .".com.mx/";
+
             $mail_to = "hevelmo060683@gmail.com";
             /*
             $mail_to = "arivera@jaguargdl.com";
             $mail_cc = "arivera@guadalajara.jlr.com.mx";
             */
             $from_email = "noreply@clicktolead.com.mx";
-            $website = "http://jaguargdl.com/";
+            $website = $url;
 
             parent::getRouter()->setRouteParams($request, $response, $args);
             $property = parent::getRouter()->getProperty();
@@ -575,7 +578,7 @@ $app = new \Slim\App($container);
                     "website" => $website
                 )
             ));
-            echo changeArrayIntoJSON("jagpa", array("process" => "ok"));
+            echo changeArrayIntoJSON("sukpa", array("process" => "ok"));
         }
     }
     // SEND TESTDRIVE
@@ -584,13 +587,16 @@ $app = new \Slim\App($container);
             parent::__construct(array(), array(), "testdrive.twig");
         }
         public function __invoke($request, $response, $args) {
+            $domain = "gdl";
+            $url  = "http://suzuki". $domain .".com.mx/";
+
             $mail_to = "hevelmo060683@gmail.com";
             /*
             $mail_to = "arivera@jaguargdl.com";
             $mail_cc = "arivera@guadalajara.jlr.com.mx";
             */
             $from_email = "noreply@clicktolead.com.mx";
-            $website = "http://jaguargdl.com/";
+            $website = $url;
 
             parent::getRouter()->setRouteParams($request, $response, $args);
             $property = parent::getRouter()->getProperty();
@@ -599,7 +605,7 @@ $app = new \Slim\App($container);
                 "html" => parent::getTemplate()->render(),
                 "subject" => "Prueba de Manejo:  " . $property->producto,
                 "from_email" => $from_email,
-                "from_name" => $property->nombre . " " . $property->apellidos,
+                "from_name" => $property->nombre . " " . $property->apellido,
                 "to" => array(
                     array(
                         "email" => $mail_to,
@@ -634,6 +640,6 @@ $app = new \Slim\App($container);
                     "website" => $website
                 )
             ));
-            echo changeArrayIntoJSON("jagpa", array("process" => "ok"));
+            echo changeArrayIntoJSON("sukpa", array("process" => "ok"));
         }
     }

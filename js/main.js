@@ -42,7 +42,7 @@ $(document).ready(function() {
 
     // GENERAL CLICK RADIO & CHECKBOX
     $(":checkbox").on('change', changeInputsMethods.clickChangeCheckbox);
-    //$('body').on('click', ".label-radio", changeInputsMethods.clcikChangeRadio);
+    $(".label-radio").on('click', changeInputsMethods.clcikChangeRadio);
 
     $('body').on('click', "#header-mobile i", is_mobileMethods.clickHeaderMobile);
     $('body').on('click', "#mobile-menu a", is_mobileMethods.clickMobileMenuLink);
@@ -70,11 +70,13 @@ $(document).ready(function() {
     //smooth scroll to top
     $("body").on('click', '.cd-top', scrolltotop.init);
     // 
-    $('#suk_model_newsletter').on('click', testDriveForm.news);
+    $('#suk_model_newsletter').on('click', newsletter.news);
 
     // VALIDATE FORM ITEMS
     $('body').on('focusout', '.validate-required', function() { $.validate_input( $(this) ) });
 
     // TEST DRIVE FORM
     $('body').on("click", '.testdrive-form-send', testDriveForm.clickSend);
+    // FINANCING FORM
+    $('body').on("click", '.financing-form-send', financingForm.clickSend);
 });

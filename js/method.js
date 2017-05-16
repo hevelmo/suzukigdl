@@ -189,7 +189,7 @@
             var cell_height = 0;
             $(this).find(".cell").each(function (index, Element) {
                 var val_cell = ($(this).height.length > 0) ? $(this).height() : 0;
-                console.log(val_cell);
+                //console.log(val_cell);
                 cell_array[index] = val_cell;
             });
             cell_height = Math.min.apply( Math, cell_array );
@@ -2334,6 +2334,35 @@
         }
     }
 /* ------------------------------------------------------ *\
+    [Methods] newsletter
+\* ------------------------------------------------------ */
+    var newsletter = {
+        news: function(event) {
+            $news = $('#suk_model_newsletter').val($(this).is(':checked'));
+            if ($news.is(':checked')) {
+                $news.val('1');
+                SUK.setValue("#suk_news", $news.val());
+            } else {
+                $news.val('0');
+                SUK.setValue("#suk_news", $news.val());
+            }
+        }
+    }
+/* ------------------------------------------------------ *\
+    [Methods] datepicker
+\* ------------------------------------------------------ */
+    var _datepicker = {
+        init: function() {
+            $('.test_drive_model_date').datepicker({
+                minDate: '+1d',
+                maxDate: '+1m',
+                minLength: 0,
+                delay: 0,
+                dateFormat: 'yy-mm-dd'
+            });
+        }
+    }
+/* ------------------------------------------------------ *\
     [Methods] testDriveForm
 \* ------------------------------------------------------ */
     var testDriveForm = {
@@ -2345,7 +2374,7 @@
             data = $(testDriveForm.contactForm).serializeFormJSON();
             dataRenamed = SUK.renameArrayObjKeys([data], {
                 "name": "nombre",
-                "lastname": "apellidos",
+                "lastname": "apellido",
                 "email": "correo",
                 "phone": "telefono",
                 "agencie": "agencia",
@@ -2354,8 +2383,7 @@
                 "news" : "news"
             });
             dataRenamed = dataRenamed[0];
-            dataRenamed["business_max"] = $('#suk_agn').find(":selected").data("max-id"); //Max Id;            
-            //dataRenamed["news"] = "0";
+            dataRenamed["business_max"] = $('#suk_agn').find(":selected").data("max-id"); //Max Id;
             dataRenamed["origen_type"] = "2";
             dataRenamed["web_max"] = window.location.href;
             dataRenamed["exit_web"] = window.location.href;
@@ -2377,33 +2405,29 @@
             rootApi = SUK.getValue('#master-host');
             url_location = rootApi;
             
-           sukagn = SUK.getValue('#suk_agn');
+            //sukagn = SUK.getValue('#suk_agn');
             suk_product = SUK.getValue('#suk_producto');
-            console.log(suk_agn, suk_product);
+            console.log(suk_product);
 
-            resetAlert();
-            alertify.set({
-                labels: {
-                    ok: 'Aceptar',
-                    cancel: 'Cancelar'
-                }
-            });
             data = $(testDriveForm.contactForm).serializeFormJSON();
             testDriveSendPromise = testDriveForm.sendContacto();
             testDriveSendPromise.success( function (data2) {
-                ga('send', 'event', 'button-send-form-testdrive', 'Prueba de manejo '+ suk_product, 'form-testdrive');
+                //ga('send', 'event', 'button-send-form-testdrive', 'Prueba de manejo '+ suk_product, 'form-testdrive');
                 setTimeout(function () {
                     setTimeout(function () {
-                        //$('#form-wrapper').fadeOut(1000);
-                        $('.form-thanks').fadeIn(1000);
                         setTimeout(function() {
                             testDriveForm.resetContact();
-                            alertify.alert("¡Muchas gracias!<br>" + 
-                                           "Hemos enviado su formulario exitosamente a un representante de la concesionaria " + suk_agn + ", " +
-                                           "pronto se pondrá en contacto con usted para enviarle su cotización.", function(e) {
-                                                $(location).attr('href', url_location); 
-                                           });
-                            alertify.success("Datos enviados.");
+                            alertify.alert("¡ATENCIÓN!", "¡Muchas gracias!<br>" + 
+                                           "Tu prueba de manejo a sido agendaa, pronto recibirás confirmación en tu correo electrónico." +
+                                           "Te hemos asignado un asesor de la concesionaria " + suk_agn + ", " +
+                                           "quien se pondrá en contacto contigo para confirmar tus datos y resolver cualquier duda que puedas tener.", function(e) {
+                                //$(location).attr('href', url_location);
+                                alertify.success("Datos enviados.");
+                            }).setting({
+                                "label": "Entendido",
+                                "closable": false,
+                                "transition": "zoom"
+                            });
                         }, 1800);
                     }, 1800);
                 }, 1400);
@@ -2417,7 +2441,7 @@
             var rootApi, data;
             data = $(testDriveForm.contactForm).serializeFormJSON();
             rootApi = SUK.getValue('#master-host');
-            return SUK.postalService(rootApi + urlsApi.snd_fin, data);
+            return SUK.postalService(rootApi + urlsApi.snd_drv, data);
         },
         resetContact: function () {
             var $btnSend;
@@ -2451,6 +2475,108 @@
         }
     }
 /* ------------------------------------------------------ *\
+    [Methods] financingForm
+\* ------------------------------------------------------ */
+    var financingForm = {
+        sendButtons: "",
+        contactForm: "",
+        loaderIcon: "",
+        sendLeads: function() {
+            var data, dataRenamed;
+            data = $(financingForm.contactForm).serializeFormJSON();
+            dataRenamed = SUK.renameArrayObjKeys([data], {
+                "name": "nombre",
+                "lastname": "apellido",
+                "email": "correo",
+                "phone": "telefono",
+                "agencie": "agencia",
+                "product": "producto",
+                "campaign_max" : "campaign",
+                "news" : "news"
+            });
+            dataRenamed = dataRenamed[0];
+            dataRenamed["business_max"] = $('#suk_agn').find(":selected").data("max-id"); //Max Id;
+            dataRenamed["origen_type"] = "2";
+            dataRenamed["web_max"] = window.location.href;
+            dataRenamed["exit_web"] = window.location.href;
+            return SUK.postalService(GLOBALMasterMax, dataRenamed);
+        },
+        handlerPromiseLeads: function (data1) {
+            var testDriveSendPromise, suk_agn, rootApi;
+
+            rootApi = SUK.getValue('#master-host');
+            url_location = rootApi;
+            
+            //sukagn = SUK.getValue('#suk_agn');
+            suk_product = SUK.getValue('#suk_producto');
+            console.log(suk_product);
+
+            data = $(financingForm.contactForm).serializeFormJSON();
+            testDriveSendPromise = financingForm.sendContacto();
+            testDriveSendPromise.success( function (data2) {
+                //ga('send', 'event', 'button-send-form-testdrive', 'Prueba de manejo '+ suk_product, 'form-testdrive');
+                setTimeout(function () {
+                    setTimeout(function () {
+                        setTimeout(function() {
+                            financingForm.resetContact();
+                            alertify.alert("¡ATENCIÓN!", "¡Muchas gracias!<br>" + 
+                                           "Tu cotización ha sido enviada a tu correo electrónico: " + data['email'] + ". " +
+                                           "Te hemos asignado un asesor Suzuki de la concesionaria " + suk_agn + ", " +
+                                           "quien se pondrá en contacto contigo para confirmar tus datos y resolver cualquier duda que puedas tener..", function(e) {
+                                //$(location).attr('href', url_location);
+                                alertify.success("Datos enviados.");
+                            }).setting({
+                                "label": "Aceptar",
+                                "closable": false,
+                                "transition": "zoom"
+                            });
+                        }, 1800);
+                    }, 1800);
+                }, 1400);
+            });
+            testDriveSendPromise.error( function (data2) {
+                financingForm.resetContact();
+                alertify.error("No se han podido enviar los datos <br /> Inténtelo más tarde.");
+            });
+        },
+        sendContacto: function () {
+            var rootApi, data;
+            data = $(financingForm.contactForm).serializeFormJSON();
+            rootApi = SUK.getValue('#master-host');
+            return SUK.postalService(rootApi + urlsApi.snd_fin, data);
+        },
+        resetContact: function () {
+            var $btnSend;
+            $btnSend = $(".send_contact_form");
+            SUK.resetForm(financingForm.contactForm);
+            $(financingForm.loaderIcon).css("display", "none");
+            $btnSend.removeAttr("disabled");
+        },
+        clickSend: function(event) {
+            // Loader Icon
+            financingForm.loaderIcon = "#loader_send_icon";
+            // Get and save current button id
+            financingForm.sendButton = "#" + $(this).attr('id');
+            // Get the current form id, find the form with the same data-scope value
+            financingForm.contactForm = "form#" + $("body").find("form").attr("id");
+            console.log(financingForm.contactForm);
+
+            formErrors = formValidation.required(financingForm.contactForm, '.validate-required', financingForm.sendButton);
+            if (formErrors) {
+                $(financingForm.contactForm).css("cursor", "auto").prop("disabled", true);
+                $(financingForm.loaderIcon).css("display", "block");
+                leadsPromise = financingForm.sendLeads();
+                leadsPromise.success(financingForm.handlerPromiseLeads);
+                leadsPromise.error(financingForm.handlerPromiseLeads);
+                /*
+                financingForm.sendLeads();
+                financingForm.sendContacto();
+                financingForm.addContacto();
+                */
+            }
+        }
+    }
+/* ------------------------------------------------------ *\
     [metodos] formValidation
 \* ------------------------------------------------------ */
     var formValidation = {
@@ -2476,13 +2602,7 @@
 \* ------------------------------------------------------ */
     var formTestDriveMethods = {
         init_datepicker: function() {
-            $('#test_drive_model_date').datepicker({
-                minDate: '+1d',
-                maxDate: '+1m',
-                minLength: 0,
-                delay: 0,
-                dateFormat: 'yy-mm-dd'
-            });
+            
         },
         addDataFormTestDrive: function() {
             var dataFormTestDriveModel;

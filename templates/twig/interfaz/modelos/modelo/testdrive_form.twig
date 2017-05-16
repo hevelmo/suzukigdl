@@ -36,7 +36,7 @@
                                         <label for="suk_date" style="display: none;">
                                             <span style="color: red;" class="fa fa-asterisk"></span> Fecha
                                         </label>
-                                        <input type="text" value="" name="fecha" class="validate-required test_drive_model_date model_date" id="suk_date" placeholder="YYYY-MM-DD" data-validation-data="required|date">
+                                        <input type="text" value="" name="fecha" class="test_drive_model_date datepicker-here model_date" id="suk_date" data-position="top left" data-language='es' placeholder="Fecha prueba de manejo" data-validation-data="required|date">
                                         <p class="invalid-message">Este campo es obligatorio<span>&nbsp;</span></p>
                                     </fieldset>
                                 </div>
@@ -54,7 +54,7 @@
                                 <div class="financing_element b">
                                     <fieldset>
                                         <label for="suk_lastname" style="display: none;">
-                                            <span style="color: red;" class="fa fa-asterisk"></span> Nombre
+                                            <span style="color: red;" class="fa fa-asterisk"></span> Apellido
                                         </label>
                                         <input type="text" id="suk_lastname" name="apellido" class="validate-required" placeholder="Apellidos" data-validation-data="required|name">
                                         <p class="invalid-message" id="error_name">Este campo es obligatorio<span>&nbsp;</span></p>
@@ -76,8 +76,8 @@
                                         <label for="suk_phone" style="display: none;">
                                             <span style="color: red;" class="fa fa-asterisk"></span> Número de celular
                                         </label>
-                                        <input type="text" id="suk_phone" name="telefono" class="validate-required" placeholder="Número de celular" data-validation-data="required|name">
-                                        <p class="invalid-message" id="error_name">Este campo es obligatorio<span>&nbsp;</span></p>
+                                        <input type="text" id="suk_phone" name="telefono" class="validate-required" placeholder="Número de celular" data-validation-data="required|phone">
+                                        <p class="invalid-message" id="error_phone">Este campo es obligatorio<span>&nbsp;</span></p>
                                     </fieldset>
                                 </div>
                             </div>
@@ -100,6 +100,7 @@
                                         <input type="hidden" name="concesionaria" id="suk_concesionaria" value="Suzuki Autos {{ _loc }}">
                                         <input type="hidden" name="imagen" id="suk_imagen" value="{{ model.key }}.jpg">
                                         <input type="hidden" name="news" id="suk_news" value="0">
+                                        <input type="hidden" name="campaign" id="suk_campaign" value="Suzuki Autos {{ _loc }} - Prueba de Manejo">
                                     </fieldset>
                                 </div>
                             </div>

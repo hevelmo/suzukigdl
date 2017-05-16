@@ -9,6 +9,6 @@ tempsNames = {
 };
 urlsApi = {
 	"snd_con":"api/v1/send/contacto",
-	"snd_drv":"api/v1/send/",
+	"snd_drv":"api/v1/send/testdrive",
 	"snd_fin":"api/v1/send/financiamiento"
 };
