@@ -2018,7 +2018,7 @@
                 //$.animate_arrow( $arrow1 )
             }
         },
-        w : function (menu) {
+        changeNameModel : function (menu) {
             var car_main_model;
             var section, model_name;
             section = SUK.getValue('#hidden_section');
