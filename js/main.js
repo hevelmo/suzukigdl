@@ -71,4 +71,10 @@ $(document).ready(function() {
     $("body").on('click', '.cd-top', scrolltotop.init);
     // 
     $('#suk_model_newsletter').on('click', testDriveForm.news);
+
+    // VALIDATE FORM ITEMS
+    $('body').on('focusout', '.validate-required', function() { $.validate_input( $(this) ) });
+
+    // TEST DRIVE FORM
+    $('body').on("click", '.testdrive-form-send', testDriveForm.clickSend);
 });

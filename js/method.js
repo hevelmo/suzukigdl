@@ -2036,17 +2036,6 @@
                     switch_arrow( );
                     display_versions_comparative();
                     modifyHeight("#features-space .suzuki-table .body .row");
-                    /*
-                    input_hidden_test_drive_swift_sport_Attributes = [
-                        ['input', {'id':'test_drive_model_modelo', 'type':'hidden', 'name':'suk_gdl_test_drive_model_modelo', 'value':'ignis'}, '', 0],
-                        ['input', {'id':'test_drive_model_concesionaria', 'type':'hidden', 'name':'suk_gdl_test_drive_model_concesionaria', 'value':'Suzuki Autos Guadalajara'}, '', 0],
-                        ['input', {'id':'test_drive_model_image_modelo', 'type':'hidden', 'name':'suk_gdl_test_drive_model_image_modelo', 'value':''}, '', 0],
-                        ['input', {'id':'test_drive_model_subscription', 'type':'hidden', 'name':'suk_gdl_test_drive_model_subscription', 'value':''}, '', 0],
-                        ['input', {'id':'test_drive_model_auto', 'type':'hidden', 'name':'suk_gdl_test_drive_model_auto', 'value':''}, '', 0]
-                    ];
-                    SUK.appendMulti('#fields_hidden', input_hidden_test_drive_swift_sport_Attributes);
-                    */
-                    //console.log(input_hidden_test_drive_swift_sport_Attributes);
                 break;
                 case 'swift-sport':
                     $("#versions-price-table").find(".pdf-download:gt(2)").css("visibility", "hidden");
@@ -2061,16 +2050,6 @@
                     switch_arrow( );
                     display_versions_comparative();
                     modifyHeight("#features-space .suzuki-table .body .row");
-                    /*input_hidden_test_drive_swift_sport_Attributes = [
-                        ['input', {'id':'test_drive_model_modelo', 'type':'hidden', 'name':'suk_gdl_test_drive_model_modelo', 'value':'swift-sport'}, '', 0],
-                        ['input', {'id':'test_drive_model_concesionaria', 'type':'hidden', 'name':'suk_gdl_test_drive_model_concesionaria', 'value':'Suzuki Autos Guadalajara'}, '', 0],
-                        ['input', {'id':'test_drive_model_image_modelo', 'type':'hidden', 'name':'suk_gdl_test_drive_model_image_modelo', 'value':''}, '', 0],
-                        ['input', {'id':'test_drive_model_subscription', 'type':'hidden', 'name':'suk_gdl_test_drive_model_subscription', 'value':''}, '', 0],
-                        ['input', {'id':'test_drive_model_auto', 'type':'hidden', 'name':'suk_gdl_test_drive_model_auto', 'value':''}, '', 0]
-                    ];
-                    SUK.appendMulti('#fields_hidden', input_hidden_test_drive_swift_sport_Attributes);
-                    */
-                    //console.log(input_hidden_test_drive_swift_sport_Attributes);
                 break;
                 case 'swift':
                     $("#versions-price-table").find(".pdf-download:gt(2)").css("visibility", "hidden");
@@ -2083,19 +2062,8 @@
                     modelsMenuMethods.scrollSwitchMethod();
                     switch_menus( menu );
                     switch_arrow( );
-                    modifyHeight("#features-space .suzuki-table .body .row");
                     display_versions_comparative();
-                    /*
-                    input_hidden_test_drive_swift_Attributes = [
-                        ['input', {'id':'test_drive_model_modelo', 'type':'hidden', 'name':'suk_gdl_test_drive_model_modelo', 'value':'swift'}, '', 0],
-                        ['input', {'id':'test_drive_model_concesionaria', 'type':'hidden', 'name':'suk_gdl_test_drive_model_concesionaria', 'value':'Suzuki Autos Guadalajara'}, '', 0],
-                        ['input', {'id':'test_drive_model_image_modelo', 'type':'hidden', 'name':'suk_gdl_test_drive_model_image_modelo', 'value':''}, '', 0],
-                        ['input', {'id':'test_drive_model_subscription', 'type':'hidden', 'name':'suk_gdl_test_drive_model_subscription', 'value':''}, '', 0],
-                        ['input', {'id':'test_drive_model_auto', 'type':'hidden', 'name':'suk_gdl_test_drive_model_auto', 'value':''}, '', 0]
-                    ];
-                    SUK.appendMulti('#fields_hidden', input_hidden_test_drive_swift_Attributes);
-                    */
-                    //console.log(input_hidden_test_drive_swift_Attributes);
+                    modifyHeight("#features-space .suzuki-table .body .row");
                 break;
                 case 'sx4-crossover':
                     $("#versions-price-table").find(".pdf-download:gt(2)").css("visibility", "hidden");
@@ -2108,17 +2076,6 @@
                     switch_arrow( );
                     display_versions_comparative();
                     modifyHeight("#features-space .suzuki-table .body .row");
-                    /*
-                    input_hidden_test_drive_sx4_crossover_Attributes = [
-                        ['input', {'id':'test_drive_model_modelo', 'type':'hidden', 'name':'suk_gdl_test_drive_model_modelo', 'value':'sx4-crossover'}, '', 0],
-                        ['input', {'id':'test_drive_model_concesionaria', 'type':'hidden', 'name':'suk_gdl_test_drive_model_concesionaria', 'value':'Suzuki Autos Guadalajara'}, '', 0],
-                        ['input', {'id':'test_drive_model_image_modelo', 'type':'hidden', 'name':'suk_gdl_test_drive_model_image_modelo', 'value':''}, '', 0],
-                        ['input', {'id':'test_drive_model_subscription', 'type':'hidden', 'name':'suk_gdl_test_drive_model_subscription', 'value':''}, '', 0],
-                        ['input', {'id':'test_drive_model_auto', 'type':'hidden', 'name':'suk_gdl_test_drive_model_auto', 'value':''}, '', 0]
-                    ];
-                    SUK.appendMulti('#fields_hidden', input_hidden_test_drive_sx4_crossover_Attributes);
-                    */
-                    //console.log(input_hidden_test_drive_sx4_crossover_Attributes);
                 break;
                 case 'sx4-sedan':
                     $("#versions-price-table").find(".pdf-download:gt(2)").css("visibility", "hidden");
@@ -2131,17 +2088,6 @@
                     switch_arrow( );
                     display_versions_comparative();
                     modifyHeight("#features-space .suzuki-table .body .row");
-                    /*
-                    input_hidden_test_drive_sx4_sedan_Attributes = [
-                        ['input', {'id':'test_drive_model_modelo', 'type':'hidden', 'name':'suk_gdl_test_drive_model_modelo', 'value':'sx4-sedan'}, '', 0],
-                        ['input', {'id':'test_drive_model_concesionaria', 'type':'hidden', 'name':'suk_gdl_test_drive_model_concesionaria', 'value':'Suzuki Autos Guadalajara'}, '', 0],
-                        ['input', {'id':'test_drive_model_image_modelo', 'type':'hidden', 'name':'suk_gdl_test_drive_model_image_modelo', 'value':''}, '', 0],
-                        ['input', {'id':'test_drive_model_subscription', 'type':'hidden', 'name':'suk_gdl_test_drive_model_subscription', 'value':''}, '', 0],
-                        ['input', {'id':'test_drive_model_auto', 'type':'hidden', 'name':'suk_gdl_test_drive_model_auto', 'value':''}, '', 0]
-                    ];
-                    SUK.appendMulti('#fields_hidden', input_hidden_test_drive_sx4_sedan_Attributes);
-                    */
-                    //console.log(input_hidden_test_drive_sx4_sedan_Attributes);
                 break;
                 case 'kizashi':
                     $("#versions-price-table").find(".pdf-download:gt(2)").css("visibility", "hidden");
@@ -2156,17 +2102,6 @@
                     switch_arrow( );
                     display_versions_comparative();
                     modifyHeight("#features-space .suzuki-table .body .row");
-                    /*
-                    input_hidden_test_drive_kizashi_Attributes = [
-                        ['input', {'id':'test_drive_model_modelo', 'type':'hidden', 'name':'suk_gdl_test_drive_model_modelo', 'value':'kizashi'}, '', 0],
-                        ['input', {'id':'test_drive_model_concesionaria', 'type':'hidden', 'name':'suk_gdl_test_drive_model_concesionaria', 'value':'Suzuki Autos Guadalajara'}, '', 0],
-                        ['input', {'id':'test_drive_model_image_modelo', 'type':'hidden', 'name':'suk_gdl_test_drive_model_image_modelo', 'value':''}, '', 0],
-                        ['input', {'id':'test_drive_model_subscription', 'type':'hidden', 'name':'suk_gdl_test_drive_model_subscription', 'value':''}, '', 0],
-                        ['input', {'id':'test_drive_model_auto', 'type':'hidden', 'name':'suk_gdl_test_drive_model_auto', 'value':''}, '', 0]
-                    ];
-                    SUK.appendMulti('#fields_hidden', input_hidden_test_drive_kizashi_Attributes);
-                    */
-                    //console.log(input_hidden_test_drive_kizashi_Attributes);
                 break;
                 case 'grand-vitara':
                     $("#versions-price-table").find(".pdf-download:gt(2)").css("visibility", "hidden");
@@ -2181,17 +2116,6 @@
                     switch_arrow( );
                     display_versions_comparative();
                     modifyHeight("#features-space .suzuki-table .body .row");
-                    /*
-                    input_hidden_test_drive_grand_vitara_Attributes = [
-                        ['input', {'id':'test_drive_model_modelo', 'type':'hidden', 'name':'suk_gdl_test_drive_model_modelo', 'value':'grand-vitara'}, '', 0],
-                        ['input', {'id':'test_drive_model_concesionaria', 'type':'hidden', 'name':'suk_gdl_test_drive_model_concesionaria', 'value':'Suzuki Autos Guadalajara'}, '', 0],
-                        ['input', {'id':'test_drive_model_image_modelo', 'type':'hidden', 'name':'suk_gdl_test_drive_model_image_modelo', 'value':''}, '', 0],
-                        ['input', {'id':'test_drive_model_subscription', 'type':'hidden', 'name':'suk_gdl_test_drive_model_subscription', 'value':''}, '', 0],
-                        ['input', {'id':'test_drive_model_auto', 'type':'hidden', 'name':'suk_gdl_test_drive_model_auto', 'value':''}, '', 0]
-                    ];
-                    SUK.appendMulti('#fields_hidden', input_hidden_test_drive_grand_vitara_Attributes);
-                    */
-                    //console.log(input_hidden_test_drive_grand_vitara_Attributes);
                 break;
                 case 's-cross':
                     $("#versions-price-table").find(".pdf-download:gt(2)").css("visibility", "hidden");
@@ -2206,17 +2130,6 @@
                     switch_arrow( );
                     display_versions_comparative();
                     modifyHeight("#features-space .suzuki-table .body .row");
-                    /*
-                    input_hidden_test_drive_s_cross_Attributes = [
-                        ['input', {'id':'test_drive_model_modelo', 'type':'hidden', 'name':'suk_gdl_test_drive_model_modelo', 'value':'s-cross'}, '', 0],
-                        ['input', {'id':'test_drive_model_concesionaria', 'type':'hidden', 'name':'suk_gdl_test_drive_model_concesionaria', 'value':'Suzuki Autos Guadalajara'}, '', 0],
-                        ['input', {'id':'test_drive_model_image_modelo', 'type':'hidden', 'name':'suk_gdl_test_drive_model_image_modelo', 'value':''}, '', 0],
-                        ['input', {'id':'test_drive_model_subscription', 'type':'hidden', 'name':'suk_gdl_test_drive_model_subscription', 'value':''}, '', 0],
-                        ['input', {'id':'test_drive_model_auto', 'type':'hidden', 'name':'suk_gdl_test_drive_model_auto', 'value':''}, '', 0]
-                    ];
-                    SUK.appendMulti('#fields_hidden', input_hidden_test_drive_s_cross_Attributes);
-                    */
-                    //console.log(input_hidden_test_drive_s_cross_Attributes);
                 break;
                 case 'ciaz':
                     $("#versions-price-table").find(".pdf-download:gt(2)").css("visibility", "hidden");
@@ -2231,17 +2144,6 @@
                     switch_arrow( );
                     display_versions_comparative();
                     modifyHeight("#features-space .suzuki-table .body .row");
-                    /*
-                    input_hidden_test_drive_ciaz_Attributes = [
-                        ['input', {'id':'test_drive_model_modelo', 'type':'hidden', 'name':'suk_gdl_test_drive_model_modelo', 'value':'ciaz'}, '', 0],
-                        ['input', {'id':'test_drive_model_concesionaria', 'type':'hidden', 'name':'suk_gdl_test_drive_model_concesionaria', 'value':'Suzuki Autos Guadalajara'}, '', 0],
-                        ['input', {'id':'test_drive_model_image_modelo', 'type':'hidden', 'name':'suk_gdl_test_drive_model_image_modelo', 'value':''}, '', 0],
-                        ['input', {'id':'test_drive_model_subscription', 'type':'hidden', 'name':'suk_gdl_test_drive_model_subscription', 'value':''}, '', 0],
-                        ['input', {'id':'test_drive_model_auto', 'type':'hidden', 'name':'suk_gdl_test_drive_model_auto', 'value':''}, '', 0]
-                    ];
-                    SUK.appendMulti('#fields_hidden', input_hidden_test_drive_ciaz_Attributes);
-                    */
-                    //console.log(input_hidden_test_drive_ciaz_Attributes);
                 break;
                 case 'nueva-vitara':
                     $("#versions-price-table").find(".pdf-download:gt(2)").css("visibility", "hidden");
@@ -2256,17 +2158,6 @@
                     switch_arrow( );
                     display_versions_comparative();
                     modifyHeight("#features-space .suzuki-table .body .row");
-                    /*
-                    input_hidden_test_drive_nueva_vitara_Attributes = [
-                        ['input', {'id':'test_drive_model_modelo', 'type':'hidden', 'name':'suk_gdl_test_drive_model_modelo', 'value':'nueva-vitara'}, '', 0],
-                        ['input', {'id':'test_drive_model_concesionaria', 'type':'hidden', 'name':'suk_gdl_test_drive_model_concesionaria', 'value':'Suzuki Autos Guadalajara'}, '', 0],
-                        ['input', {'id':'test_drive_model_image_modelo', 'type':'hidden', 'name':'suk_gdl_test_drive_model_image_modelo', 'value':''}, '', 0],
-                        ['input', {'id':'test_drive_model_subscription', 'type':'hidden', 'name':'suk_gdl_test_drive_model_subscription', 'value':''}, '', 0],
-                        ['input', {'id':'test_drive_model_auto', 'type':'hidden', 'name':'suk_gdl_test_drive_model_auto', 'value':''}, '', 0]
-                    ];
-                    SUK.appendMulti('#fields_hidden', input_hidden_test_drive_nueva_vitara_Attributes);
-                    */
-                    //console.log(input_hidden_test_drive_nueva_vitara_Attributes);
                 break;
                 case 'financing':
                     hidden_elements_funding_general_elements = [
@@ -2442,21 +2333,6 @@
             $(window).trigger('scroll');
         }
     }
-
-/* ------------------------------------------------------ *\
-    [Methods] formTestDrive general
-\* ------------------------------------------------------ */
-    var _datepicker = {
-        init: function() {
-            $('.model_date').datepicker({
-                minDate: '+1d',
-                maxDate: '+1m',
-                minLength: 0,
-                delay: 0,
-                dateFormat: 'yy-mm-dd'
-            });
-        }
-    }
 /* ------------------------------------------------------ *\
     [Methods] testDriveForm
 \* ------------------------------------------------------ */
@@ -2557,6 +2433,7 @@
             testDriveForm.sendButton = "#" + $(this).attr('id');
             // Get the current form id, find the form with the same data-scope value
             testDriveForm.contactForm = "form#" + $("body").find("form").attr("id");
+            console.log(testDriveForm.contactForm);
 
             formErrors = formValidation.required(testDriveForm.contactForm, '.validate-required', testDriveForm.sendButton);
             if (formErrors) {
@@ -2571,6 +2448,23 @@
                 testDriveForm.addContacto();
                 */
             }
+        }
+    }
+/* ------------------------------------------------------ *\
+    [metodos] formValidation
+\* ------------------------------------------------------ */
+    var formValidation = {
+        required: function (form, element, btnSend) {
+            var formErrors;
+            $(form + " " + btnSend).removeAttr("disabled");
+            formErrors = 0;
+            $(form + " " + element).each( function (idx) {
+                if ( !$.validate_input( $(this) )) {
+                    formErrors++;
+                    $(this).focus();
+                }
+            });
+            return (formErrors === 0);
         }
     }
 

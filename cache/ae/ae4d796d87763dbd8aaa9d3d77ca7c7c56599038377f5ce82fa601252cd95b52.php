@@ -42,8 +42,8 @@ class __TwigTemplate_90225f1196336bf4f917957083ad6f21b4056331bf45680a2732d49c454
                                             <span style=\"color: red;\" class=\"fa fa-asterisk\"></span> Selecciona concesionaria
                                         </label>
                                         <div class=\"select\">
-                                            <select id=\"suk_agn\" type=\"dropdown\" name=\"agencia\" class=\"seleccionar validate-required\" data-validation-data=\"required\" style=\"width: 100%;\">
-                                                <option label=\"Selecccionar Concesionaria...\" selected=\"selected\" disabled=\"disabled\" value=\"\">Selecciona Concesionaria</option>
+                                            <select id=\"suk_agn\" name=\"agencia\" class=\"validate-required\" data-validation-data=\"required\" style=\"width: 100%;\">
+                                                <option label=\"Selecccionar Concesionaria...\" value=\"\">Selecciona Concesionaria</option>
                                                 <option data-max-id=\"12\" label=\"Suzuki López Mateos\" value=\"Suzuki López Mateos\">Suzuki López Mateos</option>
                                                 <option data-max-id=\"54\" label=\"Suzuki Vallarta\" value=\"Suzuki Vallarta\">Suzuki Vallarta</option>
                                             </select>
@@ -214,8 +214,8 @@ class __TwigTemplate_90225f1196336bf4f917957083ad6f21b4056331bf45680a2732d49c454
 /*                                             <span style="color: red;" class="fa fa-asterisk"></span> Selecciona concesionaria*/
 /*                                         </label>*/
 /*                                         <div class="select">*/
-/*                                             <select id="suk_agn" type="dropdown" name="agencia" class="seleccionar validate-required" data-validation-data="required" style="width: 100%;">*/
-/*                                                 <option label="Selecccionar Concesionaria..." selected="selected" disabled="disabled" value="">Selecciona Concesionaria</option>*/
+/*                                             <select id="suk_agn" name="agencia" class="validate-required" data-validation-data="required" style="width: 100%;">*/
+/*                                                 <option label="Selecccionar Concesionaria..." value="">Selecciona Concesionaria</option>*/
 /*                                                 <option data-max-id="12" label="Suzuki López Mateos" value="Suzuki López Mateos">Suzuki López Mateos</option>*/
 /*                                                 <option data-max-id="54" label="Suzuki Vallarta" value="Suzuki Vallarta">Suzuki Vallarta</option>*/
 /*                                             </select>*/
