@@ -54,12 +54,6 @@ $app = new \Slim\App($container);
     // CONTACT
     $app->post("/send/contacto", "SendContact:__invoke");
 
-    // SERVICES
-    $app->post("/send/servicio", "SendServices:__invoke");
-
-    // REFACCIONES
-    $app->post("/send/refacciones", "SendRepairs:__invoke");
-
     // FINANCING
     $app->post("/send/financiamiento", "SendFinancing:__invoke");
 
@@ -360,139 +354,24 @@ $app = new \Slim\App($container);
             parent::__construct(array(), array(), "contact.twig");
         }
         public function __invoke($request, $response, $args) {
-            $mail_to = "hevelmo060683@gmail.com";
-            /*
-            $mail_to = "arivera@jaguargdl.com";
-            $mail_cc = "arivera@guadalajara.jlr.com.mx";
-            */
-            //MAILS
-            /*$mailsAll = explode(",", trim($mails));
-            $mailsAll = array_unique($mailsAll);
-            $mailsTo = array();
-            foreach ($mailsAll as $currentMail) {
-                $mailsTo[] = array(
-                    "email" => trim($currentMail),
-                    "name" => $property->agencia,
-                    "type" => "to"
-                );
-            }*/
-            $from_email = "noreply@clicktolead.com.mx";
-            $website = "http://jaguargdl.com/";
+            $domain = "gdl";
+            $url  = "http://suzuki". $domain .".com.mx/";
 
-            parent::getRouter()->setRouteParams($request, $response, $args);
-            $property = parent::getRouter()->getProperty();
-            parent::getTemplate()->setMasterConfigArray((array) $property);
-            parent::getSender()->__send(array(
-                "html" => parent::getTemplate()->render(),
-                "subject" => $property->producto,
-                "from_email" => $from_email,
-                "from_name" => $property->nombre . " " . $property->apellidos,
-                //"to" => $mailsTo,
-                "to" => array(
-                    array(
-                        "email" => $mail_to,
-                        "name" => $property->agencia,
-                        "type" => "to"
-                    )
-                    /*
-                    array(
-                        "email" => $mail_to,
-                        "name" => $property->agencia,
-                        "type" => "to"
-                    ),
-                    array(
-                        "email" => $mail_cc,
-                        "name" => $property->agencia,
-                        "type" => "cc"
-                    )
-                    */
-                ),
-                "headers" => array(
-                    "Reply-To" => $mail_to
-                ),
-                "tags" => array(
-                    "orden-new-notificacion",
-                    "jaguar-contact"
-                ),
-                "google_analytics_domains" => array(
-                    $website
-                ),
-                "google_analytics_campaign" => $mail_to,
-                "metadata" => array(
-                    "website" => $website
-                )
-            ));
-            echo changeArrayIntoJSON("jagpa", array("process" => "ok"));
-        }
-    }
-    // SEND SERVICES
-    class SendServices extends SendMaster {
-        function __construct() {
-            parent::__construct(array(), array(), "service.twig");
-        }
-        public function __invoke($request, $response, $args) {
-            $mail = "hevelmo060683@gmail.com";
-            /*
-            $mail = "y.villabolos@guadalajara.jlr.com.mx";
-            */
-            $from_email = "noreply@clicktolead.com.mx";
-            $website = "http://jaguargdl.com/";
-
-            parent::getRouter()->setRouteParams($request, $response, $args);
-            $property = parent::getRouter()->getProperty();
-            parent::getTemplate()->setMasterConfigArray((array) $property);
-            parent::getSender()->__send(array(
-                "html" => parent::getTemplate()->render(),
-                "subject" => $property->producto,
-                "from_email" => $from_email,
-                "from_name" => $property->nombre . " " . $property->apellidos,
-                "to" => array(
-                    array(
-                        "email" => $mail,
-                        "name" => $property->agencia,
-                        "type" => "to"
-                    )
-                ),
-                "headers" => array(
-                    "Reply-To" => $mail
-                ),
-                "tags" => array(
-                    "orden-new-notificacion",
-                    "jaguar-service",
-                    "Contacto Servicio"
-                ),
-                "google_analytics_domains" => array(
-                    $website
-                ),
-                "google_analytics_campaign" => $mail,
-                "metadata" => array(
-                    "website" => $website
-                )
-            ));
-            echo changeArrayIntoJSON("jagpa", array("process" => "ok"));
-        }
-    }
-    // SEND REPAIRS
-    class SendRepairs extends SendMaster {
-        function __construct() {
-            parent::__construct(array(), array(), "service.twig");
-        }
-        public function __invoke($request, $response, $args) {
             $mail = "hevelmo060683@gmail.com";
             /*
             $mail = "ljimenez@guadalajara.jlr.com.mx";
             */
             $from_email = "noreply@clicktolead.com.mx";
-            $website = "http://jaguargdl.com/";
+            $website = $url;
 
             parent::getRouter()->setRouteParams($request, $response, $args);
             $property = parent::getRouter()->getProperty();
             parent::getTemplate()->setMasterConfigArray((array) $property);
             parent::getSender()->__send(array(
                 "html" => parent::getTemplate()->render(),
-                "subject" => $property->producto,
+                "subject" => "Información general",
                 "from_email" => $from_email,
-                "from_name" => $property->nombre . " " . $property->apellidos,
+                "from_name" => $property->nombre . " " . $property->apellido,
                 "to" => array(
                     array(
                         "email" => $mail,
@@ -505,8 +384,7 @@ $app = new \Slim\App($container);
                 ),
                 "tags" => array(
                     "orden-new-notificacion",
-                    "jaguar-repairs",
-                    "Contacto Refacciones"
+                    "suzuki-contact"
                 ),
                 "google_analytics_domains" => array(
                     $website
@@ -516,7 +394,7 @@ $app = new \Slim\App($container);
                     "website" => $website
                 )
             ));
-            echo changeArrayIntoJSON("jagpa", array("process" => "ok"));
+            echo changeArrayIntoJSON("sukpa", array("process" => "ok"));
         }
     }
     // SEND FINANCING
@@ -543,7 +421,7 @@ $app = new \Slim\App($container);
                 "html" => parent::getTemplate()->render(),
                 "subject" => "Financiamiento:  " . $property->producto,
                 "from_email" => $from_email,
-                "from_name" => $property->nombre . " " . $property->apellidos,
+                "from_name" => $property->nombre . " " . $property->apellido,
                 "to" => array(
                     array(
                         "email" => $mail_to,
@@ -568,7 +446,7 @@ $app = new \Slim\App($container);
                 ),
                 "tags" => array(
                     "orden-new-notificacion",
-                    "jaguar-financing"
+                    "suzuki-financing"
                 ),
                 "google_analytics_domains" => array(
                     $website
@@ -630,7 +508,7 @@ $app = new \Slim\App($container);
                 ),
                 "tags" => array(
                     "orden-new-notificacion",
-                    "jaguar-test-drive"
+                    "suzuki-testdrive"
                 ),
                 "google_analytics_domains" => array(
                     $website

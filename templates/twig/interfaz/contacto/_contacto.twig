@@ -3,6 +3,7 @@
 {% block section_stylessheet %}
 	<link id="contact" rel="stylesheet" class="link-contact" href="{{ _host }}css/sections/contact.css">
 	{#<link id="contact" rel="stylesheet" class="link-contact" href="{{ _host }}css/plugins/jquery.chosen/chosen.css">#}
+	<link id="financing-test-drive" rel="stylesheet" class="link-financing-test-drive" href="{{ _host }}css/sections/test-drive-selection.css">
 {% endblock %}
 
 {% block section %}
@@ -28,6 +29,7 @@
     {% endembed %}
 {% endblock %}
 {% block content_current %}
+	{% set model = mdopa %}
     {% embed "contacto/container.twig" %}{% endembed %}
 {% endblock %}
 {% block scroll_to_top %}
@@ -44,4 +46,5 @@
 {% endblock %}
 {% block load_scripts %}
 	{#$('.seleccionar').chosen();#}
+	$('#suk_model').on('change', getModel.model);
 {% endblock %}

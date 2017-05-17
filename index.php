@@ -357,6 +357,12 @@ $app = new \Slim\App($container);
          * @param   array                   $args
         **/
         public function __invoke($request, $response, $args) {
+            parent::getRouter()->setRouteParams($request, $response, $args);
+            parent::getTemplate()->addToMasterConfigArray(parent::getRouter()->getArgs());
+
+            $modelos = parent::getSite()->getGamma();
+            parent::getTemplate()->addToMasterConfigArray('mdopa', $modelos);
+
             parent::getTemplate()->display();
             //echo "<pre>", print_r(parent::getTemplate()->getMasterConfigArray()), "</pre>";
         }

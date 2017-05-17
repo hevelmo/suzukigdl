@@ -27,5 +27,4 @@ if(!in_array($_SERVER['SERVER_NAME'], $devServerList)){
 }
 define("_LOC", $location);
 
-
 ?>

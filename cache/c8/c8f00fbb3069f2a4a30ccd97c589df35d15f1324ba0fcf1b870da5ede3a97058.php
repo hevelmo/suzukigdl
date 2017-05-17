@@ -27,7 +27,7 @@ class __TwigTemplate_0f219cb0a675e40e27a222a4d1e740dfbfeb75256c314b579199b01f6b7
                     <span style=\"color: red;\" class=\"fa fa-asterisk\"></span> Selecciona concesionaria
                 </label>
                 <div class=\"select\">
-                    <select id=\"suk_agn\" name=\"agencia\" class=\"validate-required\" data-validation-data=\"required\" style=\"width: 100%;\">
+                    <select id=\"suk_agn\" name=\"agencia\" class=\"validate-required\" data-validation-data=\"required|free\" style=\"width: 100%;\">
                         <option label=\"Selecccionar Concesionaria...\" value=\"\">Selecciona Concesionaria</option>
                         <option data-max-id=\"12\" label=\"Suzuki López Mateos\" value=\"Suzuki López Mateos\">Suzuki López Mateos</option>
                         <option data-max-id=\"54\" label=\"Suzuki Vallarta\" value=\"Suzuki Vallarta\">Suzuki Vallarta</option>
@@ -102,12 +102,12 @@ class __TwigTemplate_0f219cb0a675e40e27a222a4d1e740dfbfeb75256c314b579199b01f6b7
             <p>¿Te gustaría manejarlo?</p>
             <fieldset class=\"fieldset-radio-checkbox\" id=\"fieldset-radio-checkbox-yes\">
                 <label for=\"suk_testdrive_yes\" class=\"label-radio\">Sí
-                    <input type=\"radio\" id=\"suk_testdrive_yes\" name=\"testdrive\" class=\"validate-required\" value=\"Sí deseas manejarlo\">
+                    <input type=\"radio\" id=\"suk_testdrive_yes\" name=\"testdrive\" class=\"\" value=\"Sí deseas manejarlo\">
                 </label>
             </fieldset>
             <fieldset class=\"fieldset-radio-checkbox\" id=\"fieldset-radio-checkbox-no\">
                 <label for=\"suk_testdrive_no\" class=\"label-radio radio-checked\">No
-                    <input type=\"radio\" id=\"suk_testdrive_no\" name=\"testdrive\" class=\"validate-required\" value=\"No deseas manejarlo\" checked=\"checked\">
+                    <input type=\"radio\" id=\"suk_testdrive_no\" name=\"testdrive\" class=\"\" value=\"No deseas manejarlo\" checked=\"checked\">
                 </label>
             </fieldset>
         </div>
@@ -207,7 +207,7 @@ class __TwigTemplate_0f219cb0a675e40e27a222a4d1e740dfbfeb75256c314b579199b01f6b7
 /*                     <span style="color: red;" class="fa fa-asterisk"></span> Selecciona concesionaria*/
 /*                 </label>*/
 /*                 <div class="select">*/
-/*                     <select id="suk_agn" name="agencia" class="validate-required" data-validation-data="required" style="width: 100%;">*/
+/*                     <select id="suk_agn" name="agencia" class="validate-required" data-validation-data="required|free" style="width: 100%;">*/
 /*                         <option label="Selecccionar Concesionaria..." value="">Selecciona Concesionaria</option>*/
 /*                         <option data-max-id="12" label="Suzuki López Mateos" value="Suzuki López Mateos">Suzuki López Mateos</option>*/
 /*                         <option data-max-id="54" label="Suzuki Vallarta" value="Suzuki Vallarta">Suzuki Vallarta</option>*/
@@ -282,12 +282,12 @@ class __TwigTemplate_0f219cb0a675e40e27a222a4d1e740dfbfeb75256c314b579199b01f6b7
 /*             <p>¿Te gustaría manejarlo?</p>*/
 /*             <fieldset class="fieldset-radio-checkbox" id="fieldset-radio-checkbox-yes">*/
 /*                 <label for="suk_testdrive_yes" class="label-radio">Sí*/
-/*                     <input type="radio" id="suk_testdrive_yes" name="testdrive" class="validate-required" value="Sí deseas manejarlo">*/
+/*                     <input type="radio" id="suk_testdrive_yes" name="testdrive" class="" value="Sí deseas manejarlo">*/
 /*                 </label>*/
 /*             </fieldset>*/
 /*             <fieldset class="fieldset-radio-checkbox" id="fieldset-radio-checkbox-no">*/
 /*                 <label for="suk_testdrive_no" class="label-radio radio-checked">No*/
-/*                     <input type="radio" id="suk_testdrive_no" name="testdrive" class="validate-required" value="No deseas manejarlo" checked="checked">*/
+/*                     <input type="radio" id="suk_testdrive_no" name="testdrive" class="" value="No deseas manejarlo" checked="checked">*/
 /*                 </label>*/
 /*             </fieldset>*/
 /*         </div>*/

@@ -2349,6 +2349,42 @@
         }
     }
 /* ------------------------------------------------------ *\
+    [Methods] newsletter
+\* ------------------------------------------------------ */
+    var getModel = {
+        model: function(event) {
+            $model = $('#suk_model').val();
+            switch ($model) {
+                case 'Swift Sport':
+                    $newModel = 'swift-sport';
+                break;
+                case 'Swift':
+                    $newModel = 'swift';
+                break;
+                case 'Kizashi':
+                    $newModel = 'kizashi';
+                break;
+                case 'Grand Vitara':
+                    $newModel = 'grand-vitara';
+                break;
+                case 'S-Cross':
+                    $newModel = 's-cross';
+                break;
+                case 'Ciaz':
+                    $newModel = 'ciaz';
+                break;
+                case 'Ignis':
+                    $newModel = 'ignis';
+                break;
+                case 'Nueva Vitara':
+                    $newModel = 'nueva-vitara';
+                break;
+            }
+            SUK.setValue("#suk_imagen", "thumb-" + $newModel + ".png");
+            console.log($newModel);
+        }
+    }
+/* ------------------------------------------------------ *\
     [Methods] datepicker
 \* ------------------------------------------------------ */
     var _datepicker = {
@@ -2405,14 +2441,14 @@
             rootApi = SUK.getValue('#master-host');
             url_location = rootApi;
             
-            //sukagn = SUK.getValue('#suk_agn');
+            sukagn = SUK.getValue('#suk_agn');
             suk_product = SUK.getValue('#suk_producto');
             console.log(suk_product);
 
             data = $(testDriveForm.contactForm).serializeFormJSON();
             testDriveSendPromise = testDriveForm.sendContacto();
             testDriveSendPromise.success( function (data2) {
-                //ga('send', 'event', 'button-send-form-testdrive', 'Prueba de manejo '+ suk_product, 'form-testdrive');
+                ga('send', 'event', 'button-send-form-testdrive', 'Prueba de manejo '+ suk_product, 'form-testdrive');
                 setTimeout(function () {
                     setTimeout(function () {
                         setTimeout(function() {
@@ -2507,14 +2543,14 @@
             rootApi = SUK.getValue('#master-host');
             url_location = rootApi;
             
-            //sukagn = SUK.getValue('#suk_agn');
+            sukagn = SUK.getValue('#suk_agn');
             suk_product = SUK.getValue('#suk_producto');
             console.log(suk_product);
 
             data = $(financingForm.contactForm).serializeFormJSON();
             testDriveSendPromise = financingForm.sendContacto();
             testDriveSendPromise.success( function (data2) {
-                //ga('send', 'event', 'button-send-form-testdrive', 'Prueba de manejo '+ suk_product, 'form-testdrive');
+                ga('send', 'event', 'button-send-form-financing', 'Financiamiento '+ suk_product, 'form-financing');
                 setTimeout(function () {
                     setTimeout(function () {
                         setTimeout(function() {
@@ -2572,6 +2608,106 @@
                 financingForm.sendLeads();
                 financingForm.sendContacto();
                 financingForm.addContacto();
+                */
+            }
+        }
+    }
+/* ------------------------------------------------------ *\
+    [Methods] contactForm
+\* ------------------------------------------------------ */
+    var contactForm = {
+        sendButtons: "",
+        contactForm: "",
+        loaderIcon: "",
+        sendLeads: function() {
+            var data, dataRenamed;
+            data = $(contactForm.contactForm).serializeFormJSON();
+            dataRenamed = SUK.renameArrayObjKeys([data], {
+                "name": "nombre",
+                "lastname": "apellido",
+                "email": "correo",
+                "phone": "telefono",
+                "agencie": "agencia",
+                "product": "producto",
+                "campaign_max" : "campaign",
+                "news" : "news"
+            });
+            dataRenamed = dataRenamed[0];
+            dataRenamed["business_max"] = $('#suk_agn').find(":selected").data("max-id"); //Max Id;
+            dataRenamed["origen_type"] = "2";
+            dataRenamed["web_max"] = window.location.href;
+            dataRenamed["exit_web"] = window.location.href;
+            return SUK.postalService(GLOBALMasterMax, dataRenamed);
+        },
+        handlerPromiseLeads: function (data1) {
+            var testDriveSendPromise, suk_agn, rootApi;
+
+            rootApi = SUK.getValue('#master-host');
+            url_location = rootApi;
+            
+            sukagn = SUK.getValue('#suk_agn');
+            suk_product = SUK.getValue('#suk_producto');
+            console.log(suk_product);
+
+            data = $(contactForm.contactForm).serializeFormJSON();
+            testDriveSendPromise = contactForm.sendContacto();
+            testDriveSendPromise.success( function (data2) {
+                ga('send', 'event', 'button-send-form-contact', 'Información General', 'form-contact');
+                setTimeout(function () {
+                    setTimeout(function () {
+                        setTimeout(function() {
+                            contactForm.resetContact();
+                            alertify.alert("¡ATENCIÓN!", "¡Muchas gracias!<br>" + 
+                                           "En breve responderemos tu mensaje al siguiente correo: " + data['email'] + ".", function(e) {
+                                //$(location).attr('href', url_location);
+                                alertify.success("Datos enviados.");
+                            }).setting({
+                                "label": "Aceptar",
+                                "closable": false,
+                                "transition": "zoom"
+                            });
+                        }, 1800);
+                    }, 1800);
+                }, 1400);
+            });
+            testDriveSendPromise.error( function (data2) {
+                contactForm.resetContact();
+                alertify.error("No se han podido enviar los datos <br /> Inténtelo más tarde.");
+            });
+        },
+        sendContacto: function () {
+            var rootApi, data;
+            data = $(contactForm.contactForm).serializeFormJSON();
+            rootApi = SUK.getValue('#master-host');
+            return SUK.postalService(rootApi + urlsApi.snd_con, data);
+        },
+        resetContact: function () {
+            var $btnSend;
+            $btnSend = $(".send_contact_form");
+            SUK.resetForm(contactForm.contactForm);
+            $(contactForm.loaderIcon).css("display", "none");
+            $btnSend.removeAttr("disabled");
+        },
+        clickSend: function(event) {
+            // Loader Icon
+            contactForm.loaderIcon = "#loader_send_icon";
+            // Get and save current button id
+            contactForm.sendButton = "#" + $(this).attr('id');
+            // Get the current form id, find the form with the same data-scope value
+            contactForm.contactForm = "form#" + $("body").find("form").attr("id");
+            console.log(contactForm.contactForm);
+
+            formErrors = formValidation.required(contactForm.contactForm, '.validate-required', contactForm.sendButton);
+            if (formErrors) {
+                $(contactForm.contactForm).css("cursor", "auto").prop("disabled", true);
+                $(contactForm.loaderIcon).css("display", "block");
+                leadsPromise = contactForm.sendLeads();
+                leadsPromise.success(contactForm.handlerPromiseLeads);
+                leadsPromise.error(contactForm.handlerPromiseLeads);
+                /*
+                contactForm.sendLeads();
+                contactForm.sendContacto();
+                contactForm.addContacto();
                 */
             }
         }
