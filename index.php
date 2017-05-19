@@ -59,6 +59,8 @@ $app = new \Slim\App($container);
     // TERMINOS LEGALES Y AVISO DE PRIVACIDAD
     $app->get("/terminos-legales", "ControlLegal:__invoke");
     $app->get("/aviso-de-privacidad", "ControlPrivacy:__invoke");
+    // PLANTILLAS
+    $app->get("/temas", "ControlThemes:__invoke");
     $app->run();
 /**
  * CONTROL MASTER
@@ -677,4 +679,31 @@ $app = new \Slim\App($container);
             parent::getTemplate()->display();
             //echo "<pre>", print_r(parent::getTemplate()->getMasterConfigArray()), "</pre>";
         }
+    }
+    /**
+     * CONTROL THEMES
+    **/
+    class ControlThemes extends ControlMaster {
+        function __construct() {
+            parent::__construct(
+                array(
+                    "title" => "Temas",
+                    "title_header" => "Temas"
+                ),
+                array(),
+                "plantillas/_main.twig"
+            );
+        }
+        /**
+         * This inherited method don't do nothing however is mandatory to implement it
+         * Because the parent method is an abstract one.
+         * 
+         * @param   Slim\Http\Request       $request 
+         * @param   Slim\Http\Response      $response 
+         * @param   array                   $args
+        **/
+        public function __invoke($request, $response, $args) {
+            parent::getTemplate()->display();
+            //echo "<pre>", print_r(parent::getTemplate()->getMasterConfigArray()), "</pre>";
+        }  
     }
