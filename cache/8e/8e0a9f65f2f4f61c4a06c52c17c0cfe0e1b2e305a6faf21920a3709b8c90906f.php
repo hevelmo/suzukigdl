@@ -71,51 +71,51 @@ class __TwigTemplate_738b08fdbb7bae5de19179d1594ce7a101aac0d63550ac7872c16004df9
     {
         // line 13
         echo "    ";
-        $this->loadTemplate("404/_404.twig", "404/_404.twig", 13, "1517726544")->display($context);
+        $this->loadTemplate("404/_404.twig", "404/_404.twig", 13, "1832055823")->display($context);
     }
 
-    // line 15
+    // line 19
     public function block_content_current($context, array $blocks = array())
     {
-        // line 16
+        // line 20
         echo "    ";
-        $this->loadTemplate("404/_404.twig", "404/_404.twig", 16, "439294897")->display($context);
+        $this->loadTemplate("404/_404.twig", "404/_404.twig", 20, "968670216")->display($context);
         echo "\t
 ";
     }
 
-    // line 18
+    // line 22
     public function block_scroll_to_top($context, array $blocks = array())
     {
-        // line 19
+        // line 23
         echo "    ";
-        $this->loadTemplate("404/_404.twig", "404/_404.twig", 19, "1762787665")->display($context);
+        $this->loadTemplate("404/_404.twig", "404/_404.twig", 23, "1168201588")->display($context);
     }
 
-    // line 21
+    // line 25
     public function block_footer($context, array $blocks = array())
     {
-        // line 22
+        // line 26
         echo "    ";
-        $this->loadTemplate("404/_404.twig", "404/_404.twig", 22, "647403330")->display($context);
+        $this->loadTemplate("404/_404.twig", "404/_404.twig", 26, "669065347")->display($context);
     }
 
-    // line 24
+    // line 28
     public function block_script_load_js($context, array $blocks = array())
     {
     }
 
-    // line 26
+    // line 30
     public function block_section_scripts($context, array $blocks = array())
     {
-        // line 27
+        // line 31
         echo "    <script src=\"";
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
         echo "js/sections/totop.js\"></script>
 ";
     }
 
-    // line 29
+    // line 33
     public function block_load_scripts($context, array $blocks = array())
     {
     }
@@ -132,13 +132,13 @@ class __TwigTemplate_738b08fdbb7bae5de19179d1594ce7a101aac0d63550ac7872c16004df9
 
     public function getDebugInfo()
     {
-        return array (  119 => 29,  112 => 27,  109 => 26,  104 => 24,  99 => 22,  96 => 21,  91 => 19,  88 => 18,  81 => 16,  78 => 15,  73 => 13,  70 => 12,  62 => 9,  57 => 7,  54 => 6,  47 => 4,  44 => 3,  38 => 2,  11 => 1,);
+        return array (  119 => 33,  112 => 31,  109 => 30,  104 => 28,  99 => 26,  96 => 25,  91 => 23,  88 => 22,  81 => 20,  78 => 19,  73 => 13,  70 => 12,  62 => 9,  57 => 7,  54 => 6,  47 => 4,  44 => 3,  38 => 2,  11 => 1,);
     }
 }
 
 
 /* 404/_404.twig */
-class __TwigTemplate_738b08fdbb7bae5de19179d1594ce7a101aac0d63550ac7872c16004df9cb7be_1517726544 extends Twig_Template
+class __TwigTemplate_738b08fdbb7bae5de19179d1594ce7a101aac0d63550ac7872c16004df9cb7be_1832055823 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -147,12 +147,64 @@ class __TwigTemplate_738b08fdbb7bae5de19179d1594ce7a101aac0d63550ac7872c16004df9
         // line 13
         $this->parent = $this->loadTemplate("super_navbar.twig", "404/_404.twig", 13);
         $this->blocks = array(
+            'menu_catalogs' => array($this, 'block_menu_catalogs'),
         );
     }
 
     protected function doGetParent(array $context)
     {
         return "super_navbar.twig";
+    }
+
+    protected function doDisplay(array $context, array $blocks = array())
+    {
+        $this->parent->display($context, array_merge($this->blocks, $blocks));
+    }
+
+    // line 14
+    public function block_menu_catalogs($context, array $blocks = array())
+    {
+        echo "                
+\t\t    ";
+        // line 15
+        $this->loadTemplate("404/_404.twig", "404/_404.twig", 15, "2146939235")->display($context);
+        // line 16
+        echo "\t\t";
+    }
+
+    public function getTemplateName()
+    {
+        return "404/_404.twig";
+    }
+
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  172 => 16,  170 => 15,  165 => 14,  148 => 13,  119 => 33,  112 => 31,  109 => 30,  104 => 28,  99 => 26,  96 => 25,  91 => 23,  88 => 22,  81 => 20,  78 => 19,  73 => 13,  70 => 12,  62 => 9,  57 => 7,  54 => 6,  47 => 4,  44 => 3,  38 => 2,  11 => 1,);
+    }
+}
+
+
+/* 404/_404.twig */
+class __TwigTemplate_738b08fdbb7bae5de19179d1594ce7a101aac0d63550ac7872c16004df9cb7be_2146939235 extends Twig_Template
+{
+    public function __construct(Twig_Environment $env)
+    {
+        parent::__construct($env);
+
+        // line 15
+        $this->parent = $this->loadTemplate("menus/list_catallogs.twig", "404/_404.twig", 15);
+        $this->blocks = array(
+        );
+    }
+
+    protected function doGetParent(array $context)
+    {
+        return "menus/list_catallogs.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
@@ -172,20 +224,20 @@ class __TwigTemplate_738b08fdbb7bae5de19179d1594ce7a101aac0d63550ac7872c16004df9
 
     public function getDebugInfo()
     {
-        return array (  148 => 13,  119 => 29,  112 => 27,  109 => 26,  104 => 24,  99 => 22,  96 => 21,  91 => 19,  88 => 18,  81 => 16,  78 => 15,  73 => 13,  70 => 12,  62 => 9,  57 => 7,  54 => 6,  47 => 4,  44 => 3,  38 => 2,  11 => 1,);
+        return array (  200 => 15,  172 => 16,  170 => 15,  165 => 14,  148 => 13,  119 => 33,  112 => 31,  109 => 30,  104 => 28,  99 => 26,  96 => 25,  91 => 23,  88 => 22,  81 => 20,  78 => 19,  73 => 13,  70 => 12,  62 => 9,  57 => 7,  54 => 6,  47 => 4,  44 => 3,  38 => 2,  11 => 1,);
     }
 }
 
 
 /* 404/_404.twig */
-class __TwigTemplate_738b08fdbb7bae5de19179d1594ce7a101aac0d63550ac7872c16004df9cb7be_439294897 extends Twig_Template
+class __TwigTemplate_738b08fdbb7bae5de19179d1594ce7a101aac0d63550ac7872c16004df9cb7be_968670216 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
-        // line 16
-        $this->parent = $this->loadTemplate("404/container.twig", "404/_404.twig", 16);
+        // line 20
+        $this->parent = $this->loadTemplate("404/container.twig", "404/_404.twig", 20);
         $this->blocks = array(
         );
     }
@@ -212,20 +264,20 @@ class __TwigTemplate_738b08fdbb7bae5de19179d1594ce7a101aac0d63550ac7872c16004df9
 
     public function getDebugInfo()
     {
-        return array (  188 => 16,  148 => 13,  119 => 29,  112 => 27,  109 => 26,  104 => 24,  99 => 22,  96 => 21,  91 => 19,  88 => 18,  81 => 16,  78 => 15,  73 => 13,  70 => 12,  62 => 9,  57 => 7,  54 => 6,  47 => 4,  44 => 3,  38 => 2,  11 => 1,);
+        return array (  240 => 20,  200 => 15,  172 => 16,  170 => 15,  165 => 14,  148 => 13,  119 => 33,  112 => 31,  109 => 30,  104 => 28,  99 => 26,  96 => 25,  91 => 23,  88 => 22,  81 => 20,  78 => 19,  73 => 13,  70 => 12,  62 => 9,  57 => 7,  54 => 6,  47 => 4,  44 => 3,  38 => 2,  11 => 1,);
     }
 }
 
 
 /* 404/_404.twig */
-class __TwigTemplate_738b08fdbb7bae5de19179d1594ce7a101aac0d63550ac7872c16004df9cb7be_1762787665 extends Twig_Template
+class __TwigTemplate_738b08fdbb7bae5de19179d1594ce7a101aac0d63550ac7872c16004df9cb7be_1168201588 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
-        // line 19
-        $this->parent = $this->loadTemplate("menus/scrolltotop.twig", "404/_404.twig", 19);
+        // line 23
+        $this->parent = $this->loadTemplate("menus/scrolltotop.twig", "404/_404.twig", 23);
         $this->blocks = array(
         );
     }
@@ -252,20 +304,20 @@ class __TwigTemplate_738b08fdbb7bae5de19179d1594ce7a101aac0d63550ac7872c16004df9
 
     public function getDebugInfo()
     {
-        return array (  228 => 19,  188 => 16,  148 => 13,  119 => 29,  112 => 27,  109 => 26,  104 => 24,  99 => 22,  96 => 21,  91 => 19,  88 => 18,  81 => 16,  78 => 15,  73 => 13,  70 => 12,  62 => 9,  57 => 7,  54 => 6,  47 => 4,  44 => 3,  38 => 2,  11 => 1,);
+        return array (  280 => 23,  240 => 20,  200 => 15,  172 => 16,  170 => 15,  165 => 14,  148 => 13,  119 => 33,  112 => 31,  109 => 30,  104 => 28,  99 => 26,  96 => 25,  91 => 23,  88 => 22,  81 => 20,  78 => 19,  73 => 13,  70 => 12,  62 => 9,  57 => 7,  54 => 6,  47 => 4,  44 => 3,  38 => 2,  11 => 1,);
     }
 }
 
 
 /* 404/_404.twig */
-class __TwigTemplate_738b08fdbb7bae5de19179d1594ce7a101aac0d63550ac7872c16004df9cb7be_647403330 extends Twig_Template
+class __TwigTemplate_738b08fdbb7bae5de19179d1594ce7a101aac0d63550ac7872c16004df9cb7be_669065347 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
-        // line 22
-        $this->parent = $this->loadTemplate("super_footer.twig", "404/_404.twig", 22);
+        // line 26
+        $this->parent = $this->loadTemplate("super_footer.twig", "404/_404.twig", 26);
         $this->blocks = array(
         );
     }
@@ -292,7 +344,7 @@ class __TwigTemplate_738b08fdbb7bae5de19179d1594ce7a101aac0d63550ac7872c16004df9
 
     public function getDebugInfo()
     {
-        return array (  268 => 22,  228 => 19,  188 => 16,  148 => 13,  119 => 29,  112 => 27,  109 => 26,  104 => 24,  99 => 22,  96 => 21,  91 => 19,  88 => 18,  81 => 16,  78 => 15,  73 => 13,  70 => 12,  62 => 9,  57 => 7,  54 => 6,  47 => 4,  44 => 3,  38 => 2,  11 => 1,);
+        return array (  320 => 26,  280 => 23,  240 => 20,  200 => 15,  172 => 16,  170 => 15,  165 => 14,  148 => 13,  119 => 33,  112 => 31,  109 => 30,  104 => 28,  99 => 26,  96 => 25,  91 => 23,  88 => 22,  81 => 20,  78 => 19,  73 => 13,  70 => 12,  62 => 9,  57 => 7,  54 => 6,  47 => 4,  44 => 3,  38 => 2,  11 => 1,);
     }
 }
 /* {% extends "super.twig" %}*/
@@ -307,7 +359,11 @@ class __TwigTemplate_738b08fdbb7bae5de19179d1594ce7a101aac0d63550ac7872c16004df9
 /* 	<div class="menu-patch" id="patch">&nbsp;</div>*/
 /* {% endblock %}*/
 /* {% block navbar %}*/
-/*     {% embed "super_navbar.twig" %}{% endembed %}*/
+/*     {% embed "super_navbar.twig" %}*/
+/* 	    {% block menu_catalogs %}                */
+/* 		    {% embed "menus/list_catallogs.twig" %}{% endembed %}*/
+/* 		{% endblock %}*/
+/*     {% endembed %}*/
 /* {% endblock %}*/
 /* {% block content_current %}*/
 /*     {% embed "404/container.twig" %}{% endembed %}	*/

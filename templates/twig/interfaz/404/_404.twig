@@ -10,7 +10,11 @@
 	<div class="menu-patch" id="patch">&nbsp;</div>
 {% endblock %}
 {% block navbar %}
-    {% embed "super_navbar.twig" %}{% endembed %}
+    {% embed "super_navbar.twig" %}
+	    {% block menu_catalogs %}                
+		    {% embed "menus/list_catallogs.twig" %}{% endembed %}
+		{% endblock %}
+    {% endembed %}
 {% endblock %}
 {% block content_current %}
     {% embed "404/container.twig" %}{% endembed %}	

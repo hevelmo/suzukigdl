@@ -18,6 +18,9 @@
 		{% endblock %}
 		{% block models_header %}
 	    {% endblock %}
+	    {% block menu_catalogs %}                
+		    {% embed "menus/list_catallogs.twig" %}{% endembed %}
+		{% endblock %}
     {% endembed %}
 {% endblock %}
 {% block content_current %}

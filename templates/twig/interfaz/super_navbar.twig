@@ -26,7 +26,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="{{ _host }}catalogos" title="Catalogos" onclick="ga('send', 'event', 'Catalogo', 'Liga_interna', 'Conoce nuestro catalogo Suzuki');">
+                                        <a {#href="{{ _host }}catalogos"#} class="catalogo-dropdown" title="Catalogos" onclick="ga('send', 'event', 'Catalogo', 'Liga_interna', 'Conoce nuestro catalogo Suzuki');">
                                             <span>Catálogos</span>
                                         </a>
                                     </li>
@@ -95,6 +95,8 @@
                     {% endblock %}
                 </div>
             </div>
+            {% block menu_catalogs %}                
+            {% endblock %}
         </div>
     </section>
 </section>

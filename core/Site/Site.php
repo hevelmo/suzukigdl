@@ -9579,6 +9579,64 @@
 					'img_big' => 'manzanillo-big.jpg'
 				)
 			);
+			$this->catalog = array(
+				'nueva-vitara' => array(
+					'key' => 'nueva-vitara',
+					'name' => 'Nueva Vitara',
+					'class' => '',
+					'description' => 'La vida tiene más de un tono',
+					'download' => 'catalogo-nueva-vitara-2017.pdf'
+				),
+				'ciaz' => array(
+					'key' => 'ciaz',
+					'name' => 'Ciaz',
+					'class' => 'white',
+					'description' => 'Equipamiento, diseño y elegancia que mereces. El balance perfecto en tu vida.',
+					'download' => 'catalogo-ciaz-2017.pdf'
+				),
+				'swift' => array(
+					'key' => 'swift',
+					'name' => 'Swift',
+					'class' => 'white',
+					'description' => 'Aerodinámico y divertido para ti que buscas diseño y agilidad en un solo auto.',
+					'description' => 'catalogo-swift-2017.pdf'
+				),
+				'kizashi' => array(
+					'key' => 'kizashi',
+					'name' => 'Kizashi',
+					'class' => '',
+					'description' => '"Algo grande está por venir". Imponente diseño con finos acabados que roban miradas.',
+					'download' => 'catalogo-kizashi-2016.pdf'
+				),
+				'grand-vitara' => array(
+					'key' => 'grand-vitara',
+					'name' => 'Grand Vitara',
+					'class' => '',
+					'description' => 'Dinamismo, versatilidad y tecnología sin fronteras. Una nueva forma de viajar.',
+					'download' => 'catalogo-grand-vitara-2017.pdf'
+				),
+				'swift-sport' => array(
+					'key' => 'swift-sport',
+					'name' => 'Swift Sport',
+					'class' => '',
+					'description' => 'Diseño deportivo, movilidad veloz. La combinación perfecta de un auto deportivo y uno urbano.',
+					'download' => 'catalogo-swift-2017.pdf'
+				),
+				's-cross' => array(
+					'key' => 's-cross',
+					'name' => 'S-Cross',
+					'class' => '',
+					'description' => 'El crossover que te hará olvidar tu primera camioneta',
+					'download' => 'catalogo-s-cross-2017.pdf'
+				),
+				'ignis' => array(
+					'key' => 'ignis',
+					'name' => 'Ignis',
+					'class' => 'white',
+					'description' => 'Redefine todo e inicia un nuevo capítulo en tu vida.',
+					'download' => 'catalogo-ignis-2017.pdf'
+				)
+			);
 		}
 		public function getGamma() {
 			return $this->gamma_model;
@@ -9601,6 +9659,14 @@
 				//echo "<pre>", print_r($concessionaires), "</pre>";
 			}
 			return $concessionaires;
+		}
+		public function getCatalogByKey($key) {
+			$catalog = array();
+			if (array_key_exists($key, $this->catalog)) {
+				$catalog = $this->catalog[$key];
+				//echo "<pre>", print_r($catalog), "</pre>";
+			}
+			return $catalog;
 		}
 	}
 ?>

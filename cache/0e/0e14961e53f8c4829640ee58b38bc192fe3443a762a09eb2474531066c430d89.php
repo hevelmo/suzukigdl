@@ -80,7 +80,7 @@ class __TwigTemplate_bcbb1f70dfcad4eef41cbaf5870de11bb2a790139c7e5369d2303b4b0ab
                                 </label>
                                 <div class=\"select\">
                                     <select name=\"departamento\" id=\"suk_department\" type=\"dropdown\" class=\"seleccionar form-control validate_select\" style=\"width: 100%;\" data-validation-data=\"required|free\">
-                                        <option label=\"Selecccionar\" selected=\"selected\" disabled=\"disabled\" value=\"\">Selecciona Departamento</option>
+                                        <option label=\"Selecccionar departamento\" selected=\"selected\" disabled=\"disabled\" value=\"\">Selecciona Departamento</option>
                                         <option label=\"Ventas\" value=\"Ventas\">Ventas</option>
                                         <option label=\"Servicio\" value=\"Servicio\">Servicio</option>
                                         <option label=\"Refacciones / Accesorios\" value=\"Refacciones / Accesorios\">Refacciones / Accesorios</option>
@@ -265,7 +265,7 @@ class __TwigTemplate_bcbb1f70dfcad4eef41cbaf5870de11bb2a790139c7e5369d2303b4b0ab
 /*                                 </label>*/
 /*                                 <div class="select">*/
 /*                                     <select name="departamento" id="suk_department" type="dropdown" class="seleccionar form-control validate_select" style="width: 100%;" data-validation-data="required|free">*/
-/*                                         <option label="Selecccionar" selected="selected" disabled="disabled" value="">Selecciona Departamento</option>*/
+/*                                         <option label="Selecccionar departamento" selected="selected" disabled="disabled" value="">Selecciona Departamento</option>*/
 /*                                         <option label="Ventas" value="Ventas">Ventas</option>*/
 /*                                         <option label="Servicio" value="Servicio">Servicio</option>*/
 /*                                         <option label="Refacciones / Accesorios" value="Refacciones / Accesorios">Refacciones / Accesorios</option>*/

@@ -1,3 +1,4 @@
+
 #catalog_title {
     display:none;
 }
@@ -51,6 +52,7 @@
     margin-bottom:20px;
 }
 .catalog_switch_menu {
+    /*
     float: right;
     margin-top: 0;
     top: 100px;
@@ -60,7 +62,7 @@
     position: fixed;
     z-index: 99;
     display: none;
-    /*
+    */
     float:right;
     margin-top:-600px;
     overflow:hidden;
@@ -68,7 +70,6 @@
     width:255px;
     position:absolute;
     z-index:99;
-    */
 }
 .catalog_switch_menu .catalog_cars_wrapper {
     width:255px;

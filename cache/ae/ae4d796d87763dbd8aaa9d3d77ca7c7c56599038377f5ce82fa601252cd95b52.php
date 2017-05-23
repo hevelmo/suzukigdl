@@ -130,7 +130,7 @@ class __TwigTemplate_90225f1196336bf4f917957083ad6f21b4056331bf45680a2732d49c454
                                         <input type=\"hidden\" name=\"imagen\" id=\"suk_imagen\" value=\"";
         // line 101
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "key", array()), "html", null, true);
-        echo ".jpg\">
+        echo "\">
                                         <input type=\"hidden\" name=\"news\" id=\"suk_news\" value=\"0\">
                                         <input type=\"hidden\" name=\"campaign\" id=\"suk_campaign\" value=\"Suzuki Autos ";
         // line 103
@@ -294,7 +294,7 @@ class __TwigTemplate_90225f1196336bf4f917957083ad6f21b4056331bf45680a2732d49c454
 /*                                         <input type="hidden" name="producto" id="suk_producto" value="Prueba de manejo - {{ model.name }}">*/
 /*                                         <input type="hidden" name="modelo" id="suk_modelo" value="{{ model.name }}">*/
 /*                                         <input type="hidden" name="concesionaria" id="suk_concesionaria" value="Suzuki Autos {{ _loc }}">*/
-/*                                         <input type="hidden" name="imagen" id="suk_imagen" value="{{ model.key }}.jpg">*/
+/*                                         <input type="hidden" name="imagen" id="suk_imagen" value="{{ model.key }}">*/
 /*                                         <input type="hidden" name="news" id="suk_news" value="0">*/
 /*                                         <input type="hidden" name="campaign" id="suk_campaign" value="Suzuki Autos {{ _loc }} - Prueba de Manejo">*/
 /*                                     </fieldset>*/

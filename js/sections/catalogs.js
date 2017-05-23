@@ -1,6 +1,6 @@
 $(document).ready(function(){
     // slick carousel
-    $('.responsive').slick({
+    /*$('.responsive').slick({
         dots: true,
         vertical: true,
         slidesToShow: 1,
@@ -36,7 +36,7 @@ $(document).ready(function(){
 	    // instead of a settings object
 	  ]
 
-    });
+    });*/
     $(window).resize(function() {
 	  $('.responsive').slick('resize');
 	});

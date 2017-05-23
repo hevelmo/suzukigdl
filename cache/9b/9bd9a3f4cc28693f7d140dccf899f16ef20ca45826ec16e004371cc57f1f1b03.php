@@ -40,7 +40,7 @@ class __TwigTemplate_cc47421c55191be76ce1149eb8be30c11665d399ae08935438d888abbe7
 \t\t\t<a href=\"";
         // line 17
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "contacto\" id=\"go-contact\">Contacto</a>
+        echo "contactanos\" id=\"go-contact\">Contacto</a>
 \t\t</li>
 \t\t<li>
 \t\t\t<a href=\"";
@@ -103,7 +103,7 @@ class __TwigTemplate_cc47421c55191be76ce1149eb8be30c11665d399ae08935438d888abbe7
 /* 			<a href="{{ _host }}concesionarias" id="go-concesionaries">Concesionarias</a>*/
 /* 		</li>*/
 /* 		<li>*/
-/* 			<a href="{{ _host }}contacto" id="go-contact">Contacto</a>*/
+/* 			<a href="{{ _host }}contactanos" id="go-contact">Contacto</a>*/
 /* 		</li>*/
 /* 		<li>*/
 /* 			<a href="{{ _host }}financiamiento" id="mobile-menu-financing">Financiamiento</a>*/

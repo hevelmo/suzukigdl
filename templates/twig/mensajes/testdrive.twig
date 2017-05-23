@@ -35,7 +35,7 @@
                                             <td width="100%" height="30"></td>
                                         </tr>
                                         <tr>
-                                            <td width="100%"><span ><img src="{{ _host }}img/template/common/header/horizontal_logo.png" width="75" alt="" border="0" mc:edit="39" alt="" border="0" ></span></td>
+                                            <td width="100%"><span ><img src="http://suzukigdl.com.mx/img/template/common/header/horizontal_logo.png" width="75" alt="" border="0" mc:edit="39" alt="" border="0" ></span></td>
                                         </tr>
                                         <tr>
                                             <td width="100%" height="30"></td>
@@ -102,7 +102,7 @@
                                                 <!--[if !mso]><!-->
                                                 <span style="font-family: Helvetica; font-weight: normal;">
                                                 <!--<![endif]-->
-                                                    <img src="{{ _host }}{{ imagen }}" alt="" width="45%" style="margin: 0 auto; display: block;">
+                                                    <img src="http://suzukigdl.com.mx/img/template/models/financing/thumbs/thumb-{{ imagen }}.png" alt=". . ." width="45%" style="margin: 0 auto; display: block;">
                                                     <span style="font-family: Helvetica; font-weight: normal; display: block; text-align: center;">
                                                         <h4 style="margin-top: 0; margin-bottom: 5px;">Modelo: {{ modelo }}</h4>
                                                     </span>
@@ -141,7 +141,15 @@
                                                             <b>Concesionaria:</b>
                                                             <ul>
                                                                 <li>
-                                                                     <i>{{ agencia }}</i>
+                                                                     <i>{{ agencia }}</i>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li style="list-style-type: disc;">
+                                                            <b>Fecha Prueba de Manejo:</b>
+                                                            <ul>
+                                                                <li>
+                                                                     <i>{{ fecha }}</i>
                                                                 </li>
                                                             </ul>
                                                         </li>
@@ -150,11 +158,11 @@
                                                             <ul>
                                                                 <li>
                                                                      <i>
-                                                                     	{% if news = '1' %}
-                                                                     		Activado
-                                                                     	{% else %}
-                                                                     	    Desactivado
-                                                                     	{% endif %}
+                                                                        {% if news == '1' %}
+                                                                            Activado
+                                                                        {% else %}
+                                                                            Desactivado
+                                                                        {% endif %}
                                                                      </i>
                                                                 </li>
                                                             </ul>
@@ -196,7 +204,7 @@
                                                         <td align="center" height="45" bgcolor="#4edeb5" style="border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; padding-left: 30px; padding-right: 30px; font-weight: bold; font-family: Helvetica, Arial, sans-serif; color: rgba(255, 255, 255, 1); background-color: #c51d22;;">
                                                             <!--[if !mso]><!-->
                                                             <span style="font-family: Helvetica; font-weight: normal;"><!--<![endif]-->
-                                                                <a href="mailto:{{ correo }}?subject={{ producto}}" style="color: rgba(255, 255, 255, 0.9); font-size: 15px; text-decoration: none; line-height: 34px; width: 100%;">Responder a {{ nombre }} {{ apellido }}</a>
+                                                                <a href="mailto:{{ correo }}?subject={{ producto }}" style="color: rgba(255, 255, 255, 0.9); font-size: 15px; text-decoration: none; line-height: 34px; width: 100%;">Responder a {{ nombre }} {{ apellido }}</a>
                                                                 <br>
                                                             <!--[if !mso]><!--></span><!--<![endif]-->
                                                         </td>

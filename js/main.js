@@ -60,12 +60,15 @@ $(document).ready(function() {
     $('body').on('click', '#header-owners-button', openPanelMenuMethods.clickOwnersPanel);
     // EVENT CLICK GO BEFORE BYU
     $('body').on('click', '#header-before-buy-button', openPanelMenuMethods.clickBeforeByPanel);
+    
+    $('body').on('click', '#header-catalog-button', openPanelMenuMethods.clickCatalogPanel);
 
     // EVENT CLICK GO CLOSE PANEL
     //$('body').on('click', domEl.button_close_model_panel_menu, closePanelMenuMethods.closePanelModels);
     //$('body').on('click', domEl.button_close_financing_panel_menu, closePanelMenuMethods.closePanelFinancing);
     $('body').on('click', '#close-owners-panel', closePanelMenuMethods.closePanelOwners);
     $('body').on('click', '#close-before-buy-panel', closePanelMenuMethods.closePanelBeforeBuy);
+    $('body').on('click', '#close-catalog-panel', closePanelMenuMethods.closePanelCatalog);
 
     //smooth scroll to top
     $("body").on('click', '.cd-top', scrolltotop.init);
@@ -81,4 +84,26 @@ $(document).ready(function() {
     $('body').on("click", '.financing-form-send', financingForm.clickSend);
     // CONTACT FORM
     $('body').on("click", '.contact-form-send', contactForm.clickSend);
+
+    /*
+    $('#top-bar a.catalogo-dropdown').hover(
+        function () {
+            //mostra sottomenu
+            $('ul.list-dropdown', this).stop(true, true).delay(50).slideDown(100);
+ 
+        }, 
+        function () {
+            //nascondi sottomenu
+            $('ul.list-dropdown', this).stop(true, true).slideUp(200);        
+        }
+    );
+    $('body').on('click', 'a.catalogo-dropdown', dropdown_methods.dropdown);
+    $('a.catalogo-dropdown','#header-spacer').on('click', openMenuMethods.clickOpenCatalog);
+    */
+    $('a.catalogo-dropdown').hover(function(e) {
+         $('.inner-menu').find('div.list-catalog ul.list-dropdown').stop(true, true).delay(50).slideDown(100).css({overflow: "visible"});
+    },
+    function(e) {
+         $('.inner-menu').find('div.list-catalog ul.list-dropdown').stop(true, true).slideUp(200).css({overflow: "hidden"});
+    });
 });

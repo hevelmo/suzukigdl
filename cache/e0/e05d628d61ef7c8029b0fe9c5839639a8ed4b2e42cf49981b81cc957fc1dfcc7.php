@@ -62,7 +62,7 @@ class __TwigTemplate_df2f507a9a4f8fc48c31d931a8f017e873e2e4dbcb91f5d151c1f9ab1c2
                         <a href=\"";
         // line 40
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "modelos/swift-sport\" class=\"scroll-up\">
+        echo "catalogos/swift-sport\" class=\"scroll-up\">
                             <span>Swift Sport</span>
                         </a>
                     </li>
@@ -70,7 +70,7 @@ class __TwigTemplate_df2f507a9a4f8fc48c31d931a8f017e873e2e4dbcb91f5d151c1f9ab1c2
                         <a href=\"";
         // line 45
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "modelos/swift\" class=\"scroll-up\">
+        echo "catalogos/swift\" class=\"scroll-up\">
                             <span>Swift</span>
                         </a>
                     </li>
@@ -78,7 +78,7 @@ class __TwigTemplate_df2f507a9a4f8fc48c31d931a8f017e873e2e4dbcb91f5d151c1f9ab1c2
                         <a href=\"";
         // line 50
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "modelos/kizashi\" class=\"scroll-up\">
+        echo "catalogos/kizashi\" class=\"scroll-up\">
                             <span>Kizashi</span>
                         </a>
                     </li>
@@ -86,7 +86,7 @@ class __TwigTemplate_df2f507a9a4f8fc48c31d931a8f017e873e2e4dbcb91f5d151c1f9ab1c2
                         <a href=\"";
         // line 55
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "modelos/s-cross\" class=\"scroll-up\">
+        echo "catalogos/s-cross\" class=\"scroll-up\">
                             <span>S-Cross</span>
                         </a>
                     </li>
@@ -96,7 +96,7 @@ class __TwigTemplate_df2f507a9a4f8fc48c31d931a8f017e873e2e4dbcb91f5d151c1f9ab1c2
                         <a href=\"";
         // line 62
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "modelos/grand-vitara\" class=\"scroll-up\">
+        echo "catalogos/grand-vitara\" class=\"scroll-up\">
                             <span>Grand Vitara</span>
                         </a>
                     </li>
@@ -104,7 +104,7 @@ class __TwigTemplate_df2f507a9a4f8fc48c31d931a8f017e873e2e4dbcb91f5d151c1f9ab1c2
                         <a href=\"";
         // line 67
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "modelos/ciaz\" class=\"scroll-up\">
+        echo "catalogos/ciaz\" class=\"scroll-up\">
                             <span>Ciaz</span>
                         </a>
                     </li>
@@ -112,7 +112,7 @@ class __TwigTemplate_df2f507a9a4f8fc48c31d931a8f017e873e2e4dbcb91f5d151c1f9ab1c2
                         <a href=\"";
         // line 72
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "modelos/nueva-vitara\" class=\"scroll-up\">
+        echo "catalogos/nueva-vitara\" class=\"scroll-up\">
                             <span>Nueva Vitara</span>
                         </a>
                     </li>
@@ -120,7 +120,7 @@ class __TwigTemplate_df2f507a9a4f8fc48c31d931a8f017e873e2e4dbcb91f5d151c1f9ab1c2
                         <a href=\"";
         // line 77
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "modelos/ignis\" class=\"scroll-up\">
+        echo "catalogos/ignis\" class=\"scroll-up\">
                             <span>Ignis</span>
                         </a>
                     </li>
@@ -327,44 +327,44 @@ class __TwigTemplate_df2f507a9a4f8fc48c31d931a8f017e873e2e4dbcb91f5d151c1f9ab1c2
 /*                 </div>*/
 /*                 <ul class="links links-s-1 links_catalog" id="links-catalog">*/
 /*                     <li>*/
-/*                         <a href="{{ _host }}modelos/swift-sport" class="scroll-up">*/
+/*                         <a href="{{ _host }}catalogos/swift-sport" class="scroll-up">*/
 /*                             <span>Swift Sport</span>*/
 /*                         </a>*/
 /*                     </li>*/
 /*                     <li>*/
-/*                         <a href="{{ _host }}modelos/swift" class="scroll-up">*/
+/*                         <a href="{{ _host }}catalogos/swift" class="scroll-up">*/
 /*                             <span>Swift</span>*/
 /*                         </a>*/
 /*                     </li>*/
 /*                     <li>*/
-/*                         <a href="{{ _host }}modelos/kizashi" class="scroll-up">*/
+/*                         <a href="{{ _host }}catalogos/kizashi" class="scroll-up">*/
 /*                             <span>Kizashi</span>*/
 /*                         </a>*/
 /*                     </li>*/
 /*                     <li>*/
-/*                         <a href="{{ _host }}modelos/s-cross" class="scroll-up">*/
+/*                         <a href="{{ _host }}catalogos/s-cross" class="scroll-up">*/
 /*                             <span>S-Cross</span>*/
 /*                         </a>*/
 /*                     </li>*/
 /*                 </ul>*/
 /*                 <ul class="links links-s-2 links_catalog">*/
 /*                     <li>*/
-/*                         <a href="{{ _host }}modelos/grand-vitara" class="scroll-up">*/
+/*                         <a href="{{ _host }}catalogos/grand-vitara" class="scroll-up">*/
 /*                             <span>Grand Vitara</span>*/
 /*                         </a>*/
 /*                     </li>*/
 /*                     <li>*/
-/*                         <a href="{{ _host }}modelos/ciaz" class="scroll-up">*/
+/*                         <a href="{{ _host }}catalogos/ciaz" class="scroll-up">*/
 /*                             <span>Ciaz</span>*/
 /*                         </a>*/
 /*                     </li>*/
 /*                     <li>*/
-/*                         <a href="{{ _host }}modelos/nueva-vitara" class="scroll-up">*/
+/*                         <a href="{{ _host }}catalogos/nueva-vitara" class="scroll-up">*/
 /*                             <span>Nueva Vitara</span>*/
 /*                         </a>*/
 /*                     </li>*/
 /*                     <li>*/
-/*                         <a href="{{ _host }}modelos/ignis" class="scroll-up">*/
+/*                         <a href="{{ _host }}catalogos/ignis" class="scroll-up">*/
 /*                             <span>Ignis</span>*/
 /*                         </a>*/
 /*                     </li>*/

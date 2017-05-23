@@ -13,6 +13,7 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
             'phone_call' => array($this, 'block_phone_call'),
             'models_header' => array($this, 'block_models_header'),
             'menu_panel' => array($this, 'block_menu_panel'),
+            'menu_catalogs' => array($this, 'block_menu_catalogs'),
         );
     }
 
@@ -60,10 +61,9 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
                                         </a>
                                     </li>
                                     <li>
-                                        <a href=\"";
+                                        <a ";
         // line 29
-        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "catalogos\" title=\"Catalogos\" onclick=\"ga('send', 'event', 'Catalogo', 'Liga_interna', 'Conoce nuestro catalogo Suzuki');\">
+        echo " class=\"catalogo-dropdown\" title=\"Catalogos\" onclick=\"ga('send', 'event', 'Catalogo', 'Liga_interna', 'Conoce nuestro catalogo Suzuki');\">
                                             <span>Catálogos</span>
                                         </a>
                                     </li>
@@ -151,7 +151,11 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
         // line 96
         echo "                </div>
             </div>
-        </div>
+            ";
+        // line 98
+        $this->displayBlock('menu_catalogs', $context, $blocks);
+        // line 100
+        echo "        </div>
     </section>
 </section>
 ";
@@ -176,12 +180,19 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
     {
         // line 93
         echo "                        ";
-        $this->loadTemplate("super_navbar.twig", "super_navbar.twig", 93, "1375747776")->display($context);
+        $this->loadTemplate("super_navbar.twig", "super_navbar.twig", 93, "1928898431")->display($context);
         // line 94
         echo "                        ";
-        $this->loadTemplate("super_navbar.twig", "super_navbar.twig", 94, "36255503")->display($context);
+        $this->loadTemplate("super_navbar.twig", "super_navbar.twig", 94, "905645413")->display($context);
         // line 95
         echo "                    ";
+    }
+
+    // line 98
+    public function block_menu_catalogs($context, array $blocks = array())
+    {
+        echo "                
+            ";
     }
 
     public function getTemplateName()
@@ -196,13 +207,13 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
 
     public function getDebugInfo()
     {
-        return array (  184 => 95,  181 => 94,  178 => 93,  175 => 92,  171 => 81,  168 => 80,  164 => 45,  161 => 44,  152 => 96,  150 => 92,  141 => 86,  137 => 85,  132 => 82,  130 => 80,  106 => 59,  98 => 54,  88 => 46,  86 => 44,  73 => 34,  65 => 29,  57 => 24,  49 => 19,  36 => 9,  30 => 8,  22 => 2,);
+        return array (  192 => 98,  188 => 95,  185 => 94,  182 => 93,  179 => 92,  175 => 81,  172 => 80,  168 => 45,  165 => 44,  158 => 100,  156 => 98,  152 => 96,  150 => 92,  141 => 86,  137 => 85,  132 => 82,  130 => 80,  106 => 59,  98 => 54,  88 => 46,  86 => 44,  73 => 34,  66 => 29,  58 => 24,  50 => 19,  37 => 9,  31 => 8,  23 => 2,);
     }
 }
 
 
 /* super_navbar.twig */
-class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11ac4cd_1375747776 extends Twig_Template
+class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11ac4cd_1928898431 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -236,13 +247,13 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
 
     public function getDebugInfo()
     {
-        return array (  212 => 93,  184 => 95,  181 => 94,  178 => 93,  175 => 92,  171 => 81,  168 => 80,  164 => 45,  161 => 44,  152 => 96,  150 => 92,  141 => 86,  137 => 85,  132 => 82,  130 => 80,  106 => 59,  98 => 54,  88 => 46,  86 => 44,  73 => 34,  65 => 29,  57 => 24,  49 => 19,  36 => 9,  30 => 8,  22 => 2,);
+        return array (  223 => 93,  192 => 98,  188 => 95,  185 => 94,  182 => 93,  179 => 92,  175 => 81,  172 => 80,  168 => 45,  165 => 44,  158 => 100,  156 => 98,  152 => 96,  150 => 92,  141 => 86,  137 => 85,  132 => 82,  130 => 80,  106 => 59,  98 => 54,  88 => 46,  86 => 44,  73 => 34,  66 => 29,  58 => 24,  50 => 19,  37 => 9,  31 => 8,  23 => 2,);
     }
 }
 
 
 /* super_navbar.twig */
-class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11ac4cd_36255503 extends Twig_Template
+class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11ac4cd_905645413 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -276,7 +287,7 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
 
     public function getDebugInfo()
     {
-        return array (  252 => 94,  212 => 93,  184 => 95,  181 => 94,  178 => 93,  175 => 92,  171 => 81,  168 => 80,  164 => 45,  161 => 44,  152 => 96,  150 => 92,  141 => 86,  137 => 85,  132 => 82,  130 => 80,  106 => 59,  98 => 54,  88 => 46,  86 => 44,  73 => 34,  65 => 29,  57 => 24,  49 => 19,  36 => 9,  30 => 8,  22 => 2,);
+        return array (  263 => 94,  223 => 93,  192 => 98,  188 => 95,  185 => 94,  182 => 93,  179 => 92,  175 => 81,  172 => 80,  168 => 45,  165 => 44,  158 => 100,  156 => 98,  152 => 96,  150 => 92,  141 => 86,  137 => 85,  132 => 82,  130 => 80,  106 => 59,  98 => 54,  88 => 46,  86 => 44,  73 => 34,  66 => 29,  58 => 24,  50 => 19,  37 => 9,  31 => 8,  23 => 2,);
     }
 }
 /* {# Begin: Header #}*/
@@ -307,7 +318,7 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
 /*                                         </a>*/
 /*                                     </li>*/
 /*                                     <li>*/
-/*                                         <a href="{{ _host }}catalogos" title="Catalogos" onclick="ga('send', 'event', 'Catalogo', 'Liga_interna', 'Conoce nuestro catalogo Suzuki');">*/
+/*                                         <a {#href="{{ _host }}catalogos"#} class="catalogo-dropdown" title="Catalogos" onclick="ga('send', 'event', 'Catalogo', 'Liga_interna', 'Conoce nuestro catalogo Suzuki');">*/
 /*                                             <span>Catálogos</span>*/
 /*                                         </a>*/
 /*                                     </li>*/
@@ -376,6 +387,8 @@ class __TwigTemplate_555cdcd741d16e4ddb4292d4f3ef17018eb00ffddebf384b7e193252e11
 /*                     {% endblock %}*/
 /*                 </div>*/
 /*             </div>*/
+/*             {% block menu_catalogs %}                */
+/*             {% endblock %}*/
 /*         </div>*/
 /*     </section>*/
 /* </section>*/

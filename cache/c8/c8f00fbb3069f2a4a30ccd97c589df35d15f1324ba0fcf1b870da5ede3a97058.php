@@ -130,7 +130,7 @@ class __TwigTemplate_0f219cb0a675e40e27a222a4d1e740dfbfeb75256c314b579199b01f6b7
         echo "\">
                 <input type=\"hidden\" name=\"modelo\" id=\"suk_modelo\" value=\"";
         // line 109
-        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "key", array()), "html", null, true);
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "name", array()), "html", null, true);
         echo "\">
                 <input type=\"hidden\" name=\"concesionaria\" id=\"suk_concesionaria\" value=\"Suzuki Autos ";
         // line 110
@@ -139,7 +139,7 @@ class __TwigTemplate_0f219cb0a675e40e27a222a4d1e740dfbfeb75256c314b579199b01f6b7
                 <input type=\"hidden\" name=\"imagen\" id=\"suk_imagen\" value=\"";
         // line 111
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["model"]) ? $context["model"] : null), "key", array()), "html", null, true);
-        echo ".jpg\">
+        echo "\">
                 <input type=\"hidden\" name=\"news\" id=\"suk_news\" value=\"0\">
                 <input type=\"hidden\" name=\"campaign\" id=\"suk_campaign\" value=\"Suzuki Autos ";
         // line 113
@@ -305,9 +305,9 @@ class __TwigTemplate_0f219cb0a675e40e27a222a4d1e740dfbfeb75256c314b579199b01f6b7
 /*         <div class="financing_element ab">*/
 /*             <fieldset id="fields_hidden">*/
 /*                 <input type="hidden" name="producto" id="suk_producto" value="Financiamiento - {{ model.name }}">*/
-/*                 <input type="hidden" name="modelo" id="suk_modelo" value="{{ model.key }}">*/
+/*                 <input type="hidden" name="modelo" id="suk_modelo" value="{{ model.name }}">*/
 /*                 <input type="hidden" name="concesionaria" id="suk_concesionaria" value="Suzuki Autos {{ _loc }}">*/
-/*                 <input type="hidden" name="imagen" id="suk_imagen" value="{{ model.key }}.jpg">*/
+/*                 <input type="hidden" name="imagen" id="suk_imagen" value="{{ model.key }}">*/
 /*                 <input type="hidden" name="news" id="suk_news" value="0">*/
 /*                 <input type="hidden" name="campaign" id="suk_campaign" value="Suzuki Autos {{ _loc }} - Financiamiento">*/
 /*             </fieldset>*/

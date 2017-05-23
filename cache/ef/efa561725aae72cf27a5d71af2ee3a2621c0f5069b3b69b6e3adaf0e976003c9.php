@@ -416,7 +416,7 @@ class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d
     // line 142
     public function block_navbar($context, array $blocks = array())
     {
-        echo "              
+        echo "  
             ";
     }
 
@@ -444,7 +444,7 @@ class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d
     {
         // line 175
         echo "            ";
-        $this->loadTemplate("super.twig", "super.twig", 175, "1190630285")->display($context);
+        $this->loadTemplate("super.twig", "super.twig", 175, "1725736900")->display($context);
         // line 176
         echo "        ";
     }
@@ -522,7 +522,7 @@ class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d
 
 
 /* super.twig */
-class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d37ccb_1190630285 extends Twig_Template
+class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d37ccb_1725736900 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -700,7 +700,7 @@ class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d
 /*         {% endblock %}*/
 /* */
 /*         {% block header_wrapper %}*/
-/*             {% block navbar %}              */
+/*             {% block navbar %}  */
 /*             {% endblock %}*/
 /*         {% endblock %}*/
 /* */

@@ -2349,7 +2349,7 @@
         }
     }
 /* ------------------------------------------------------ *\
-    [Methods] newsletter
+    [Methods] getModel
 \* ------------------------------------------------------ */
     var getModel = {
         model: function(event) {
@@ -2380,8 +2380,87 @@
                     $newModel = 'nueva-vitara';
                 break;
             }
-            SUK.setValue("#suk_imagen", "thumb-" + $newModel + ".png");
+            SUK.setValue("#suk_imagen", $newModel);
             console.log($newModel);
+        }
+    }
+/* ------------------------------------------------------ *\
+    [methods] dropdown
+\* ------------------------------------------------------ */
+    var dropdown_methods = {
+        dropdown: function(event) {
+            $(".inner-menu").not($("ul", this)).slideUp("fast").next()
+            $(this).find('ul').slideToggle("fast").end();
+        }
+    }
+/* ------------------------------------------------------ *\
+    [Methods] openMenuMethods
+\* ------------------------------------------------------ */
+    var openMenuMethods = {
+        clickOpenMenu : function () {
+            $('nav').toggleClass('open-menu');
+        },
+        clickOpenCatalog : function () {
+            var hideTimeout;
+            clearTimeout(hideTimeout);
+            $('.list-dropdown', '#header-spaceru').slideDown();
+        }
+    }
+/* ------------------------------------------------------ *\
+    [Methods] closeMenuMethods
+\* ------------------------------------------------------ */
+    var closeMenuMethods = {
+        clickClose: function(event) {
+            $('nav').removeClass('open-menu');
+        },
+        clickCloseCatalog: function(event) {
+            var hideTimeout;
+            hideTimeout = setTimeout(function(){
+                $('.list-dropdown', '#header-spaceru').slideUp();
+                //console.log(hideTimeout);
+            }, 100);
+        }
+    }
+/* ------------------------------------------------------ *\
+    [Methods] getCatalog
+\* ------------------------------------------------------ */
+    var getCatalog = {
+        model: function(event) {
+            $model = $('#hidden_section').val();
+            switch ($model) {
+                case 'swift-sport':
+                    $('.catalog_car').addClass('active');
+                    console.log($model);
+                break;
+                case 'swift':
+                    $('.catalog_car').addClass('active');
+                    console.log($model);
+                break;
+                case 'kizashi':
+                    $('.catalog_car').addClass('active');
+                    console.log($model);
+                break;
+                case 'grand-vitara':
+                    $('.catalog_car').addClass('active');
+                    console.log($model);
+                break;
+                case 's-cross':
+                    $('.catalog_car').addClass('active');
+                    console.log($model);
+                break;
+                case 'ciaz':
+                    $('.catalog_car').addClass('active');
+                    console.log($model);
+                break;
+                case 'ignis':
+                    $('.catalog_car').addClass('active');
+                    console.log($model);
+                break;
+                case 'nueva-vitara':
+                    $('.catalog_car').addClass('active');
+                    console.log($model);
+                break;
+            }
         }
     }
 /* ------------------------------------------------------ *\
@@ -2425,16 +2504,6 @@
             dataRenamed["exit_web"] = window.location.href;
             return SUK.postalService(GLOBALMasterMax, dataRenamed);
         },
-        news: function(event) {
-            $news = $('#suk_model_newsletter').val($(this).is(':checked'));
-            if ($news.is(':checked')) {
-                $news.val('1');
-                SUK.setValue("#suk_news", $news.val());
-            } else {
-                $news.val('0');
-                SUK.setValue("#suk_news", $news.val());
-            }
-        },
         handlerPromiseLeads: function (data1) {
             var testDriveSendPromise, suk_agn, rootApi;
 
@@ -2452,7 +2521,6 @@
                 setTimeout(function () {
                     setTimeout(function () {
                         setTimeout(function() {
-                            testDriveForm.resetContact();
                             alertify.alert("¡ATENCIÓN!", "¡Muchas gracias!<br>" + 
                                            "Tu prueba de manejo a sido agendaa, pronto recibirás confirmación en tu correo electrónico." +
                                            "Te hemos asignado un asesor de la concesionaria " + suk_agn + ", " +
@@ -2465,6 +2533,7 @@
                                 "transition": "zoom"
                             });
                         }, 1800);
+                        testDriveForm.resetContact();
                     }, 1800);
                 }, 1400);
             });

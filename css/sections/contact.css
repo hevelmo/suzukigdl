@@ -254,7 +254,7 @@
 		width:100%;
 		height:auto !important;
 		float:none;
-		min-height:90px;
+		min-height:0px;
 		margin:0;
 	}
 	.contact_main .contact_content .contact_elements .contact_element p,

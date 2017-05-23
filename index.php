@@ -41,7 +41,7 @@ $app = new \Slim\App($container);
     // GRUPO SUZUKI
     $app->get("/grupo", "ControlGroup:__invoke");
     // CATALOGOS
-    $app->get("/catalogos", "ControlCatalogs:__invoke");
+    $app->get("/catalogos/{catalogo}", "ControlCatalogs:__invoke");
     // CONCESIONARIAS
     $app->get("/concesionarias", "ControlConcessionaires:__invoke");
     // CONTACTO
@@ -60,7 +60,7 @@ $app = new \Slim\App($container);
     $app->get("/terminos-legales", "ControlLegal:__invoke");
     $app->get("/aviso-de-privacidad", "ControlPrivacy:__invoke");
     // PLANTILLAS
-    $app->get("/temas", "ControlThemes:__invoke");
+    //$app->get("/temas", "ControlThemes:__invoke");
     $app->run();
 /**
  * CONTROL MASTER
@@ -264,7 +264,7 @@ $app = new \Slim\App($container);
     /**
      * CONTROL CATALOGS
     **/
-    class ControlCatalogs extends ControlMaster {    
+    class ControlCatalogs extends ControlMaster {
         function __construct() {
             parent::__construct(
                 array(
@@ -291,6 +291,18 @@ $app = new \Slim\App($container);
          * @param   array                   $args
         **/
         public function __invoke($request, $response, $args) {
+            parent::getRouter()->setRouteParams($request, $response, $args);
+            parent::getTemplate()->addToMasterConfigArray(parent::getRouter()->getArgs());
+
+            $catalog = parent::getRouter()->getArgs('catalogo');
+            $detalle = parent::getSite()->getCatalogByKey($catalog);
+            parent::getTemplate()->addToMasterConfigArray('catpa', $detalle);
+            
+            $catalog = $args["catalogo"];
+            $catalog = str_replace("-", " ", ucfirst($catalog));
+
+            parent::getTemplate()->addToMasterConfigArray("title", "Suzuki Autos " . _LOC . ": " . $catalog);
+
             parent::getTemplate()->display();
             //echo "<pre>", print_r(parent::getTemplate()->getMasterConfigArray()), "</pre>";
         }
@@ -682,7 +694,6 @@ $app = new \Slim\App($container);
     }
     /**
      * CONTROL THEMES
-    **/
     class ControlThemes extends ControlMaster {
         function __construct() {
             parent::__construct(
@@ -694,6 +705,7 @@ $app = new \Slim\App($container);
                 "plantillas/_main.twig"
             );
         }
+    **/
         /**
          * This inherited method don't do nothing however is mandatory to implement it
          * Because the parent method is an abstract one.
@@ -701,9 +713,9 @@ $app = new \Slim\App($container);
          * @param   Slim\Http\Request       $request 
          * @param   Slim\Http\Response      $response 
          * @param   array                   $args
-        **/
         public function __invoke($request, $response, $args) {
             parent::getTemplate()->display();
             //echo "<pre>", print_r(parent::getTemplate()->getMasterConfigArray()), "</pre>";
         }  
     }
+        **/

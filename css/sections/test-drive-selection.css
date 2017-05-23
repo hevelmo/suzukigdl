@@ -385,8 +385,8 @@
 	.promotion-financing.ciaz-bg,
 	.promotion-financing.nueva-vitara-bg,
 	.promotion-financing {
-		background:none;
-		padding:0;
+		background:none !important;
+		padding:0 !important;
 	}
 	.promo-content-financing {
 		width:100%;
@@ -429,7 +429,7 @@
 		width:100%;
 		height:auto !important;
 		float:none;
-		min-height:90px;
+		min-height:0px;
 		margin:0;
 	}
 	.financing_main .financing_content .financing_elements .financing_element p,

@@ -419,7 +419,7 @@ $app = new \Slim\App($container);
             parent::getTemplate()->setMasterConfigArray((array) $property);
             parent::getSender()->__send(array(
                 "html" => parent::getTemplate()->render(),
-                "subject" => "Financiamiento:  " . $property->producto,
+                "subject" => $property->producto,
                 "from_email" => $from_email,
                 "from_name" => $property->nombre . " " . $property->apellido,
                 "to" => array(
@@ -481,7 +481,7 @@ $app = new \Slim\App($container);
             parent::getTemplate()->setMasterConfigArray((array) $property);
             parent::getSender()->__send(array(
                 "html" => parent::getTemplate()->render(),
-                "subject" => "Prueba de Manejo:  " . $property->producto,
+                "subject" => $property->producto,
                 "from_email" => $from_email,
                 "from_name" => $property->nombre . " " . $property->apellido,
                 "to" => array(
