@@ -36,7 +36,7 @@ $(document).ready(function(){
 	    // instead of a settings object
 	  ]
 
-    });*/
+    });
     $(window).resize(function() {
 	  $('.responsive').slick('resize');
 	});
@@ -44,4 +44,5 @@ $(document).ready(function(){
 	$(window).on('orientationchange', function() {
 	  $('.responsive').slick('resize');
 	});
+    */
 })

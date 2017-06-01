@@ -9599,7 +9599,7 @@
 					'name' => 'Swift',
 					'class' => 'white',
 					'description' => 'Aerodinámico y divertido para ti que buscas diseño y agilidad en un solo auto.',
-					'description' => 'catalogo-swift-2017.pdf'
+					'download' => 'catalogo-swift-2017.pdf'
 				),
 				'kizashi' => array(
 					'key' => 'kizashi',

@@ -18,6 +18,8 @@ function urlsApi() {
     //$srv = "servicio";
     //$rep = "refacciones";
     $cnt = "contacto";
+    // newsletter
+    $new = "newsletter";
 
     //Root Api url
     $root = 'api/v1';
@@ -34,11 +36,14 @@ function urlsApi() {
 
         // SEND CONTACT
         'snd_con' => "$root/$snd/$cnt",
+        'snd_con_news' => "$root/$snd/$new/$cnt",
 
         // SEND FINANCING
         'snd_fin' => "$root/$snd/$fin",
+        'snd_fin_news' => "$root/$snd/$new/$fin",
 
         // SEND TESTDRIVE
-        'snd_drv' => "$root/$snd/$drv"
+        'snd_drv' => "$root/$snd/$drv",
+        'snd_drvn_news' => "$root/$snd/$new/$drv"
     );
 }

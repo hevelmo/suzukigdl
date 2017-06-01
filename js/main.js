@@ -40,6 +40,8 @@ $(document).ready(function() {
         EVENT CONTROL
     \* ------------------------------------------------------ */
 
+    /*
+    */
     // GENERAL CLICK RADIO & CHECKBOX
     $(":checkbox").on('change', changeInputsMethods.clickChangeCheckbox);
     $(".label-radio").on('click', changeInputsMethods.clcikChangeRadio);
@@ -50,6 +52,8 @@ $(document).ready(function() {
     $('body').on('click', ".header-column", is_mobileMethods.clickHeaderColumn);
     $('body').on('click', ".back-list-arrow", is_mobileMethods.clickBackListArrow);
 
+    $('body').on('click', ".menu-catalogs", is_mobileMethods.clickMobileMenuContent);
+    
     $('body').on('click', ".scroll-up", up.init);
 
     // HEADER PANEL
@@ -58,17 +62,19 @@ $(document).ready(function() {
 
     // EVENT CLICK GO OWNERS
     $('body').on('click', '#header-owners-button', openPanelMenuMethods.clickOwnersPanel);
+    $('body').on('click', '#header-menu-before-buy', openPanelMenuMethods.clickBeforeByPanelMobile);
     // EVENT CLICK GO BEFORE BYU
     $('body').on('click', '#header-before-buy-button', openPanelMenuMethods.clickBeforeByPanel);
+    $('body').on('click', '#header-menu-owners', openPanelMenuMethods.clickOwnersPanelMobile);
     
-    $('body').on('click', '#header-catalog-button', openPanelMenuMethods.clickCatalogPanel);
+    //$('body').on('click', '#header-catalog-button', openPanelMenuMethods.clickCatalogPanel);
 
     // EVENT CLICK GO CLOSE PANEL
     //$('body').on('click', domEl.button_close_model_panel_menu, closePanelMenuMethods.closePanelModels);
     //$('body').on('click', domEl.button_close_financing_panel_menu, closePanelMenuMethods.closePanelFinancing);
     $('body').on('click', '#close-owners-panel', closePanelMenuMethods.closePanelOwners);
     $('body').on('click', '#close-before-buy-panel', closePanelMenuMethods.closePanelBeforeBuy);
-    $('body').on('click', '#close-catalog-panel', closePanelMenuMethods.closePanelCatalog);
+    //$('body').on('click', '#close-catalog-panel', closePanelMenuMethods.closePanelCatalog);
 
     //smooth scroll to top
     $("body").on('click', '.cd-top', scrolltotop.init);
@@ -85,25 +91,11 @@ $(document).ready(function() {
     // CONTACT FORM
     $('body').on("click", '.contact-form-send', contactForm.clickSend);
 
-    /*
-    $('#top-bar a.catalogo-dropdown').hover(
-        function () {
-            //mostra sottomenu
-            $('ul.list-dropdown', this).stop(true, true).delay(50).slideDown(100);
- 
-        }, 
-        function () {
-            //nascondi sottomenu
-            $('ul.list-dropdown', this).stop(true, true).slideUp(200);        
-        }
-    );
-    $('body').on('click', 'a.catalogo-dropdown', dropdown_methods.dropdown);
-    $('a.catalogo-dropdown','#header-spacer').on('click', openMenuMethods.clickOpenCatalog);
-    */
-    $('a.catalogo-dropdown').hover(function(e) {
-         $('.inner-menu').find('div.list-catalog ul.list-dropdown').stop(true, true).delay(50).slideDown(100).css({overflow: "visible"});
-    },
-    function(e) {
-         $('.inner-menu').find('div.list-catalog ul.list-dropdown').stop(true, true).slideUp(200).css({overflow: "hidden"});
+    $('body').on('click', 'a.catalogo-dropdown', function(event) {
+        $('.inner-menu').addClass('active');
     });
+    $('.close-list-dropdown', '.inner-menu').on('click', function(event) {
+        $('#list-menu').removeClass('active');
+    });
+
 });

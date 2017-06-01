@@ -138,13 +138,17 @@
             <input id="master-root-api" type="hidden" value="{#{{ _rootapi }}#}">
         {% endblock %}
 
+        {% block mobile_menu %}
+            {% embed "super_mobilemenu.twig" %}{% endembed %}
+        {% endblock %}
+
         {% block header_wrapper %}
             {% block navbar %}  
             {% endblock %}
         {% endblock %}
 
         {# Begin: Content #}
-	    <div class="wrapper_content_interactive" id='content-temporal-interactive'>
+	    <div class="wrapper_content_interactive wrap push" id='content-temporal-interactive'>
             <div id="content-wrapper">
                 
                 {# content hidden concessionaires 
@@ -171,35 +175,39 @@
         {% block scroll_to_top %}
         {% endblock %}
 
-        {% block mobile_menu %}
-            {% embed "super_mobilemenu.twig" %}{% endembed %}
-        {% endblock %}
-
         {% block body_scripts %}
             {# CORE LIBS #}
             <script src="{{ _host }}lib/min/core.lib.min.js"></script>
+            <script src="{{ _host }}lib/assets/bigSlide/bigSlide.js"></script>
 
             {# GOOGLE API #}
             <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCqo-F2TnMAABZvfV5yTQLlWvUCJlJViU&amp;sensor=false"></script>
-            {#
             <script src="{{ _host }}js/min/core.min.js"></script>
-            #}
+            {#
             <script src="{{ _host }}js/main.js"></script>
             <script src="{{ _host }}js/method.js"></script>
             <script src="{{ _host }}js/model.js"></script>
             <script src="{{ _host }}js/objects.js"></script>
             <script src="{{ _host }}js/required.js"></script>
+            #}
             {% block section_scripts %}                
             {% endblock %}
             
         {% endblock %}
         <script>
-            {% block load_scripts %}
-                toHtmlMethod.toHtml();
-                //hide or show the "back to top" link
-                $(window).scroll(scrolltotop.windowScroll());
-                
-            {% endblock %}
+            $(document).ready(function() {
+                var IS_MOBILE = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+                {% block load_scripts %}
+                    toHtmlMethod.toHtml();
+                    //hide or show the "back to top" link
+                    $(window).scroll(scrolltotop.windowScroll());
+                {% endblock %}
+                if( IS_MOBILE ) {
+                    $('.menu-link').bigSlide();
+                } else {
+                    $('#mobile-menu').css('display','none');
+                }
+            });
         </script>
 
         {# GOOGLE CODE PARA ETIQUETAS DE REMARKETING #}

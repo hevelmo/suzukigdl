@@ -16,7 +16,7 @@ class __TwigTemplate_df2f507a9a4f8fc48c31d931a8f017e873e2e4dbcb91f5d151c1f9ab1c2
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 2
-        echo "<div id=\"footer-wrapper\">
+        echo "<div id=\"footer-wrapper\" class=\"wrap push\">
     <div id=\"footer-content\">
         <div class=\"footer-row first row-1\">
             <div class=\"footer-column column-a\">
@@ -28,14 +28,6 @@ class __TwigTemplate_df2f507a9a4f8fc48c31d931a8f017e873e2e4dbcb91f5d151c1f9ab1c2
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
         echo "modelos\" class=\"scroll-up\">
                             <span>Modelos</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href=\"";
-        // line 14
-        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "catalogos\" class=\"scroll-up\">
-                            <span>Catálogos</span>
                         </a>
                     </li>
                     ";
@@ -285,11 +277,11 @@ class __TwigTemplate_df2f507a9a4f8fc48c31d931a8f017e873e2e4dbcb91f5d151c1f9ab1c2
 
     public function getDebugInfo()
     {
-        return array (  264 => 199,  260 => 198,  251 => 194,  237 => 182,  224 => 171,  211 => 160,  198 => 149,  185 => 138,  174 => 130,  168 => 126,  161 => 120,  140 => 100,  132 => 93,  122 => 77,  114 => 72,  106 => 67,  98 => 62,  88 => 55,  80 => 50,  72 => 45,  64 => 40,  43 => 21,  36 => 14,  28 => 9,  19 => 2,);
+        return array (  256 => 199,  252 => 198,  243 => 194,  229 => 182,  216 => 171,  203 => 160,  190 => 149,  177 => 138,  166 => 130,  160 => 126,  153 => 120,  132 => 100,  124 => 93,  114 => 77,  106 => 72,  98 => 67,  90 => 62,  80 => 55,  72 => 50,  64 => 45,  56 => 40,  35 => 21,  28 => 9,  19 => 2,);
     }
 }
 /* {# Begin: Footer #}*/
-/* <div id="footer-wrapper">*/
+/* <div id="footer-wrapper" class="wrap push">*/
 /*     <div id="footer-content">*/
 /*         <div class="footer-row first row-1">*/
 /*             <div class="footer-column column-a">*/
@@ -300,12 +292,12 @@ class __TwigTemplate_df2f507a9a4f8fc48c31d931a8f017e873e2e4dbcb91f5d151c1f9ab1c2
 /*                             <span>Modelos</span>*/
 /*                         </a>*/
 /*                     </li>*/
+/*                     {#*/
 /*                     <li>*/
 /*                         <a href="{{ _host }}catalogos" class="scroll-up">*/
 /*                             <span>Catálogos</span>*/
 /*                         </a>*/
 /*                     </li>*/
-/*                     {#*/
 /*                     <li><a href="#prueba-de-manejo"  onclick=" var modelo = get_car_by_url(); $.openPanel('test-drive', modelo ); return false;"><span>Agenda prueba de manejo</span></a></li>*/
 /*                     #}*/
 /*                 </ul>*/

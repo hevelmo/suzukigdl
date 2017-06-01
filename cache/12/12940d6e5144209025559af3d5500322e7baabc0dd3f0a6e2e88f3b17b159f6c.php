@@ -20,10 +20,9 @@ class __TwigTemplate_b4c2b1cc0a6d38cfaae76e48d134dd9c0a3c503ce76001823952035fca8
         // line 3
         echo "<div class=\"header-section financing-general\" style=\"display: block;\">
 \t<div class=\"header-section-content-financing-general-wrapper\">
-\t\t<div class=\"close-menu-box\">
-\t\t\t<a id=\"close-models-panel\">Cerrar<span>&nbsp;</span></a>
-\t\t</div>
-\t\t<div class=\"header-section-content-financing-general no-padding models\">
+\t\t";
+        // line 8
+        echo "\t\t<div class=\"header-section-content-financing-general no-padding models\">
     \t\t<div class=\"header-title\"></div>
 \t\t    <div class=\"models-wrapper\">
 \t\t    \t";
@@ -90,16 +89,16 @@ class __TwigTemplate_b4c2b1cc0a6d38cfaae76e48d134dd9c0a3c503ce76001823952035fca8
 
     public function getDebugInfo()
     {
-        return array (  73 => 33,  62 => 27,  57 => 19,  40 => 13,  35 => 12,  31 => 11,  21 => 3,  19 => 2,);
+        return array (  72 => 33,  61 => 27,  56 => 19,  39 => 13,  34 => 12,  30 => 11,  25 => 8,  21 => 3,  19 => 2,);
     }
 }
 /* {# Begin: Modelos #}*/
 /* {% set modelo = mdopa %}*/
 /* <div class="header-section financing-general" style="display: block;">*/
 /* 	<div class="header-section-content-financing-general-wrapper">*/
-/* 		<div class="close-menu-box">*/
+/* 		{#<div class="close-menu-box">*/
 /* 			<a id="close-models-panel">Cerrar<span>&nbsp;</span></a>*/
-/* 		</div>*/
+/* 		</div>#}*/
 /* 		<div class="header-section-content-financing-general no-padding models">*/
 /*     		<div class="header-title"></div>*/
 /* 		    <div class="models-wrapper">*/

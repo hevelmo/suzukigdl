@@ -1,5 +1,5 @@
 {# Begin: Header #}
-<section id="header-wrapper">
+<section id="header-wrapper" class="wrap push">
     <section id="header-content">
         <div class="header-wrapper" id="header-spacer">
             <header id="header-zone">
@@ -26,7 +26,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a {#href="{{ _host }}catalogos"#} class="catalogo-dropdown" title="Catalogos" onclick="ga('send', 'event', 'Catalogo', 'Liga_interna', 'Conoce nuestro catalogo Suzuki');">
+                                        <a href="#" {#href="{{ _host }}catalogos"#} class="catalogo-dropdown" title="Catalogos" onclick="ga('send', 'event', 'Catalogo', 'Liga_interna', 'Conoce nuestro catalogo Suzuki');">
                                             <span>Catálogos</span>
                                         </a>
                                     </li>
@@ -85,7 +85,11 @@
                 <a href="{{ _host }}">
                     <img src="{{ _host }}img/template/common/header/horizontal_logo.png" alt="Logo Suzuki">
                 </a>
-                <i class="fa fa-bars"></i>
+                <a href="#mobile-menu" class="menu-link">☰</a>
+                {#<a href="#menu" class="icon-hamburger-animate menu-link">
+                    <i class="icon-hamburger"></i>
+                </a>
+                #}
             </div>
             <div id="header-panel" class="header-panel">
                 <div id="header-sections-wrapper" class="current-sections-wrapper">

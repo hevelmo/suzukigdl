@@ -21,12 +21,12 @@ class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d
             'menu_patch' => array($this, 'block_menu_patch'),
             'current_master' => array($this, 'block_current_master'),
             'section' => array($this, 'block_section'),
+            'mobile_menu' => array($this, 'block_mobile_menu'),
             'header_wrapper' => array($this, 'block_header_wrapper'),
             'navbar' => array($this, 'block_navbar'),
             'content_current' => array($this, 'block_content_current'),
             'footer' => array($this, 'block_footer'),
             'scroll_to_top' => array($this, 'block_scroll_to_top'),
-            'mobile_menu' => array($this, 'block_mobile_menu'),
             'body_scripts' => array($this, 'block_body_scripts'),
             'section_scripts' => array($this, 'block_section_scripts'),
             'load_scripts' => array($this, 'block_load_scripts'),
@@ -121,57 +121,65 @@ class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d
         echo "
         ";
         // line 141
-        $this->displayBlock('header_wrapper', $context, $blocks);
-        // line 145
+        $this->displayBlock('mobile_menu', $context, $blocks);
+        // line 144
         echo "
         ";
-        // line 147
-        echo "\t    <div class=\"wrapper_content_interactive\" id='content-temporal-interactive'>
+        // line 145
+        $this->displayBlock('header_wrapper', $context, $blocks);
+        // line 149
+        echo "
+        ";
+        // line 151
+        echo "\t    <div class=\"wrapper_content_interactive wrap push\" id='content-temporal-interactive'>
             <div id=\"content-wrapper\">
                 
                 ";
-        // line 155
+        // line 159
         echo "                ";
-        // line 161
+        // line 165
         echo "
                 ";
-        // line 163
+        // line 167
         echo "                ";
         $this->displayBlock('content_current', $context, $blocks);
-        // line 164
+        // line 168
         echo "            </div>
         </div>
         ";
-        // line 167
-        echo "
-        ";
-        // line 168
-        $this->displayBlock('footer', $context, $blocks);
-        // line 170
-        echo "
-        ";
         // line 171
-        $this->displayBlock('scroll_to_top', $context, $blocks);
-        // line 173
         echo "
         ";
+        // line 172
+        $this->displayBlock('footer', $context, $blocks);
         // line 174
-        $this->displayBlock('mobile_menu', $context, $blocks);
+        echo "
+        ";
+        // line 175
+        $this->displayBlock('scroll_to_top', $context, $blocks);
         // line 177
         echo "
         ";
         // line 178
         $this->displayBlock('body_scripts', $context, $blocks);
-        // line 196
-        echo "        <script>
-            ";
         // line 197
+        echo "        <script>
+            \$(document).ready(function() {
+                var IS_MOBILE = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+                ";
+        // line 200
         $this->displayBlock('load_scripts', $context, $blocks);
-        // line 203
-        echo "        </script>
+        // line 205
+        echo "                if( IS_MOBILE ) {
+                    \$('.menu-link').bigSlide();
+                } else {
+                    \$('#mobile-menu').css('display','none');
+                }
+            });
+        </script>
 
         ";
-        // line 206
+        // line 214
         echo "        <script type=\"text/javascript\">
             /* <![CDATA[ */
                 var google_conversion_id = 956352007;
@@ -404,47 +412,47 @@ class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d
     }
 
     // line 141
-    public function block_header_wrapper($context, array $blocks = array())
+    public function block_mobile_menu($context, array $blocks = array())
     {
         // line 142
         echo "            ";
-        $this->displayBlock('navbar', $context, $blocks);
-        // line 144
+        $this->loadTemplate("super.twig", "super.twig", 142, "686519096")->display($context);
+        // line 143
         echo "        ";
     }
 
-    // line 142
+    // line 145
+    public function block_header_wrapper($context, array $blocks = array())
+    {
+        // line 146
+        echo "            ";
+        $this->displayBlock('navbar', $context, $blocks);
+        // line 148
+        echo "        ";
+    }
+
+    // line 146
     public function block_navbar($context, array $blocks = array())
     {
         echo "  
             ";
     }
 
-    // line 163
+    // line 167
     public function block_content_current($context, array $blocks = array())
     {
     }
 
-    // line 168
+    // line 172
     public function block_footer($context, array $blocks = array())
     {
-        // line 169
+        // line 173
         echo "        ";
     }
 
-    // line 171
+    // line 175
     public function block_scroll_to_top($context, array $blocks = array())
     {
-        // line 172
-        echo "        ";
-    }
-
-    // line 174
-    public function block_mobile_menu($context, array $blocks = array())
-    {
-        // line 175
-        echo "            ";
-        $this->loadTemplate("super.twig", "super.twig", 175, "1725736900")->display($context);
         // line 176
         echo "        ";
     }
@@ -458,55 +466,42 @@ class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d
         echo "            <script src=\"";
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
         echo "lib/min/core.lib.min.js\"></script>
+            <script src=\"";
+        // line 181
+        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
+        echo "lib/assets/bigSlide/bigSlide.js\"></script>
 
             ";
-        // line 183
+        // line 184
         echo "            <script type=\"text/javascript\" src=\"https://maps.googleapis.com/maps/api/js?key=AIzaSyCCqo-F2TnMAABZvfV5yTQLlWvUCJlJViU&amp;sensor=false\"></script>
+            <script src=\"";
+        // line 185
+        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
+        echo "js/min/core.min.js\"></script>
             ";
-        // line 187
-        echo "            <script src=\"";
-        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "js/main.js\"></script>
-            <script src=\"";
-        // line 188
-        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "js/method.js\"></script>
-            <script src=\"";
-        // line 189
-        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "js/model.js\"></script>
-            <script src=\"";
-        // line 190
-        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "js/objects.js\"></script>
-            <script src=\"";
-        // line 191
-        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "js/required.js\"></script>
-            ";
-        // line 192
+        // line 193
+        echo "            ";
         $this->displayBlock('section_scripts', $context, $blocks);
-        // line 194
+        // line 195
         echo "            
         ";
     }
 
-    // line 192
+    // line 193
     public function block_section_scripts($context, array $blocks = array())
     {
         echo "                
             ";
     }
 
-    // line 197
+    // line 200
     public function block_load_scripts($context, array $blocks = array())
     {
-        // line 198
-        echo "                toHtmlMethod.toHtml();
-                //hide or show the \"back to top\" link
-                \$(window).scroll(scrolltotop.windowScroll());
-                
-            ";
+        // line 201
+        echo "                    toHtmlMethod.toHtml();
+                    //hide or show the \"back to top\" link
+                    \$(window).scroll(scrolltotop.windowScroll());
+                ";
     }
 
     public function getTemplateName()
@@ -516,20 +511,20 @@ class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d
 
     public function getDebugInfo()
     {
-        return array (  505 => 198,  502 => 197,  495 => 192,  490 => 194,  488 => 192,  484 => 191,  480 => 190,  476 => 189,  472 => 188,  467 => 187,  464 => 183,  458 => 180,  456 => 179,  453 => 178,  449 => 176,  446 => 175,  443 => 174,  439 => 172,  436 => 171,  432 => 169,  429 => 168,  424 => 163,  417 => 142,  413 => 144,  410 => 142,  407 => 141,  402 => 128,  396 => 138,  390 => 135,  384 => 132,  380 => 129,  378 => 128,  375 => 127,  371 => 124,  369 => 123,  366 => 122,  359 => 120,  352 => 118,  345 => 116,  338 => 114,  333 => 55,  327 => 57,  324 => 56,  322 => 55,  318 => 54,  314 => 53,  310 => 52,  306 => 51,  303 => 50,  301 => 49,  298 => 48,  291 => 46,  285 => 42,  281 => 41,  277 => 40,  273 => 39,  267 => 37,  264 => 36,  260 => 44,  258 => 36,  253 => 34,  248 => 32,  243 => 30,  238 => 28,  228 => 23,  222 => 20,  218 => 19,  214 => 18,  203 => 9,  200 => 8,  175 => 206,  171 => 203,  169 => 197,  166 => 196,  164 => 178,  161 => 177,  159 => 174,  156 => 173,  154 => 171,  151 => 170,  149 => 168,  146 => 167,  142 => 164,  139 => 163,  136 => 161,  134 => 155,  129 => 147,  126 => 145,  124 => 141,  121 => 140,  118 => 122,  115 => 120,  112 => 118,  109 => 116,  107 => 114,  103 => 112,  86 => 96,  77 => 88,  65 => 77,  63 => 76,  60 => 59,  58 => 48,  53 => 46,  50 => 45,  48 => 8,  39 => 1,);
+        return array (  501 => 201,  498 => 200,  491 => 193,  486 => 195,  483 => 193,  479 => 185,  476 => 184,  471 => 181,  466 => 180,  464 => 179,  461 => 178,  457 => 176,  454 => 175,  450 => 173,  447 => 172,  442 => 167,  435 => 146,  431 => 148,  428 => 146,  425 => 145,  421 => 143,  418 => 142,  415 => 141,  410 => 128,  404 => 138,  398 => 135,  392 => 132,  388 => 129,  386 => 128,  383 => 127,  379 => 124,  377 => 123,  374 => 122,  367 => 120,  360 => 118,  353 => 116,  346 => 114,  341 => 55,  335 => 57,  332 => 56,  330 => 55,  326 => 54,  322 => 53,  318 => 52,  314 => 51,  311 => 50,  309 => 49,  306 => 48,  299 => 46,  293 => 42,  289 => 41,  285 => 40,  281 => 39,  275 => 37,  272 => 36,  268 => 44,  266 => 36,  261 => 34,  256 => 32,  251 => 30,  246 => 28,  236 => 23,  230 => 20,  226 => 19,  222 => 18,  211 => 9,  208 => 8,  183 => 214,  173 => 205,  171 => 200,  166 => 197,  164 => 178,  161 => 177,  159 => 175,  156 => 174,  154 => 172,  151 => 171,  147 => 168,  144 => 167,  141 => 165,  139 => 159,  134 => 151,  131 => 149,  129 => 145,  126 => 144,  124 => 141,  121 => 140,  118 => 122,  115 => 120,  112 => 118,  109 => 116,  107 => 114,  103 => 112,  86 => 96,  77 => 88,  65 => 77,  63 => 76,  60 => 59,  58 => 48,  53 => 46,  50 => 45,  48 => 8,  39 => 1,);
     }
 }
 
 
 /* super.twig */
-class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d37ccb_1725736900 extends Twig_Template
+class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d37ccb_686519096 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
-        // line 175
-        $this->parent = $this->loadTemplate("super_mobilemenu.twig", "super.twig", 175);
+        // line 142
+        $this->parent = $this->loadTemplate("super_mobilemenu.twig", "super.twig", 142);
         $this->blocks = array(
         );
     }
@@ -556,7 +551,7 @@ class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d
 
     public function getDebugInfo()
     {
-        return array (  532 => 175,  505 => 198,  502 => 197,  495 => 192,  490 => 194,  488 => 192,  484 => 191,  480 => 190,  476 => 189,  472 => 188,  467 => 187,  464 => 183,  458 => 180,  456 => 179,  453 => 178,  449 => 176,  446 => 175,  443 => 174,  439 => 172,  436 => 171,  432 => 169,  429 => 168,  424 => 163,  417 => 142,  413 => 144,  410 => 142,  407 => 141,  402 => 128,  396 => 138,  390 => 135,  384 => 132,  380 => 129,  378 => 128,  375 => 127,  371 => 124,  369 => 123,  366 => 122,  359 => 120,  352 => 118,  345 => 116,  338 => 114,  333 => 55,  327 => 57,  324 => 56,  322 => 55,  318 => 54,  314 => 53,  310 => 52,  306 => 51,  303 => 50,  301 => 49,  298 => 48,  291 => 46,  285 => 42,  281 => 41,  277 => 40,  273 => 39,  267 => 37,  264 => 36,  260 => 44,  258 => 36,  253 => 34,  248 => 32,  243 => 30,  238 => 28,  228 => 23,  222 => 20,  218 => 19,  214 => 18,  203 => 9,  200 => 8,  175 => 206,  171 => 203,  169 => 197,  166 => 196,  164 => 178,  161 => 177,  159 => 174,  156 => 173,  154 => 171,  151 => 170,  149 => 168,  146 => 167,  142 => 164,  139 => 163,  136 => 161,  134 => 155,  129 => 147,  126 => 145,  124 => 141,  121 => 140,  118 => 122,  115 => 120,  112 => 118,  109 => 116,  107 => 114,  103 => 112,  86 => 96,  77 => 88,  65 => 77,  63 => 76,  60 => 59,  58 => 48,  53 => 46,  50 => 45,  48 => 8,  39 => 1,);
+        return array (  527 => 142,  501 => 201,  498 => 200,  491 => 193,  486 => 195,  483 => 193,  479 => 185,  476 => 184,  471 => 181,  466 => 180,  464 => 179,  461 => 178,  457 => 176,  454 => 175,  450 => 173,  447 => 172,  442 => 167,  435 => 146,  431 => 148,  428 => 146,  425 => 145,  421 => 143,  418 => 142,  415 => 141,  410 => 128,  404 => 138,  398 => 135,  392 => 132,  388 => 129,  386 => 128,  383 => 127,  379 => 124,  377 => 123,  374 => 122,  367 => 120,  360 => 118,  353 => 116,  346 => 114,  341 => 55,  335 => 57,  332 => 56,  330 => 55,  326 => 54,  322 => 53,  318 => 52,  314 => 51,  311 => 50,  309 => 49,  306 => 48,  299 => 46,  293 => 42,  289 => 41,  285 => 40,  281 => 39,  275 => 37,  272 => 36,  268 => 44,  266 => 36,  261 => 34,  256 => 32,  251 => 30,  246 => 28,  236 => 23,  230 => 20,  226 => 19,  222 => 18,  211 => 9,  208 => 8,  183 => 214,  173 => 205,  171 => 200,  166 => 197,  164 => 178,  161 => 177,  159 => 175,  156 => 174,  154 => 172,  151 => 171,  147 => 168,  144 => 167,  141 => 165,  139 => 159,  134 => 151,  131 => 149,  129 => 145,  126 => 144,  124 => 141,  121 => 140,  118 => 122,  115 => 120,  112 => 118,  109 => 116,  107 => 114,  103 => 112,  86 => 96,  77 => 88,  65 => 77,  63 => 76,  60 => 59,  58 => 48,  53 => 46,  50 => 45,  48 => 8,  39 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -699,13 +694,17 @@ class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d
 /*             <input id="master-root-api" type="hidden" value="{#{{ _rootapi }}#}">*/
 /*         {% endblock %}*/
 /* */
+/*         {% block mobile_menu %}*/
+/*             {% embed "super_mobilemenu.twig" %}{% endembed %}*/
+/*         {% endblock %}*/
+/* */
 /*         {% block header_wrapper %}*/
 /*             {% block navbar %}  */
 /*             {% endblock %}*/
 /*         {% endblock %}*/
 /* */
 /*         {# Begin: Content #}*/
-/* 	    <div class="wrapper_content_interactive" id='content-temporal-interactive'>*/
+/* 	    <div class="wrapper_content_interactive wrap push" id='content-temporal-interactive'>*/
 /*             <div id="content-wrapper">*/
 /*                 */
 /*                 {# content hidden concessionaires */
@@ -732,35 +731,39 @@ class __TwigTemplate_25d180b82733506f5811146df8b2aac7fa053ad34fa11f7a73f6ed3112d
 /*         {% block scroll_to_top %}*/
 /*         {% endblock %}*/
 /* */
-/*         {% block mobile_menu %}*/
-/*             {% embed "super_mobilemenu.twig" %}{% endembed %}*/
-/*         {% endblock %}*/
-/* */
 /*         {% block body_scripts %}*/
 /*             {# CORE LIBS #}*/
 /*             <script src="{{ _host }}lib/min/core.lib.min.js"></script>*/
+/*             <script src="{{ _host }}lib/assets/bigSlide/bigSlide.js"></script>*/
 /* */
 /*             {# GOOGLE API #}*/
 /*             <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCqo-F2TnMAABZvfV5yTQLlWvUCJlJViU&amp;sensor=false"></script>*/
-/*             {#*/
 /*             <script src="{{ _host }}js/min/core.min.js"></script>*/
-/*             #}*/
+/*             {#*/
 /*             <script src="{{ _host }}js/main.js"></script>*/
 /*             <script src="{{ _host }}js/method.js"></script>*/
 /*             <script src="{{ _host }}js/model.js"></script>*/
 /*             <script src="{{ _host }}js/objects.js"></script>*/
 /*             <script src="{{ _host }}js/required.js"></script>*/
+/*             #}*/
 /*             {% block section_scripts %}                */
 /*             {% endblock %}*/
 /*             */
 /*         {% endblock %}*/
 /*         <script>*/
-/*             {% block load_scripts %}*/
-/*                 toHtmlMethod.toHtml();*/
-/*                 //hide or show the "back to top" link*/
-/*                 $(window).scroll(scrolltotop.windowScroll());*/
-/*                 */
-/*             {% endblock %}*/
+/*             $(document).ready(function() {*/
+/*                 var IS_MOBILE = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);*/
+/*                 {% block load_scripts %}*/
+/*                     toHtmlMethod.toHtml();*/
+/*                     //hide or show the "back to top" link*/
+/*                     $(window).scroll(scrolltotop.windowScroll());*/
+/*                 {% endblock %}*/
+/*                 if( IS_MOBILE ) {*/
+/*                     $('.menu-link').bigSlide();*/
+/*                 } else {*/
+/*                     $('#mobile-menu').css('display','none');*/
+/*                 }*/
+/*             });*/
 /*         </script>*/
 /* */
 /*         {# GOOGLE CODE PARA ETIQUETAS DE REMARKETING #}*/

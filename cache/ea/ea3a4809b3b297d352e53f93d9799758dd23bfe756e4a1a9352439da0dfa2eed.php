@@ -32,7 +32,7 @@ class __TwigTemplate_72fc2a7db6a73849350311f522f78cef3e2ca6592eb7a242cc0850808d1
             <a href=\"";
         // line 14
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "autos/nueva-vitara\" target=\"_blank\" title=\"Nueva Vitara 2016\" onclick=\"ga('send', 'event', 'Suzuki ";
+        echo "modelos/nueva-vitara\" title=\"Nueva Vitara 2016\" onclick=\"ga('send', 'event', 'Suzuki ";
         echo twig_escape_filter($this->env, (isset($context["_loc"]) ? $context["_loc"] : null), "html", null, true);
         echo " Nueva Vitara 2016', 'Home Cross', 'Nueva_Vitara_2016');\">
                 <img class=\"scross_bg flash\" src=\"";
@@ -81,7 +81,7 @@ class __TwigTemplate_72fc2a7db6a73849350311f522f78cef3e2ca6592eb7a242cc0850808d1
 /*                     <div class="down"><img src="img/sections/home/s-cross/down.png" alt=""/></div>*/
 /*                 </div>*/
 /*             </div>*/
-/*             <a href="{{ _host }}autos/nueva-vitara" target="_blank" title="Nueva Vitara 2016" onclick="ga('send', 'event', 'Suzuki {{ _loc }} Nueva Vitara 2016', 'Home Cross', 'Nueva_Vitara_2016');">*/
+/*             <a href="{{ _host }}modelos/nueva-vitara" title="Nueva Vitara 2016" onclick="ga('send', 'event', 'Suzuki {{ _loc }} Nueva Vitara 2016', 'Home Cross', 'Nueva_Vitara_2016');">*/
 /*                 <img class="scross_bg flash" src="{{ _host }}img/sections/home/nueva-vitara/gif_pagina.gif" alt="Nueva Vitara"/>*/
 /*                 <img class="scross_bg" src="{{ _host }}img/sections/home/nueva-vitara/gif_pagina.gif" alt="Nueva Vitara"/>*/
 /*             </a>*/

@@ -1689,6 +1689,7 @@
                 //SUK.loadTemplate(tempsNames.tmp_panel_menu_owners, domEl.div_recurrent_panel_menu);
                 $('.header-section.nav_owners').css('display', 'block');
                 $('.header-section.nav_before_buy').css('display', 'none');
+                console.log(this);
             } else {
                 $('#header-spacer').css('height','0px');
                 $('.header_section').css({
@@ -1699,6 +1700,26 @@
                 $('.header-section.nav_before_buy').css('display', 'block');
                 //SUK.setHTML(domEl.div_recurrent_panel_menu, '');
                 $('#header-sections-wrapper').hide();
+            }
+        },
+        clickOwnersPanelMobile: function(event) {
+            if( IS_MOBILE ) {
+                $('#header-spacer').css('height','340px');
+                $('#header-panel').css('display', 'block');
+                $('#mobile-menu').css('right', '-15.625em');
+                $('.wrap').css('right', '0em');
+                $('.menu-link').removeClass('active');
+                $('.header_section').css({
+                    'display':'block',
+                    'opacity':'1'
+                });
+                //SUK.loadTemplate(tempsNames.tmp_panel_menu_owners, domEl.div_recurrent_panel_menu);
+                $('.header-section.nav_owners').css('display', 'block');
+                $('.header-section.nav_before_buy').css('display', 'none');
+                $('#header-sections-wrapper').show();
+                $('.menu-link').bigSlide();
+            } else {
+            //console.log('You are not using a mobile device!');
             }
         },
         clickBeforeByPanel : function (event) {
@@ -1721,6 +1742,27 @@
                 $('.header-section.nav_owners').css('display', 'block');
                 //SUK.setHTML(domEl.div_recurrent_panel_menu, '');
                 $('#header-sections-wrapper').hide();
+            }
+        },
+        clickBeforeByPanelMobile: function(event) {
+            if( IS_MOBILE ) {
+                $('#header-spacer').css('height','419px');
+                $('#header-panel').css('display', 'block');
+                $('#mobile-menu').css('right', '-15.625em');
+                $('.menu-link').removeClass('active');
+
+                $('.wrap').css('right', '0em');
+                $('.header_section').css({
+                    'display':'block',
+                    'opacity':'1'
+                });
+                //SUK.loadTemplate(tempsNames.tmp_panel_menu_before_buy, domEl.div_recurrent_panel_menu);
+                $('.header-section.nav_before_buy').css('display', 'block');
+                $('.header-section.nav_owners').css('display', 'none');
+                $('#header-sections-wrapper').show();
+                $('.menu-link').bigSlide();
+            } else {
+            //console.log('You are not using a mobile device!');
             }
         },
         animatePanelMenu : function () {
@@ -2510,7 +2552,7 @@
             rootApi = SUK.getValue('#master-host');
             url_location = rootApi;
             
-            sukagn = SUK.getValue('#suk_agn');
+            suk_agn = SUK.getValue('#suk_agn');
             suk_product = SUK.getValue('#suk_producto');
             console.log(suk_product);
 
@@ -2612,8 +2654,9 @@
             rootApi = SUK.getValue('#master-host');
             url_location = rootApi;
             
-            sukagn = SUK.getValue('#suk_agn');
+            suk_agn = SUK.getValue('#suk_agn');
             suk_product = SUK.getValue('#suk_producto');
+            suk_email = SUK.getValue('#suk_email');
             console.log(suk_product);
 
             data = $(financingForm.contactForm).serializeFormJSON();
@@ -2625,7 +2668,7 @@
                         setTimeout(function() {
                             financingForm.resetContact();
                             alertify.alert("¡ATENCIÓN!", "¡Muchas gracias!<br>" + 
-                                           "Tu cotización ha sido enviada a tu correo electrónico: " + data['email'] + ". " +
+                                           "Tu cotización ha sido enviada a tu correo electrónico: " + suk_email + ". " +
                                            "Te hemos asignado un asesor Suzuki de la concesionaria " + suk_agn + ", " +
                                            "quien se pondrá en contacto contigo para confirmar tus datos y resolver cualquier duda que puedas tener..", function(e) {
                                 //$(location).attr('href', url_location);
@@ -2716,7 +2759,7 @@
             
             sukagn = SUK.getValue('#suk_agn');
             suk_product = SUK.getValue('#suk_producto');
-            console.log(suk_product);
+            suk_email = SUK.getValue('#suk_email');
 
             data = $(contactForm.contactForm).serializeFormJSON();
             testDriveSendPromise = contactForm.sendContacto();
@@ -2727,7 +2770,7 @@
                         setTimeout(function() {
                             contactForm.resetContact();
                             alertify.alert("¡ATENCIÓN!", "¡Muchas gracias!<br>" + 
-                                           "En breve responderemos tu mensaje al siguiente correo: " + data['email'] + ".", function(e) {
+                                           "En breve responderemos tu mensaje al siguiente correo: " + suk_email + ".", function(e) {
                                 //$(location).attr('href', url_location);
                                 alertify.success("Datos enviados.");
                             }).setting({
@@ -2798,7 +2841,36 @@
             return (formErrors === 0);
         }
     }
-
+/* ------------------------------------------------------ *\
+    [Methods] iconHamburguer
+\* ------------------------------------------------------ */
+    var iconHamburguer = {
+        _init_: function(event) {
+            var iconHamburger = {
+                selector:'.icon-hamburger',
+                svg: '<svg width="100%" height="100%" viewBox="0 0 65 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.5;"  fill="none" stroke="#000" stroke-width="10"><g><path class="hamburger-top" d="m 5,10 55,0" /><path class="hamburger-middle" d="m 5,30 55,0" /></g><path class="hamburger-bottom" d="m 5,50 55,0" /></svg>',
+                transitionTime: 250,
+                states: {
+                    open:[
+                        { id: "top-lower", element: ".hamburger-top", y:20 },
+                        { id: "bottom-raise", element: ".hamburger-bottom", y:-20 },
+                        { waitFor: "top-lower", element: "g", r:45 },
+                        { waitFor: "top-lower", element: ".hamburger-bottom", r:-45},
+                    ],
+                    closed: [
+                        { id: "top-angle", element: "g", r: 0 },
+                        { id: "bottom-angle", element: ".hamburger-bottom", r: 0 },                     
+                        { waitFor: "top-angle", element: ".hamburger-top", y: 0 },
+                        { waitFor: "bottom-angle", element: ".hamburger-bottom", y: 0 },
+                    ]
+                },
+                events: [
+                    { event: "click", state: ["open", "closed"] }
+                ]
+            };
+            SnapStates(iconHamburger);
+        }
+    }
 /* ------------------------------------------------------ *\
     [Methods] formTestDrive
 \* ------------------------------------------------------ */
@@ -3699,8 +3771,10 @@
         },
         clickHeaderMobile : function(event) {
             if( IS_MOBILE ) {
-                $(this).toggleClass("header-mobile-icon-active");
-                is_mobileMethods.openCloseMenu();
+                $('#mobile-menu').css('visibility', 'visible');
+                //$('#header-mobile').css('position', 'fixed');
+                //$(this).toggleClass("header-mobile-icon-active");
+                //is_mobileMethods.openCloseMenu();
                 ga('send', 'event', 'Menu Mobile', 'Abrir Menu', 'Open_Mobile_Menu');
             } else {
                 //console.log('You are not using a mobile device!');
@@ -3733,7 +3807,7 @@
                         link = "#mobile-financing-button";
                         ga('send', 'event', 'Header Button Financing', 'Financing', 'Header_Financing_Button');
                         $('body,html').animate({ scrollTop: "0" }, 999, 'easeOutExpo' );
-                        Finch.navigate('/financiamiento');
+                        //Finch.navigate('/financiamiento');
                         //console.log('Menu mobile: Financiamiento');
                         break;
                     case 5:
@@ -3750,7 +3824,7 @@
                         link = "#mobile-models-button";
                         ga('send', 'event', 'Header Button Models', 'Models', 'Header_Models_Button');
                         $('body,html').animate({ scrollTop: "0" }, 999, 'easeOutExpo' );
-                        Finch.navigate('/modelos');
+                        //Finch.navigate('/modelos');
                         //console.log('Menu mobile: Modelos');
                         break;
                     /*case 8:
@@ -3764,9 +3838,9 @@
                         break;*/
                 }
                 //console.log(idx);
-                is_mobileMethods.openCloseMenu();
-                $(link).trigger("click");
-                $("#header-mobile i").removeClass("header-mobile-icon-active");
+                //is_mobileMethods.openCloseMenu();
+                //$(link).trigger("click");
+                //$("#header-mobile i").removeClass("header-mobile-icon-active");
             } else {
                 //console.log('You are not using a mobile device!');
             }
@@ -3775,6 +3849,20 @@
             if( IS_MOBILE ) {
                 $(".footer-column .links").slideUp();
                 $(".footer-column i").removeClass("fa-minus").addClass("fa-plus");
+                if ($(this).find(".links").css("display") != "block") {
+                    $(this).find(".links").slideDown();
+                    $(this).find("i").removeClass("fa-plus").addClass("fa-minus");
+                    console.log(this);
+                }
+            } else {
+                //console.log('You are not using a mobile device!');
+            }
+        },
+        clickMobileMenuContent : function(event) {
+            //event.preventDefault();
+            if( IS_MOBILE ) {
+                $(".menu-catalogs .links").slideUp();
+                $(".menu-catalogs i").removeClass("fa-minus").addClass("fa-plus");
                 if ($(this).find(".links").css("display") != "block") {
                     $(this).find(".links").slideDown();
                     $(this).find("i").removeClass("fa-plus").addClass("fa-minus");
