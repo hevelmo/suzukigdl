@@ -316,7 +316,7 @@ $app = new \Slim\App($container);
             //ROUTER
             $this->router   = new Router();
             //SENDER
-            $this->sender   = new Sender(new Mandrill("vipel7XhxNiqPkblHbw0qg"));
+            $this->sender   = new Sender(new Mandrill("-M2qid9ztNaYfJvoZWPOHQ"));
             //TEMPLATE
             $this->template = new Template(
                 "../../templates/twig/mensajes",
