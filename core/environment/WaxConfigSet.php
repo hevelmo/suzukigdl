@@ -16,6 +16,7 @@ if ($url = "suzukigdl") {
     $location = "Guadalajara";
     //echo $url, $folderDev, $location;
 }
+/*
 else if ($url = "http://suzukigdl.com.mx/") {
     $folderDev = "suzukigdl";    
     $location = "Guadalajara";
@@ -36,6 +37,7 @@ else if ($url = "http://suzukimorelia.com.mx/") {
     $location = "Morelia";
     //echo $url, $folderDev, $location;
 }
+*/
 
 if(!in_array($_SERVER['SERVER_NAME'], $devServerList)){
     $urlHost  = isset($_SERVER['HTTPS']) ? 'http://' : 'http://';

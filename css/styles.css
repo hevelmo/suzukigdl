@@ -12141,27 +12141,25 @@
 }
 .absolem {
     position: absolute;
-    background: #fff;
-    color: #000;
+    background: #2a2a2a;
+    color: #fff;
     padding: 10px;
     top: 0;
 }
 div.list-catalog {
     margin: 0 auto;
-    /* padding: 30px 0 15px; */
     width: 960px;
     position: relative;
     top: 0;
     height: auto;
-    /* border: 1px solid red; */
 }
 .list-dropdown {
     width: 100%;
     position: relative;
-    background: rgba(255, 255, 255, 1);
+    background: #2a2a2a;
     top: 0;
     height: 100%;
-    /* border: 1px solid red; */
+    border: 1px solid #2a2a2a;
     padding: 0;
     margin: 0 auto;
     z-index: 12;
@@ -12172,13 +12170,12 @@ div.list-catalog {
     list-style-type: none;
     padding: 0px 0px;
     vertical-align: middle;
-    /* border: 1px solid red; */
     margin: 0 -2px;
 }
 .list-dropdown li a {
-    padding: 12px 35px;
+    padding: 6.3px 35px;
     text-decoration: none;
-    color: #000;
+    color: #fff;
     display: block;
 }
 

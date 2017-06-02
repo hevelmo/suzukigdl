@@ -1,7 +1,7 @@
 <?php
 
-/* testdrive.twig */
-class __TwigTemplate_31c01c41841329c3b5f548b3edf9df04d7fceffc475f03c59029fa4e3beabc83 extends Twig_Template
+/* contact_news.twig */
+class __TwigTemplate_e5611cf8b42d5c1403a420f8c94f246b73538e3fe9d18ad834c4b28c1bdf254b extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -86,7 +86,10 @@ class __TwigTemplate_31c01c41841329c3b5f548b3edf9df04d7fceffc475f03c59029fa4e3be
                                                 <!--[if !mso]><!-->
                                                 <span style=\"font-family: Helvetica; font-weight: normal; text-align: center; display: block;\">
                                                     <!--<![endif]-->
-                                                        Prueba de Manejo
+                                                        Contacto - Noticias y promociones <br> ";
+        // line 71
+        echo twig_escape_filter($this->env, (isset($context["agencia"]) ? $context["agencia"] : null), "html", null, true);
+        echo "
                                                     <!--[if !mso]><!-->
                                                 </span>
                                                 <!--<![endif]-->
@@ -120,16 +123,6 @@ class __TwigTemplate_31c01c41841329c3b5f548b3edf9df04d7fceffc475f03c59029fa4e3be
                                                 <!--[if !mso]><!-->
                                                 <span style=\"font-family: Helvetica; font-weight: normal;\">
                                                 <!--<![endif]-->
-                                                    <img src=\"http://suzukigdl.com.mx/img/template/models/financing/thumbs/thumb-";
-        // line 105
-        echo twig_escape_filter($this->env, (isset($context["imagen"]) ? $context["imagen"] : null), "html", null, true);
-        echo ".png\" alt=\". . .\" width=\"45%\" style=\"margin: 0 auto; display: block;\">
-                                                    <span style=\"font-family: Helvetica; font-weight: normal; display: block; text-align: center;\">
-                                                        <h4 style=\"margin-top: 0; margin-bottom: 5px;\">Modelo: ";
-        // line 107
-        echo twig_escape_filter($this->env, (isset($context["modelo"]) ? $context["modelo"] : null), "html", null, true);
-        echo "</h4>
-                                                    </span>
                                                     <hr style=\"border: 0; border-top: 1px solid #c51d22; display: block; width: 100%; margin-bottom: 0%;\">
                                                     <ol type=\"1\">
                                                         <li style=\"list-style-type: none; margin: 0 -30px; display: block;\"><b>Usuario</b></li>
@@ -138,7 +131,7 @@ class __TwigTemplate_31c01c41841329c3b5f548b3edf9df04d7fceffc475f03c59029fa4e3be
                                                             <ul>
                                                                 <li>
                                                                      <i>";
-        // line 116
+        // line 112
         echo twig_escape_filter($this->env, (isset($context["nombre"]) ? $context["nombre"] : null), "html", null, true);
         echo " ";
         echo twig_escape_filter($this->env, (isset($context["apellido"]) ? $context["apellido"] : null), "html", null, true);
@@ -151,7 +144,7 @@ class __TwigTemplate_31c01c41841329c3b5f548b3edf9df04d7fceffc475f03c59029fa4e3be
                                                             <ul>
                                                                 <li>
                                                                      <i>";
-        // line 124
+        // line 120
         echo twig_escape_filter($this->env, (isset($context["correo"]) ? $context["correo"] : null), "html", null, true);
         echo "</i>
                                                                 </li>
@@ -162,7 +155,7 @@ class __TwigTemplate_31c01c41841329c3b5f548b3edf9df04d7fceffc475f03c59029fa4e3be
                                                             <ul>
                                                                 <li>
                                                                      <i>";
-        // line 132
+        // line 128
         echo twig_escape_filter($this->env, (isset($context["telefono"]) ? $context["telefono"] : null), "html", null, true);
         echo "</i>
                                                                 </li>
@@ -177,40 +170,29 @@ class __TwigTemplate_31c01c41841329c3b5f548b3edf9df04d7fceffc475f03c59029fa4e3be
                                                             <ul>
                                                                 <li>
                                                                      <i>";
-        // line 144
+        // line 140
         echo twig_escape_filter($this->env, (isset($context["agencia"]) ? $context["agencia"] : null), "html", null, true);
         echo "</i>
                                                                 </li>
                                                             </ul>
                                                         </li>
                                                         <li style=\"list-style-type: disc;\">
-                                                            <b>Fecha Prueba de Manejo:</b>
-                                                            <ul>
-                                                                <li>
-                                                                     <i>";
-        // line 152
-        echo twig_escape_filter($this->env, (isset($context["fecha"]) ? $context["fecha"] : null), "html", null, true);
-        echo "</i>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li style=\"list-style-type: disc;\">
-                                                            <b>Subscripción a Newsletter:</b>
+                                                            <b>Subscripción:</b>
                                                             <ul>
                                                                 <li>
                                                                      <i>
                                                                         ";
-        // line 161
+        // line 149
         if (((isset($context["news"]) ? $context["news"] : null) == "1")) {
-            // line 162
+            // line 150
             echo "                                                                            Activado
                                                                         ";
         } else {
-            // line 164
+            // line 152
             echo "                                                                            Desactivado
                                                                         ";
         }
-        // line 166
+        // line 154
         echo "                                                                     </i>
                                                                 </li>
                                                             </ul>
@@ -238,82 +220,6 @@ class __TwigTemplate_31c01c41841329c3b5f548b3edf9df04d7fceffc475f03c59029fa4e3be
                                 </td>
                             </tr>
                         </table>
-                        
-                        <!-- Button Center -->
-                        <table width=\"600\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\" class=\"mobile2\" bgcolor=\"#ffffff\"object=\"drag-module-small\" style=\"background-color: rgba(255, 255, 255, 0.9);\">
-                            <tr>
-                                <td width=\"100%\" valign=\"middle\" align=\"center\">
-
-                                    <table width=\"540\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\" style=\"text-align: center; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;\" class=\"fullCenter2\">
-                                        <tr>
-                                            <td>
-                                                <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"left\" width=\"100%\">
-                                                    <tr>
-                                                        <td align=\"center\" height=\"45\" bgcolor=\"#4edeb5\" style=\"border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; padding-left: 30px; padding-right: 30px; font-weight: bold; font-family: Helvetica, Arial, sans-serif; color: rgba(255, 255, 255, 1); background-color: #c51d22;;\">
-                                                            <!--[if !mso]><!-->
-                                                            <span style=\"font-family: Helvetica; font-weight: normal;\"><!--<![endif]-->
-                                                                <a href=\"mailto:";
-        // line 207
-        echo twig_escape_filter($this->env, (isset($context["correo"]) ? $context["correo"] : null), "html", null, true);
-        echo "?subject=";
-        echo twig_escape_filter($this->env, (isset($context["producto"]) ? $context["producto"] : null), "html", null, true);
-        echo "\" style=\"color: rgba(255, 255, 255, 0.9); font-size: 15px; text-decoration: none; line-height: 34px; width: 100%;\">Responder a ";
-        echo twig_escape_filter($this->env, (isset($context["nombre"]) ? $context["nombre"] : null), "html", null, true);
-        echo " ";
-        echo twig_escape_filter($this->env, (isset($context["apellido"]) ? $context["apellido"] : null), "html", null, true);
-        echo "</a>
-                                                                <br>
-                                                            <!--[if !mso]><!--></span><!--<![endif]-->
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                        <!-- End Button Center -->
-
-                        <table width=\"600\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\" class=\"mobile2\" bgcolor=\"#ffffff\"object=\"drag-module-small\" style=\"background-color: rgba(255, 255, 255, 0.9);\">
-                            <tr>
-                                <td width=\"100%\" valign=\"middle\" align=\"center\">
-
-                                    <table width=\"540\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\" style=\"text-align: center; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;\" class=\"fullCenter2\">
-                                        <tr>
-                                            <td width=\"100%\" height=\"10\"></td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-
-                        <!-- Button Center -->
-                        <table width=\"600\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\" class=\"mobile2\" bgcolor=\"#ffffff\"object=\"drag-module-small\" style=\"background-color: rgba(255, 255, 255, 0.9);\">
-                            <tr>
-                                <td width=\"100%\" valign=\"middle\" align=\"center\">
-
-                                    <table width=\"540\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\" style=\"text-align: center; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;\" class=\"fullCenter2\">
-                                        <tr>
-                                            <td>
-                                                <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"left\" width=\"100%\">
-                                                    <tr>
-                                                        <td align=\"center\" height=\"45\"bgcolor=\"#4edeb5\" style=\"border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; padding-left: 30px; padding-right: 30px; font-weight: bold; font-family: Helvetica, Arial, sans-serif; color: rgba(255, 255, 255, 0.9); background-color: #c51d22;\">
-                                                            <!--[if !mso]><!-->
-                                                            <span style=\"font-family: Helvetica; font-weight: normal;\"><!--<![endif]-->
-                                                                <a href=\"http://clicktolead.com.mx/\" style=\"color: rgba(255, 255, 255, 0.9); font-size: 15px; text-decoration: none; line-height: 34px; width: 100%;\">Gestiona todos tus prospectos en Click To Lead</a>
-                                                                <br>
-                                                            <!--[if !mso]><!--></span><!--<![endif]-->
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                        <!-- End Button Center -->
 
                         <table width=\"600\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\" class=\"mobile2\" bgcolor=\"#ffffff\"style=\"border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; background-color: rgba(255, 255, 255, 0.9);\" object=\"drag-module-small\">
                             <tr>
@@ -339,7 +245,7 @@ class __TwigTemplate_31c01c41841329c3b5f548b3edf9df04d7fceffc475f03c59029fa4e3be
                             <tr>
                                 <td valign=\"middle\" width=\"100%\" style=\"text-align: left; font-family: Helvetica, Arial, sans-serif; font-size: 13px; color: rgba(255, 255, 255, 0.9); line-height: 24px; text-align: center\">
                                     <!--[if !mso]><!--><span style=\"font-family: Helvetica; font-weight: normal;\"><!--<![endif]-->&copy; ";
-        // line 284
+        // line 205
         echo twig_escape_filter($this->env, (isset($context["_anio"]) ? $context["_anio"] : null), "html", null, true);
         echo " ";
         echo twig_escape_filter($this->env, (isset($context["agencia"]) ? $context["agencia"] : null), "html", null, true);
@@ -374,7 +280,7 @@ class __TwigTemplate_31c01c41841329c3b5f548b3edf9df04d7fceffc475f03c59029fa4e3be
 
     public function getTemplateName()
     {
-        return "testdrive.twig";
+        return "contact_news.twig";
     }
 
     public function isTraitable()
@@ -384,7 +290,7 @@ class __TwigTemplate_31c01c41841329c3b5f548b3edf9df04d7fceffc475f03c59029fa4e3be
 
     public function getDebugInfo()
     {
-        return array (  343 => 284,  257 => 207,  214 => 166,  210 => 164,  206 => 162,  204 => 161,  192 => 152,  181 => 144,  166 => 132,  155 => 124,  142 => 116,  130 => 107,  125 => 105,  19 => 1,);
+        return array (  249 => 205,  196 => 154,  192 => 152,  188 => 150,  186 => 149,  174 => 140,  159 => 128,  148 => 120,  135 => 112,  91 => 71,  19 => 1,);
     }
 }
 /* <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />*/
@@ -457,7 +363,7 @@ class __TwigTemplate_31c01c41841329c3b5f548b3edf9df04d7fceffc475f03c59029fa4e3be
 /*                                                 <!--[if !mso]><!-->*/
 /*                                                 <span style="font-family: Helvetica; font-weight: normal; text-align: center; display: block;">*/
 /*                                                     <!--<![endif]-->*/
-/*                                                         Prueba de Manejo*/
+/*                                                         Contacto - Noticias y promociones <br> {{ agencia }}*/
 /*                                                     <!--[if !mso]><!-->*/
 /*                                                 </span>*/
 /*                                                 <!--<![endif]-->*/
@@ -491,10 +397,6 @@ class __TwigTemplate_31c01c41841329c3b5f548b3edf9df04d7fceffc475f03c59029fa4e3be
 /*                                                 <!--[if !mso]><!-->*/
 /*                                                 <span style="font-family: Helvetica; font-weight: normal;">*/
 /*                                                 <!--<![endif]-->*/
-/*                                                     <img src="http://suzukigdl.com.mx/img/template/models/financing/thumbs/thumb-{{ imagen }}.png" alt=". . ." width="45%" style="margin: 0 auto; display: block;">*/
-/*                                                     <span style="font-family: Helvetica; font-weight: normal; display: block; text-align: center;">*/
-/*                                                         <h4 style="margin-top: 0; margin-bottom: 5px;">Modelo: {{ modelo }}</h4>*/
-/*                                                     </span>*/
 /*                                                     <hr style="border: 0; border-top: 1px solid #c51d22; display: block; width: 100%; margin-bottom: 0%;">*/
 /*                                                     <ol type="1">*/
 /*                                                         <li style="list-style-type: none; margin: 0 -30px; display: block;"><b>Usuario</b></li>*/
@@ -535,15 +437,7 @@ class __TwigTemplate_31c01c41841329c3b5f548b3edf9df04d7fceffc475f03c59029fa4e3be
 /*                                                             </ul>*/
 /*                                                         </li>*/
 /*                                                         <li style="list-style-type: disc;">*/
-/*                                                             <b>Fecha Prueba de Manejo:</b>*/
-/*                                                             <ul>*/
-/*                                                                 <li>*/
-/*                                                                      <i>{{ fecha }}</i>*/
-/*                                                                 </li>*/
-/*                                                             </ul>*/
-/*                                                         </li>*/
-/*                                                         <li style="list-style-type: disc;">*/
-/*                                                             <b>Subscripción a Newsletter:</b>*/
+/*                                                             <b>Subscripción:</b>*/
 /*                                                             <ul>*/
 /*                                                                 <li>*/
 /*                                                                      <i>*/
@@ -579,73 +473,6 @@ class __TwigTemplate_31c01c41841329c3b5f548b3edf9df04d7fceffc475f03c59029fa4e3be
 /*                                 </td>*/
 /*                             </tr>*/
 /*                         </table>*/
-/*                         */
-/*                         <!-- Button Center -->*/
-/*                         <table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile2" bgcolor="#ffffff"object="drag-module-small" style="background-color: rgba(255, 255, 255, 0.9);">*/
-/*                             <tr>*/
-/*                                 <td width="100%" valign="middle" align="center">*/
-/* */
-/*                                     <table width="540" border="0" cellpadding="0" cellspacing="0" align="center" style="text-align: center; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="fullCenter2">*/
-/*                                         <tr>*/
-/*                                             <td>*/
-/*                                                 <table border="0" cellpadding="0" cellspacing="0" align="left" width="100%">*/
-/*                                                     <tr>*/
-/*                                                         <td align="center" height="45" bgcolor="#4edeb5" style="border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; padding-left: 30px; padding-right: 30px; font-weight: bold; font-family: Helvetica, Arial, sans-serif; color: rgba(255, 255, 255, 1); background-color: #c51d22;;">*/
-/*                                                             <!--[if !mso]><!-->*/
-/*                                                             <span style="font-family: Helvetica; font-weight: normal;"><!--<![endif]-->*/
-/*                                                                 <a href="mailto:{{ correo }}?subject={{ producto }}" style="color: rgba(255, 255, 255, 0.9); font-size: 15px; text-decoration: none; line-height: 34px; width: 100%;">Responder a {{ nombre }} {{ apellido }}</a>*/
-/*                                                                 <br>*/
-/*                                                             <!--[if !mso]><!--></span><!--<![endif]-->*/
-/*                                                         </td>*/
-/*                                                     </tr>*/
-/*                                                 </table>*/
-/*                                             </td>*/
-/*                                         </tr>*/
-/*                                     </table>*/
-/*                                 </td>*/
-/*                             </tr>*/
-/*                         </table>*/
-/*                         <!-- End Button Center -->*/
-/* */
-/*                         <table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile2" bgcolor="#ffffff"object="drag-module-small" style="background-color: rgba(255, 255, 255, 0.9);">*/
-/*                             <tr>*/
-/*                                 <td width="100%" valign="middle" align="center">*/
-/* */
-/*                                     <table width="540" border="0" cellpadding="0" cellspacing="0" align="center" style="text-align: center; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="fullCenter2">*/
-/*                                         <tr>*/
-/*                                             <td width="100%" height="10"></td>*/
-/*                                         </tr>*/
-/*                                     </table>*/
-/*                                 </td>*/
-/*                             </tr>*/
-/*                         </table>*/
-/* */
-/*                         <!-- Button Center -->*/
-/*                         <table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile2" bgcolor="#ffffff"object="drag-module-small" style="background-color: rgba(255, 255, 255, 0.9);">*/
-/*                             <tr>*/
-/*                                 <td width="100%" valign="middle" align="center">*/
-/* */
-/*                                     <table width="540" border="0" cellpadding="0" cellspacing="0" align="center" style="text-align: center; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="fullCenter2">*/
-/*                                         <tr>*/
-/*                                             <td>*/
-/*                                                 <table border="0" cellpadding="0" cellspacing="0" align="left" width="100%">*/
-/*                                                     <tr>*/
-/*                                                         <td align="center" height="45"bgcolor="#4edeb5" style="border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; padding-left: 30px; padding-right: 30px; font-weight: bold; font-family: Helvetica, Arial, sans-serif; color: rgba(255, 255, 255, 0.9); background-color: #c51d22;">*/
-/*                                                             <!--[if !mso]><!-->*/
-/*                                                             <span style="font-family: Helvetica; font-weight: normal;"><!--<![endif]-->*/
-/*                                                                 <a href="http://clicktolead.com.mx/" style="color: rgba(255, 255, 255, 0.9); font-size: 15px; text-decoration: none; line-height: 34px; width: 100%;">Gestiona todos tus prospectos en Click To Lead</a>*/
-/*                                                                 <br>*/
-/*                                                             <!--[if !mso]><!--></span><!--<![endif]-->*/
-/*                                                         </td>*/
-/*                                                     </tr>*/
-/*                                                 </table>*/
-/*                                             </td>*/
-/*                                         </tr>*/
-/*                                     </table>*/
-/*                                 </td>*/
-/*                             </tr>*/
-/*                         </table>*/
-/*                         <!-- End Button Center -->*/
 /* */
 /*                         <table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="mobile2" bgcolor="#ffffff"style="border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; background-color: rgba(255, 255, 255, 0.9);" object="drag-module-small">*/
 /*                             <tr>*/
