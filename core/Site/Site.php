@@ -2137,9 +2137,9 @@
 					'inicio' => array(
 						'main' => array(
 							'image' => 'swift.png',
-							'title' => 'Swift 2017',
-							'slogan' => 'Experimenta desafío. Acepta el reto.',
-							'price' => 'Aerodinámico y divertido para ti que buscas diseño y agilidad en un solo auto.'
+							'title' => 'Swift 2018',
+							'slogan' => 'Renovado. Imponente.',
+							'price' => 'Simplemente superior. Bienvenido a un nuevo nivel de poder y estilo.'
 						)
 					),
 					'caracteristicas' => array(
@@ -2151,39 +2151,34 @@
 							'specifications' => array(
 								'banner' => array(
 									array(
-										'image' => 'swift-2013-aire-acondicionado.jpg',
-										'title' => 'Aire acondicionado automático',
-										'description' => 'Prográmalo para tener siempre la temperatura deseada sin importar los cambios de clima exterior. *Sólo para GLX.'
+										'image' => '9d8a3b95b1aa1a87b8509f3edb05c47000fbcf2c.jpg',
+										'title' => 'Nuevo Motor BOOSTERJET',
+										'description' => 'Tecnología exclusiva de Suzuki con el Nuevo motor turbo con inyección directa, diseño ligero, compacto y un desempeño impecable de gran rendimiento de combustible y bajas emisiones contaminantes.'
 									),
 									array(
-										'image' => 'swift-2013-quemacocos.jpg',
-										'title' => 'Quemacocos',
-										'description' => 'Eléctrico de 3 posiciones con cubierta deslizable interior. Vive la libertad en todo momento desde el interior de tu Swift. *Sólo para GLX.'
+										'image' => '8c73a7b98a7e2bb67bcd04e2938099bf6d6e4215.jpg',
+										'title' => 'Luces traseras LED',
+										'description' => 'Estilo y vanguardia que enciende tu camino.'
 									),
 									array(
-										'image' => 'swift-2013-bolsas-aire.jpg',
-										'title' => '6 Bolsas de aire',
-										'description' => '2 frontales, 2 laterales y 2 tipo cortina que se activan de acuerdo a la necesidad del imprevisto. *Sólo para GLX.'
+										'image' => '24b7b89b2d5727041cee274106514cfb674ac495.jpg',
+										'title' => 'Manija de la puerta trasera',
+										'description' => 'La nueva posición vertical de la manija en puertas traseras, situada a nivel de la ventana, contribuye a una mayor aerodinámica y brinda al nuevo Swift un renovado estilo único.'
 									),
 									array(
-										'image' => 'swift-2013-keyless.jpg',
-										'title' => 'Keyless Start &amp; Entry',
-										'description' => 'No tendrás que insertar la llave para abrir ni encender tu auto. Basta con tenerla contigo y presionar el botón correspondiente para disfrutar tu auto. *Sólo para GLX.'
+										'image' => 'b78a87b9bed645b7401689f3bdc4a61a10212ac6.jpg',
+										'title' => 'Personalización',
+										'description' => 'Con el Nuevo Swift vive la experiencia de darle tu toque único.'
 									),
 									array(
-										'image' => 'swift-2013-rines-16.jpg',
-										'title' => 'Rines de 16”',
-										'description' => 'Fabricados en aluminio. Ligeros y con gran estilo. *Sólo para GLS y GLX.'
+										'image' => '0d375e8e06b63af5a89fc87b4d3423c4e41ee35e.jpg',
+										'title' => 'Pantalla touch de 7” y conectividad multimedia.',
+										'description' => 'La diversion y seguridad, viajan contigo a todas partes. Cuenta con navegador GPS e integración con smartphones mediante Apple Carplay™, Android Auto™ y Mirrorlink™.'
 									),
 									array(
-										'image' => 'swift-frenos-disco.jpg',
-										'title' => 'Frenos de disco',
-										'description' => 'Efectivo sistema de frenado en las 4 ruedas que combina frenos ventilados y sólidos. *Sólo para GLX.'
-									),
-									array(
-										'image' => 'swift-stereo-pantalla-touch.jpg',
-										'title' => 'Estéreo con pantalla touch a color de 7”',
-										'description' => 'AM/FM/CD/MP3/Bluetooth/ APPLE CAR PLAY ​/ Compatible con Android​ Auto. Disponible para E. Especial y GLX año modelo 2017.'
+										'image' => 'e66e12c7e3379347b0ef05c99abbb47ff0b349d6.jpg',
+										'title' => 'Frenos de disco en las 4 ruedas',
+										'description' => 'Asegura tus trayectos gracias a sus frenos de disco con Sistema Antibloqueo (ABS), Distribución Electrónica de Frenado (EBD) y Asistente de Frenado (BA).'
 									)
 								)
 							)
@@ -2323,6 +2318,35 @@
 								'description' => 'Detalles que hacen de un auto una experiencia.'
 							),
 							'model_prices' => array(
+								'columns' => '3',
+								'head' => array(
+									'row' => array(
+										'class' => 'dark'
+									),
+									'col' => array(
+										'class' => '3'
+									),
+									'cell' => array(
+										'class' => 'light',
+										'first' => array(
+											'class' => 'first',
+											'image' => '2b6fcd525ff96ae9af7a7b0804128b4031daac38.png',
+											'title' => 'SWIFT GLS'
+										),
+										'second' => array(
+											'class' => '',
+											'image' => '2b2448af51755fe411271e51482d3f4f6d96a04f.png',
+											'title' => 'SWIFT GLX'
+										),
+										'third' => array(
+											'class' => 'last',
+											'image' => 'f782455d2c8e1b2860f8a236894b5cba4b853468.png',
+											'title' => 'SWIFT BOOSTERJET'
+										)
+									)
+								)
+							),
+							'_model_prices' => array(
 								'columns' => '4',
 								'head' => array(
 									'row' => array(

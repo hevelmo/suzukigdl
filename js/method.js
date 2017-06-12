@@ -185,7 +185,7 @@
 \* ------------------------------------------------------ */
     function modifyHeight(selector){
         $(selector).each(function (index, Element) {
-            var cell_array = new Array(2);
+            var cell_array = new Array();
             var cell_height = 0;
             $(this).find(".cell").each(function (index, Element) {
                 var val_cell = ($(this).height.length > 0) ? $(this).height() : 0;

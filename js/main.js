@@ -97,5 +97,5 @@ $(document).ready(function() {
     $('.close-list-dropdown', '.inner-menu').on('click', function(event) {
         $('#list-menu').removeClass('active');
     });
-
+    
 });

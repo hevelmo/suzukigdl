@@ -1,6 +1,6 @@
 detectNavigatorMethods.IE10();
 is_mobileMethods.is_mobile();
-modifyHeight("#features-space .suzuki-table .row");
+//modifyHeight("#features-space .suzuki-table .row .cell");
 features_tables.init_is_mobile();
 is_mobileMethods.is_mobile_versions_price_table();
 
@@ -84,7 +84,8 @@ modelsMenuMethods.scrollSwitchMethod();
             $div = $(this);
             if( display_vct_class == $div.data('display-table') ){
                 $div.fadeOut().fadeIn(1000);
-                modifyHeight("#features-space .suzuki-table .row");
+                //modifyHeight("#features-space .suzuki-table .row");
+                //modifyHeight("#features-space .suzuki-table .row .cell");
                 //modifyHeight("#features-space .suzuki-table .body .row");
             }else{
                 $div.hide();
