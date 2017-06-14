@@ -190,7 +190,7 @@
             $(this).find(".cell").each(function (index, Element) {
                 var val_cell = ($(this).height.length > 0) ? $(this).height() : 0;
                 //console.log(val_cell);
-                cell_array[index] = val_cell;
+                //cell_array[index] = val_cell;
             });
             cell_height = Math.min.apply( Math, cell_array );
             $(this).find(".cell").css("height", cell_height);
