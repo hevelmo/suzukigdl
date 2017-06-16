@@ -19,15 +19,21 @@ class __TwigTemplate_4ba0bfcdcbe6716334a03c7ad669b992e7126b14f594e80c12fd1588c7a
         echo "    <div class=\"specifications-wrapper\">
         <div class=\"specifications\" id=\"features-wrapper\">
             ";
-        // line 19
-        echo "            <!-- slide extra -->
-            ";
-        // line 45
+        // line 30
         echo "            ";
-        // line 65
-        echo "            <!-- slide 00 -->
+        // line 41
+        echo "            <!-- slide extra -->
+            <div class=\"specification\" style=\"background-image: url('img/sections/home/slider/SLIDER-DE-PROMOCIONES-1659X655.jpg');\">
+                <div class=\"title-wrapper\" style=\"color: #fff\">
+                    <div class=\"title\">
+                       &nbsp;
+                    </div>
+                </div>
+                <div class=\"description compact\"><p>&nbsp;</p></div>
+            </div>
+            <!-- slide 00 -->
             <div class=\"specification\" style=\"background-image: url('";
-        // line 66
+        // line 51
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
         echo "img/sections/home/slider/SLIDER-DE-PROMOCIONES-03.jpg');\">
                 <div class=\"title-wrapper\" style=\"color: #fff\">
@@ -38,10 +44,10 @@ class __TwigTemplate_4ba0bfcdcbe6716334a03c7ad669b992e7126b14f594e80c12fd1588c7a
                 <div class=\"description compact\"><p>&nbsp;</p></div>
             </div>
             ";
-        // line 91
+        // line 76
         echo "            <!-- slide 02 -->
             <div class=\"specification\" style=\"background-image: url('";
-        // line 92
+        // line 77
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
         echo "img/sections/home/slider/slider_marca-2017.jpg');\">
                 <div class=\"title-wrapper\" style=\"color: #fff\">
@@ -52,7 +58,7 @@ class __TwigTemplate_4ba0bfcdcbe6716334a03c7ad669b992e7126b14f594e80c12fd1588c7a
                 <div class=\"description extra-compact\"><p>&nbsp;</p></div>
             </div>
             ";
-        // line 120
+        // line 105
         echo "        </div>
         <div class=\"clearfix\"></div>
     </div>
@@ -78,29 +84,14 @@ class __TwigTemplate_4ba0bfcdcbe6716334a03c7ad669b992e7126b14f594e80c12fd1588c7a
 
     public function getDebugInfo()
     {
-        return array (  56 => 120,  45 => 92,  42 => 91,  31 => 66,  28 => 65,  26 => 45,  23 => 19,  19 => 2,);
+        return array (  62 => 105,  51 => 77,  48 => 76,  37 => 51,  25 => 41,  23 => 30,  19 => 2,);
     }
 }
 /* {# INICIO DE NUEVO SLIDER #}*/
 /*     <div class="specifications-wrapper">*/
 /*         <div class="specifications" id="features-wrapper">*/
-/*             {#<!-- slide extra -->*/
-/*             <div class="specification" style="background-image: url('img/sections/home/slider/SLIDER-DE-PROMOCIONES-swift.jpg');">*/
-/*                 <div class="title-wrapper" style="color: #fff">*/
-/*                     <div class="title">*/
-/*                        &nbsp;*/
-/*                     </div>*/
-/*                 </div>*/
-/*                 <div class="description extra-compact">*/
-/*                     <p>*/
-/*                         <a class='btn btn-sm btn-default' title='Nuevo Swift Boosterjet 2018' target='_blank' onclick="ga('send', 'event', 'Promoción Nuevo Swift', 'Home Slider', 'Nuevo Swift Boosterjet 2018');" href="http://suzukigdl.com.mx/nuevo-swift/">*/
-/*                             Ver más*/
-/*                         </a>*/
-/*                     </p>*/
-/*                 </div>*/
-/*             </div>#}*/
-/*             <!-- slide extra -->*/
 /*             {#*/
+/*             <!-- slide extra -->*/
 /*             <div class="specification" style="background-image: url('{{ _host }}img/sections/home/slider/SLIDER-DE-PROMOCIONES-1659X655-GUADALAJARA.jpg');">*/
 /*                 <div class="title-wrapper" style="color: #fff">*/
 /*                     <div class="title">*/
@@ -135,8 +126,9 @@ class __TwigTemplate_4ba0bfcdcbe6716334a03c7ad669b992e7126b14f594e80c12fd1588c7a
 /*                 </div>*/
 /*                 <div class="description compact"><p>&nbsp;</p></div>*/
 /*             </div>*/
+/*             #}*/
 /*             <!-- slide extra -->*/
-/*             <div class="specification" style="background-image: url('img/sections/home/slider/SLIDER-DE-PROMOCIONES-05.jpg');">*/
+/*             <div class="specification" style="background-image: url('img/sections/home/slider/SLIDER-DE-PROMOCIONES-1659X655.jpg');">*/
 /*                 <div class="title-wrapper" style="color: #fff">*/
 /*                     <div class="title">*/
 /*                        &nbsp;*/
@@ -144,7 +136,6 @@ class __TwigTemplate_4ba0bfcdcbe6716334a03c7ad669b992e7126b14f594e80c12fd1588c7a
 /*                 </div>*/
 /*                 <div class="description compact"><p>&nbsp;</p></div>*/
 /*             </div>*/
-/*             #}*/
 /*             <!-- slide 00 -->*/
 /*             <div class="specification" style="background-image: url('{{ _host }}img/sections/home/slider/SLIDER-DE-PROMOCIONES-03.jpg');">*/
 /*                 <div class="title-wrapper" style="color: #fff">*/
