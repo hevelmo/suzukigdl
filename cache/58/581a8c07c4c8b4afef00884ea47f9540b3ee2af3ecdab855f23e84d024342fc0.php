@@ -1,7 +1,7 @@
 <?php
 
-/* contacto/container.twig */
-class __TwigTemplate_d203f23c0b71e11983e4b572dd365c8fab6e8eb12e30182798986112ce39a354 extends Twig_Template
+/* bolsa/container.twig */
+class __TwigTemplate_ccea3980fae144acca658aca33844aec779f208699cf035d04bd66bfcbb3ad76 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -22,15 +22,16 @@ class __TwigTemplate_d203f23c0b71e11983e4b572dd365c8fab6e8eb12e30182798986112ce3
             <div class=\"promotion-contact\">
                 <div class=\"promo-content-contact\">
                     <div class=\"description\">
-                        <p class=\"description_title\">CONTÁCTANOS</p>
-                        <p>Envía tus comentarios o contáctanos directamente en nuestras redes sociales.</p>
-                    </div>
+                        <p class=\"description_title\">Bolsa de trabajo</p>
+                        ";
+        // line 9
+        echo "                    </div>
                 </div>
                 <div class=\"contact_main\">
                     <div id=\"content-section-form-contact\">
                         ";
         // line 13
-        $this->loadTemplate("contacto/container.twig", "contacto/container.twig", 13, "1805070921")->display($context);
+        $this->loadTemplate("bolsa/container.twig", "bolsa/container.twig", 13, "60138284")->display($context);
         // line 14
         echo "                    </div>
                     <div class=\"contact_sidebar\">
@@ -65,7 +66,7 @@ class __TwigTemplate_d203f23c0b71e11983e4b572dd365c8fab6e8eb12e30182798986112ce3
 
     public function getTemplateName()
     {
-        return "contacto/container.twig";
+        return "bolsa/container.twig";
     }
 
     public function isTraitable()
@@ -75,27 +76,27 @@ class __TwigTemplate_d203f23c0b71e11983e4b572dd365c8fab6e8eb12e30182798986112ce3
 
     public function getDebugInfo()
     {
-        return array (  35 => 14,  33 => 13,  19 => 1,);
+        return array (  36 => 14,  34 => 13,  28 => 9,  19 => 1,);
     }
 }
 
 
-/* contacto/container.twig */
-class __TwigTemplate_d203f23c0b71e11983e4b572dd365c8fab6e8eb12e30182798986112ce39a354_1805070921 extends Twig_Template
+/* bolsa/container.twig */
+class __TwigTemplate_ccea3980fae144acca658aca33844aec779f208699cf035d04bd66bfcbb3ad76_60138284 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
         // line 13
-        $this->parent = $this->loadTemplate("contacto/contact_form.twig", "contacto/container.twig", 13);
+        $this->parent = $this->loadTemplate("bolsa/contact_form.twig", "bolsa/container.twig", 13);
         $this->blocks = array(
         );
     }
 
     protected function doGetParent(array $context)
     {
-        return "contacto/contact_form.twig";
+        return "bolsa/contact_form.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
@@ -105,7 +106,7 @@ class __TwigTemplate_d203f23c0b71e11983e4b572dd365c8fab6e8eb12e30182798986112ce3
 
     public function getTemplateName()
     {
-        return "contacto/container.twig";
+        return "bolsa/container.twig";
     }
 
     public function isTraitable()
@@ -115,7 +116,7 @@ class __TwigTemplate_d203f23c0b71e11983e4b572dd365c8fab6e8eb12e30182798986112ce3
 
     public function getDebugInfo()
     {
-        return array (  91 => 13,  35 => 14,  33 => 13,  19 => 1,);
+        return array (  92 => 13,  36 => 14,  34 => 13,  28 => 9,  19 => 1,);
     }
 }
 /* <div id="content-content">*/
@@ -124,13 +125,13 @@ class __TwigTemplate_d203f23c0b71e11983e4b572dd365c8fab6e8eb12e30182798986112ce3
 /*             <div class="promotion-contact">*/
 /*                 <div class="promo-content-contact">*/
 /*                     <div class="description">*/
-/*                         <p class="description_title">CONTÁCTANOS</p>*/
-/*                         <p>Envía tus comentarios o contáctanos directamente en nuestras redes sociales.</p>*/
+/*                         <p class="description_title">Bolsa de trabajo</p>*/
+/*                         {#<p>Envía tus comentarios o contáctanos directamente en nuestras redes sociales.</p>#}*/
 /*                     </div>*/
 /*                 </div>*/
 /*                 <div class="contact_main">*/
 /*                     <div id="content-section-form-contact">*/
-/*                         {% embed "contacto/contact_form.twig" %}{% endembed %}*/
+/*                         {% embed "bolsa/contact_form.twig" %}{% endembed %}*/
 /*                     </div>*/
 /*                     <div class="contact_sidebar">*/
 /*                         <div class="contact_social">*/

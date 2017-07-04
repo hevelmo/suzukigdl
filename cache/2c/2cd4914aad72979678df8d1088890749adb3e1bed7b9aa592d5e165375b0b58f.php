@@ -1,7 +1,7 @@
 <?php
 
-/* contacto/contact_form.twig */
-class __TwigTemplate_bcbb1f70dfcad4eef41cbaf5870de11bb2a790139c7e5369d2303b4b0ab1fb6d extends Twig_Template
+/* bolsa/contact_form.twig */
+class __TwigTemplate_be50bc322825c8187d6b6a9ad9c585682a24eadd764fa3cf57a26a5e280a2ec2 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -26,6 +26,23 @@ class __TwigTemplate_bcbb1f70dfcad4eef41cbaf5870de11bb2a790139c7e5369d2303b4b0ab
                     ";
         // line 8
         echo "                    <div class=\"contact_elements\">
+                        <div class=\"contact_element ab\">
+                            <fieldset class=\"custom-file-upload\" id=\"content_custom_file_upload\">
+                                <label for=\"file\">
+                                    Adjunta tu CV. 
+                                    <span style=\"float:right; color: #e1251b;\">
+                                        <i class=\"fa fa-asterisk fa-fw\" style=\"position: relative; top: 0px; left: 0px;\"></i>
+                                        Sólo archivos en PDF.
+                                    </span>
+                                </label>
+                                <div class=\"text-center\">
+                                    <input type=\"file\" class=\"input-standard validate-required validate-upload\" name=\"archivo\" id=\"suk_update_file\" data-validation-data=\"required|upload\" size=\"2120\">
+                                    <p class=\"invalid-message\" id=\"error_upload\">Este campo es obligatorio<span>&nbsp;</span></p>
+                                </div>                                
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class=\"contact_elements\">
                         <div class=\"contact_element a\">
                             <fieldset>
                                 <label for=\"suk_name\" style=\"display: none;\">
@@ -40,7 +57,7 @@ class __TwigTemplate_bcbb1f70dfcad4eef41cbaf5870de11bb2a790139c7e5369d2303b4b0ab
                                 <label for=\"suk_lastname\" style=\"display: none;\">
                                     <span style=\"color: red;\" class=\"fa fa-asterisk\"></span> Apellido
                                 </label>
-                                <input type=\"text\" id=\"suk_lastname\" name=\"apellido\" class=\"validate-required\" placeholder=\"Apellidos\" data-validation-data=\"required|name\">
+                                <input type=\"text\" id=\"suk_lastname\" name=\"apellidos\" class=\"validate-required\" placeholder=\"Apellidos\" data-validation-data=\"required|name\">
                                 <p class=\"invalid-message\" id=\"error_name\">Este campo es obligatorio<span>&nbsp;</span></p>
                             </fieldset>
                         </div>
@@ -73,47 +90,6 @@ class __TwigTemplate_bcbb1f70dfcad4eef41cbaf5870de11bb2a790139c7e5369d2303b4b0ab
                         </div>
                     </div>
                     <div class=\"contact_elements\">
-                        <div class=\"contact_element a\">
-                            <fieldset>
-                                <label for=\"suk_department\" style=\"display: none;\">
-                                    <span style=\"color: red;\" class=\"fa fa-asterisk\"></span> Departamento
-                                </label>
-                                <div class=\"select\">
-                                    <select name=\"departamento\" id=\"suk_department\" type=\"dropdown\" class=\"seleccionar form-control validate_select\" style=\"width: 100%;\" data-validation-data=\"required|free\">
-                                        <option label=\"Selecccionar departamento\" selected=\"selected\" disabled=\"disabled\" value=\"\">Selecciona Departamento</option>
-                                        <option label=\"Ventas\" value=\"Ventas\">Ventas</option>
-                                        <option label=\"Servicio\" value=\"Servicio\">Servicio</option>
-                                        <option label=\"Refacciones / Accesorios\" value=\"Refacciones / Accesorios\">Refacciones / Accesorios</option>
-                                        <option label=\"Mercadotecnia\" value=\"Mercadotecnia\">Mercadotecnia</option>
-                                        <option label=\"Otros\" value=\"Otros\">Otros</option>
-                                    </select>
-                                    </div>
-                                <p class=\"invalid-message\" id=\"error_departamento\">Este campo es obligatorio<span>&nbsp;</span></p>
-                            </fieldset>
-                        </div>
-                        <div class=\"contact_element b\">
-                            <fieldset>
-                                <label for=\"suk_model\" style=\"display: none;\">
-                                    <span style=\"color: red;\" class=\"fa fa-asterisk\"></span> Auto
-                                </label>
-                                <div class=\"select\">
-                                    <select name=\"modelo\" id=\"suk_model\" type=\"dropdown\" class=\"seleccionar form-control validate_select\" style=\"width: 100%;\" data-validation-data=\"required|free\">
-                                        <option label=\"Selecciona Modelo\" selected=\"selected\" disabled=\"disabled\" value=\"\">Selecciona Modelo</option>
-                                        <option label=\"Swift Sport\" value=\"Swift Sport\">Swift Sport</option>
-                                        <option label=\"Swift\" value=\"Swift\">Swift</option>
-                                        <option label=\"Kizashi\" value=\"Kizashi\">Kizashi</option>
-                                        <option label=\"Grand Vitara\" value=\"Grand Vitara\">Grand Vitara</option>
-                                        <option label=\"S-Cross\" value=\"S-Cross\">S-Cross</option>
-                                        <option label=\"Ciaz\"value=\"Ciaz\">Ciaz</option>
-                                        <option label=\"Ignis\"value=\"Ignis\">Ignis</option>
-                                        <option label=\"Nueva Vitara\"value=\"Nueva Vitara\">Nueva Vitara</option>
-                                    </select>
-                                </div>
-                                <p class=\"invalid-message\" id=\"error_auto\">Este campo es obligatorio<span>&nbsp;</span></p>
-                            </fieldset>
-                        </div>
-                    </div>
-                    <div class=\"contact_elements\">
                         <div class=\"contact_element ab\">
                             <fieldset>
                                 <label for=\"suk_message\" style=\"display: none;\">
@@ -124,26 +100,18 @@ class __TwigTemplate_bcbb1f70dfcad4eef41cbaf5870de11bb2a790139c7e5369d2303b4b0ab
                             </fieldset>
                         </div>
                     </div>
-                    <div class=\"contact_elements\">
-                        <div class=\"contact_element ab\">
-                            <fieldset class=\"fieldset-radio-checkbox\" id=\"checkbox-news\">
-                                <label for=\"suk_model_newsletter\" class=\"label-checkbox\">
-                                    <input type=\"checkbox\" id=\"suk_model_newsletter\" name=\"model_newsletter\" value=\"\"> Deseo recibir noticias y promociones.
-                                </label>
-                            </fieldset>
-                        </div>
-                    </div>
-                    <input type=\"hidden\" name=\"producto\" id=\"suk_producto\" value=\"Contacto\">
-                    <input type=\"hidden\" name=\"concesionaria\" id=\"suk_concesionaria\" value=\"Suzuki Autos ";
-        // line 117
-        echo twig_escape_filter($this->env, (isset($context["_loc"]) ? $context["_loc"] : null), "html", null, true);
-        echo "\">
+                    <input type=\"hidden\" name=\"dia\" id=\"suk_date\" value=\"\">
+                    <input type=\"hidden\" name=\"nombre_archivo\" id=\"suk_filename\" value=\"\">
+                    <input type=\"hidden\" name=\"mime\" id=\"suk_mime\" value=\"\">
+                    <input type=\"hidden\" name=\"file_content\" id=\"suk_filecontent\" value=\"\">
+
+                    <input type=\"hidden\" name=\"producto\" id=\"suk_product\" value=\"Bolsa de Trabajo Camcar\">
+
                     <input type=\"hidden\" name=\"imagen\" id=\"suk_imagen\" value=\"\">
-                    <input type=\"hidden\" name=\"news\" id=\"suk_news\" value=\"0\">
                     <input type=\"hidden\" name=\"campaign\" id=\"suk_campaign\" value=\"Suzuki Autos ";
-        // line 120
+        // line 91
         echo twig_escape_filter($this->env, (isset($context["_loc"]) ? $context["_loc"] : null), "html", null, true);
-        echo " - Contacto\">
+        echo " - Bolsa de Trabajo\">
                     <div class=\"clearfix\"></div>
                 </form>
                 <div class=\"contact_elements\">
@@ -160,7 +128,7 @@ class __TwigTemplate_bcbb1f70dfcad4eef41cbaf5870de11bb2a790139c7e5369d2303b4b0ab
                     </div>
                     <div class=\"contact_element b\">
                         <fieldset>
-                            <button id=\"contact_send\" class=\"enviar button red send_contact_form contact-form-send\">Enviar</button>
+                            <button id=\"contact_send\" class=\"enviar button red send_contact_form job-board-form-send\">Enviar</button>
                         </fieldset>
                     </div>
                 </div>
@@ -169,20 +137,10 @@ class __TwigTemplate_bcbb1f70dfcad4eef41cbaf5870de11bb2a790139c7e5369d2303b4b0ab
                         <fieldset>
                             <p>
                                 Tus datos están a salvo.<br>Para mayor información revisa nuestro <a href=\"";
-        // line 145
+        // line 116
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
         echo "aviso-de-privacidad\" id=\"go-privacy-notice\">Aviso de Privacidad</a>
                             </p>
-                        </fieldset>
-                    </div>
-                </div>
-                <div class=\"contact_elements\">
-                    <div class=\"contact_element ab\">
-                        <fieldset>
-                            <a href=\"";
-        // line 153
-        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "bolsa-de-trabajo\" id=\"\" class=\"enviar button blue col-md-12\" style=\"text-align: center;\">Bolsa de Trabajo</a>
                         </fieldset>
                     </div>
                 </div>
@@ -194,7 +152,7 @@ class __TwigTemplate_bcbb1f70dfcad4eef41cbaf5870de11bb2a790139c7e5369d2303b4b0ab
 
     public function getTemplateName()
     {
-        return "contacto/contact_form.twig";
+        return "bolsa/contact_form.twig";
     }
 
     public function isTraitable()
@@ -204,7 +162,7 @@ class __TwigTemplate_bcbb1f70dfcad4eef41cbaf5870de11bb2a790139c7e5369d2303b4b0ab
 
     public function getDebugInfo()
     {
-        return array (  184 => 153,  173 => 145,  145 => 120,  139 => 117,  28 => 8,  21 => 2,  19 => 1,);
+        return array (  141 => 116,  113 => 91,  28 => 8,  21 => 2,  19 => 1,);
     }
 }
 /* {% set model = mdopa %}*/
@@ -214,6 +172,23 @@ class __TwigTemplate_bcbb1f70dfcad4eef41cbaf5870de11bb2a790139c7e5369d2303b4b0ab
 /*             <div class="financing_content">*/
 /*                 <form id="contact">*/
 /*                     {# Contacto #}*/
+/*                     <div class="contact_elements">*/
+/*                         <div class="contact_element ab">*/
+/*                             <fieldset class="custom-file-upload" id="content_custom_file_upload">*/
+/*                                 <label for="file">*/
+/*                                     Adjunta tu CV. */
+/*                                     <span style="float:right; color: #e1251b;">*/
+/*                                         <i class="fa fa-asterisk fa-fw" style="position: relative; top: 0px; left: 0px;"></i>*/
+/*                                         Sólo archivos en PDF.*/
+/*                                     </span>*/
+/*                                 </label>*/
+/*                                 <div class="text-center">*/
+/*                                     <input type="file" class="input-standard validate-required validate-upload" name="archivo" id="suk_update_file" data-validation-data="required|upload" size="2120">*/
+/*                                     <p class="invalid-message" id="error_upload">Este campo es obligatorio<span>&nbsp;</span></p>*/
+/*                                 </div>                                */
+/*                             </fieldset>*/
+/*                         </div>*/
+/*                     </div>*/
 /*                     <div class="contact_elements">*/
 /*                         <div class="contact_element a">*/
 /*                             <fieldset>*/
@@ -229,7 +204,7 @@ class __TwigTemplate_bcbb1f70dfcad4eef41cbaf5870de11bb2a790139c7e5369d2303b4b0ab
 /*                                 <label for="suk_lastname" style="display: none;">*/
 /*                                     <span style="color: red;" class="fa fa-asterisk"></span> Apellido*/
 /*                                 </label>*/
-/*                                 <input type="text" id="suk_lastname" name="apellido" class="validate-required" placeholder="Apellidos" data-validation-data="required|name">*/
+/*                                 <input type="text" id="suk_lastname" name="apellidos" class="validate-required" placeholder="Apellidos" data-validation-data="required|name">*/
 /*                                 <p class="invalid-message" id="error_name">Este campo es obligatorio<span>&nbsp;</span></p>*/
 /*                             </fieldset>*/
 /*                         </div>*/
@@ -262,47 +237,6 @@ class __TwigTemplate_bcbb1f70dfcad4eef41cbaf5870de11bb2a790139c7e5369d2303b4b0ab
 /*                         </div>*/
 /*                     </div>*/
 /*                     <div class="contact_elements">*/
-/*                         <div class="contact_element a">*/
-/*                             <fieldset>*/
-/*                                 <label for="suk_department" style="display: none;">*/
-/*                                     <span style="color: red;" class="fa fa-asterisk"></span> Departamento*/
-/*                                 </label>*/
-/*                                 <div class="select">*/
-/*                                     <select name="departamento" id="suk_department" type="dropdown" class="seleccionar form-control validate_select" style="width: 100%;" data-validation-data="required|free">*/
-/*                                         <option label="Selecccionar departamento" selected="selected" disabled="disabled" value="">Selecciona Departamento</option>*/
-/*                                         <option label="Ventas" value="Ventas">Ventas</option>*/
-/*                                         <option label="Servicio" value="Servicio">Servicio</option>*/
-/*                                         <option label="Refacciones / Accesorios" value="Refacciones / Accesorios">Refacciones / Accesorios</option>*/
-/*                                         <option label="Mercadotecnia" value="Mercadotecnia">Mercadotecnia</option>*/
-/*                                         <option label="Otros" value="Otros">Otros</option>*/
-/*                                     </select>*/
-/*                                     </div>*/
-/*                                 <p class="invalid-message" id="error_departamento">Este campo es obligatorio<span>&nbsp;</span></p>*/
-/*                             </fieldset>*/
-/*                         </div>*/
-/*                         <div class="contact_element b">*/
-/*                             <fieldset>*/
-/*                                 <label for="suk_model" style="display: none;">*/
-/*                                     <span style="color: red;" class="fa fa-asterisk"></span> Auto*/
-/*                                 </label>*/
-/*                                 <div class="select">*/
-/*                                     <select name="modelo" id="suk_model" type="dropdown" class="seleccionar form-control validate_select" style="width: 100%;" data-validation-data="required|free">*/
-/*                                         <option label="Selecciona Modelo" selected="selected" disabled="disabled" value="">Selecciona Modelo</option>*/
-/*                                         <option label="Swift Sport" value="Swift Sport">Swift Sport</option>*/
-/*                                         <option label="Swift" value="Swift">Swift</option>*/
-/*                                         <option label="Kizashi" value="Kizashi">Kizashi</option>*/
-/*                                         <option label="Grand Vitara" value="Grand Vitara">Grand Vitara</option>*/
-/*                                         <option label="S-Cross" value="S-Cross">S-Cross</option>*/
-/*                                         <option label="Ciaz"value="Ciaz">Ciaz</option>*/
-/*                                         <option label="Ignis"value="Ignis">Ignis</option>*/
-/*                                         <option label="Nueva Vitara"value="Nueva Vitara">Nueva Vitara</option>*/
-/*                                     </select>*/
-/*                                 </div>*/
-/*                                 <p class="invalid-message" id="error_auto">Este campo es obligatorio<span>&nbsp;</span></p>*/
-/*                             </fieldset>*/
-/*                         </div>*/
-/*                     </div>*/
-/*                     <div class="contact_elements">*/
 /*                         <div class="contact_element ab">*/
 /*                             <fieldset>*/
 /*                                 <label for="suk_message" style="display: none;">*/
@@ -313,20 +247,15 @@ class __TwigTemplate_bcbb1f70dfcad4eef41cbaf5870de11bb2a790139c7e5369d2303b4b0ab
 /*                             </fieldset>*/
 /*                         </div>*/
 /*                     </div>*/
-/*                     <div class="contact_elements">*/
-/*                         <div class="contact_element ab">*/
-/*                             <fieldset class="fieldset-radio-checkbox" id="checkbox-news">*/
-/*                                 <label for="suk_model_newsletter" class="label-checkbox">*/
-/*                                     <input type="checkbox" id="suk_model_newsletter" name="model_newsletter" value=""> Deseo recibir noticias y promociones.*/
-/*                                 </label>*/
-/*                             </fieldset>*/
-/*                         </div>*/
-/*                     </div>*/
-/*                     <input type="hidden" name="producto" id="suk_producto" value="Contacto">*/
-/*                     <input type="hidden" name="concesionaria" id="suk_concesionaria" value="Suzuki Autos {{ _loc }}">*/
+/*                     <input type="hidden" name="dia" id="suk_date" value="">*/
+/*                     <input type="hidden" name="nombre_archivo" id="suk_filename" value="">*/
+/*                     <input type="hidden" name="mime" id="suk_mime" value="">*/
+/*                     <input type="hidden" name="file_content" id="suk_filecontent" value="">*/
+/* */
+/*                     <input type="hidden" name="producto" id="suk_product" value="Bolsa de Trabajo Camcar">*/
+/* */
 /*                     <input type="hidden" name="imagen" id="suk_imagen" value="">*/
-/*                     <input type="hidden" name="news" id="suk_news" value="0">*/
-/*                     <input type="hidden" name="campaign" id="suk_campaign" value="Suzuki Autos {{ _loc }} - Contacto">*/
+/*                     <input type="hidden" name="campaign" id="suk_campaign" value="Suzuki Autos {{ _loc }} - Bolsa de Trabajo">*/
 /*                     <div class="clearfix"></div>*/
 /*                 </form>*/
 /*                 <div class="contact_elements">*/
@@ -343,7 +272,7 @@ class __TwigTemplate_bcbb1f70dfcad4eef41cbaf5870de11bb2a790139c7e5369d2303b4b0ab
 /*                     </div>*/
 /*                     <div class="contact_element b">*/
 /*                         <fieldset>*/
-/*                             <button id="contact_send" class="enviar button red send_contact_form contact-form-send">Enviar</button>*/
+/*                             <button id="contact_send" class="enviar button red send_contact_form job-board-form-send">Enviar</button>*/
 /*                         </fieldset>*/
 /*                     </div>*/
 /*                 </div>*/
@@ -353,13 +282,6 @@ class __TwigTemplate_bcbb1f70dfcad4eef41cbaf5870de11bb2a790139c7e5369d2303b4b0ab
 /*                             <p>*/
 /*                                 Tus datos están a salvo.<br>Para mayor información revisa nuestro <a href="{{ _host }}aviso-de-privacidad" id="go-privacy-notice">Aviso de Privacidad</a>*/
 /*                             </p>*/
-/*                         </fieldset>*/
-/*                     </div>*/
-/*                 </div>*/
-/*                 <div class="contact_elements">*/
-/*                     <div class="contact_element ab">*/
-/*                         <fieldset>*/
-/*                             <a href="{{ _host }}bolsa-de-trabajo" id="" class="enviar button blue col-md-12" style="text-align: center;">Bolsa de Trabajo</a>*/
 /*                         </fieldset>*/
 /*                     </div>*/
 /*                 </div>*/

@@ -19,7 +19,10 @@ class __TwigTemplate_483365886a4ee0ff7bfbee365ff5ab721265f1380cbd556d72eef8c420f
         echo "<div id=\"content-content\">
     <div class=\"site-content\">
         <div id=\"warranty-first-image\" class=\"half extended first\">
-            <img src=\"img/sections/warranty/warranty-1.jpg\" alt=\"\">
+            <img src=\"";
+        // line 4
+        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
+        echo "img/sections/warranty/warranty-1.jpg\" alt=\"\">
         </div>
         <div class=\"half compressed first\">
             <div class=\"padding-left\">
@@ -53,7 +56,10 @@ class __TwigTemplate_483365886a4ee0ff7bfbee365ff5ab721265f1380cbd556d72eef8c420f
         <hr/>
         <a class=\"close-warranty-button\" href=\"garantia-suzuki.html#Cerrar\"><span>Cerrar</span></a>
         <div id=\"warranty-image-ordinary1\" class=\"half extended warranty-right\">
-            <img src=\"img/sections/warranty/ordinary-1.jpg\"
+            <img src=\"";
+        // line 38
+        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
+        echo "img/sections/warranty/ordinary-1.jpg\"
                  style=\"margin-top: 50px\"
                  alt=\"Servicios Básicos Km '0'\" title=\"Servicios Básicos Km '0'\">
         </div>
@@ -92,7 +98,10 @@ class __TwigTemplate_483365886a4ee0ff7bfbee365ff5ab721265f1380cbd556d72eef8c420f
 
 
         <div class=\"half extended warranty-div-image\">
-            <img id=\"warranty-image-ordinary2\" src=\"img/sections/warranty/ordinary-2.jpg\" alt=\"Asistencia Hogar\" title=\"Asistencia Hogar\">
+            <img id=\"warranty-image-ordinary2\" src=\"";
+        // line 77
+        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
+        echo "img/sections/warranty/ordinary-2.jpg\" alt=\"Asistencia Hogar\" title=\"Asistencia Hogar\">
         </div>
         <div class=\"half compressed\">
             <div class=\"padding-left\">
@@ -114,7 +123,10 @@ class __TwigTemplate_483365886a4ee0ff7bfbee365ff5ab721265f1380cbd556d72eef8c420f
         <hr/>
 
         <div class=\"half extended warranty-div-image warranty-right\">
-            <img id=\"warranty-image-ordinary3\" src=\"img/sections/warranty/ordinary-3.jpg\" alt=\"Asistencia Médica\" title=\"Asistencia Médica\">
+            <img id=\"warranty-image-ordinary3\" src=\"";
+        // line 99
+        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
+        echo "img/sections/warranty/ordinary-3.jpg\" alt=\"Asistencia Médica\" title=\"Asistencia Médica\">
         </div>
         <div class=\"half compressed warranty-left\">
             <div class=\"padding-right\">
@@ -142,7 +154,10 @@ class __TwigTemplate_483365886a4ee0ff7bfbee365ff5ab721265f1380cbd556d72eef8c420f
         <hr/>
         <a class=\"close-warranty-button\" href=\"garantia-suzuki.html#Cerrar\"><span>Cerrar</span></a>
         <div id=\"warranty-image-extended3\" class=\"half extended warranty-right\">
-            <img src=\"img/sections/warranty/extended-1.jpg\"
+            <img src=\"";
+        // line 127
+        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
+        echo "img/sections/warranty/extended-1.jpg\"
                  style=\"margin-top: 35px\"
                  alt=\"Beneficios para nuestros clientes\" title=\"Beneficios para nuestros clientes\">
         </div>
@@ -170,7 +185,10 @@ class __TwigTemplate_483365886a4ee0ff7bfbee365ff5ab721265f1380cbd556d72eef8c420f
 
 
         <div id=\"warranty-image-extended2\" class=\"half compressed\">
-            <img src=\"img/sections/warranty/extended-2.jpg\" alt=\"\">
+            <img src=\"";
+        // line 155
+        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
+        echo "img/sections/warranty/vitara-extension-garantia.jpg\" alt=\"\">
         </div>
         <div class=\"half extended\">
             <div class=\"padding-left\">
@@ -219,7 +237,10 @@ class __TwigTemplate_483365886a4ee0ff7bfbee365ff5ab721265f1380cbd556d72eef8c420f
         </div>
         <div id=\"warranty-image-extended1\" class=\"half extended\">
 
-            <img src=\"img/sections/warranty/extended-3.png\" alt=\"\">
+            <img src=\"";
+        // line 204
+        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
+        echo "img/sections/warranty/extended-3.png\" alt=\"\">
 
         </div>
         <div class=\"clearfix\"></div>
@@ -256,7 +277,10 @@ class __TwigTemplate_483365886a4ee0ff7bfbee365ff5ab721265f1380cbd556d72eef8c420f
         </div>
         <div class=\"half extended\">
             <div class=\"center-500-left\">
-                <img src=\"img/sections/warranty/extended-4.jpg\" alt=\"Cobertura por antigüedad\"
+                <img src=\"";
+        // line 241
+        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
+        echo "img/sections/warranty/extended-4.jpg\" alt=\"Cobertura por antigüedad\"
                      title=\"Cobertura por antigüedad\">
 
                 <h3>Cobertura por antigüedad</h3>
@@ -354,15 +378,20 @@ class __TwigTemplate_483365886a4ee0ff7bfbee365ff5ab721265f1380cbd556d72eef8c420f
         return "garantia/container.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  19 => 1,);
+        return array (  282 => 241,  242 => 204,  190 => 155,  159 => 127,  128 => 99,  103 => 77,  61 => 38,  24 => 4,  19 => 1,);
     }
 }
 /* <div id="content-content">*/
 /*     <div class="site-content">*/
 /*         <div id="warranty-first-image" class="half extended first">*/
-/*             <img src="img/sections/warranty/warranty-1.jpg" alt="">*/
+/*             <img src="{{ _host }}img/sections/warranty/warranty-1.jpg" alt="">*/
 /*         </div>*/
 /*         <div class="half compressed first">*/
 /*             <div class="padding-left">*/
@@ -396,7 +425,7 @@ class __TwigTemplate_483365886a4ee0ff7bfbee365ff5ab721265f1380cbd556d72eef8c420f
 /*         <hr/>*/
 /*         <a class="close-warranty-button" href="garantia-suzuki.html#Cerrar"><span>Cerrar</span></a>*/
 /*         <div id="warranty-image-ordinary1" class="half extended warranty-right">*/
-/*             <img src="img/sections/warranty/ordinary-1.jpg"*/
+/*             <img src="{{ _host }}img/sections/warranty/ordinary-1.jpg"*/
 /*                  style="margin-top: 50px"*/
 /*                  alt="Servicios Básicos Km '0'" title="Servicios Básicos Km '0'">*/
 /*         </div>*/
@@ -435,7 +464,7 @@ class __TwigTemplate_483365886a4ee0ff7bfbee365ff5ab721265f1380cbd556d72eef8c420f
 /* */
 /* */
 /*         <div class="half extended warranty-div-image">*/
-/*             <img id="warranty-image-ordinary2" src="img/sections/warranty/ordinary-2.jpg" alt="Asistencia Hogar" title="Asistencia Hogar">*/
+/*             <img id="warranty-image-ordinary2" src="{{ _host }}img/sections/warranty/ordinary-2.jpg" alt="Asistencia Hogar" title="Asistencia Hogar">*/
 /*         </div>*/
 /*         <div class="half compressed">*/
 /*             <div class="padding-left">*/
@@ -457,7 +486,7 @@ class __TwigTemplate_483365886a4ee0ff7bfbee365ff5ab721265f1380cbd556d72eef8c420f
 /*         <hr/>*/
 /* */
 /*         <div class="half extended warranty-div-image warranty-right">*/
-/*             <img id="warranty-image-ordinary3" src="img/sections/warranty/ordinary-3.jpg" alt="Asistencia Médica" title="Asistencia Médica">*/
+/*             <img id="warranty-image-ordinary3" src="{{ _host }}img/sections/warranty/ordinary-3.jpg" alt="Asistencia Médica" title="Asistencia Médica">*/
 /*         </div>*/
 /*         <div class="half compressed warranty-left">*/
 /*             <div class="padding-right">*/
@@ -485,7 +514,7 @@ class __TwigTemplate_483365886a4ee0ff7bfbee365ff5ab721265f1380cbd556d72eef8c420f
 /*         <hr/>*/
 /*         <a class="close-warranty-button" href="garantia-suzuki.html#Cerrar"><span>Cerrar</span></a>*/
 /*         <div id="warranty-image-extended3" class="half extended warranty-right">*/
-/*             <img src="img/sections/warranty/extended-1.jpg"*/
+/*             <img src="{{ _host }}img/sections/warranty/extended-1.jpg"*/
 /*                  style="margin-top: 35px"*/
 /*                  alt="Beneficios para nuestros clientes" title="Beneficios para nuestros clientes">*/
 /*         </div>*/
@@ -513,7 +542,7 @@ class __TwigTemplate_483365886a4ee0ff7bfbee365ff5ab721265f1380cbd556d72eef8c420f
 /* */
 /* */
 /*         <div id="warranty-image-extended2" class="half compressed">*/
-/*             <img src="img/sections/warranty/extended-2.jpg" alt="">*/
+/*             <img src="{{ _host }}img/sections/warranty/vitara-extension-garantia.jpg" alt="">*/
 /*         </div>*/
 /*         <div class="half extended">*/
 /*             <div class="padding-left">*/
@@ -562,7 +591,7 @@ class __TwigTemplate_483365886a4ee0ff7bfbee365ff5ab721265f1380cbd556d72eef8c420f
 /*         </div>*/
 /*         <div id="warranty-image-extended1" class="half extended">*/
 /* */
-/*             <img src="img/sections/warranty/extended-3.png" alt="">*/
+/*             <img src="{{ _host }}img/sections/warranty/extended-3.png" alt="">*/
 /* */
 /*         </div>*/
 /*         <div class="clearfix"></div>*/
@@ -599,7 +628,7 @@ class __TwigTemplate_483365886a4ee0ff7bfbee365ff5ab721265f1380cbd556d72eef8c420f
 /*         </div>*/
 /*         <div class="half extended">*/
 /*             <div class="center-500-left">*/
-/*                 <img src="img/sections/warranty/extended-4.jpg" alt="Cobertura por antigüedad"*/
+/*                 <img src="{{ _host }}img/sections/warranty/extended-4.jpg" alt="Cobertura por antigüedad"*/
 /*                      title="Cobertura por antigüedad">*/
 /* */
 /*                 <h3>Cobertura por antigüedad</h3>*/
