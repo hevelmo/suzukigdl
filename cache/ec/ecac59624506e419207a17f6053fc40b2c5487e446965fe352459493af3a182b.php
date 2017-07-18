@@ -98,15 +98,9 @@ class __TwigTemplate_897d6eb55ce0fb1eb904f14ae26de04179a4013c8db8f1432e373c87469
                     <span>Swift</span>
                 </a>
             </div>
-            <div class=\"catalog_car kizashi\">
-                <a class=\"switch-catalog kizashi\" data-key=\"kizashi\" href=\"";
-        // line 296
-        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "catalogos/kizashi\">
-                    <span>Kizashi</span>
-                </a>
-            </div>
-            <div class=\"catalog_car grand-vitara\">
+            ";
+        // line 300
+        echo "            <div class=\"catalog_car grand-vitara\">
                 <a class=\"switch-catalog grand-vitara\" data-key=\"grand-vitara\" href=\"";
         // line 301
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
@@ -155,7 +149,7 @@ class __TwigTemplate_897d6eb55ce0fb1eb904f14ae26de04179a4013c8db8f1432e373c87469
 
     public function getDebugInfo()
     {
-        return array (  136 => 316,  128 => 311,  120 => 306,  112 => 301,  104 => 296,  96 => 291,  88 => 286,  80 => 281,  73 => 276,  70 => 147,  58 => 16,  51 => 12,  46 => 10,  41 => 8,  28 => 7,  25 => 6,  19 => 1,);
+        return array (  130 => 316,  122 => 311,  114 => 306,  106 => 301,  103 => 300,  96 => 291,  88 => 286,  80 => 281,  73 => 276,  70 => 147,  58 => 16,  51 => 12,  46 => 10,  41 => 8,  28 => 7,  25 => 6,  19 => 1,);
     }
 }
 /* <div id="content-content">*/
@@ -452,11 +446,11 @@ class __TwigTemplate_897d6eb55ce0fb1eb904f14ae26de04179a4013c8db8f1432e373c87469
 /*                     <span>Swift</span>*/
 /*                 </a>*/
 /*             </div>*/
-/*             <div class="catalog_car kizashi">*/
+/*             {#<div class="catalog_car kizashi">*/
 /*                 <a class="switch-catalog kizashi" data-key="kizashi" href="{{ _host }}catalogos/kizashi">*/
 /*                     <span>Kizashi</span>*/
 /*                 </a>*/
-/*             </div>*/
+/*             </div>#}*/
 /*             <div class="catalog_car grand-vitara">*/
 /*                 <a class="switch-catalog grand-vitara" data-key="grand-vitara" href="{{ _host }}catalogos/grand-vitara">*/
 /*                     <span>Grand Vitara</span>*/

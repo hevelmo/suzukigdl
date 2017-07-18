@@ -37,13 +37,9 @@ class __TwigTemplate_cb72e37febe4cf26e2142a587b3340b6fc659e737bb9ae3d583ae849a33
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
         echo "catalogos/swift\" class=\"ld-catalogs hvr-underline-from-center close-list-dropdown\">Swift</a>
             </li>
-            <li>
-                <a href=\"";
-        // line 14
-        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
-        echo "catalogos/kizashi\" class=\"ld-catalogs hvr-underline-from-center close-list-dropdown\">Kizashi</a>
-            </li>
-            <li>
+            ";
+        // line 16
+        echo "            <li>
                 <a href=\"";
         // line 17
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
@@ -87,7 +83,7 @@ class __TwigTemplate_cb72e37febe4cf26e2142a587b3340b6fc659e737bb9ae3d583ae849a33
 
     public function getDebugInfo()
     {
-        return array (  67 => 26,  61 => 23,  55 => 20,  49 => 17,  43 => 14,  37 => 11,  31 => 8,  25 => 5,  19 => 1,);
+        return array (  63 => 26,  57 => 23,  51 => 20,  45 => 17,  42 => 16,  37 => 11,  31 => 8,  25 => 5,  19 => 1,);
     }
 }
 /* <div class="inner-menu" id="list-menu">*/
@@ -102,9 +98,9 @@ class __TwigTemplate_cb72e37febe4cf26e2142a587b3340b6fc659e737bb9ae3d583ae849a33
 /*             <li>*/
 /*                 <a href="{{ _host }}catalogos/swift" class="ld-catalogs hvr-underline-from-center close-list-dropdown">Swift</a>*/
 /*             </li>*/
-/*             <li>*/
+/*             {#<li>*/
 /*                 <a href="{{ _host }}catalogos/kizashi" class="ld-catalogs hvr-underline-from-center close-list-dropdown">Kizashi</a>*/
-/*             </li>*/
+/*             </li>#}*/
 /*             <li>*/
 /*                 <a href="{{ _host }}catalogos/grand-vitara" class="ld-catalogs hvr-underline-from-center close-list-dropdown">Grand Vitara</a>*/
 /*             </li>*/
