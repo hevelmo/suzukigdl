@@ -21,53 +21,8 @@ class __TwigTemplate_4ba0bfcdcbe6716334a03c7ad669b992e7126b14f594e80c12fd1588c7a
             ";
         // line 30
         echo "            ";
-        // line 41
-        echo "            <!-- slide extra -->
-            <div class=\"specification\" style=\"background-image: url('img/sections/home/slider/01-SLIDER-DE-PROMOCIONES-2012.jpg');\">
-                <div class=\"title-wrapper\" style=\"color: #fff\">
-                    <div class=\"title\">
-                       &nbsp;
-                    </div>
-                </div>
-                <div class=\"description compact\"><p>&nbsp;</p></div>
-            </div>
-            <!-- slide extra -->
-            <div class=\"specification\" style=\"background-image: url('img/sections/home/slider/02-SLIDER-DE-PROMOCIONES-swift.jpg');\">
-                <div class=\"title-wrapper\" style=\"color: #fff\">
-                    <div class=\"title\">
-                       &nbsp;
-                    </div>
-                </div>
-                <div class=\"description compact\"><p>&nbsp;</p></div>
-            </div>
-            <!-- slide extra -->
-            <div class=\"specification\" style=\"background-image: url('img/sections/home/slider/03-SLIDER-DE-PROMOCIONES-SCROSS.jpg');\">
-                <div class=\"title-wrapper\" style=\"color: #fff\">
-                    <div class=\"title\">
-                       &nbsp;
-                    </div>
-                </div>
-                <div class=\"description compact\"><p>&nbsp;</p></div>
-            </div>
-            <!-- slide extra -->
-            <div class=\"specification\" style=\"background-image: url('img/sections/home/slider/04-SLIDER-DE-PROMOCIONES-vitara-GLS.jpg');\">
-                <div class=\"title-wrapper\" style=\"color: #fff\">
-                    <div class=\"title\">
-                       &nbsp;
-                    </div>
-                </div>
-                <div class=\"description compact\"><p>&nbsp;</p></div>
-            </div>
-            <!-- slide extra -->
-            <div class=\"specification\" style=\"background-image: url('img/sections/home/slider/05-SLIDER-DE-PROMOCIONES-vitara-turbo.jpg');\">
-                <div class=\"title-wrapper\" style=\"color: #fff\">
-                    <div class=\"title\">
-                       &nbsp;
-                    </div>
-                </div>
-                <div class=\"description compact\"><p>&nbsp;</p></div>
-            </div>
-            <!-- slide 00 -->
+        // line 86
+        echo "            <!-- slide 00 -->
             <div class=\"specification\" style=\"background-image: url('";
         // line 87
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
@@ -120,7 +75,7 @@ class __TwigTemplate_4ba0bfcdcbe6716334a03c7ad669b992e7126b14f594e80c12fd1588c7a
 
     public function getDebugInfo()
     {
-        return array (  98 => 141,  87 => 113,  84 => 112,  73 => 87,  25 => 41,  23 => 30,  19 => 2,);
+        return array (  53 => 141,  42 => 113,  39 => 112,  28 => 87,  25 => 86,  23 => 30,  19 => 2,);
     }
 }
 /* {# INICIO DE NUEVO SLIDER #}*/
@@ -162,7 +117,6 @@ class __TwigTemplate_4ba0bfcdcbe6716334a03c7ad669b992e7126b14f594e80c12fd1588c7a
 /*                 </div>*/
 /*                 <div class="description compact"><p>&nbsp;</p></div>*/
 /*             </div>*/
-/*             #}*/
 /*             <!-- slide extra -->*/
 /*             <div class="specification" style="background-image: url('img/sections/home/slider/01-SLIDER-DE-PROMOCIONES-2012.jpg');">*/
 /*                 <div class="title-wrapper" style="color: #fff">*/
@@ -208,6 +162,7 @@ class __TwigTemplate_4ba0bfcdcbe6716334a03c7ad669b992e7126b14f594e80c12fd1588c7a
 /*                 </div>*/
 /*                 <div class="description compact"><p>&nbsp;</p></div>*/
 /*             </div>*/
+/*             #}*/
 /*             <!-- slide 00 -->*/
 /*             <div class="specification" style="background-image: url('{{ _host }}img/sections/home/slider/SLIDER-DE-PROMOCIONES-03.jpg');">*/
 /*                 <div class="title-wrapper" style="color: #fff">*/
