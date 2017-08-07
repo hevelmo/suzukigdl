@@ -87,7 +87,7 @@ $(document).ready(function() {
     // TEST DRIVE FORM
     $('body').on("click", '.testdrive-form-send', testDriveForm.clickSend);
     // FINANCING FORM
-    $('body').on("click", '.financing-form-send', financingForm.clickSend);
+    $('body').on("click", '.financing_form_send', financingForm.clickSend);
     // CONTACT FORM
     $('body').on("click", '.contact-form-send', contactForm.clickSend);
 
@@ -185,4 +185,5 @@ $(document).ready(function() {
         }
         $(this).parent().remove();
     }*/
+
 });

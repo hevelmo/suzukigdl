@@ -142,6 +142,8 @@
                                 r.message = validation_messages.upload;
                             }
                             break;
+                        case 'free':
+                            r.message = '';
                         default:
                             r.message = validations_regexp.not_config;
                             break;

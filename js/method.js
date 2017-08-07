@@ -70,7 +70,7 @@
         key     : ''
     };
     var $btnSend;
-    $btnSend = $('.enviar.button.red');
+    //$btnSend = $('.enviar.button.red');
     //
     var year_model;
     year_model = '2017';
@@ -2550,7 +2550,7 @@
             return SUK.postalService(GLOBALMasterMax, dataRenamed);
         },
         handlerPromiseLeads: function (data1) {
-            var testDriveSendPromise, suk_agn, rootApi;
+            var sendPromise, suk_agn, rootApi;
 
             rootApi = SUK.getValue('#master-host');
             url_location = rootApi;
@@ -2565,15 +2565,15 @@
                 newsletter = $news.val('1');
                 //SUK.setValue("#suk_news", $news.val());
                 console.log(newsletter);
-                testDriveSendPromise = testDriveForm.sendContacto();
-                testDriveSendPromise = testDriveForm.sendContactoNews();
+                sendPromise = testDriveForm.sendContacto();
+                sendPromise = testDriveForm.sendContactoNews();
             } else {
                 newsletter = $news.val('0');
                 //SUK.setValue("#suk_news", $news.val());
                 console.log(newsletter);
-                testDriveSendPromise = testDriveForm.sendContacto();
+                sendPromise = testDriveForm.sendContacto();
             }
-            testDriveSendPromise.success( function (data2) {
+            sendPromise.success( function (data2) {
                 ga('send', 'event', 'button-send-form-testdrive', 'Prueba de manejo '+ suk_product, 'form-testdrive');
                 setTimeout(function () {
                     setTimeout(function () {
@@ -2594,7 +2594,7 @@
                     }, 1800);
                 }, 1400);
             });
-            testDriveSendPromise.error( function (data2) {
+            sendPromise.error( function (data2) {
                 testDriveForm.resetContact();
                 alertify.error("No se han podido enviar los datos <br /> Inténtelo más tarde.");
             });
@@ -2671,7 +2671,7 @@
             return SUK.postalService(GLOBALMasterMax, dataRenamed);
         },
         handlerPromiseLeads: function (data1) {
-            var testDriveSendPromise, suk_agn, rootApi;
+            var sendPromise, suk_agn, rootApi;
 
             rootApi = SUK.getValue('#master-host');
             url_location = rootApi;
@@ -2679,25 +2679,24 @@
             suk_agn = SUK.getValue('#suk_agn');
             suk_product = SUK.getValue('#suk_producto');
             suk_email = SUK.getValue('#suk_email');
-            console.log(suk_product);
 
             data = $(financingForm.contactForm).serializeFormJSON();
             $news = $('#suk_model_newsletter').val($(this).is(':checked'));
             if ($news.is(':checked')) {
                 newsletter = $news.val('1');
-                testDriveSendPromise = financingForm.sendContacto();
-                testDriveSendPromise = financingForm.sendContactoNews();
+                sendPromise = financingForm.sendContacto();
+                sendPromise = financingForm.sendContactoNews();
             } else {
                 newsletter = $news.val('0');
-                testDriveSendPromise = financingForm.sendContacto();
+                sendPromise = financingForm.sendContacto();
             }
-            testDriveSendPromise.success( function (data2) {
+            sendPromise.success( function (data2) {
                 ga('send', 'event', 'button-send-form-financing', 'Financiamiento '+ suk_product, 'form-financing');
                 setTimeout(function () {
                     setTimeout(function () {
                         setTimeout(function() {
                             financingForm.resetContact();
-                            alertify.alert("¡ATENCIÓN!", "¡Muchas gracias!<br>" + 
+                            alertify.alert(suk_product, "¡Muchas gracias!<br>" + 
                                            "Tu cotización ha sido enviada a tu correo electrónico: " + suk_email + ". " +
                                            "Te hemos asignado un asesor Suzuki de la concesionaria " + suk_agn + ", " +
                                            "quien se pondrá en contacto contigo para confirmar tus datos y resolver cualquier duda que puedas tener..", function(e) {
@@ -2712,7 +2711,7 @@
                     }, 1800);
                 }, 1400);
             });
-            testDriveSendPromise.error( function (data2) {
+            sendPromise.error( function (data2) {
                 financingForm.resetContact();
                 alertify.error("No se han podido enviar los datos <br /> Inténtelo más tarde.");
             });
@@ -2740,10 +2739,9 @@
             // Loader Icon
             financingForm.loaderIcon = "#loader_send_icon";
             // Get and save current button id
-            financingForm.sendButton = "#" + $(this).attr('id');
+            financingForm.sendButton = "#financing_send";
             // Get the current form id, find the form with the same data-scope value
-            financingForm.contactForm = "form#" + $("body").find("form").attr("id");
-            console.log(financingForm.contactForm);
+            financingForm.contactForm = "form#financing";
 
             formErrors = formValidation.required(financingForm.contactForm, '.validate-required', financingForm.sendButton);
             if (formErrors) {
@@ -2752,11 +2750,6 @@
                 leadsPromise = financingForm.sendLeads();
                 leadsPromise.success(financingForm.handlerPromiseLeads);
                 leadsPromise.error(financingForm.handlerPromiseLeads);
-                /*
-                financingForm.sendLeads();
-                financingForm.sendContacto();
-                financingForm.addContacto();
-                */
             }
         }
     }
@@ -2789,7 +2782,7 @@
             return SUK.postalService(GLOBALMasterMax, dataRenamed);
         },
         handlerPromiseLeads: function (data1) {
-            var testDriveSendPromise, suk_agn, rootApi;
+            var sendPromise, suk_agn, rootApi;
 
             rootApi = SUK.getValue('#master-host');
             url_location = rootApi;
@@ -2799,17 +2792,17 @@
             suk_email = SUK.getValue('#suk_email');
 
             data = $(contactForm.contactForm).serializeFormJSON();
-            testDriveSendPromise = contactForm.sendContacto();
+            sendPromise = contactForm.sendContacto();
             $news = $('#suk_model_newsletter').val($(this).is(':checked'));
             if ($news.is(':checked')) {
                 newsletter = $news.val('1');
-                testDriveSendPromise = contactForm.sendContacto();
-                testDriveSendPromise = contactForm.sendContactoNews();
+                sendPromise = contactForm.sendContacto();
+                sendPromise = contactForm.sendContactoNews();
             } else {
                 newsletter = $news.val('0');
-                testDriveSendPromise = contactForm.sendContacto();
+                sendPromise = contactForm.sendContacto();
             }
-            testDriveSendPromise.success( function (data2) {
+            sendPromise.success( function (data2) {
                 ga('send', 'event', 'button-send-form-contact', 'Información General', 'form-contact');
                 setTimeout(function () {
                     setTimeout(function () {
@@ -2828,7 +2821,7 @@
                     }, 1800);
                 }, 1400);
             });
-            testDriveSendPromise.error( function (data2) {
+            sendPromise.error( function (data2) {
                 contactForm.resetContact();
                 alertify.error("No se han podido enviar los datos <br /> Inténtelo más tarde.");
             });
@@ -3285,826 +3278,6 @@
                 ]
             };
             SnapStates(iconHamburger);
-        }
-    }
-/* ------------------------------------------------------ *\
-    [Methods] formTestDrive
-\* ------------------------------------------------------ */
-/* ------------------------------------------------------ *\
-    [Methods] formTestDrive
-\* ------------------------------------------------------ */
-    var formTestDriveMethods = {
-        init_datepicker: function() {
-            
-        },
-        addDataFormTestDrive: function() {
-            var dataFormTestDriveModel;
-            dataFormTestDriveModel = $('#test_drive').serializeFormJSON();
-
-            dataFormTestDriveModel['suk_gdl_test_drive_model_newsletter'] = (dataFormTestDriveModel['suk_gdl_test_drive_model_newsletter'] == 'on')
-                ? dataFormTestDriveModel['suk_gdl_test_drive_model_newsletter'] : 'off';
-
-            //console.log(dataFormTestDriveModel);
-            //console.log(dataFormTestDriveModel['suk_gdl_test_drive_model_newsletter']);
-
-            return SUK.postalService(urlsApi.sendTestDriveModel, dataFormTestDriveModel);
-        },
-        fillingControl: function() {
-            var validFieldItems, dataFormTestDriveModel, isFull, isNoEmpty;
-            validFieldItems = [
-                'suk_gdl_test_drive_model_date',
-                'suk_gdl_test_drive_model_name',
-                'suk_gdl_test_drive_model_lastname',
-                'suk_gdl_test_drive_model_email',
-                'suk_gdl_test_drive_model_tel'
-            ];
-            dataFormTestDriveModel = $('#test_drive').serializeFormJSON();
-
-            isFull = SUK.validFormFull(dataFormTestDriveModel, validFieldItems);
-            $('#suk_test_dirve_model_submit').attr('disabled', !isFull);
-
-            /*isEmpty = SUK.validFormEmpty(dataFormTestDriveModel, validFieldItems);
-            $('#suk_test_dirve_model_submit').attr('disabled', isEmpty);*/
-
-            //console.log($('#test_drive').serializeFormJSON());
-        },
-        refreshForm: function() {
-            SUK.loadTemplate(tempsNames.tmp_test_drive_model, domEl.div_recurrent_test_drive_section);
-            formTestDriveMethods.init_datepicker();
-            modelsMenuMethods.changeNameModel();
-            $('#suk_test_dirve_model_submit').attr('disabled', true);
-            //console.log('entra form-contact');
-        },
-        resetForm: function() {
-            SUK.resetForm('#test_drive');
-            formTestDriveMethods.init_datepicker();
-            $('#suk_test_dirve_model_submit').attr('disabled', true);
-            //console.log('entra form-contact');
-        },
-        reset_pre_loader: function() {
-            SUK.setHTML('.form-loader', '');
-        },
-        finchNavigateReturn: function(event) {
-            $('body,html').animate({ scrollTop: "0" }, 999, 'easeOutExpo' );
-            Finch.navigate('/');
-        },
-        validate_fields_keyup: function() {
-            formTestDriveMethods.fillingControl();
-        },
-        sendTestDriveForm: function(event) {
-            formTestDriveMethods.fillingControl();
-            var $test_drive_model_date           = $('#test_drive_model_date'),
-                $test_drive_model_name           = $('#test_drive_model_name'),
-                $test_drive_model_lastname       = $('#test_drive_model_lastname'),
-                $test_drive_model_email          = $('#test_drive_model_email'),
-                $test_drive_model_tel            = $('#test_drive_model_tel');
-
-            val_news = SUK.getValue('#test_drive_model_newsletter');
-            val_auto = SUK.getValue('#test_drive_model_modelo');
-            current_car = SUK.getValue('#test_drive_model_modelo');
-            selected_concessionaire = SUK.getValue('#test_drive_model_concesionaria');
-
-            SUK.setValue('#test_drive_model_image_modelo', 'suzuki_'+val_auto+'.png');
-
-            if (val_news === 'on') {
-                val_subscription = 'Activado';
-                SUK.setValue('#test_drive_model_subscription', val_subscription);
-                //console.log(val_subscription);
-            } else {
-                val_subscription = 'Desactivado';
-                SUK.setValue('#test_drive_model_subscription', val_subscription);
-                //console.log(val_subscription);
-            }
-            var form_errors = 0;
-            if( validateMethods.validate_input( $test_drive_model_date ) ){
-                form_errors++;
-                $test_drive_model_date.change();
-            }
-            if( validateMethods.validate_input( $test_drive_model_name ) ){
-                form_errors++;
-                $test_drive_model_name.focusout();
-            }
-            if( validateMethods.validate_input( $test_drive_model_lastname ) ){
-                form_errors++;
-                $test_drive_model_lastname.focusout();
-            }
-            if( validateMethods.validate_input( $test_drive_model_email ) ){
-                form_errors++;
-                $test_drive_model_email.focusout();
-            }
-            if( validateMethods.validate_input( $test_drive_model_tel ) ){
-                form_errors++;
-                $test_drive_model_tel.focusout();
-            }
-            if ( form_errors != 0 ) {
-                var data = {
-                    car_key         : current_car,
-                    concessionaire  : selected_concessionaire,
-                    date            : $test_drive_model_date.val(),
-                    email           : $test_drive_model_email.val(),
-                    name            : $test_drive_model_name.val(),
-                    lastname        : $test_drive_model_lastname.val(),
-                    newsletter      : $('#test_drive_model_newsletter:checked').length,
-                    phone           : $test_drive_model_tel.val(),
-                    source          : 'Model ' + current_car
-                }
-                var precio_actual = showMeTheMoney(current_car),
-                    precio_cal = 0.071 * precio_actual,
-                    precio_total = moneyFormat( precio_cal );
-
-                analytics_test_drive( 'Modelos: ' + current_car , precio_cal );
-                var cd = selected_concessionaire;
-
-                $('#step-2-concessionaire-final').html( cd );
-                $('#step-2-mail-final').html( data.email );
-
-                $('#step-2-form').fadeOut( 300 , function(){
-                    setTimeout(function () {
-                        $('.form-loader').fadeIn();
-                        var testDriveModelPromise = formTestDriveMethods.addDataFormTestDrive();
-
-                        testDriveModelPromise.success(function (data) {
-                            //console.log('Datos Enviados');
-                        });
-                        testDriveModelPromise.error(function (data) {
-                            formTestDriveMethods.resetForm();
-                            //console.log('Datos No Enviados');
-                        });
-                    }, 1000);
-                    setTimeout(function () {
-                        $('.form-loader').fadeOut();
-                        $('#step-2-form').hide();
-                        $('#step-2-final').hide().fadeIn();
-                    }, 3000);
-                });
-
-                //console.log(data);
-                //console.log(moneyFormat(precio_actual));
-                //console.log(cd);
-
-            }
-        }
-    }
-/* ------------------------------------------------------ *\
-    [Methods] formContact
-\* ------------------------------------------------------ */
-    var formContactMethods = {
-        addDataFormContact: function() {
-            var dataFormContact;
-            dataFormContact = $('#form-contact').serializeFormJSON();
-
-            dataFormContact['suk_gdl_contact_news'] = (dataFormContact['suk_gdl_contact_news'] == 'on')
-                ? dataFormContact['suk_gdl_contact_news'] : 'off';
-
-            //console.log(dataFormContact);
-            //console.log(dataFormContact['suk_gdl_contact_news']);
-
-            return SUK.postalService(urlsApi.sendContact, dataFormContact);
-        },
-        fillingControl: function() {
-            var validFieldItems, dataFormContact, isFull, isNoEmpty;
-            validFieldItems = [
-                'suk_gdl_contact_name', 'suk_gdl_contact_lastname',
-                'suk_gdl_contact_email', 'suk_gdl_contact_department',
-                'suk_gdl_contact_car', 'suk_gdl_contact_message'
-            ];
-
-            dataFormContact = $('#form-contact').serializeFormJSON();
-
-            isFull = SUK.validFormFull(dataFormContact, validFieldItems);
-            $('#suk_contact_submit').attr('disabled', !isFull);
-
-            /*isEmpty = SUK.validFormEmpty(dataFormContact, validFieldItems);
-            $('#suk_contact_submit').attr('disabled', isEmpty);*/
-
-            //console.log($('#form-contact').serializeFormJSON());
-        },
-        refreshForm : function() {
-            SUK.loadTemplate(tempsNames.tmp_form_contact, domEl.div_content_section_form_contact);
-            $('.seleccionar').chosen();
-            $('#contact-newsletter').attr('checked', true);
-            $('#suk_contact_submit').attr('disabled', true);
-            //console.log('entra form-contact');
-        },
-        resetForm : function() {
-            SUK.resetForm('#form-contact');
-            $('.seleccionar').chosen();
-            $('#contact-newsletter').attr('checked', true);
-            $('#suk_contact_submit').attr('disabled', true);
-            //console.log('refresca todo');
-        },
-        reset_pre_loader: function() {
-            SUK.setHTML('.form-loader', '');
-        },
-        finchNavigateReturn: function() {
-            $('body,html').animate({ scrollTop: "0" }, 999, 'easeOutExpo' );
-            Finch.navigate('/');
-        },
-        validate_fields_keyup: function() {
-            formContactMethods.fillingControl();
-        },
-        validate_fields_change: function() {
-            formContactMethods.fillingControl();
-        },
-        sendContactForm : function(event) {
-            formContactMethods.fillingControl();
-            var $contact_message    = $('#contact_message'),
-                $contact_car_key    = $('#contact_car_key'),
-                $contact_department = $('#contact_department'),
-                $contact_email      = $('#contact_email'),
-                $contact_name       = $('#contact_name'),
-                $contact_lastname   = $('#contact_lastname'),
-                $contact_newsletter = $('#contact-newsletter');
-
-            val_department = SUK.getValue('#contact_department');
-            val_auto = SUK.getValue('#contact_car_key');
-            val_news = SUK.getValue('#contact-newsletter');
-
-            SUK.setValue('#contact_depto', val_department);
-            SUK.setValue('#contact_auto', val_auto);
-            SUK.setValue('#contact_image_modelo', 'suzuki_'+val_auto+'.png');
-
-            if (val_news === 'on') {
-                val_subscription = 'Activado';
-                SUK.setValue('#contact_subscription', val_subscription);
-                //console.log(val_subscription);
-            } else {
-                val_subscription = 'Desactivado';
-                SUK.setValue('#contact_subscription', val_subscription);
-                //console.log(val_subscription);
-            }
-
-            $contact_department.chosen();
-            $contact_car_key.chosen();
-
-            var form_errors = 0;
-            if( validateMethods.validate_input( $contact_message ) ){
-                form_errors++;
-                $contact_message.focusout();
-            }
-            if( validateMethods.validate_input( $contact_car_key ) ){
-                form_errors++;
-                $contact_car_key.change();
-            }
-            if( validateMethods.validate_input( $contact_department ) ){
-                form_errors++;
-                $contact_department.change();
-            }
-            if( validateMethods.validate_input( $contact_email ) ){
-                form_errors++;
-                $contact_email.focusout();
-            }
-            if( validateMethods.validate_input( $contact_name ) ){
-                form_errors++;
-                $contact_name.focusout();
-            }
-            if( validateMethods.validate_input( $contact_lastname ) ){
-                form_errors++;
-                $contact_lastname.focusout();
-            }
-            if( form_errors != 0 ){
-                var data = {
-                    car_key     : $contact_car_key.val(),
-                    department  : $contact_department.val(),
-                    email       : $contact_email.val(),
-                    message     : $contact_message.val(),
-                    name        : $contact_name.val(),
-                    lastname    : $contact_lastname.val(),
-                    newsletter  : $('#contact-newsletter:checked').length,
-                    //newsletter  : $contact_newsletter.is(':checked').length,
-                    source      : 'Contacto'
-                };
-                var contactPromise = formContactMethods.addDataFormContact();
-
-                contactPromise.success(function (data) {
-                    //console.log(data);
-                    var con_news = $('#contact-newsletter:checked').length;
-                    //var con_news = $contact_newsletter.is(':checked').length;
-                    var departamento = $contact_department.val();
-                    var precio_actual = showMeTheMoney($contact_car_key.val());
-                    var news_srt    = con_news ? 'Envio_con_Newsletter' : 'Envio_Sin_Newsletter';
-                    var news_val    = con_news ? 600 : 0;
-                    var car_val     = departamento === 'ventas' ? precio_actual * 0.03 : 0;
-                    //console.log(departamento, precio_actual, news_srt, news_val, car_val);
-                    ga('send', 'event', 'Contacto', news_srt, departamento, news_val + car_val );
-                    setTimeout(function() {
-                        //setTimeout(function () {
-                            //$('#form-wrapper').fadeIn( 300 , function(){
-                                //$('.form-loader').fadeOut();
-                            //});
-                        //}, 800);
-                        //console.log('Espera');
-                        setTimeout(function () {
-                            //setTimeout(function () {
-                                $('#form-wrapper').fadeOut( 300 , function(){
-                                    setTimeout(function () {
-                                        $('.form-loader').fadeIn();
-                                    }, 300);
-                                });
-                            //}, 1800);
-                            setTimeout(function () {
-                                //console.log("Correo Enviado...");
-                                setTimeout(function () {
-                                    $('#form-wrapper').fadeOut( 300 , function(){
-                                        var correo = $("#contact_email").val();
-                                        $('#email-from').text(correo);
-                                        setTimeout(function () {
-                                            $('.form-thanks').fadeIn();
-                                        }, 1800);
-                                    });
-                                    //console.log(data);
-                                    setTimeout(function () {
-                                        formContactMethods.reset_pre_loader();
-                                        formContactMethods.resetForm();
-                                        setTimeout(function () {
-                                            $('#form-wrapper').fadeIn( 300 , function(){
-                                                var correo = $("#contact_email").val();
-                                                $('#email-from').text(correo);
-                                                $('.form-thanks').fadeOut();
-                                            });
-                                            setTimeout(function () {
-                                                formContactMethods.finchNavigateReturn();
-                                            }, 2000);
-                                        }, 3400);
-                                    }, 1800);
-                                }, 1800);
-                            }, 1400);
-                        }, 300);
-                    }, 500);
-                });
-                contactPromise.error(function (data) {
-                    setTimeout(function() {
-                        //setTimeout(function () {
-                            //$('#form-wrapper').fadeIn( 300 , function(){
-                                //$('.form-loader').fadeOut();
-                            //});
-                        //}, 1800);
-                        //console.log('Espera');
-                        setTimeout(function () {
-                            //setTimeout(function () {
-                                $('#form-wrapper').fadeOut( 300 , function(){
-                                    setTimeout(function () {
-                                        $('.form-loader').fadeIn();
-                                    }, 1000);
-                                });
-                            //}, 1800);
-                            setTimeout(function () {
-                                //console.log("Correo Enviado...");
-                                setTimeout(function () {
-                                    $('#form-wrapper').fadeOut( 300 , function(){
-                                        setTimeout(function () {
-                                            $('.form-error').fadeIn();
-                                        }, 1800);
-                                    });
-                                    //console.log(data);
-                                    setTimeout(function () {
-                                        formContactMethods.resetForm();
-                                        setTimeout(function () {
-                                            $('#form-wrapper').fadeIn( 300 , function(){
-                                                $('.form-error').fadeOut();
-                                            });
-                                            setTimeout(function () {
-                                                formContactMethods.resetForm();
-                                            }, 2000);
-                                        }, 3400);
-                                    }, 1800);
-                                }, 5900);
-                            }, 3400);
-                        }, 1800);
-                    }, 500);
-                });
-
-            }
-        }
-    }
-/* ------------------------------------------------------ *\
-    [functions] getAbsolutePath
-\* ------------------------------------------------------ */
-    function getAbsolutePath() {
-        var loc = window.location;
-        var pathName = loc.pathname.substring(0, loc.pathname.lastIndexOf('/') + 1);
-        return loc.href.substring(0, loc.href.length - ((loc.pathname + loc.search + loc.hash).length - pathName.length));
-    }
-/* ------------------------------------------------------ *\
-    [Methods] set_form_leads_method
-\* ------------------------------------------------------ */
-    var set_form_leads_method = {
-        data_max_leads_api: function() {
-            var dataApi, dataRenowned, $model, $url, day, f, month, dateFormat;
-            day = new Array("Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado");
-            f = new Date();
-            month = new Array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
-
-            dateFormat = month[f.getMonth()] + " " + f.getFullYear();
-
-            dataApi = $(domEl._form_leads).serializeFormJSON();
-            $model = SUK.getValue('#hidden_key_model_gama');
-
-            replace_model = SUK.replaceAll($model, '-', ' ');
-            new_model_name = SUK.ucWords(replace_model);
-
-            //console.log('Guarda datos MAX.');
-            //console.log(dataApi);
-
-            dataRenowned = SUK.renameArrayObjKeys([dataApi], {
-                'name': 'nombre',
-                'lastname': 'apellidos' ,
-                'email': 'correo',
-                'phone': 'telefono',
-                'comment': 'mensaje',
-                'news': 'newsletter'
-            });
-            dataRenowned = dataRenowned[0];
-
-            $url = getAbsolutePath();
-            //console.log($url);
-
-            dataRenowned['product'] = new_model_name;
-            dataRenowned['web_max'] = $url + '#/financiamiento/'+ $model;
-            dataRenowned["business_max"] = $('#leads_concessionaire').find(":selected").data("max-id"); //Max Id;            
-            dataRenowned['origen_type'] = '2';
-            dataRenowned['campaign_max'] = 'Cotización ' + new_model_name + ' ' + dateFormat;
-            //console.log(dataRenowned);
-
-            return SUK.postalService('http://clicktolead.com.mx/api/v1/remote/action', dataRenowned);
-        },
-        data_fiancing_by_model: function() {
-            var data, $model, urlApi, postApi;
-            data = $(domEl._form_leads).serializeFormJSON();
-
-            // CHECKBOX
-            data['newsletter'] = (data['newsletter'] == '1') ? data['newsletter'] : '0';
-            // RADIO
-            data['test_drive'] = (data['test_drive'] == 'Sí deseas manejarlo') ? data['test_drive'] : 'No deseas manejarlo';
-            //console.log(data);
-
-            $model = SUK.getValue('#hidden_key_model_gama');
-
-            urlApi = urlsApi.getFinancingByModel + $model;
-            postApi = SUK.postalService(urlApi, data);
-            //console.log(postApi);
-            return postApi;
-        },
-        fillingControl: function() {
-            var validFieldName, dataApi, isFull, isNoEmpty;
-            validFieldName = ['concesionaria', 'nombre', 'apellidos', 'correo', 'telefono', 'mensaje'];
-            dataApi = $(domEl._form_leads).serializeFormJSON();
-            //console.log(dataApi);
-        },
-        refreshForm: function() {
-            var $btnSend;
-            $btnSend = $('.send_contact_form');
-
-            SUK.loadTemplate(tempsNames.start_site_form_leads, domEl.leads_financing_form);
-            $('.seleccionar').chosen();
-            set_form_leads_method.set_input_hidden();
-
-            $btnSend.removeAttr('disabled');
-        },
-        resetApi: function() {
-            var $btnSend;
-            $btnSend = $('.send_contact_form');
-
-            SUK.resetForm(domEl._form_leads);
-
-            $('#loader_send_icon').css('display', 'none');
-
-            //$('#leads_concessionaire_chosen a.chosen-single span').text('Selecciona Concesionaria');
-            //$('#leads_model_chosen a.chosen-single span').text('Selecciona Modelo');
-            
-            $('#fieldset-radio-checkbox-yes label').removeClass('radio-checked');
-            $('#fieldset-radio-checkbox-yes label input').removeAttr('checked');
-
-            $('#fieldset-radio-checkbox-no label').addClass('radio-checked');
-            $('#fieldset-radio-checkbox-no label input').attr('checked');
-
-            $('#checkbox-news label').removeClass('checkbox-checked');
-            $('#checkbox-news label input').removeAttr('checked');
-            
-            $btnSend.removeAttr('disabled');
-        },
-        keyInput: function() {
-            set_form_leads_method.fillingControl();
-        },
-        set_input_hidden: function() {
-            var $model, replace_model, new_model_name, $url;
-            $model = SUK.getValue('#hidden_key_model_gama');
-
-            $url = getAbsolutePath();
-
-            replace_model = SUK.replaceAll($model, '-', ' ');
-            new_model_name = SUK.ucWords(replace_model);
-            set_input_hidden = [
-                ['input', {'id' : 'leads_image_model', 'class' : 'set_input_hidden', 'value' : 'thumb-' + $model + '.png', 'name' : 'image_model', 'type' : 'hidden'}, '', 0],
-                ['input', {'id' : 'leads_name_model', 'class' : 'set_input_hidden', 'value' : new_model_name + ' ' + year_model, 'name' : 'name_model', 'type' : 'hidden'}, '', 0],
-                ['input', {'id' : 'leads_agencie', 'class' : 'set_input_hidden', 'value' : '', 'name' : 'agencie', 'type' : 'hidden'}, '', 0],
-                ['input', {'id' : 'leads_url', 'class' : 'set_input_hidden', 'value' : '', 'name' : 'url', 'type' : 'hidden'}, '', 0],
-                ['input', {'id' : 'leads_model_key', 'class' : 'set_input_hidden', 'value' : $model, 'name' : 'key_model', 'type' : 'hidden'}, '', 0],
-                ['input', {'id' : 'leads_subscription', 'class' : 'set_input_hidden', 'value' : '', 'name' : 'subscription', 'type' : 'hidden'}, '', 0],
-                ['input', {'id' : 'leads_testdrive', 'class' : 'set_input_hidden', 'value' : '', 'name' : 'testdrive', 'type' : 'hidden'}, '', 0],
-                ['input', {'id' : 'leads_campaign', 'class' : 'set_input_hidden', 'value' : 'Cotización ' + new_model_name, 'name' : 'campaign_model', 'type' : 'hidden'}, '', 0]            
-            ];
-            SUK.appendMulti('#funding_fields_hidden', set_input_hidden);
-        },
-        send_form_leads: function() {
-            var $concessionaire, $model, $name, $lastname, $email, $phone, $message, $test_drive, $news, $url, $btnSend, form_errors;
-
-            $concessionaire = $('#leads_concessionaire');
-            $model = $('#leads_model');
-            $name = $('#leads_name');
-            $lastname = $('#leads_lastname');
-            $email = $('#leads_email');
-            $phone = $('#leads_phone');
-            $message = $('#leads_message');
-            $test_drive = $('input[name="test_drive"]:checked');
-            $news = $('#leads_newsletter');
-
-            $url = getAbsolutePath();
-            //console.log($url);
-
-            val_concessionaire = $concessionaire.val();
-            //console.log(val_concessionaire);
-            if ( val_concessionaire != null && val_concessionaire != '' ) {
-                replace_concessionaire = SUK.replaceAll(val_concessionaire, '-', ' ');
-                replace_concessionaire_acute = SUK.replaceAll(replace_concessionaire, 'lopez', 'lópez');
-                new_concessionaire_name = SUK.ucWords(replace_concessionaire_acute);
-                //console.log(new_concessionaire_name);
-
-                SUK.setValue($('#leads_agencie'), new_concessionaire_name);
-            }
-            SUK.setValue($('#leads_url'), $url);
-            
-            $btnSend = $('.send_contact_form');
-            form_errors = 0;
-
-            val_test_drive = $test_drive.val();
-            val_news = $news.val();
-            //console.log(val_test_drive);
-            //console.log(val_news);
-            $btnSend.removeAttr('disabled');
-
-            // VALIDATE TEST DRIVE
-            if ( val_test_drive === '1' ) {
-                    val_testdrive = 'Sí deseas manejarlo';
-                    //console.log(val_testdrive);
-                    SUK.setValue($('#leads_testdrive'), val_testdrive);
-                    ga('send', 'event', 'Financiamiento', 'Confirmacion_Test_Drive', val_testdrive);
-            } else {
-                    val_testdrive = 'No deseas manejarlo';
-                    //console.log(val_testdrive);
-                    SUK.setValue($('#leads_testdrive'), val_testdrive);
-                    ga('send', 'event', 'Financiamiento', 'Confirmacion_Test_Drive', val_testdrive);
-            }
-            // VALIDATE NEWSLETTER
-            if ( val_news === '1' ) {
-                    val_subscription = 'Activado';
-                    //console.log(val_subscription);
-                    SUK.setValue($('#leads_subscription'), val_subscription);
-                    ga('send', 'event', 'Financiamiento', 'Confirmacion_Newsletter', val_subscription);
-            } else {
-                    val_subscription = 'Desactivado';
-                    //console.log(val_subscription);
-                    SUK.setValue($('#leads_subscription'), val_subscription);
-                    ga('send', 'event', 'Financiamiento', 'Confirmacion_Newsletter', val_subscription);
-            }
-            if ( !$.validate_input( $message )) {
-                form_errors++;
-                $message.focus();
-            }
-            if ( !$.validate_input( $phone )) {
-                form_errors++;
-                $phone.focus();
-            }
-            if ( !$.validate_input( $email )) {
-                form_errors++;
-                $email.focus();
-            }
-            if ( !$.validate_input( $lastname )) {
-                form_errors++;
-                $lastname.focus();
-            }
-            if ( !$.validate_input( $name )) {
-                form_errors++;
-                $name.focus();
-            }
-            /*if ( !$.validate_input( $model )) {
-                form_errors++;
-                //$model.change();
-                $model.focusout();
-            }
-            if ( !$.validate_input( $concessionaire )) {
-                form_errors++;
-                $concessionaire.change();
-                //$concessionaire.focusout();
-            }
-            */
-            if ( form_errors == 0 ) {
-                $btnSend.css('cursor', 'auto').prop('disabled', true);
-                $('#loader_send_icon').css('display', 'block');
-
-                apiPromise = set_form_leads_method.data_max_leads_api();
-                apiPromise.success( function (data) {
-                    //console.log('guarda registro en max, promise success');
-                    //console.log(data);
-
-                    sendFundingPromise = set_form_leads_method.data_fiancing_by_model();
-                    sendFundingPromise.success( function (data) {
-                        //console.log('Entra promise success');
-                        //console.log(data);
-                        setTimeout(function () {
-                            //console.log("Correo Enviado...");
-                            setTimeout(function () {
-                                $('#form-wrapper').fadeOut(1000);
-                                var correo, agencie;
-                                correo = $('#leads_email').val();
-                                agencie = SUK.getValue('#leads_agencie');
-                                $('#email-from').text(correo);
-                                $('#concessionaire-from').text(agencie);
-                                $('.form-thanks').fadeIn(1000);
-                                setTimeout(function() {
-                                    set_form_leads_method.fillingControl();
-                                    set_form_leads_method.resetApi();
-                                    setTimeout(function() {
-                                        $('#form-wrapper').fadeIn(1000);
-                                        $('.form-thanks').fadeOut(1000);
-                                    }, 3400);
-                                }, 1800);
-                            }, 1800);
-                        }, 1400);
-                    });
-                    sendFundingPromise.error( function (data) {
-                        //console.log('Entra promise error');
-                        //console.log(data);
-                        set_form_leads_method.resetApi();
-                    });
-                });
-                apiPromise.error( function (data) {
-                    //console.log('no guarda registro en max, promise error');
-                    //console.log(data);
-                    set_form_leads_method.resetApi();
-                });
-            }
-        }
-    }
-/* ------------------------------------------------------ *\
-    [Methods] formFinancing General Models
-\* ------------------------------------------------------ */
-    var formFinancingGeneral = {
-        addDataFormFinancingGeneral: function() {
-            var dataFormFinancingGeneral;
-            dataFormFinancingGeneral = $('#financing-general').serializeFormJSON();
-
-            // CHECKBOX
-            dataFormFinancingGeneral['suk_gdl_financing_general_newsletter'] = (dataFormFinancingGeneral['suk_gdl_financing_general_newsletter'] == 'on')
-                ? dataFormFinancingGeneral['suk_gdl_financing_general_newsletter'] : 'off';
-
-            // RADIO
-            dataFormFinancingGeneral['suk_gdl_financing_general_drive'] = (dataFormFinancingGeneral['suk_gdl_financing_general_drive'] == 'Sí deseas manejarlo')
-                ? dataFormFinancingGeneral['suk_gdl_financing_general_drive'] : 'No deseas manejarlo';
-
-            //console.log(dataFormFinancingGeneral);
-            //console.log(dataFormFinancingGeneral['suk_gdl_financing_general_newsletter']);
-            //console.log(dataFormFinancingGeneral['suk_gdl_financing_general_drive']);
-
-            return SUK.postalService(urlsApi.sendFinancingGeneral, dataFormFinancingGeneral);
-        },
-        fillingControl: function() {
-            var validFieldItems, dataFormFinancingGeneralModel, isFull, isNoEmpty;
-            validFieldItems = [
-                'suk_gdl_financing_general_name',
-                'suk_gdl_financing_general_lastname',
-                'suk_gdl_financing_general_email',
-                'suk_gdl_financing_general_tel'
-            ];
-            dataFormFinancingGeneralModel = $('#financing-general').serializeFormJSON();
-
-            isFull = SUK.validFormFull(dataFormFinancingGeneralModel, validFieldItems);
-            $('#suk_financing_general_submit').attr('disabled', !isFull);
-
-            /*isEmpty = SUK.validFormEmpty(dataFormFinancingGeneralModel, validFieldItems);
-            $('#suk_financing_general_submit').attr('disabled', isEmpty);*/
-
-            //console.log(dataFormFinancingGeneralModel);
-        },
-        refreshFrom: function() {
-            SUK.loadTemplate(tempsNames.tmp_form_financing_general, domEl.div_recurrent_funding_general_form);
-            modelsMenuMethods.changeNameModel();
-            $('#suk_financing_general_submit').attr('disabled', true);
-            //console.log('entra form-financing-general');
-        },
-        resetForm: function() {
-            SUK.resetForm('#financing-general');
-            $('#suk_financing_general_submit').attr('disabled', true);
-            //console.log('refresh form-financing-general');
-        },
-        finchNavigateReturn: function(event) {
-            $('body,html').animate({ scrollTop: "0" }, 999, 'easeOutExpo' );
-            Finch.navigate('/');
-        },
-        validate_fields_keyup: function() {
-            formFinancingGeneral.fillingControl();
-        },
-        sendFinancingGeneralForm: function(event) {
-            formFinancingGeneral.fillingControl();
-            var $financing_general_name     = $('#financing_general_name'),
-                $financing_general_lastname = $('#financing_general_lastname'),
-                $financing_general_email    = $('#financing_general_email'),
-                $financing_general_tel      = $('#financing_general_tel');
-            var $financing_general_car_price            = $('#financing_general_car_price'),
-                $financing_general_car_engagement       = $('#financing_general_car_engagement'),
-                $financing_general_car_monthly_payment  = $('#financing_general_car_monthly_payment'),
-                $financing_general_car_months           = $('#financing_general_car_months');
-            val_news = SUK.getValue('#financing_general_newsletter');
-            val_auto = SUK.getValue('#financing_general_model_key');
-            current_car = SUK.getValue('#financing_general_model_key');
-            selected_concessionaire = SUK.getValue('#financing_general_concesionarie');
-
-            fu_car_version = fuh_data.car_version;
-            SUK.setValue('#financing_general_model_car_verison', fu_car_version);
-            //console.log(fu_car_version);
-
-            SUK.setValue('#financing_general_image_model', 'suzuki_'+val_auto+'.png');
-
-            if (val_news === 'on') {
-                val_subscription = 'Activado';
-                SUK.setValue('#financing_general_subscription', val_subscription);
-                //console.log(val_subscription);
-            } else {
-                val_subscription = 'Desactivado';
-                SUK.setValue('#financing_general_subscription', val_subscription);
-                //console.log(val_subscription);
-            }
-            var form_errors = 0;
-            if( validateMethods.validate_input( $financing_general_name ) ){
-                form_errors++;
-                $financing_general_name.focusout();
-            }
-            if( validateMethods.validate_input( $financing_general_lastname ) ){
-                form_errors++;
-                $financing_general_lastname.focusout();
-            }
-            if( validateMethods.validate_input( $financing_general_email ) ){
-                form_errors++;
-                $financing_general_email.focusout();
-            }
-            if( validateMethods.validate_input( $financing_general_tel ) ){
-                form_errors++;
-                $financing_general_tel.focusout();
-            }
-            if( form_errors != 0){
-                var data = {
-                    car_key         : fuh_data.key,
-                    car_version     : fu_car_version,
-                    email           : $financing_general_email.val(),
-                    price           : $financing_general_car_price.val(),
-                    engagement      : $financing_general_car_engagement.val(),
-                    monthly_payment : $financing_general_car_monthly_payment.val(),
-                    months          : $financing_general_car_months.val(),
-                    name            : $financing_general_name.val(),
-                    lastname        : $financing_general_lastname.val(),
-                    concessionaire  : selected_concessionaire,
-                    newsletter      : ('#financing_general_newsletter:checked').length,
-                    source          : 'Financiamiento Gama General'
-                };
-                //console.log(data);
-                var price_cal = 0.012 * funding_data.price,
-                    price_total = moneyFormat( price_cal );
-
-                $('#funding_resume_email').html( data.email );
-                $('#header-financiamiento li.step-nav-tabs').addClass( 'disabled' );
-
-                if ($('input[name="suk_gdl_financing_general_drive"]:checked').val() == 'Sí deseas manejarlo') {
-                    $('#funding_resume_concessionaire').text( selected_concessionaire );
-                    ga('send', 'event', 'Financiamiento', 'Confirmacion_Prueba', 'Financing: ' + fuh_data.key, 0.012 * funding_data.price );
-                    //console.log("ga('send', 'event', 'Financiamiento', 'Confirmacion_Prueba', 'Financing: '" + fuh_data.key, price_total +")");
-                } else {
-                    ga('send', 'event', 'Financiamiento', 'Confirmacion_No_Prueba', 'Financing: ' + fuh_data.key, 0.012 * funding_data.price );
-                    //console.log("ga('send', 'event', 'Financiamiento', 'Confirmacion_No_Prueba', 'Financing: '" + fuh_data.key, price_total +")");
-                }
-                $('#funding_form').fadeOut( 300 , function(){
-                    setTimeout(function () {
-                        $('.form-loader').fadeIn();
-                        var financingGeneralPromise = formFinancingGeneral.addDataFormFinancingGeneral();
-
-                        financingGeneralPromise.success(function (data) {
-                            formFinancingGeneral.resetForm();
-                            //console.log('Datos Enviados');
-                        });
-                        financingGeneralPromise.error(function (data) {
-                            formFinancingGeneral.resetForm();
-                            //console.log('Datos No Enviados');
-                        });
-                    }, 100);
-                    setTimeout(function () {
-                        $('.form-loader').fadeOut();
-                        $('#funding_form').hide();
-                        $('#funding_resume').fadeIn();
-                    }, 3000);
-                });
-
-            }
-
-            //console.log('entra evento');
         }
     }
 /* ------------------------------------------------------ *\

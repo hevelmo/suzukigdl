@@ -27,7 +27,7 @@ class __TwigTemplate_0f219cb0a675e40e27a222a4d1e740dfbfeb75256c314b579199b01f6b7
                     <span style=\"color: red;\" class=\"fa fa-asterisk\"></span> Selecciona concesionaria
                 </label>
                 <div class=\"select\">
-                    <select id=\"suk_agn\" name=\"agencia\" class=\"validate-required\" data-validation-data=\"required|free\" style=\"width: 100%;\">
+                    <select id=\"suk_agn\" name=\"agencia\" class=\"validate-required\" data-validation-data=\"required\" style=\"width: 100%;\">
                         <option label=\"Selecccionar Concesionaria...\" value=\"\">Selecciona Concesionaria</option>
                         <option data-max-id=\"12\" label=\"Suzuki López Mateos\" value=\"Suzuki López Mateos\">Suzuki López Mateos</option>
                         <option data-max-id=\"54\" label=\"Suzuki Vallarta\" value=\"Suzuki Vallarta\">Suzuki Vallarta</option>
@@ -164,7 +164,7 @@ class __TwigTemplate_0f219cb0a675e40e27a222a4d1e740dfbfeb75256c314b579199b01f6b7
     </div>
     <div class=\"financing_element b\">
         <fieldset>
-            <button id=\"financing_send\" class=\"enviar button red send_contact_form financing-form-send\">Enviar</button>
+            <button id=\"financing_send\" class=\"enviar button red send_contact_form financing_form_send\">Enviar</button>
         </fieldset>
     </div>
 </div>
@@ -207,7 +207,7 @@ class __TwigTemplate_0f219cb0a675e40e27a222a4d1e740dfbfeb75256c314b579199b01f6b7
 /*                     <span style="color: red;" class="fa fa-asterisk"></span> Selecciona concesionaria*/
 /*                 </label>*/
 /*                 <div class="select">*/
-/*                     <select id="suk_agn" name="agencia" class="validate-required" data-validation-data="required|free" style="width: 100%;">*/
+/*                     <select id="suk_agn" name="agencia" class="validate-required" data-validation-data="required" style="width: 100%;">*/
 /*                         <option label="Selecccionar Concesionaria..." value="">Selecciona Concesionaria</option>*/
 /*                         <option data-max-id="12" label="Suzuki López Mateos" value="Suzuki López Mateos">Suzuki López Mateos</option>*/
 /*                         <option data-max-id="54" label="Suzuki Vallarta" value="Suzuki Vallarta">Suzuki Vallarta</option>*/
@@ -329,7 +329,7 @@ class __TwigTemplate_0f219cb0a675e40e27a222a4d1e740dfbfeb75256c314b579199b01f6b7
 /*     </div>*/
 /*     <div class="financing_element b">*/
 /*         <fieldset>*/
-/*             <button id="financing_send" class="enviar button red send_contact_form financing-form-send">Enviar</button>*/
+/*             <button id="financing_send" class="enviar button red send_contact_form financing_form_send">Enviar</button>*/
 /*         </fieldset>*/
 /*     </div>*/
 /* </div>*/

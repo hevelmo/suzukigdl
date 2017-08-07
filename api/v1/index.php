@@ -362,10 +362,10 @@ $app = new \Slim\App($container);
         public function __invoke($request, $response, $args) {
             $domain = "gdl";
             $url  = "http://suzuki". $domain .".com.mx/";
-            /*
             $mail_to = "hevelmo060683@gmail.com";
-            */
+            /*
             $mail_to = "mercadotecnia@suzuki-lm.com.mx";
+            */
             $from_email = "noreply@clicktolead.com.mx";
             $website = $url;
 
@@ -411,10 +411,10 @@ $app = new \Slim\App($container);
         public function __invoke($request, $response, $args) {
             $domain = "gdl";
             $url  = "http://suzuki". $domain .".com.mx/";
-            /*
             $mail_to = "hevelmo060683@gmail.com";
-            */
+            /*
             $mail_to = "webmaster@medigraf.com.mx";
+            */
             $from_email = "noreply@clicktolead.com.mx";
             $website = $url;
 
@@ -460,10 +460,10 @@ $app = new \Slim\App($container);
         public function __invoke($request, $response, $args) {
             $domain = "gdl";
             $url  = "http://suzuki". $domain .".com.mx/";
-            /*
             $mail_to = "hevelmo060683@gmail.com";
-            */
+            /*
             $mail_to = "mercadotecnia@suzuki-lm.com.mx";
+            */
             $from_email = "noreply@clicktolead.com.mx";
             $website = $url;
 
@@ -508,10 +508,10 @@ $app = new \Slim\App($container);
         public function __invoke($request, $response, $args) {
             $domain = "gdl";
             $url  = "http://suzuki". $domain .".com.mx/";
-            /*
             $mail_to = "hevelmo060683@gmail.com";
-            */
+            /*
             $mail_to = "webmaster@medigraf.com.mx";
+            */
             $from_email = "noreply@clicktolead.com.mx";
             $website = $url;
 
@@ -557,10 +557,10 @@ $app = new \Slim\App($container);
         public function __invoke($request, $response, $args) {
             $domain = "gdl";
             $url  = "http://suzuki". $domain .".com.mx/";
-            /*
             $mail_to = "hevelmo060683@gmail.com";
-            */
+            /*
             $mail_to = "mercadotecnia@suzuki-lm.com.mx";
+            */
             $from_email = "noreply@clicktolead.com.mx";
             $website = $url;
 
@@ -606,10 +606,10 @@ $app = new \Slim\App($container);
         public function __invoke($request, $response, $args) {
             $domain = "gdl";
             $url  = "http://suzuki". $domain .".com.mx/";
-            /*
             $mail_to = "hevelmo060683@gmail.com";
-            */
+            /*
             $mail_to = "webmaster@medigraf.com.mx";
+            */
             $from_email = "noreply@clicktolead.com.mx";
             $website = $url;
 
@@ -665,10 +665,10 @@ $app = new \Slim\App($container);
         public function startProcess($request, $response, $args) {
             $domain = "gdl";
             $url  = "http://suzuki". $domain .".com.mx/";
-            /*
             $mail_to = "hevelmo060683@gmail.com";
-            */
+            /*
             $mail_to = "reclutamiento@camcar.mx";
+            */
             $from_email = "noreply@clicktolead.com.mx";
             $website = $url;
 

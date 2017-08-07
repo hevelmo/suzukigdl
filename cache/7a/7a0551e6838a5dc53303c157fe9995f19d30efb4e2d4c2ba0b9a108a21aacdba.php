@@ -150,17 +150,6 @@ class __TwigTemplate_e5611cf8b42d5c1403a420f8c94f246b73538e3fe9d18ad834c4b28c1bd
                                                                 </li>
                                                             </ul>
                                                         </li>
-                                                        <li style=\"list-style-type: disc;\">
-                                                            <b>Teléfono:</b>
-                                                            <ul>
-                                                                <li>
-                                                                     <i>";
-        // line 128
-        echo twig_escape_filter($this->env, (isset($context["telefono"]) ? $context["telefono"] : null), "html", null, true);
-        echo "</i>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
                                                     </ol>
                                                     <hr style=\"border: 0; border-top: 1px solid #c51d22; display: block; width: 100%; margin-bottom: 0%;\">
                                                     <ol type=\"1\">
@@ -170,7 +159,7 @@ class __TwigTemplate_e5611cf8b42d5c1403a420f8c94f246b73538e3fe9d18ad834c4b28c1bd
                                                             <ul>
                                                                 <li>
                                                                      <i>";
-        // line 140
+        // line 132
         echo twig_escape_filter($this->env, (isset($context["agencia"]) ? $context["agencia"] : null), "html", null, true);
         echo "</i>
                                                                 </li>
@@ -182,17 +171,17 @@ class __TwigTemplate_e5611cf8b42d5c1403a420f8c94f246b73538e3fe9d18ad834c4b28c1bd
                                                                 <li>
                                                                      <i>
                                                                         ";
-        // line 149
+        // line 141
         if (((isset($context["news"]) ? $context["news"] : null) == "1")) {
-            // line 150
+            // line 142
             echo "                                                                            Activado
                                                                         ";
         } else {
-            // line 152
+            // line 144
             echo "                                                                            Desactivado
                                                                         ";
         }
-        // line 154
+        // line 146
         echo "                                                                     </i>
                                                                 </li>
                                                             </ul>
@@ -245,7 +234,7 @@ class __TwigTemplate_e5611cf8b42d5c1403a420f8c94f246b73538e3fe9d18ad834c4b28c1bd
                             <tr>
                                 <td valign=\"middle\" width=\"100%\" style=\"text-align: left; font-family: Helvetica, Arial, sans-serif; font-size: 13px; color: rgba(255, 255, 255, 0.9); line-height: 24px; text-align: center\">
                                     <!--[if !mso]><!--><span style=\"font-family: Helvetica; font-weight: normal;\"><!--<![endif]-->&copy; ";
-        // line 205
+        // line 197
         echo twig_escape_filter($this->env, (isset($context["_anio"]) ? $context["_anio"] : null), "html", null, true);
         echo " ";
         echo twig_escape_filter($this->env, (isset($context["agencia"]) ? $context["agencia"] : null), "html", null, true);
@@ -290,7 +279,7 @@ class __TwigTemplate_e5611cf8b42d5c1403a420f8c94f246b73538e3fe9d18ad834c4b28c1bd
 
     public function getDebugInfo()
     {
-        return array (  249 => 205,  196 => 154,  192 => 152,  188 => 150,  186 => 149,  174 => 140,  159 => 128,  148 => 120,  135 => 112,  91 => 71,  19 => 1,);
+        return array (  238 => 197,  185 => 146,  181 => 144,  177 => 142,  175 => 141,  163 => 132,  148 => 120,  135 => 112,  91 => 71,  19 => 1,);
     }
 }
 /* <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />*/
@@ -413,14 +402,6 @@ class __TwigTemplate_e5611cf8b42d5c1403a420f8c94f246b73538e3fe9d18ad834c4b28c1bd
 /*                                                             <ul>*/
 /*                                                                 <li>*/
 /*                                                                      <i>{{ correo }}</i>*/
-/*                                                                 </li>*/
-/*                                                             </ul>*/
-/*                                                         </li>*/
-/*                                                         <li style="list-style-type: disc;">*/
-/*                                                             <b>Teléfono:</b>*/
-/*                                                             <ul>*/
-/*                                                                 <li>*/
-/*                                                                      <i>{{ telefono }}</i>*/
 /*                                                                 </li>*/
 /*                                                             </ul>*/
 /*                                                         </li>*/

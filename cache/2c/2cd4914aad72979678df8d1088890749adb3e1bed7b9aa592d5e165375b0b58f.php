@@ -105,7 +105,10 @@ class __TwigTemplate_be50bc322825c8187d6b6a9ad9c585682a24eadd764fa3cf57a26a5e280
                     <input type=\"hidden\" name=\"mime\" id=\"suk_mime\" value=\"\">
                     <input type=\"hidden\" name=\"file_content\" id=\"suk_filecontent\" value=\"\">
 
-                    <input type=\"hidden\" name=\"producto\" id=\"suk_product\" value=\"Bolsa de Trabajo Camcar\">
+                    <input type=\"hidden\" name=\"producto\" id=\"suk_product\" value=\"Bolsa de Trabajo Suzuki Autos ";
+        // line 88
+        echo twig_escape_filter($this->env, (isset($context["_loc"]) ? $context["_loc"] : null), "html", null, true);
+        echo "\">
 
                     <input type=\"hidden\" name=\"imagen\" id=\"suk_imagen\" value=\"\">
                     <input type=\"hidden\" name=\"campaign\" id=\"suk_campaign\" value=\"Suzuki Autos ";
@@ -162,7 +165,7 @@ class __TwigTemplate_be50bc322825c8187d6b6a9ad9c585682a24eadd764fa3cf57a26a5e280
 
     public function getDebugInfo()
     {
-        return array (  141 => 116,  113 => 91,  28 => 8,  21 => 2,  19 => 1,);
+        return array (  144 => 116,  116 => 91,  110 => 88,  28 => 8,  21 => 2,  19 => 1,);
     }
 }
 /* {% set model = mdopa %}*/
@@ -252,7 +255,7 @@ class __TwigTemplate_be50bc322825c8187d6b6a9ad9c585682a24eadd764fa3cf57a26a5e280
 /*                     <input type="hidden" name="mime" id="suk_mime" value="">*/
 /*                     <input type="hidden" name="file_content" id="suk_filecontent" value="">*/
 /* */
-/*                     <input type="hidden" name="producto" id="suk_product" value="Bolsa de Trabajo Camcar">*/
+/*                     <input type="hidden" name="producto" id="suk_product" value="Bolsa de Trabajo Suzuki Autos {{ _loc }}">*/
 /* */
 /*                     <input type="hidden" name="imagen" id="suk_imagen" value="">*/
 /*                     <input type="hidden" name="campaign" id="suk_campaign" value="Suzuki Autos {{ _loc }} - Bolsa de Trabajo">*/
