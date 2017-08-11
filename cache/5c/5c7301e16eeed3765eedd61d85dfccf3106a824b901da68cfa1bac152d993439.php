@@ -18,8 +18,38 @@ class __TwigTemplate_4ba0bfcdcbe6716334a03c7ad669b992e7126b14f594e80c12fd1588c7a
         // line 2
         echo "    <div class=\"specifications-wrapper\">
         <div class=\"specifications\" id=\"features-wrapper\">
+            <!-- slide extra -->
+            <div class=\"specification\" style=\"background-image: url('";
+        // line 5
+        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
+        echo "img/sections/home/slider/01-SLIDER-DE-PROMOCION-SWIFT.jpg');\">
+                <div class=\"title-wrapper\" style=\"color: #fff\">
+                    <div class=\"title\">
+                       &nbsp;
+                    </div>
+                </div>
+                <div class=\"description compact\"><p>&nbsp;</p></div>
+            </div>
+            <!-- slide extra -->
+            <div class=\"specification\" style=\"background-image: url('img/sections/home/slider/02-SLIDER-DE-PROMOCION-VITARA.jpg');\">
+                <div class=\"title-wrapper\" style=\"color: #fff\">
+                    <div class=\"title\">
+                       &nbsp;
+                    </div>
+                </div>
+                <div class=\"description compact\"><p>&nbsp;</p></div>
+            </div>
+            <!-- slide extra -->
+            <div class=\"specification\" style=\"background-image: url('img/sections/home/slider/03-SLIDER-DE-PROMOCION-SCROSS.jpg');\">
+                <div class=\"title-wrapper\" style=\"color: #fff\">
+                    <div class=\"title\">
+                       &nbsp;
+                    </div>
+                </div>
+                <div class=\"description compact\"><p>&nbsp;</p></div>
+            </div>
             ";
-        // line 30
+        // line 48
         echo "            ";
         // line 86
         echo "            <!-- slide 00 -->
@@ -75,15 +105,14 @@ class __TwigTemplate_4ba0bfcdcbe6716334a03c7ad669b992e7126b14f594e80c12fd1588c7a
 
     public function getDebugInfo()
     {
-        return array (  53 => 141,  42 => 113,  39 => 112,  28 => 87,  25 => 86,  23 => 30,  19 => 2,);
+        return array (  83 => 141,  72 => 113,  69 => 112,  58 => 87,  55 => 86,  53 => 48,  24 => 5,  19 => 2,);
     }
 }
 /* {# INICIO DE NUEVO SLIDER #}*/
 /*     <div class="specifications-wrapper">*/
 /*         <div class="specifications" id="features-wrapper">*/
-/*             {#*/
 /*             <!-- slide extra -->*/
-/*             <div class="specification" style="background-image: url('{{ _host }}img/sections/home/slider/SLIDER-DE-PROMOCIONES-1659X655-GUADALAJARA.jpg');">*/
+/*             <div class="specification" style="background-image: url('{{ _host }}img/sections/home/slider/01-SLIDER-DE-PROMOCION-SWIFT.jpg');">*/
 /*                 <div class="title-wrapper" style="color: #fff">*/
 /*                     <div class="title">*/
 /*                        &nbsp;*/
@@ -91,6 +120,25 @@ class __TwigTemplate_4ba0bfcdcbe6716334a03c7ad669b992e7126b14f594e80c12fd1588c7a
 /*                 </div>*/
 /*                 <div class="description compact"><p>&nbsp;</p></div>*/
 /*             </div>*/
+/*             <!-- slide extra -->*/
+/*             <div class="specification" style="background-image: url('img/sections/home/slider/02-SLIDER-DE-PROMOCION-VITARA.jpg');">*/
+/*                 <div class="title-wrapper" style="color: #fff">*/
+/*                     <div class="title">*/
+/*                        &nbsp;*/
+/*                     </div>*/
+/*                 </div>*/
+/*                 <div class="description compact"><p>&nbsp;</p></div>*/
+/*             </div>*/
+/*             <!-- slide extra -->*/
+/*             <div class="specification" style="background-image: url('img/sections/home/slider/03-SLIDER-DE-PROMOCION-SCROSS.jpg');">*/
+/*                 <div class="title-wrapper" style="color: #fff">*/
+/*                     <div class="title">*/
+/*                        &nbsp;*/
+/*                     </div>*/
+/*                 </div>*/
+/*                 <div class="description compact"><p>&nbsp;</p></div>*/
+/*             </div>*/
+/*             {#*/
 /*             <!-- slide extra -->*/
 /*             <div class="specification" style="background-image: url('img/sections/home/slider/SLIDER-DE-PROMOCIONES-02.jpg');">*/
 /*                 <div class="title-wrapper" style="color: #fff">*/
@@ -108,24 +156,6 @@ class __TwigTemplate_4ba0bfcdcbe6716334a03c7ad669b992e7126b14f594e80c12fd1588c7a
 /*             </div>*/
 /*             #}*/
 /*             {#*/
-/*             <!-- slide extra -->*/
-/*             <div class="specification" style="background-image: url('img/sections/home/slider/SLIDER-DE-PROMOCIONES-04.jpg');">*/
-/*                 <div class="title-wrapper" style="color: #fff">*/
-/*                     <div class="title">*/
-/*                        &nbsp;*/
-/*                     </div>*/
-/*                 </div>*/
-/*                 <div class="description compact"><p>&nbsp;</p></div>*/
-/*             </div>*/
-/*             <!-- slide extra -->*/
-/*             <div class="specification" style="background-image: url('img/sections/home/slider/01-SLIDER-DE-PROMOCIONES-2012.jpg');">*/
-/*                 <div class="title-wrapper" style="color: #fff">*/
-/*                     <div class="title">*/
-/*                        &nbsp;*/
-/*                     </div>*/
-/*                 </div>*/
-/*                 <div class="description compact"><p>&nbsp;</p></div>*/
-/*             </div>*/
 /*             <!-- slide extra -->*/
 /*             <div class="specification" style="background-image: url('img/sections/home/slider/02-SLIDER-DE-PROMOCIONES-swift.jpg');">*/
 /*                 <div class="title-wrapper" style="color: #fff">*/
