@@ -28,11 +28,17 @@ class __TwigTemplate_4ba0bfcdcbe6716334a03c7ad669b992e7126b14f594e80c12fd1588c7a
                        &nbsp;
                     </div>
                 </div>
-                <div class=\"description compact\"><p>&nbsp;</p></div>
+                <div class=\"description extra-compact\">
+                    <p>
+                        <a class='button button-resp button-sm button-default' title='Casino Swift' target='_blank' onclick=\"ga('send', 'event', 'Casino Swift', 'Home Slider', 'Casino Swift');\" href=\"http://suzukigdl.com.mx/nochesdecasino/\">
+                            Registrate
+                        </a>
+                    </p>
+                </div>
             </div>
             <!-- slide extra -->
             <div class=\"specification\" style=\"background-image: url('";
-        // line 14
+        // line 20
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
         echo "img/sections/home/slider/01-SLIDER-DE-PROMOCION-SWIFT.jpg');\">
                 <div class=\"title-wrapper\" style=\"color: #fff\">
@@ -61,12 +67,12 @@ class __TwigTemplate_4ba0bfcdcbe6716334a03c7ad669b992e7126b14f594e80c12fd1588c7a
                 <div class=\"description compact\"><p>&nbsp;</p></div>
             </div>
             ";
-        // line 57
+        // line 63
         echo "            ";
-        // line 95
+        // line 101
         echo "            <!-- slide 00 -->
             <div class=\"specification\" style=\"background-image: url('";
-        // line 96
+        // line 102
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
         echo "img/sections/home/slider/SLIDER-DE-PROMOCIONES-03.jpg');\">
                 <div class=\"title-wrapper\" style=\"color: #fff\">
@@ -77,10 +83,10 @@ class __TwigTemplate_4ba0bfcdcbe6716334a03c7ad669b992e7126b14f594e80c12fd1588c7a
                 <div class=\"description compact\"><p>&nbsp;</p></div>
             </div>
             ";
-        // line 121
+        // line 127
         echo "            <!-- slide 02 -->
             <div class=\"specification\" style=\"background-image: url('";
-        // line 122
+        // line 128
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
         echo "img/sections/home/slider/slider_marca-2017.jpg');\">
                 <div class=\"title-wrapper\" style=\"color: #fff\">
@@ -91,7 +97,7 @@ class __TwigTemplate_4ba0bfcdcbe6716334a03c7ad669b992e7126b14f594e80c12fd1588c7a
                 <div class=\"description extra-compact\"><p>&nbsp;</p></div>
             </div>
             ";
-        // line 150
+        // line 156
         echo "        </div>
         <div class=\"clearfix\"></div>
     </div>
@@ -117,7 +123,7 @@ class __TwigTemplate_4ba0bfcdcbe6716334a03c7ad669b992e7126b14f594e80c12fd1588c7a
 
     public function getDebugInfo()
     {
-        return array (  95 => 150,  84 => 122,  81 => 121,  70 => 96,  67 => 95,  65 => 57,  36 => 14,  24 => 5,  19 => 2,);
+        return array (  101 => 156,  90 => 128,  87 => 127,  76 => 102,  73 => 101,  71 => 63,  42 => 20,  24 => 5,  19 => 2,);
     }
 }
 /* {# INICIO DE NUEVO SLIDER #}*/
@@ -130,7 +136,13 @@ class __TwigTemplate_4ba0bfcdcbe6716334a03c7ad669b992e7126b14f594e80c12fd1588c7a
 /*                        &nbsp;*/
 /*                     </div>*/
 /*                 </div>*/
-/*                 <div class="description compact"><p>&nbsp;</p></div>*/
+/*                 <div class="description extra-compact">*/
+/*                     <p>*/
+/*                         <a class='button button-resp button-sm button-default' title='Casino Swift' target='_blank' onclick="ga('send', 'event', 'Casino Swift', 'Home Slider', 'Casino Swift');" href="http://suzukigdl.com.mx/nochesdecasino/">*/
+/*                             Registrate*/
+/*                         </a>*/
+/*                     </p>*/
+/*                 </div>*/
 /*             </div>*/
 /*             <!-- slide extra -->*/
 /*             <div class="specification" style="background-image: url('{{ _host }}img/sections/home/slider/01-SLIDER-DE-PROMOCION-SWIFT.jpg');">*/
