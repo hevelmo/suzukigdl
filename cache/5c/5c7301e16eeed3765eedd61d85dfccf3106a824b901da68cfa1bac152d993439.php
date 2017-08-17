@@ -22,6 +22,18 @@ class __TwigTemplate_4ba0bfcdcbe6716334a03c7ad669b992e7126b14f594e80c12fd1588c7a
             <div class=\"specification\" style=\"background-image: url('";
         // line 5
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
+        echo "img/sections/home/slider/SLIDER-DE-CASINO-1659X655.jpg');\">
+                <div class=\"title-wrapper\" style=\"color: #fff\">
+                    <div class=\"title\">
+                       &nbsp;
+                    </div>
+                </div>
+                <div class=\"description compact\"><p>&nbsp;</p></div>
+            </div>
+            <!-- slide extra -->
+            <div class=\"specification\" style=\"background-image: url('";
+        // line 14
+        echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
         echo "img/sections/home/slider/01-SLIDER-DE-PROMOCION-SWIFT.jpg');\">
                 <div class=\"title-wrapper\" style=\"color: #fff\">
                     <div class=\"title\">
@@ -49,12 +61,12 @@ class __TwigTemplate_4ba0bfcdcbe6716334a03c7ad669b992e7126b14f594e80c12fd1588c7a
                 <div class=\"description compact\"><p>&nbsp;</p></div>
             </div>
             ";
-        // line 48
+        // line 57
         echo "            ";
-        // line 86
+        // line 95
         echo "            <!-- slide 00 -->
             <div class=\"specification\" style=\"background-image: url('";
-        // line 87
+        // line 96
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
         echo "img/sections/home/slider/SLIDER-DE-PROMOCIONES-03.jpg');\">
                 <div class=\"title-wrapper\" style=\"color: #fff\">
@@ -65,10 +77,10 @@ class __TwigTemplate_4ba0bfcdcbe6716334a03c7ad669b992e7126b14f594e80c12fd1588c7a
                 <div class=\"description compact\"><p>&nbsp;</p></div>
             </div>
             ";
-        // line 112
+        // line 121
         echo "            <!-- slide 02 -->
             <div class=\"specification\" style=\"background-image: url('";
-        // line 113
+        // line 122
         echo twig_escape_filter($this->env, (isset($context["_host"]) ? $context["_host"] : null), "html", null, true);
         echo "img/sections/home/slider/slider_marca-2017.jpg');\">
                 <div class=\"title-wrapper\" style=\"color: #fff\">
@@ -79,7 +91,7 @@ class __TwigTemplate_4ba0bfcdcbe6716334a03c7ad669b992e7126b14f594e80c12fd1588c7a
                 <div class=\"description extra-compact\"><p>&nbsp;</p></div>
             </div>
             ";
-        // line 141
+        // line 150
         echo "        </div>
         <div class=\"clearfix\"></div>
     </div>
@@ -105,12 +117,21 @@ class __TwigTemplate_4ba0bfcdcbe6716334a03c7ad669b992e7126b14f594e80c12fd1588c7a
 
     public function getDebugInfo()
     {
-        return array (  83 => 141,  72 => 113,  69 => 112,  58 => 87,  55 => 86,  53 => 48,  24 => 5,  19 => 2,);
+        return array (  95 => 150,  84 => 122,  81 => 121,  70 => 96,  67 => 95,  65 => 57,  36 => 14,  24 => 5,  19 => 2,);
     }
 }
 /* {# INICIO DE NUEVO SLIDER #}*/
 /*     <div class="specifications-wrapper">*/
 /*         <div class="specifications" id="features-wrapper">*/
+/*             <!-- slide extra -->*/
+/*             <div class="specification" style="background-image: url('{{ _host }}img/sections/home/slider/SLIDER-DE-CASINO-1659X655.jpg');">*/
+/*                 <div class="title-wrapper" style="color: #fff">*/
+/*                     <div class="title">*/
+/*                        &nbsp;*/
+/*                     </div>*/
+/*                 </div>*/
+/*                 <div class="description compact"><p>&nbsp;</p></div>*/
+/*             </div>*/
 /*             <!-- slide extra -->*/
 /*             <div class="specification" style="background-image: url('{{ _host }}img/sections/home/slider/01-SLIDER-DE-PROMOCION-SWIFT.jpg');">*/
 /*                 <div class="title-wrapper" style="color: #fff">*/
